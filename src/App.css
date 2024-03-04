@@ -136,7 +136,7 @@ margin: 10px !important;
 @font-face {
   font-family: "Signwood";   
   src: local("Signwood-2Om7l"),
-    url("./fonts/signwood-font/Signwood-2Om7l.ttf") format("truetype");
+    url("fonts/signwood-font/Signwood-2Om7l.ttf") format("truetype");
 }
 
 @font-face {
