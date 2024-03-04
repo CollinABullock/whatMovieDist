@@ -1,0 +1,175 @@
+#root {
+  width: 100vw;
+  background-color: #58355E;
+  color: #E4C3AD;
+  font-family: Signwood;
+  padding: 0px;
+  align-items: start;
+}
+
+.streaming-service-img {
+  transition: filter 0.3s ease-in-out;
+}
+
+.streaming-service-img:hover {
+  filter: brightness(1.2) blur(2px);
+}
+
+.streaming-service-img.selected {
+  filter: brightness(1.2) blur(2px) hue-rotate(120deg); /* Green tint */
+}
+
+/* setting a glowing effect, you know like a flickering movie theatre bulb! */
+
+.glow {
+  animation: glowing 1500ms infinite;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+  }
+  50% {
+    box-shadow: 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff, 0 0 80px #ffffff;
+  }
+  100% {
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+  }
+}
+
+
+.navbar {
+background-color: pink;
+position: relative;
+margin: 10px !important;
+}
+
+.footer-a {
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  .card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: .75em;
+    padding: 0;
+  }
+}
+
+.container {
+  position: relative;
+  margin-top: 500px !important;
+}
+
+.RandomMovie {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.randomMovie {
+  width: 100%;
+  font-size: 4em; 
+  background-color: red;
+  color: whitesmoke; 
+  text-shadow: 2px 2px 2px black;  
+  @media (max-width: 768px) {
+    
+      width: 100%;
+      font-size: 2em;
+  }
+}
+
+.modal-details {
+  text-align: end;
+  margin: 0 !important;
+}
+
+.randomCard {
+  margin: 0 auto;
+  border: 0;
+  margin-top: -220px;
+  width: 80%;
+ 
+  @media (max-width: 768px) {
+    margin-top: -320px !important;
+    width: 100% !important;
+ 
+}
+}
+
+.filtered-director-item {
+  width: 150px; /* Set a fixed width for each grid item */
+  height: 200px; /* Set a fixed height for each grid item */
+  text-align: center;
+}
+
+.filtered-director-img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+@font-face {
+  font-family: "Poster";   
+  src: local("PostersItalicPersonalUseBoldItalic-ALqx6"),
+    url("./fonts/posters-italic-font/PostersItalicPersonalUseBoldItalic-ALqx6.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Showtime";   
+  src: local("Showtime"),
+    url("./fonts/showtime/Showtime.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Banner";   
+  src: local("Banner-DOqK0"),
+    url("./fonts/banner-font/Banner-DOqK0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Signwood";   
+  src: local("Signwood-2Om7l"),
+    url("./fonts/signwood-font/Signwood-2Om7l.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nemo";   
+  src: local("LostFish-5DOz"),
+    url("./fonts/lost-fish-font/LostFish-5DOz.ttf") format("truetype");
+}
+
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+a {
+  color: black;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  padding: 2em;
+  border: none;
+  margin-top: -500;
+  height: 100%;
+}
+
+.read-the-docs {
+  color: #888;
+}
