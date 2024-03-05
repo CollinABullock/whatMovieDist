@@ -10522,6 +10522,36 @@ const moviesArray = [
   }]
 },
 
+{
+  "item": 435,
+  "title": "Benedetta",
+  "runtime": 130,
+  "mpaa": "R",
+  "poster": "https://img.hulu.com/user/v3/artwork/53acf949-ad64-4b5b-b2ac-52da4eafdc97?base_image_bucket_name=image_manager&base_image=ee142715-5bd1-4b9e-995d-2244577b6c77&size=600x338&format=jpeg",
+  "description": "Follow the story of Benedetta Carlini, a 17th-century nun who joins a convent in Italy and experiences divine visions. As her religious fervor grows, she becomes involved in a forbidden love affair with another nun. Director Paul Verhoeven delivers a provocative and visually stunning exploration of faith, sexuality, and power.",
+  "genre": ["drama", "biography", "foreign"],
+  "link": "",
+  "director": [{
+    "name": "Paul Verhoeven",
+    "image": "https://deadline.com/wp-content/uploads/2016/11/elle-e1638963982120.jpg?w=1024",
+    "imdb": "https://www.imdb.com/name/nm0000682/"
+  }],
+  "actors": [{
+    "name": "Virginie Efira",
+    "image": "https://www.washingtonblade.com/content/files/2021/12/Daphne_Patakia_and_Virginie_Efira_in_Benedetta_insert_courtesy_IFC_Films.jpg",
+    "imdb": "https://www.imdb.com/name/nm0252051/"
+  }, {
+    "name": "Charlotte Rampling",
+    "image": "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2F96933198-4420-11e2-952a-00144feabdc0?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1",
+    "imdb": "https://www.imdb.com/name/nm0001648/"
+  }, {
+    "name": "Daphné Patakia",
+    "image": "https://i.ytimg.com/vi/wkxyD9c48ok/sddefault.jpg",
+    "imdb": "https://www.imdb.com/name/nm2935100/"
+  }]
+},
+
+
     
 
     {
