@@ -396,7 +396,8 @@ const moviesArray = [
       "actors": [{
         "name": "Jennifer Lopez",
       "image": "https://variety.com/wp-content/uploads/2024/02/Jennifer-Lopez-Variety-Cover-Story-1.jpg?crop=0px%2C178px%2C1918px%2C1080px&resize=1920%2C1080",
-      "imdb": "https://www.imdb.com/name/nm0000182/?ref_=tt_cl_t_2",}
+      "imdb": "https://www.imdb.com/name/nm0000182/?ref_=tt_cl_t_2"
+    }
       ]
     },
     
@@ -3719,6 +3720,155 @@ const moviesArray = [
   [
 
     {
+      "item": 421,
+      "title": "Capturing the Friedmans",
+      "runtime": 108,
+      "mpaa": "Not Rated",
+      "poster": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/89f21e68-5cdf-4be2-9ff7-ae45e6e53ba3/98a45aa7361e548af073ee51fb6d288128824aeb.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom",
+      "description": "The Friedmans seem at first to be a typical family - until one Thanksgiving while they are gathered at home preparing for a quiet holiday dinner, a police battering ram splinters the front door and officers rush into the house searching every corner and seizing boxes of the family's possessions. Arnold and his 18-year old son Jesse are both arrested. As the police pursue the investigation, and the community reacts, the fabric of the family begins to disintegrate, revealing disturbing questions.",
+      "genre": ["documentary", "crime"],
+      "link": "https://www.max.com/movies/capturing-the-friedmans/89f21e68-5cdf-4be2-9ff7-ae45e6e53ba3?reason=anonymous&returnUrl=https%3A%2F%2Fplay.max.com%2Fmovie%2F89f21e68-5cdf-4be2-9ff7-ae45e6e53ba3",
+      "director": [{
+        "name": "Andrew Jarecki",
+        "image": "https://cdn.vox-cdn.com/thumbor/nZhhXRRweMsTfwfApK0Evi6TCdQ=/0x61:3088x2377/1200x800/filters:focal(0x61:3088x2377)/cdn.vox-cdn.com/uploads/chorus_image/image/45844518/jarecki.0.0.jpg",
+        "imdb": "https://www.imdb.com/name/nm1285613/"
+      }],
+      "actors": []
+    },
+    {
+      "item": 422,
+      "title": "Hoop Dreams",
+      "runtime": 170,
+      "mpaa": "PG-13",
+      "poster": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/8de6f0f3-38a2-48f8-88ad-7b2805d72782/ff861b8f78294036b0448fdd21cd52b192777d6a.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom",
+      "description": "Follow the journey of two inner-city Chicago boys with dreams of becoming professional basketball players. Over the span of five years, the film documents their struggles with family, education, race, and the competitive world of basketball.",
+      "genre": ["documentary", "sports", "classic"],
+      "link": "https://play.max.com/movie/8de6f0f3-38a2-48f8-88ad-7b2805d72782",
+      "director": [{
+        "name": "Steve James",
+        "image": "",
+        "imdb": "https://www.imdb.com/name/nm0417024/"
+      }],
+      "actors": []
+    },
+
+    {
+      "item": 423,
+      "title": "Grey Gardens",
+      "runtime": 94,
+      "mpaa": "PG",
+      "poster": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/1da58c29-5bfc-4198-8ac6-055f8cd0eee6/4dc94dee2141415dce88080eadd124c70669e1ec.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom",
+      "description": "Explore the eccentric lives of Edith Bouvier Beale and her daughter, Edie, relatives of Jacqueline Kennedy Onassis, as they reside in a decaying mansion in East Hampton, New York. This captivating documentary delves into their isolated existence, past glories, and complex mother-daughter relationship.",
+      "genre": ["documentary", "classic"],
+      "link": "https://play.max.com/movie/1da58c29-5bfc-4198-8ac6-055f8cd0eee6?tab=generic-movie-page-rail-content-details-tab",
+      "director": [{
+        "name": "Albert Maysles",
+        "image": "https://static01.nyt.com/images/2015/03/07/arts/07maysles-1-obit/07maysles-1-obit-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
+        "imdb": "https://www.imdb.com/name/nm0563099/"
+      }, {
+        "name": "David Maysles",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/filmmaking-brothers-albert-and-david-maysles-w-motion-news-photo-1707332600.jpg",
+        "imdb": "https://www.imdb.com/name/nm0563042/"
+      }],
+      "actors": []
+    },
+    {
+      "item": 424,
+      "title": "Harlan County USA",
+      "runtime": 103,
+      "mpaa": "Not Rated",
+      "poster": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/1e53285f-4f19-4f8e-aefc-fc4b033a9080/15d572c15677a4bc9560683dd003b05bc88d4e5a.jpg?submitted=1684654546243&host=wbd-images.prod-vod.h264.io&partner=beamcom",
+      "description": "Delve into the coal mining community of Harlan County, Kentucky, as director Barbara Kopple chronicles the bitter 1973 strike against the Duke Power Company. Through intimate interviews and powerful footage, the film captures the struggles, solidarity, and sacrifices of the miners and their families in their fight for better working conditions and fair treatment.",
+      "genre": ["documentary", "classic"],
+      "link": "https://play.max.com/movie/1e53285f-4f19-4f8e-aefc-fc4b033a9080",
+      "director": [{
+        "name": "Barbara Kopple",
+        "image": "https://cloudfront-us-east-1.images.arcpublishing.com/opb/2SPJS3PH4NBR5LW2XOEBT5IMUA.png",
+        "imdb": "https://www.imdb.com/name/nm0465732/"
+      }],
+      "actors": []
+    },
+    {
+      "item": 425,
+      "title": "Don't Look Back",
+      "runtime": 96,
+      "mpaa": "Not Rated",
+      "poster": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/4bd1bd9d-4697-4765-9cbc-44d41ea7fea9/5843fab096fe446e36ae516ef517cdd325a52889.jpg?submitted=1684658273598&host=wbd-images.prod-vod.h264.io&partner=beamcom&w=500",
+      "description": "Experience the legendary 1965 concert tour of Bob Dylan through the lens of filmmaker D.A. Pennebaker. This groundbreaking documentary captures Dylan's enigmatic personality, iconic performances, and behind-the-scenes moments, providing an intimate portrait of the influential singer-songwriter during a pivotal period of his career.",
+      "genre": ["documentary", "music", "classic"],
+      "link": "https://play.max.com/movie/4bd1bd9d-4697-4765-9cbc-44d41ea7fea9",
+      "director": [{
+        "name": "D.A. Pennebaker",
+        "image": "https://www.indiewire.com/wp-content/uploads/2019/08/5872226b.jpg",
+        "imdb": "https://www.imdb.com/name/nm0671933/"
+      }],
+      "actors": [{
+        "name": "Bob Dylan",
+        "image": "https://miro.medium.com/v2/resize:fit:8384/1*_EDEWvWLREzlAvaQRfC_SQ.jpeg",
+        "imdb": "https://www.imdb.com/name/nm0001168/"
+      }]
+    },
+
+    {
+      "item": 426,
+      "title": "Nanook of the North",
+      "runtime": 79,
+      "mpaa": "Not Rated",
+      "poster": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/d69498b9-5881-4097-8e36-db1c87080088/e8ce47dcaaddfd42d258afaa5b3676b9f9df3d8d.jpg?submitted=1684684626553&host=wbd-images.prod-vod.h264.io&partner=beamcom",
+      "description": "Experience the groundbreaking documentary by director Robert J. Flaherty, depicting the daily life of an Inuk family in the Canadian Arctic. Filmed in 1922, the film provides a captivating glimpse into the survival skills, traditions, and challenges faced by Nanook and his family as they navigate the harsh Arctic environment.",
+      "genre": ["documentary", "classic"],
+      "link": "https://play.max.com/movie/d69498b9-5881-4097-8e36-db1c87080088",
+      "director": [{
+        "name": "Robert J. Flaherty",
+        "image": "https://www.sensesofcinema.com/wp-content/uploads/2002/12/Robert-Flaherty.png",
+        "imdb": "https://www.imdb.com/name/nm0281107/"
+      }],
+      "actors": []
+    },
+
+    {
+      "item": 427,
+      "title": "Hearts and Minds",
+      "runtime": 112,
+      "mpaa": "R",
+      "poster": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/2c43837c-73a0-4de2-af8e-43a7410b27a8/f5e75cbf57edebe2363a27a2d55730133e838760.jpg?submitted=1684655665813&host=wbd-images.prod-vod.h264.io&partner=beamcom",
+      "description": "Experience the powerful documentary directed by Peter Davis, exploring the impact of the Vietnam War on both the Vietnamese and American populations. Through interviews, archival footage, and emotional testimonials, the film delves into the complexities of war, its human toll, and the societal divisions it engenders.",
+      "genre": ["documentary", "war", "classic"],
+      "link": "https://play.max.com/movie/2c43837c-73a0-4de2-af8e-43a7410b27a8",
+      "director": [{
+        "name": "Peter Davis",
+        "image": "https://villonfilms.ca/img/asset/bWFpbi9TSURFLUJZLVNJREVfWklNMDgxX1BFVEVSLURBVklTLmpwZw==/SIDE-BY-SIDE_ZIM081_PETER-DAVIS.jpg?w=1200&h=628&q=80&fit=crop&s=2ecf7d057106180c571a6f870e201b3b",
+        "imdb": "https://www.imdb.com/name/nm0204782/"
+      }],
+      "actors": []
+    },
+
+    {    
+      "item": "m420",
+      "title": "Navalny",
+      "runtime": 99,
+      "mpaa": "R",
+      "poster": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/11a4cff7-b90a-44c0-8cb6-c56b5cbfe5aa/c69eef8569801f9d0dbbedc4359d504032cb7a92.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom&w=500",
+      "description": "This eye-opening documentary chronicles the investigation into the brazen 2020 assassination attempt of late Russian opposition leader Alexei Navalny.",
+	"genre": ["documentary"],
+    "link": "https://play.max.com/movie/11a4cff7-b90a-44c0-8cb6-c56b5cbfe5aa",
+    "director": [{
+    "name": "Daniel Roher",
+    "image": "https://media.cnn.com/api/v1/images/stellar/prod/220424133008-rs-f-block-roher.jpg?c=original",
+    "imdb": "https://www.imdb.com/name/nm4173215/",
+    }],
+    "actors": [{
+      "name": "Alexei Navalny",
+      "image": "https://www.politico.eu/cdn-cgi/image/width=1160,height=773,quality=80,onerror=redirect,format=auto/wp-content/uploads/2024/02/26/GettyImages-2025100283-scaled.jpg",
+      "imdb": "https://www.imdb.com/name/nm6281092/",
+    }]
+    },
+
+
+
+
+
+    {
       "item": 335,
       "title": "Spirited Away",
       "runtime": 125,
@@ -7006,6 +7156,219 @@ const moviesArray = [
 
       // start prime array
   [
+    {
+      "item": 407,
+      "title": "Dear Zachary: A Letter to a Son About His Father",
+      "runtime": 95,
+      "mpaa": "Not Rated",
+      "poster": "https://m.media-amazon.com/images/S/pv-target-images/4f8b22cf475e238cd11b02ded538ce69c4bf61389e219ec342ecd4239690f92d.jpg",
+      "description": "This heartbreaking documentary is a letter to Zachary, the son of Andrew Bagby, who was murdered by his ex-girlfriend. As his friends and family recount Andrew's life, the film also serves as a testament to the love and loss experienced by those left behind.",
+      "genre": ["documentary", "crime", "biography"],
+      "link": "https://www.amazon.com/gp/video/detail/B00MB6F3QW/ref=atv_ge_agd_1_c_hUhMb1_brws_1_4?jic=8%7CEgRzdm9k",
+      "director": [{
+        "name": "Kurt Kuenne",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjE2NzYyMzcyM15BMl5BanBnXkFtZTgwNjk3ODgxNDE@._V1_.jpg",
+        "imdb": "https://www.imdb.com/name/nm0474155/"
+      }],
+      "actors": []
+    },
+
+    {
+      "item": 409,
+      "title": "Scandalous: The Untold Story of the National Enquirer",
+      "runtime": 97,
+      "mpaa": "Not Rated",
+      "poster": "https://m.media-amazon.com/images/S/pv-target-images/ec46fe0de01698319e42be5cb3bce5ef077bb14379b394138eb86044448a31c3._SX1080_FMjpg_.jpg",
+      "description": "Delve into the controversial history and inner workings of the National Enquirer, a tabloid newspaper renowned for its sensationalist coverage of celebrity scandals. Through interviews and archival footage, explore the tabloid's rise to prominence, its impact on American culture, and the ethical dilemmas surrounding its reporting practices.",
+      "genre": ["documentary"],
+      "link": "https://www.amazon.com/gp/video/detail/B0B7B9MH8D/ref=atv_ge_agd_1_c_hUhMb1_brws_1_2?jic=8%7CEgRzdm9k",
+      "director": [{
+        "name": "Mark Landsman",
+        "image": "https://miro.medium.com/v2/resize:fit:1400/1*8P36gR9pdo-oh58ZqxAiQg.jpeg",
+        "imdb": "https://www.imdb.com/name/nm0486469/"
+      }],
+      "actors": []
+    },
+
+    {
+      "item": 410,
+      "title": "Val",
+      "runtime": 108,
+      "mpaa": "Not Rated",
+      "poster": "https://m.media-amazon.com/images/S/pv-target-images/a80ec7f05d4dc5a0517bf09fe9fc6548e70aeea50497f86702d543f04ee17805.jpg",
+      "description": "A look at the daily life of actor Val Kilmer with never-before-seen images spanning forty years of his career.",
+      "genre": ["documentary", "biopic"],
+      "link": "https://www.amazon.com/gp/video/detail/B0988VKGW6/ref=atv_ge_agd_1_c_hUhMb1_brws_1_6?jic=8%7CEgRzdm9k",
+      "director": [{
+        "name": "Ting Poo",
+        "image": "https://i.ytimg.com/vi/CZqb9g-DKh4/hqdefault.jpg",
+        "imdb": "https://www.imdb.com/name/nm2593979/"
+      }, {
+        "name": "Leo Scott",
+        "image": "https://i.ytimg.com/vi/CZqb9g-DKh4/hqdefault.jpg",
+        "imdb": "https://www.imdb.com/name/nm2816195/"
+      }],
+      "actors": [
+        {"name": "Val Kilmer",
+        "image": "https://imageio.forbes.com/specials-images/imageserve/4c927758a4dc45b69f2d3ad7b8a887be/960x0.jpg?height=503&width=711&fit=bounds",
+        "imdb": "https://www.imdb.com/name/nm0000174/"}
+      ]
+    },
+    {
+      "item": 411,
+      "title": "When You're Strange",
+      "runtime": 86,
+      "mpaa": "R",
+      "poster": "https://m.media-amazon.com/images/S/pv-target-images/004229387bbf3c29259a0a42ee0ea1bc024c9ac44ef7e59c54b533ec18479f1d.jpg",
+      "description": "Explore the captivating journey of the iconic rock band The Doors in this documentary narrated by Johnny Depp. Through rare footage and interviews, delve into the band's rise to fame, their tumultuous relationships, and the enduring legacy of their music.",
+      "genre": ["documentary", "music"],
+      "link": "https://www.amazon.com/gp/video/detail/B07QQ4D123/ref=atv_dp_amz_c_TS5124c5_1_1?jic=16%7CCgNhbGwSA2FsbA%3D%3D",
+      "director": [{
+        "name": "Tom DiCillo",
+        "image": "https://www.tomdicillo.com/wp-content/uploads/2023/06/haleluyah-8-1-scaled.jpg",
+        "imdb": "https://www.imdb.com/name/nm0225726/"
+      }],
+      "actors": [{
+        "name": "Johnny Depp",
+        "image": "https://www.hollywoodreporter.com/wp-content/uploads/2023/05/Johnny-Depp-Puffins-Promotion-GettyImages-1235985361-H-2023.jpg?w=1296",
+        "imdb": "https://www.imdb.com/name/nm0000136/"
+      }]
+    },
+
+    {
+      "item": 412,
+      "title": "Soaked in Bleach",
+      "runtime": 90,
+      "mpaa": "Not Rated",
+      "poster": "https://m.media-amazon.com/images/S/pv-target-images/e1f6c4723a4e2b3d6f8dcb818a4557f39ebf37a40ffdc4354657d5de42bb73e4._UR1920,1080_SX720_FMjpg_.jpg",
+      "description": "Investigate the controversial circumstances surrounding the death of Kurt Cobain, the lead singer of Nirvana, in this documentary. Through interviews and evidence examination, the film questions the official ruling of suicide and explores alternative theories.",
+      "genre": ["documentary", "crime", "music"],
+      "link": "https://www.amazon.com/gp/video/detail/B078PS557R/ref=atv_dp_amz_c_TS5124c5_1_5?jic=16%7CCgNhbGwSA2FsbA%3D%3D",
+      "director": [{
+        "name": "Benjamin Statler",
+        "image": "https://i.iheart.com/v3/re/assets.coast2coast/ba50f76a443213e6692ee0a87c261cc9?ops=gravity(%22north%22),fit(1200,675),quality(65)",
+        "imdb": "https://www.imdb.com/name/nm1985356/"
+      }],
+      "actors": []
+    },
+
+    {
+      "item": 413,
+      "title": "Hype!",
+      "runtime": 83,
+      "mpaa": "Not Rated",
+      "poster": "https://m.media-amazon.com/images/S/pv-target-images/94f155964d4936a4fe3e3f17780341d3dc76123d7c06f0dc2c7722fe4579232b.jpg",
+      "description": "Explore the emergence of the Seattle grunge music scene in the early 1990s through this documentary. Featuring interviews with musicians, journalists, and industry insiders, the film examines the cultural impact of bands like Nirvana, Pearl Jam, and Soundgarden.",
+      "genre": ["documentary", "music"],
+      "link": "https://www.amazon.com/gp/video/detail/B00D5C9T70/ref=atv_dp_amz_c_TS5124c5_1_5?jic=16%7CCgNhbGwSA2FsbA%3D%3D",
+      "director": [{
+        "name": "Doug Pray",
+        "image": "https://media.baselineresearch.com/images/255377/255377_full.jpg",
+        "imdb": "https://www.imdb.com/name/nm0695046/"
+      }],
+      "actors": []
+    },
+
+    {
+      "item": 414,
+      "title": "Hired Gun",
+      "runtime": 98,
+      "mpaa": "Not Rated",
+      "poster": "https://m.media-amazon.com/images/S/pv-target-images/5a828da79c219e462671de35c2fc3b755d8c296c8c56468ae5b06cbe7c24dcd8.jpg",
+      "description": "Delve into the world of professional musicians known as 'hired guns' who are hired by famous artists and bands to accompany them on tours and recordings. Through interviews and performances, this documentary sheds light on the unsung heroes behind some of the biggest names in music.",
+      "genre": ["documentary", "music"],
+      "link": "https://www.amazon.com/gp/video/detail/B073RFVW36/ref=atv_dp_amz_c_TS5124c5_1_5?jic=16%7CCgNhbGwSA2FsbA%3D%3D",
+      "director": [{
+        "name": "Fran Strine",
+        "image": "https://media.gettyimages.com/id/1469318566/photo/fran-strine-documentary-award.jpg?s=612x612&w=gi&k=20&c=jkHXkBBzOzfDwIaTXHvq5inNQJ5xbYva9ppQGoVoSpM=",
+        "imdb": "https://www.imdb.com/name/nm1355010/"
+      }],
+      "actors": []
+    },
+
+    {
+      "item": 417,
+      "title": "Man on Wire",
+      "runtime": 94,
+      "mpaa": "PG-13",
+      "poster": "https://i.ytimg.com/vi/MhPSl00UDVE/maxresdefault.jpg",
+      "description": "Experience the astonishing true story of Philippe Petit, a French high-wire artist who walked between the Twin Towers of the World Trade Center in 1974. Through archival footage and reenactments, this documentary captures Petit's daring feat and the meticulous planning that went into it.",
+      "genre": ["documentary", "biopic", "crime"],
+      "link": "https://www.amazon.com/gp/video/detail/B00CV1AKWE/ref=atv_ge_agd_1_c_hUhMb1_brws_1_7?jic=8%7CEgRzdm9k",
+      "director": [{
+        "name": "James Marsh",
+        "image": "https://www.hollywoodreporter.com/wp-content/uploads/2016/03/gettyimages-461021666-h_2016.jpg",
+        "imdb": "https://www.imdb.com/name/nm0550321/"
+      }],
+      "actors": []
+    },
+
+    {
+  "item": 418,
+  "title": "The Resurrection of Jake the Snake",
+  "runtime": 93,
+  "mpaa": "Not Rated",
+  "poster": "https://m.media-amazon.com/images/S/pv-target-images/4e1256356eac9b35c482dfbccdfcf2312fd7b1708e6c74faa074727ad235dda0.jpg",
+  "description": "Follow the journey of professional wrestler Jake 'The Snake' Roberts as he attempts to overcome personal struggles and reclaim his life and career with the help of fellow wrestler Diamond Dallas Page. The film documents Roberts' battles with addiction and his transformation through yoga and rehabilitation, offering an intimate look into his life and the challenges he faces on his path to recovery.",
+  "genre": ["documentary", "sports", "biopic"],
+  "link": "https://www.amazon.com/gp/video/detail/B08BNKGZ9D/ref=atv_ge_agd_1_c_hUhMb1_brws_1_9?jic=8%7CEgRzdm9k",
+  "director": [{
+    "name": "Steve Yu",
+    "image": "https://www.ajc.com/resizer/UNFgDHMLmj_2UqF8L3347tVPZjo=/500x282/cloudfront-us-east-1.images.arcpublishing.com/ajc/APJN5L76TSETBPNASIXSXBB4VM.jpg",
+    "imdb": "https://www.imdb.com/name/nm3201804/"
+  }],
+  "actors": [{
+    "name": "Jake Roberts",
+    "image": "https://m.media-amazon.com/images/M/MV5BNTdjMzYzMTUtNGZhNS00ZTRiLWI3Y2YtMjc3YTM1NjhkZjg3XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_QL75_UX500_CR0,47,500,281_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0731195/",
+
+  }]
+},
+
+{
+  "item": 419,
+  "title": "Conan O'Brien Can't Stop",
+  "runtime": 89,
+  "mpaa": "R",
+  "poster": "https://m.media-amazon.com/images/S/pv-target-images/84aa591a3664b14fed2bda86d7fe8b41cb2257a06a3681644d782d63137aa31a.jpg",
+  "description": "Follow Conan O'Brien's post-'Tonight Show' comedy tour as he struggles with the aftermath of losing his show and the pressures of creating new material. Despite setbacks and exhaustion, O'Brien's irrepressible energy and wit shine through as he entertains audiences across the country.",
+  "genre": ["documentary", "comedy"],
+  "link": "https://www.amazon.com/gp/video/detail/B00BR7Z4WY/ref=atv_ge_agd_1_c_hUhMb1_brws_1_10?jic=8%7CEgRzdm9k",
+  "director": [{
+    "name": "Rodman Flender",
+    "image": "https://m.media-amazon.com/images/M/MV5BZTc2ZmU5NDMtOTEwZS00YjE4LWIxODctNWQ2YzY5MzljMWIxXkEyXkFqcGdeQXVyNTI5ODg0MjQ@._V1_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0281635/"
+  }],
+  "actors": [{
+    "name": "Conan O'Brien",
+    "image": "https://dims.apnews.com/dims4/default/0bb131d/2147483647/strip/false/crop/3000x2122+0+0/resize/1486x1051!/quality/90/?url=https%3A%2F%2Fstorage.googleapis.com%2Fafs-prod%2Fmedia%2F73c914338bd7484f9ee86b83132b1ac2%2F3000.jpeg",
+    "imdb": "https://www.imdb.com/name/nm0005277/"
+  }]
+},
+
+{
+  "item": 420,
+  "title": "Jasper Mall",
+  "runtime": 85,
+  "mpaa": "Not Rated",
+  "poster": "https://m.media-amazon.com/images/S/pv-target-images/55e96b4f5d1f9cdf061ea812d65abc8b092d8c5b7d7e422b2b9ef5f00fcd2857.jpg",
+  "description": "Explore the fading glory of the Jasper Mall, once a bustling hub of community activity, now struggling to survive in the age of online shopping. Through intimate portraits of the mall's tenants and patrons, this documentary offers a poignant reflection on the changing landscape of American retail and small-town life.",
+  "genre": ["documentary", "history"],
+  "link": "https://www.amazon.com/gp/video/detail/B088MGQ7T1/ref=atv_ge_agd_1_c_hUhMb1_brws_1_15?jic=8%7CEgRzdm9k",
+  "director": [{
+    "name": "Bradford Thomason",
+    "image": "https://images.mubicdn.net/images/film/231420/cache-419711-1552734304/image-w1280.jpg?size=400x",
+    "imdb": "https://www.imdb.com/name/nm9322203/"
+  }, {
+    "name": "Brett Whitcomb",
+    "image": "https://tapeop.com/_m/photologue/photos/cache/rich_williams%20(1)_disp_horizontal_bw.jpg",
+    "imdb": "https://www.imdb.com/name/nm3581873/"
+  }],
+  "actors": []
+},
+
+
+
     {    
       "item": "202",
       "title": "Saltburn",
@@ -7693,7 +8056,7 @@ const moviesArray = [
       "mpaa": "PG-13",
       "poster": "https://m.media-amazon.com/images/S/pv-target-images/958ccc5bca2267a09dfe9e0f6521bca22dbfd3c9ef38711893e3665647c359e0.jpg",
       "description": "NASCAR superstar Ricky Bobby faces various challenges when French Formula One driver Jean Girard challenges him for the top spot in auto racing.",
-      "genre": ["comedy", "sport"],
+      "genre": ["comedy", "sports"],
       "link": "https://www.amazon.com/Talladega-Nights-Ballad-Ricky-Unrated/dp/B018R7MTPQ/ref=sr_1_1?crid=LEKN8CA76OEA&dib=eyJ2IjoiMSJ9.SmdnXU1uP0uAnfQNH2LwoxHi9HYYPXbjKQqTPiGclCxNwWn9YRYOzUIeYs2ci9kwMfeQ-DH5BhuIMvb1FIDXNrQ_qL2wptPxfsWQygCUNBTJUP77eloFlC3mbyMdVpmauivjFA9e8ELWIvYfkLTmQ8d1UwfiH4m4FjPG5qJZqjTTGjyNq5br3nATYxjb7Vyv4riEI0SELtsKS_cDttykblvYl04x45jr_-v1cSzFKoI.JQnYBtMrEfl7Tyc9WOh9kslrb17xzfsIuzS6t9hfOns&dib_tag=se&keywords=talladega+nights+the+ballad+of+ricky+bobby&qid=1709231475&s=instant-video&sprefix=talla%2Cinstant-video%2C215&sr=1-1",
       "director": [{
         "name": "Adam McKay",
@@ -8301,7 +8664,7 @@ const moviesArray = [
       "mpaa": "PG-13",
       "poster": "https://m.media-amazon.com/images/S/pv-target-images/e60627e0080707b1c3a63aff289fb4993177bd526c89d94cd770776816f6826c._UR1920,1080_.jpg",
       "description": "In 2002, two rival Olympic ice skaters were stripped of their gold medals and permanently banned from men's single competition. Presently, however, they've found a loophole that will allow them to qualify as a pairs team.",
-      "genre": ["comedy", "sport"],
+      "genre": ["comedy", "sports"],
       "link": "https://www.amazon.com/gp/video/detail/B00C3MTMSO/ref=atv_dp_amz_c_TS5124c5_1_2?jic=16%7CCgNhbGwSA2FsbA%3D%3D",
       "director": [{
         "name": "Josh Gordon & Will Speck",
@@ -10016,6 +10379,181 @@ const moviesArray = [
   ], 
   // start hulu array
   [
+
+    {
+      "item": 429,
+      "title": "Minding the Gap",
+      "runtime": 93,
+      "mpaa": "Not Rated",
+      "poster": "https://img3.hulu.com/user/v3/artwork/efcd9be9-9541-46b4-abbc-dd8b0606b304?base_image_bucket_name=image_manager&base_image=459411eb-4834-4a54-a64e-90fd6269f1c4&size=1200x630&format=jpeg&operations=%5B%7B%22gradient_vector%22%3A%22(0%2C0%2C0%2C0.5)%7C(0%2C0%2C0%2C0)%7C(0%2C600)%7C(0%2C240)%22%7D%2C%7B%22overlay%22%3A%7B%22position%22%3A%22SouthEast%7C(30%2C30)%22%2C%22operations%22%3A%5B%7B%22image%22%3A%22image_manager%7C869e68d8-de1f-4c66-ac40-521d403076eb%22%7D%2C%7B%22resize%22%3A%22204x204%7Cmax%22%7D%2C%7B%22extent%22%3A%22204x204%22%7D%5D%7D%7D%2C%5D",
+      "description": "Follow three young skateboarders from Rockford, Illinois, as they navigate the challenges of adolescence and adulthood while using skateboarding as an escape from troubled family lives. Director Bing Liu explores themes of race, class, masculinity, and trauma in this intimate and moving documentary.",
+      "genre": ["documentary", "sports", "biopic"],
+      "link": "https://www.hulu.com/movie/minding-the-gap-efcd9be9-9541-46b4-abbc-dd8b0606b304?cmp=11932&utm_source=google&utm_medium=SEM&utm_campaign=CM_SEM_Various+Niche+Originals&utm_term=&gad_source=1&gclid=CjwKCAiAopuvBhBCEiwAm8jaMc3LSftiBn98XyzGwZ85Ttu4TOQVwCbI7P0l8Gr__sY8Am4EIItFuxoCU4UQAvD_BwE&gclsrc=aw.ds",
+      "director": [{
+        "name": "Bing Liu",
+        "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/1282/2023/11/16171645/MWFF-Friday-83-copy.webp",
+        "imdb": "https://www.imdb.com/name/nm7256169/"
+      }],
+      "actors": []
+    },
+
+    {
+      "item": 430,
+      "title": "Hail Satan?",
+      "runtime": 95,
+      "mpaa": "R",
+      "poster": "https://img.hulu.com/user/v3/artwork/88dd0321-84b5-426d-a57d-bb7875e69bf5?base_image_bucket_name=image_manager&base_image=ec8bba2f-46f4-44c4-aa11-c7e94ab9477b&size=600x338&format=jpeg",
+      "description": "Explore the rise of The Satanic Temple, a controversial religious organization advocating for the separation of church and state and promoting social justice causes. Through interviews and archival footage, the documentary sheds light on the group's activism, challenges, and impact on American society.",
+      "genre": ["documentary", "comedy"],
+      "link": "https://www.hulu.com/movie/hail-satan-88dd0321-84b5-426d-a57d-bb7875e69bf5",
+      "director": [{
+        "name": "Penny Lane",
+        "image": "https://womenandhollywood.com/wp-content/uploads/2022/07/lane.png",
+        "imdb": "https://www.imdb.com/name/nm1753772/"
+      }],
+      "actors": []
+    },
+
+    {
+      "item": 431,
+      "title": "The Worst Person in the World",
+      "runtime": 127,
+      "mpaa": "R",
+      "poster": "https://img2.hulu.com/user/v3/artwork/e30177ce-5201-402d-a346-6333ca2fe5b8?base_image_bucket_name=image_manager&base_image=93492891-4075-4b9c-b211-5cea3f108aaf&size=600x338&format=jpeg",
+      "description": "Follow the journey of Julie, a young woman in Oslo, as she navigates the complexities of love, career, and identity over the course of several years. Director Joachim Trier crafts a poignant and relatable portrait of modern adulthood, exploring themes of ambition, relationships, and self-discovery.",
+      "genre": ["drama", "comedy", "romance", "foreign"],
+      "link": "https://www.hulu.com/movie/the-worst-person-in-the-world-e30177ce-5201-402d-a346-6333ca2fe5b8",
+      "director": [{
+        "name": "Joachim Trier",
+        "image": "https://d27csu38upkiqd.cloudfront.net/eyJidWNrZXQiOiJmZGMtc2l0ZXB1YmxpYy1tZWRpYS1wcm9kIiwia2V5IjoidXBsb2Fkc1wvMjAxN1wvMDRcLzYwYjFhOTcxODI5NTUyY2IzYjliZDBiNDc3OTA3YjE5LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAyOCwiZml0IjoiY292ZXIifX19",
+        "imdb": "https://www.imdb.com/name/nm0873093/"
+      }],
+      "actors": [{
+        "name": "Renate Reinsve",
+        "image": "https://lh3.googleusercontent.com/proxy/2sdjrpBsvVnJW2KCbyeZzHB-E1fRk-W0p932en161TEpK2622LjpAN-T9xP5UlWADmVE_Z0WgZUIyyQyYsYCiy4-QVMb1cgrMpT9Cktkttm9QlruWLXo-sOUVAVuw1djlfwGAibQMvViGbJSKUIO25I",
+        "imdb": "https://www.imdb.com/name/nm4535655/"
+      }, {
+        "name": "Anders Danielsen Lie",
+        "image": "https://pyxis.nymag.com/v1/imgs/128/9d3/e985c399b492007c43307d20dba3d4c505-anders-danielsen-lie.2x.rsocial.w600.jpg",
+        "imdb": "https://www.imdb.com/name/nm0200473/"
+      }, {
+        "name": "Herbert Nordrum",
+        "image": "https://m.media-amazon.com/images/M/MV5BMmI2ZWY4YzItODFlYy00NTA4LTk1ZTktMTIxMWE5ZTZlZGM5XkEyXkFqcGdeQWxiaWFtb250._V1_QL75_UX500_CR0,0,500,281_.jpg",
+        "imdb": "https://www.imdb.com/name/nm2180503/"
+      }]
+    },
+
+    {
+      "item": 432,
+      "title": "Bad Luck Banging or Loony Porn",
+      "runtime": 106,
+      "mpaa": "Not Rated",
+      "poster": "https://img1.hulu.com/user/v3/artwork/d55bd317-c0ea-4782-905b-b0b9f5c94237?base_image_bucket_name=image_manager&base_image=af6248dd-c343-46a5-a19f-541fac8cc55a&size=600x338&format=jpeg",
+      "description": "Follow the story of a schoolteacher whose private sex tape is leaked online, causing a scandal that reverberates throughout her life. Director Radu Jude explores themes of privacy, morality, and societal norms in this provocative and satirical film.",
+      "genre": ["drama", "comedy", "foreign"],
+      "link": "https://www.hulu.com/movie/bad-luck-banging-or-loony-porn-d55bd317-c0ea-4782-905b-b0b9f5c94237",
+      "director": [{
+        "name": "Radu Jude",
+        "image": "https://m.media-amazon.com/images/M/MV5BN2U1NTFlMmQtYTU0Yi00M2MyLTlhODUtZTg5ZjI2N2NhZjVlXkEyXkFqcGdeQXVyNDkzNTM2ODg@._V1_.jpg",
+        "imdb": "https://www.imdb.com/name/nm0431838/"
+      }],
+      "actors": [{
+        "name": "Katia Pascariu",
+        "image": "https://www.filmsinframe.com/wp-content/uploads/2023/01/films_in_frame_katia_pascariu_imagine_reprezentativa-scaled.jpg",
+        "imdb": "https://www.imdb.com/name/nm3714165/"
+      }]
+    },
+
+    {
+      "item": 433,
+      "title": "Titane",
+      "runtime": 108,
+      "mpaa": "R",
+      "poster": "https://img2.hulu.com/user/v3/artwork/bcf42641-5348-4bdb-a9bc-cf1e123aab7e?base_image_bucket_name=image_manager&base_image=a864feb1-2232-40ba-af9e-a74c1271a26b&size=600x338&format=jpeg",
+      "description": "Experience the surreal journey of a young woman named Alexia who has a mysterious and violent connection to cars. As she flees the law, she forms an unexpected bond with a firefighter on the run. Director Julia Ducournau delivers a visceral and provocative exploration of identity, desire, and human connection.",
+      "genre": ["drama", "horror", "foreign"],
+      "link": "https://www.hulu.com/movie/titane-bcf42641-5348-4bdb-a9bc-cf1e123aab7e",
+      "director": [{
+        "name": "Julia Ducournau",
+        "image": "https://www.semainedelacritique.com/uploads/news/image_big_f666c2091f029a9c5c73dac7d28cfbbe.jpg",
+        "imdb": "https://www.imdb.com/name/nm2934937/"
+      }],
+      "actors": [{
+        "name": "Agathe Rousselle",
+        "image": "https://a-rabbitsfoot.com/wp-content/uploads/2022/06/AGATHE-ROUSSELLE-%E2%80%93-Credit_-Fiona-Torre-scaled-edited-scaled.jpeg",
+        "imdb": "https://www.imdb.com/name/nm8638569/"
+      }, {
+        "name": "Vincent Lindon",
+        "image": "https://www.nydailynews.com/wp-content/uploads/migration/2022/04/28/DJ53S7PSCBGN3EBEHKYVV3APNQ.jpg",
+        "imdb": "https://www.imdb.com/name/nm0512146/"
+      }]
+    }
+,  
+{
+  "item": 434,
+  "title": "Nymphomaniac: Part 1",
+  "runtime": 117,
+  "mpaa": "NC-17",
+  "poster": "https://img1.hulu.com/user/v3/artwork/2e78760f-ae5d-465d-afe2-302f447b9c4a?base_image_bucket_name=image_manager&base_image=83a9fe43-db73-4032-9f8e-a0c4632c3cbd&size=600x338&format=jpeg",
+  "description": "Delve into the provocative and controversial world of Joe, a self-diagnosed nymphomaniac, as she recounts her erotic experiences to a stranger after being found beaten in an alley. Director Lars von Trier crafts a visually stunning and emotionally charged exploration of sexuality, desire, and human connection.",
+  "genre": ["drama", "foreign"],
+  "link": "https://www.hulu.com/movie/nymphomaniac-volume-i-extended-directors-cut-2e78760f-ae5d-465d-afe2-302f447b9c4a",
+  "director": [{
+    "name": "Lars von Trier",
+    "image": "https://media.newyorker.com/photos/638785b12d5d9a5ef49876c5/3:2/w_1500,h_1000,c_limit/Nayman-Von-Trier.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001885/"
+  }],
+  "actors": [{
+    "name": "Charlotte Gainsbourg",
+    "image": "https://www.hollywoodreporter.com/wp-content/uploads/2022/08/Charlotte-Gainsbourg-Getty-1382390655-Carlos-Alvarez_Getty-Images.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001251/"
+  }, {
+    "name": "Stellan Skarsgård",
+    "image": "https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1688,w_3000,x_0,y_0/dpr_1.5/c_limit,w_1600/fl_lossy,q_auto/v1618385638/210409-stern-Stellan-Skarsgard-tease_kf7hql",
+    "imdb": "https://www.imdb.com/name/nm0001745/"
+  }, {
+    "name": "Shia Labeouf",
+    "image": "https://media.gq.com/photos/5f4952b38dc8847e289114e8/4:3/w_1024%2Cc_limit/GQ-Shia-Grooming-082820.jpeg",
+    "imdb": "https://www.imdb.com/name/nm0479471/?ref_=nv_sr_srsg_0_tt_2_nm_6_q_shia%2520leb"
+  }, {
+    "name": "Christian Slater",
+    "image": "https://m.media-amazon.com/images/M/MV5BMzZmMWJmZmMtMDBjYi00NTFiLWI3ZWYtOTA4NWMwMDg5NjFlXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0000225/"
+  }]
+},
+
+{
+  "item": 435,
+  "title": "Benedetta",
+  "runtime": 130,
+  "mpaa": "R",
+  "poster": "https://img.hulu.com/user/v3/artwork/53acf949-ad64-4b5b-b2ac-52da4eafdc97?base_image_bucket_name=image_manager&base_image=ee142715-5bd1-4b9e-995d-2244577b6c77&size=600x338&format=jpeg",
+  "description": "Follow the story of Benedetta Carlini, a 17th-century nun who joins a convent in Italy and experiences divine visions. As her religious fervor grows, she becomes involved in a forbidden love affair with another nun. Director Paul Verhoeven delivers a provocative and visually stunning exploration of faith, sexuality, and power.",
+  "genre": ["drama", "biography", "foreign"],
+  "link": "",
+  "director": [{
+    "name": "Paul Verhoeven",
+    "image": "https://deadline.com/wp-content/uploads/2016/11/elle-e1638963982120.jpg?w=1024",
+    "imdb": "https://www.imdb.com/name/nm0000682/"
+  }],
+  "actors": [{
+    "name": "Virginie Efira",
+    "image": "https://www.washingtonblade.com/content/files/2021/12/Daphne_Patakia_and_Virginie_Efira_in_Benedetta_insert_courtesy_IFC_Films.jpg",
+    "imdb": "https://www.imdb.com/name/nm0252051/"
+  }, {
+    "name": "Charlotte Rampling",
+    "image": "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2F96933198-4420-11e2-952a-00144feabdc0?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1",
+    "imdb": "https://www.imdb.com/name/nm0001648/"
+  }, {
+    "name": "Daphné Patakia",
+    "image": "https://i.ytimg.com/vi/wkxyD9c48ok/sddefault.jpg",
+    "imdb": "https://www.imdb.com/name/nm2935100/"
+  }]
+},
+
+
+    
+
     {
       "item": 338,
       "title": "The Lost City",
@@ -11844,11 +12382,611 @@ const moviesArray = [
   ]
 }
 ,
+{
+  "item": 387,
+  "title": "Melancholia",
+  "runtime": 136,
+  "mpaa": "R",
+  "poster": "https://img1.hulu.com/user/v3/artwork/271959fb-260a-46ae-9cb7-e319ee1f99d7?base_image_bucket_name=image_manager&base_image=cb64a24f-0aa8-4925-81d0-7ee954b1492e&size=600x338&format=jpeg",
+  "description": "Justine, a woman struggling with depression, finds herself amidst family tensions as her sister Claire's lavish wedding celebration unravels. Meanwhile, a mysterious planet named Melancholia hurtles towards Earth, threatening all life on the planet.",
+  "genre": ["drama", "science-fiction"],
+  "link": "https://www.hulu.com/movie/melancholia-271959fb-260a-46ae-9cb7-e319ee1f99d7",
+  "director": [{
+    "name": "Lars von Trier",
+    "image": "https://media.newyorker.com/photos/638785b12d5d9a5ef49876c5/3:2/w_1500,h_1000,c_limit/Nayman-Von-Trier.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001885/"
+  }],
+  "actors": [{
+    "name": "Kirsten Dunst",
+    "image": "https://people.com/thmb/t0tfzxEbftdvKZxRNNfDYz_u-ps=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(809x274:811x276)/kirsten-dunst-4c8ebd76adbd4eb2931f5c455c5be858.jpg",
+    "imdb": "https://www.imdb.com/name/nm0000379/"
+  }, {
+    "name": "Charlotte Gainsbourg",
+    "image": "https://www.hollywoodreporter.com/wp-content/uploads/2022/08/Charlotte-Gainsbourg-Getty-1382390655-Carlos-Alvarez_Getty-Images.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001251/"
+  }, {
+    "name": "Alexander Skarsgård",
+    "image": "https://www.hollywoodreporter.com/wp-content/uploads/2022/04/4179_PP_D001_00695_RC-h-2022.jpg?w=1296",
+    "imdb": "https://www.imdb.com/name/nm0002907/"
+  }, {
+    "name": "Kiefer Sutherland",
+    "image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2024/01/1200/675/KieferSutherlandCriticsChoice.jpg?ve=1&tl=1",
+    "imdb": "https://www.imdb.com/name/nm0000662/"
+  }]
+}
+,
+{
+  "item": 388,
+  "title": "The House That Jack Built",
+  "runtime": 152,
+  "mpaa": "R",
+  "poster": "https://img4.hulu.com/user/v3/artwork/b5bf8de6-67b5-4f5d-8397-9f19ba319f45?base_image_bucket_name=image_manager&base_image=7936a934-f2c9-487e-9886-f30aaa461530&size=1200x630&format=jpeg",
+  "description": "Follow the life and actions of Jack, a highly intelligent and sophisticated serial killer, over a span of 12 years, and the inevitable consequences of his crimes.",
+  "genre": ["crime", "drama", "horror"],
+  "link": "https://www.hulu.com/movie/the-house-that-jack-built-b5bf8de6-67b5-4f5d-8397-9f19ba319f45",
+  "director": [{
+    "name": "Lars von Trier",
+    "image": "https://media.newyorker.com/photos/638785b12d5d9a5ef49876c5/3:2/w_1500,h_1000,c_limit/Nayman-Von-Trier.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001885/"
+  }],
+  "actors": [{
+    "name": "Matt Dillon",
+    "image": "https://imgix.ranker.com/list_img_v2/4694/2004694/original/young-matt-dillon-u2?fit=crop&fm=pjpg&q=80&dpr=2&w=1200&h=720",
+    "imdb": "https://www.imdb.com/name/nm0000369/"
+  }, {
+    "name": "Bruno Ganz",
+    "image": "https://m.media-amazon.com/images/M/MV5BOGViODI1YTMtNjA4Ny00Mjg1LTgzNTgtNzQwMWIwMjhlNDNiXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0000658/"
+  }, {
+    "name": "Uma Thurman",
+    "image": "https://m.media-amazon.com/images/M/MV5BOTViOTM2NzItZTA5Yi00Y2ZkLWJlYTgtZjFmMDBlYmJiYzJkXkEyXkFqcGdeQW1pYnJ5YW50._V1_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0000235/"
+  }, {
+    "name": "Siobhan Fallon Hogan",
+    "image": "https://s.yimg.com/ny/api/res/1.2/P2mTMbusbhlkMx_pq64OXA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTI3Ng--/https://s.yimg.com/os/creatr-uploaded-images/2023-12/eeb45200-9912-11ee-9f7f-0d932dc3463f",
+    "imdb": "https://www.imdb.com/name/nm0266550/"
+  }]
+},
+{
+  "item": 389,
+  "title": "Swallow",
+  "runtime": 94,
+  "mpaa": "R",
+  "poster": "https://img3.hulu.com/user/v3/artwork/4a32a3a0-536c-4ed8-babc-8382dff3d656?base_image_bucket_name=image_manager&base_image=7bb88cb9-4c3b-4030-b580-2eb77bf45dad&size=600x338&format=jpeg",
+  "description": "Hunter, a young housewife, develops an unusual and dangerous compulsion to swallow inedible objects. As her behavior becomes more erratic, she must confront the underlying trauma that drives her compulsions.",
+  "genre": ["drama", "thriller", "indie"],
+  "link": "https://www.hulu.com/movie/swallow-4a32a3a0-536c-4ed8-babc-8382dff3d656",
+  "director": [{
+    "name": "Carlo Mirabella-Davis",
+    "image": "https://filmmakermagazine.com/wp-content/uploads/2019/08/Carlo-Mirabella-Davis-headshot-copy-628x348.jpg",
+    "imdb": "https://www.imdb.com/name/nm1981778/"
+  }],
+  "actors": [{
+    "name": "Haley Bennett",
+    "image": "https://pyxis.nymag.com/v1/imgs/8f3/746/fb2bcb61177ea2e28224951d21c499ee0f-04-haley-bennett-jlaw-002.2x.rhorizontal.w710.jpg",
+    "imdb": "https://www.imdb.com/name/nm2030490/"
+  }, {
+    "name": "Austin Stowell",
+    "image": "https://deadline.com/wp-content/uploads/2019/11/austin-stowell.jpg?w=1000",
+    "imdb": "https://www.imdb.com/name/nm1858905/"
+  }, {
+    "name": "Elizabeth Marvel",
+    "image": "https://ca-times.brightspotcdn.com/dims4/default/7c2aef0/2147483647/strip/true/crop/2048x1439+0+0/resize/1200x843!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F1a%2F3d%2Febb743f09347619c5b73ed3d25ca%2Fla-1536692369-z4xqxqnlqb-snap-image",
+    "imdb": "https://www.imdb.com/name/nm0559832/"
+  }, {
+    "name": "David Rasche",
+    "image": "https://www.insidehook.com/wp-content/uploads/2023/07/david-rasche-e1688756534928.jpeg?fit=1005%2C669",
+    "imdb": "https://www.imdb.com/name/nm0711187/"
+  }]
+}
+,
+{
+  "item": 390,
+  "title": "Personal Shopper",
+  "runtime": 105,
+  "mpaa": "R",
+  "poster": "https://img3.hulu.com/user/v3/artwork/8187fbc5-435d-453d-bcce-2684856a67d1?base_image_bucket_name=image_manager&base_image=48bbe0e4-e814-488b-b0d2-c6b21a89343a&size=600x338&format=jpeg",
+  "description": "Maureen, a personal shopper for a wealthy celebrity, tries to connect with her deceased twin brother's spirit while dealing with her own grief and uncertainties about her future.",
+  "genre": ["drama", "mystery", "thriller", "foreign"],
+  "link": "https://www.hulu.com/movie/personal-shopper-8187fbc5-435d-453d-bcce-2684856a67d1",
+  "director": [{
+    "name": "Olivier Assayas",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjIyOTI5NjUwOV5BMl5BanBnXkFtZTcwNzk4ODYzNQ@@._V1_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001913/"
+  }],
+  "actors": [{
+    "name": "Kristen Stewart",
+    "image": "https://m.media-amazon.com/images/M/MV5BZGE0NGM4NjAtMDgyZC00NjAyLWE0ZTktYmRiMWY4NmE2ZjNkXkEyXkFqcGdeQXZ3ZXNsZXk@._V1_QL75_UX500_CR0,0,500,281_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0829576/"
+  }, {
+    "name": "Lars Eidinger",
+    "image": "https://www.hollywoodreporter.com/wp-content/uploads/2024/02/Sterben-Lars-Eidinger.jpeg?w=1600&h=900&crop=1",
+    "imdb": "https://www.imdb.com/name/nm1017605/"
+  }]
+},
+{
+  "item": 391,
+  "title": "Once Upon a Time in Hollywood",
+  "runtime": 161,
+  "mpaa": "R",
+  "poster": "https://img2.hulu.com/user/v3/artwork/53ad86e8-d796-4a5f-b6ac-b3339482c22c?base_image_bucket_name=image_manager&base_image=ab3057ce-54f6-4572-88b6-1ea29edcf2ea&size=1200x630&format=jpeg",
+  "description": "In 1969 Los Angeles, aging television actor Rick Dalton and his stunt double Cliff Booth navigate the changing film industry and encounter the Manson Family.",
+  "genre": ["comedy", "drama", "history"],
+  "link": "https://img2.hulu.com/user/v3/artwork/53ad86e8-d796-4a5f-b6ac-b3339482c22c?base_image_bucket_name=image_manager&base_image=ab3057ce-54f6-4572-88b6-1ea29edcf2ea&size=1200x630&format=jpeg",
+  "director": [{
+    "name": "Quentin Tarantino",
+    "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTfp1z_B7M3pWBZ__wU1PSwBAhIZRd6MyxYbc_25PDvGs6MlzsTLejJDtdOh772ILYJch3Fn-hOq8woi-o",
+    "imdb": "https://www.imdb.com/name/nm0000233/",
+  }],
+  "actors": [{
+    "name": "Leonardo DiCaprio",
+    "image": "https://phantom-marca.unidadeditorial.es/0e1996b37d1147008cea1fb6be3dc73a/resize/828/f/jpg/assets/multimedia/imagenes/2023/07/14/16893608205539.jpg",
+    "imdb": "https://www.imdb.com/name/nm0000138/",
+  }, {
+    "name": "Brad Pitt",
+    "image": "https://m.media-amazon.com/images/M/MV5BMWRkMDE5MjUtN2MyYi00MzAyLWIwOWMtNWU0NzNkZDczOWUyXkEyXkFqcGdeQUlNRGJWaWRlb1RodW1ibmFpbFNlcnZpY2U@._V1_QL75_UX500_CR0,0,500,281_.jpg"
+  }, {
+    "name": "Margot Robbie",
+    "image": "https://media.npr.org/assets/img/2015/03/02/margotrobbie-eb727edf7b18cbe8b755d8372cf271d4f4d6e3a7-s1100-c50.jpg",
+    "imdb": "https://www.imdb.com/name/nm3053338/?ref_=tt_ov_st",
+  }, {
+    "name": "Emile Hirsch",
+    "image": "https://ew.com/thmb/sN2bcgci0G_CIrMhXY39TMrSbrY=/800x524/filters:no_upscale():max_bytes(150000):strip_icc()/Emile-Hirsch-061623-d3d29995d627474d931af09646cb6ea6.jpg",
+    "imdb": "https://www.imdb.com/name/nm0386472/?ref_=nv_sr_srsg_0_tt_0_nm_8_q_emile%2520hirsch",
+  }]
+},
+{
+  "item": 392,
+  "title": "Tropic Thunder",
+  "runtime": 107,
+  "mpaa": "R",
+  "poster": "https://img.hulu.com/user/v3/artwork/73ed908e-b3b0-4033-8937-1d91b1a12e94?base_image_bucket_name=image_manager&base_image=65f06108-f098-4a67-8496-cc60e644ef2f&size=600x338&format=jpeg",
+  "description": "A group of self-absorbed actors shooting a big-budget war movie are forced to become the soldiers they are portraying when they are caught behind enemy lines.",
+  "genre": ["action", "comedy", "war"],
+  "link": "https://www.hulu.com/movie/tropic-thunder-73ed908e-b3b0-4033-8937-1d91b1a12e94",
+  "director": [{
+    "name": "Ben Stiller",
+    "image": "https://www.indiewire.com/wp-content/uploads/2022/08/Ben-Stiller.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001774/?ref_=tt_ov_st",
+  }],
+  "actors": [{
+    "name": "Ben Stiller",
+        "image": "https://www.indiewire.com/wp-content/uploads/2022/08/Ben-Stiller.jpg",
+        "imdb": "https://www.imdb.com/name/nm0001774/?ref_=tt_ov_st",
+  }, {
+    "name": "Jack Black",
+    "image": "https://static.foxnews.com/foxnews.com/content/uploads/2019/12/Jack-Black.jpg",
+    "imdb": "https://www.imdb.com/name/nm0085312/?ref_=tt_ov_st",
+  }, {
+    "name": "Robert Downey Jr.",
+    "image": "https://www.hollywoodreporter.com/wp-content/uploads/2023/06/Robert-Downey-Jr.-Getty-H-2023.jpg?w=1296",
+    "imdb": "https://www.imdb.com/name/nm0000375/"
+  }, {
+    "name": "Tom Cruise",
+    "image": "https://media.cnn.com/api/v1/images/stellar/prod/230710085438-tom-cruise-0703-restricted.jpg?c=16x9&q=h_833,w_1480,c_fill",
+    "imdb": "https://www.imdb.com/name/nm0000129/"
+  }]
+}
+,
+{
+  "item": 393,
+  "title": "Straight Outta Compton",
+  "runtime": 147,
+  "mpaa": "R",
+  "poster": "https://img1.hulu.com/user/v3/artwork/a32f9ed4-5820-4dc0-8551-ac6d87961024?base_image_bucket_name=image_manager&base_image=9d35bc1c-4cd8-435c-b74f-08c76a56c938&size=600x338&format=jpeg",
+  "description": "This biographical drama chronicles the rise and fall of the influential rap group N.W.A., exploring their music, conflicts, and impact on hip-hop culture.",
+  "genre": ["biography", "drama", "musical"],
+  "link": "https://www.hulu.com/movie/straight-outta-compton-a32f9ed4-5820-4dc0-8551-ac6d87961024",
+  "director": [{
+    "name": "F. Gary Gray",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTQ5ODcyMzExMF5BMl5BanBnXkFtZTgwMTgxMjAwMjE@._V1_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0336620/"
+  }],
+  "actors": [{
+    "name": "O'Shea Jackson Jr.",
+    "image": "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/8/21/1440161672462/af1a4d51-c1fa-4998-bfa9-13e8d5bba1e4-2060x1236.jpeg?width=465&dpr=1&s=none",
+    "imdb": "https://www.imdb.com/name/nm0815345/"
+  }, {
+    "name": "Corey Hawkins",
+    "image": "https://deadline.com/wp-content/uploads/2024/01/Corey-Hawkins.jpg?w=1000",
+    "imdb": "https://www.imdb.com/name/nm3729721/"
+  }, {
+    "name": "Jason Mitchell",
+    "image": "https://newsone.com/wp-content/uploads/sites/22/2021/11/1636049273806.jpg?quality=80&strip=all&w=1024&crop=0,0,100,683px",
+    "imdb": "https://www.imdb.com/name/nm2784935/"
+  }, {
+    "name": "Paul Giamatti",
+    "image": "https://people.com/thmb/7vnf3B_fcUWGT7MIacFocGbb37c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(734x120:736x122)/paul-giamatti-mag-rollout-1-tout-120523-1cb744c7221f4defb5576b9a6c04207b.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001292/"
+  }]
+}
+,
+{
+  "item": 394,
+  "title": "Empire Records",
+  "runtime": 90,
+  "mpaa": "PG-13",
+  "poster": "https://img.hulu.com/user/v3/artwork/25ca3de3-9925-4ad4-a9c6-170318bff1c1?base_image_bucket_name=image_manager&base_image=7c098603-2fa8-43c0-8d24-7621ace3d1b8&size=600x338&format=jpeg",
+  "description": "Follow the misadventures of the eclectic staff of Empire Records, an independent record store, over the course of one chaotic day as they struggle to save their beloved store from being sold to a large chain.",
+  "genre": ["comedy", "drama"],
+  "link": "https://www.hulu.com/movie/empire-records-25ca3de3-9925-4ad4-a9c6-170318bff1c1",
+  "director": [{
+    "name": "Allan Moyle",
+    "image": "https://www.northernstars.ca/wp-content/uploads/2013/03/Allan_Moyle-New-Waterford-Girl.jpg",
+    "imdb": "https://www.imdb.com/name/nm0600004/"
+  }],
+  "actors": [{
+    "name": "Anthony LaPaglia",
+    "image": "https://i.guim.co.uk/img/media/a0e807b7aa48d549534f627e70802cfde6137e50/0_62_3508_2105/master/3508.jpg?width=1200&quality=85&auto=format&fit=max&s=b6bb3cfda66b8049a0560e9110c64d53",
+    "imdb": "https://www.imdb.com/name/nm0001448/"
+  }, {
+    "name": "Liv Tyler",
+    "image": "https://m.media-amazon.com/images/M/MV5BNjdlZWM4YzAtMzg2NS00MzZhLThjY2UtZDcwZWFiMjY5YjRkXkEyXkFqcGdeQXVyMTE4ODQ1Mjc3._V1_FMjpg_UX1000_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0000239/"
+  }, {
+    "name": "Rory Cochrane",
+    "image": "https://i.ytimg.com/vi/Wjq_heXCUyM/maxresdefault.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001053/"
+  }]
+}
+,
+{
+  "item": 395,
+  "title": "Grandma's Boy",
+  "runtime": 94,
+  "mpaa": "R",
+  "poster": "https://img2.hulu.com/user/v3/artwork/3cc07d84-3c42-4555-9989-397ff2b40ad6?base_image_bucket_name=image_manager&base_image=bd4f0a82-f52d-484a-9a9b-a00e5958d9d6&size=600x338&format=jpeg",
+  "description": "When Alex, a 35-year-old video game tester, is kicked out of his apartment, he has to move in with his grandmother and her friends. As he tries to develop a new video game and navigate his new living situation, hilarity ensues.",
+  "genre": ["comedy"],
+  "link": "https://www.hulu.com/movie/grandmas-boy-3cc07d84-3c42-4555-9989-397ff2b40ad6",
+  "director": [{
+    "name": "Nicholaus Goossen",
+    "image": "https://pbs.twimg.com/media/GHtic8oaQAAxeil?format=jpg&name=4096x4096",
+    "imdb": "https://www.imdb.com/name/nm0331101/"
+  }],
+  "actors": [{
+    "name": "Allen Covert",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTM2NzE5NDE5NF5BMl5BanBnXkFtZTcwNDkyNTU0NA@@._V1_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0178246/"
+  }, {
+    "name": "Linda Cardellini",
+    "image": "https://static01.nyt.com/images/2013/06/05/arts/linda/linda-superJumbo.jpg",
+    "imdb": "https://www.imdb.com/name/nm0004804/"
+  }, {
+    "name": "Peter Dante",
+    "image": "https://i.ytimg.com/vi/mlC-RfdsJLU/maxresdefault.jpg",
+    "imdb": "https://www.imdb.com/name/nm0200701/"
+  }, {
+    "name": "Shirley Jones",
+    "image": "https://cdn.aarp.net/content/aarpe/en/home/entertainment/books/info-08-2013/shirley-jones-discusses-memoir/_jcr_content/root/container_main/container_body_main/container_image/articlecontentfragme/cfimage.coreimg.jpeg/content/dam/aarp/entertainment/books/2013-08/740-actress-shirley-jones-smiling-portrait.jpg",
+    "imdb": "https://www.imdb.com/name/nm0005064/"
+  }]
+}
+,
+{
+  "item": 396,
+  "title": "Heat",
+  "runtime": 170,
+  "mpaa": "R",
+  "poster": "https://img3.hulu.com/user/v3/artwork/88be9f24-47f7-41b5-8dd2-5d99b3101cdf?base_image_bucket_name=image_manager&base_image=210c8afc-7a7b-408f-97b4-894e9d9c4b8b&size=600x338&format=jpeg",
+  "description": "A group of professional bank robbers led by Neil McCauley and a dedicated LAPD detective, Vincent Hanna, pursue each other in a deadly cat-and-mouse game.",
+  "genre": ["crime", "drama", "thriller"],
+  "link": "https://www.hulu.com/movie/heat-88be9f24-47f7-41b5-8dd2-5d99b3101cdf",
+  "director": [{
+    "name": "Michael Mann",
+    "image": "https://variety.com/wp-content/uploads/2024/01/Michael-Mann-Variety-Directors-on-Directors.jpg?w=1000&h=563&crop=1",
+    "imdb": "https://www.imdb.com/name/nm0000520/"
+  }],
+  "actors": [{
+    "name": "Al Pacino",
+    "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSvNvCnfwhUJomL6srW4j0x21ntqd2R0HDGGyD-MLZA7OUZ52_3XZtjGq_B4G0dmM9-WfF0zMp6seOS_BM",
+    "imdb": "https://www.imdb.com/name/nm0000199/",
+  }, {
+    "name": "Robert De Niro",
+    "image": "https://www.usatoday.com/gcdn/presto/2020/08/17/USAT/7a0449c7-ffa8-450d-b65f-77a920a61757-Robert_De_Niro.JPG",
+    "imdb": "https://www.imdb.com/name/nm0000134/?ref_=tt_ov_st"
+  }, {
+    "name": "Val Kilmer",
+    "image": "https://imageio.forbes.com/specials-images/imageserve/4c927758a4dc45b69f2d3ad7b8a887be/960x0.jpg?height=503&width=711&fit=bounds",
+    "imdb": "https://www.imdb.com/name/nm0000174/"
+  }, {
+    "name": "Jon Voight",
+    "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/07/02/08/Angelina-Jon-Getty.jpg",
+    "imdb": "https://www.imdb.com/name/nm0000685/"
+  }]
+}
+,
+{
+  "item": 397,
+  "title": "Masterminds",
+  "runtime": 95,
+  "mpaa": "PG-13",
+  "poster": "https://img1.hulu.com/user/v3/artwork/a8010702-21f2-4900-b96b-4d616dbc5039?base_image_bucket_name=image_manager&base_image=c458d7e4-918b-4d42-aadb-4f7e1437eaba&size=600x338&format=jpeg",
+  "description": "Based on the true story of the 1997 Loomis Fargo robbery, this comedy follows David Ghantt, a naive armored car driver, who is persuaded by his work crush and her accomplices to steal $17 million.",
+  "genre": ["action", "comedy", "crime"],
+  "link": "https://www.hulu.com/movie/masterminds-a8010702-21f2-4900-b96b-4d616dbc5039",
+  "director": [{
+    "name": "Jared Hess",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTI0ODkwODY2OV5BMl5BanBnXkFtZTYwODExNjA3._V1_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0382706/"
+  }],
+  "actors": [{
+    "name": "Zach Galifianakis",
+    "image": "https://m.media-amazon.com/images/M/MV5BNjc5ZTY5NGItY2JiMC00OGFjLWI5YjAtNmIwYzYxZmFlZjU2XkEyXkFqcGdeQWxpenpp._V1_QL75_UX500_CR0,0,500,281_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0302108/"
+  }, {
+    "name": "Owen Wilson",
+    "image": "https://www.hollywoodreporter.com/wp-content/uploads/2021/08/GettyImages-1328382839-H-2021.jpg?w=1296",
+    "imdb": "https://www.imdb.com/name/nm0005562/"
+  }, {
+    "name": "Kristen Wiig",
+    "image": "https://people.com/thmb/0dDxscDgChqOghle1f4GF2tzVKY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(937x499:939x501)/kristen-wiig-1-a6ece2c7e8d943b6b5c93be0a25878f1.jpg",
+    "imdb": "https://www.imdb.com/name/nm1325419/?ref_=nv_sr_srsg_0_tt_2_nm_6_q_kristen%2520wi"
+  }, {
+    "name": "Jason Sudeikis",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjI4OGZjYmQtMWMwYi00NTcwLWFhYWMtYzVmMWE4NzJlZWE5XkEyXkFqcGdeQXJoYW5uYWg@._V1_QL75_UX500_CR0,0,500,281_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0837177/"
+  }]
+}
+,
+{
+  "item": 398,
+  "title": "Arizona",
+  "runtime": 85,
+  "mpaa": "R",
+  "poster": "https://img.hulu.com/user/v3/artwork/5f8425e1-fc32-4c4b-8da6-467de41f5910?base_image_bucket_name=image_manager&base_image=320542ce-84b4-4abc-ab5b-2f9cdf4299e5&size=600x338&format=jpeg",
+  "description": "In the midst of the 2009 housing crisis, a single mother and real estate agent, Cassie, becomes entangled in a dangerous situation when she discovers that her client, Sonny, is a murderous sociopath.",
+  "genre": ["comedy", "crime", "thriller"],
+  "link": "https://www.hulu.com/movie/arizona-5f8425e1-fc32-4c4b-8da6-467de41f5910",
+  "director": [{
+    "name": "Jonathan Watson",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjEzNzk0NDgwNV5BMl5BanBnXkFtZTgwODAzOTE2NDM@._V1_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0914834/"
+  }],
+  "actors": [{
+    "name": "Danny McBride",
+    "image": "https://facts.net/wp-content/uploads/2023/09/45-facts-about-danny-mcbride-1695992854.jpg",
+    "imdb": "https://www.imdb.com/name/nm0565099/"
+  }, {
+    "name": "Rosemarie DeWitt",
+    "image": "https://variety.com/wp-content/uploads/2022/05/rosemarie-dewitt.jpg",
+    "imdb": "https://www.imdb.com/name/nm0223607/"
+  }, {
+    "name": "Luke Wilson",
+    "image": "https://deadline.com/wp-content/uploads/2022/08/GettyImages-538522248.jpg?w=681&h=383&crop=1",
+    "imdb": "https://www.imdb.com/name/nm0005562/"
+  }]
+},
+{
+  "item": 399,
+  "title": "I Think We're Alone Now",
+  "runtime": 93,
+  "mpaa": "R",
+  "poster": "https://img.hulu.com/user/v3/artwork/0f859921-0844-4c4c-b4ae-bcf50a92013f?base_image_bucket_name=image_manager&base_image=dd4174cd-bfc6-453b-987c-e113a51f58cd&size=600x338&format=jpeg",
+  "description": "Del, a lonely survivor in a post-apocalyptic world, enjoys his solitude until Grace, another survivor, arrives on the scene. As they form an unlikely bond, Del's carefully constructed world begins to unravel.",
+  "genre": ["drama", "mystery", "science-fiction"],
+  "link": "https://www.hulu.com/movie/i-think-were-alone-now-0f859921-0844-4c4c-b4ae-bcf50a92013f",
+  "director": [{
+    "name": "Reed Morano",
+    "image": "https://www.premiumbeat.com/blog/wp-content/uploads/2020/07/Reed-Morano-Cover-New.jpg",
+    "imdb": "https://www.imdb.com/name/nm0607681/"
+  }],
+  "actors": [{
+    "name": "Peter Dinklage",
+    "image": "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/8/5/1438770901233/Peter-Dinklage--009.jpg?width=700&quality=85&auto=format&fit=max&s=2ded45e451e959c1404eabe01bb1ec7d",
+    "imdb": "https://www.imdb.com/name/nm0227759/"
+  }, {
+    "name": "Elle Fanning",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/elle-fanning-attends-the-6th-annual-instyle-awards-on-news-photo-1637084431.jpg?crop=1xw:0.78537xh;center,top",
+    "imdb": "https://www.imdb.com/name/nm1102577/"
+  }]
+},
+{
+  "item": 400,
+  "title": "Eight Crazy Nights",
+  "runtime": 76,
+  "mpaa": "PG-13",
+  "poster": "https://img2.hulu.com/user/v3/artwork/e3c5d5e2-dcd2-41bc-bee4-8756eaec56ef?base_image_bucket_name=image_manager&base_image=611289d2-f874-4e06-8be7-849c67082182&size=600x338&format=jpeg",
+  "description": "Davey Stone, a 33-year-old party animal, is given one last chance to redeem himself when he's sentenced to community service as a youth basketball referee. Along the way, he learns the true meaning of the holiday season.",
+  "genre": ["animation", "comedy", "musical"],
+  "link": "https://www.hulu.com/movie/adam-sandlers-eight-crazy-nights-dc4db4af-ab04-4be6-a0f6-d2c11bdc9491",
+  "director": [{
+    "name": "Seth Kearsley",
+    "image": "https://static.wikia.nocookie.net/looneytunes/images/f/f4/Sethkearsley.jpg/revision/latest/thumbnail/width/360/height/360?cb=20130810133506",
+    "imdb": "https://www.imdb.com/name/nm0444828/"
+  }],
+  "actors": [{
+    "name": "Adam Sandler",
+    "image": "https://variety.com/wp-content/uploads/2022/09/GettyImages-1400536441.jpg?w=1000&h=563&crop=1",
+    "imdb": "https://www.imdb.com/name/nm0001191/"
+  }, {
+    "name": "Rob Schneider",
+    "image": "https://i.ticketweb.com/i/00/08/74/54/11/Original.jpg?v=2",
+    "imdb": "https://www.imdb.com/name/nm0001702/"
+  }]
+},
+{
+  "item": 401,
+  "title": "High School High",
+  "runtime": 86,
+  "mpaa": "PG-13",
+  "poster": "https://img4.hulu.com/user/v3/artwork/7b589e71-0fef-45dd-b0ee-e8b47361b362?base_image_bucket_name=image_manager&base_image=34839c03-856d-4c29-9956-fe3d1b1b08f2&size=600x338&format=jpeg",
+  "description": "Richard Clark, an idealistic teacher, takes on a challenging job at Marion Barry High School, where he encounters a chaotic environment filled with unruly students and dysfunctional staff. Despite the obstacles, he's determined to make a difference.",
+  "genre": ["comedy"],
+  "link": "https://www.hulu.com/movie/high-school-high-7b589e71-0fef-45dd-b0ee-e8b47361b362",
+  "director": [{
+    "name": "Hart Bochner",
+    "image": "https://media.gettyimages.com/id/1477150270/photo/actor-hart-bochner-portrait-session-november-27-1984-in-los-angeles-california.jpg?s=612x612&w=gi&k=20&c=3RMX-25ZPSJHu0hdICWgL-Joyka7-R_DiVtS5Ahyla8=",
+    "imdb": "https://www.imdb.com/name/nm0001955/"
+  }],
+  "actors": [{
+    "name": "Jon Lovitz",
+    "image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/e7/0d/3c.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001484/"
+  }, {
+    "name": "Tia Carrere",
+    "image": "https://facts.net/wp-content/uploads/2023/10/23-intriguing-facts-about-tia-carrere-1696552866.jpg",
+    "imdb": "https://www.imdb.com/name/nm0000112/"
+  }]
+},
+{
+  "item": 402,
+  "title": "Popstar: Never Stop Never Stopping",
+  "runtime": 87,
+  "mpaa": "R",
+  "poster": "https://img2.hulu.com/user/v3/artwork/e2bb5a87-e1da-448b-94a0-8c7d94a02e0a?base_image_bucket_name=image_manager&base_image=e753f4d7-3ea5-484c-b931-f1bc3af42e94&size=600x338&format=jpeg",
+  "description": "This mockumentary follows the rise and fall of Conner4Real, a former boy band member turned solo superstar. As his latest album bombs and his fame wanes, Conner must navigate the challenges of reinventing himself and rebuilding his career.",
+  "genre": ["comedy", "music"],
+  "link": "https://www.hulu.com/movie/popstar-never-stop-never-stopping-e2bb5a87-e1da-448b-94a0-8c7d94a02e0a",
+  "director": [{
+    "name": "Akiva Schaffer",
+    "image": "https://www.looper.com/img/gallery/akiva-schaffer-on-directing-chip-n-dale-rescue-rangers-and-his-favorite-snl-memory-exclusive-interview/l-intro-1653052107.jpg",
+    "imdb": "https://www.imdb.com/name/nm0772147/"
+  }, {
+    "name": "Jorma Taccone",
+    "image": "https://worldredeye.com/wp-content/uploads/massupload/6579434Jorma%20Tacccone%20&%20Max%20Pierre.jpg",
+    "imdb": "https://www.imdb.com/name/nm1181586/"
+  }],
+  "actors": [{
+    "name": "Andy Samberg",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/andy-samberg-attends-the-imdb-studio-at-acura-festival-news-photo-1690831221.jpg",
+    "imdb": "https://www.imdb.com/name/nm1676221/"
+  }, {
+    "name": "Akiva Schaffer",
+    "image": "https://www.looper.com/img/gallery/akiva-schaffer-on-directing-chip-n-dale-rescue-rangers-and-his-favorite-snl-memory-exclusive-interview/l-intro-1653052107.jpg",
+    "imdb": "https://www.imdb.com/name/nm0772147/"
+  }, {
+    "name": "Jorma Taccone",
+    "image": "https://worldredeye.com/wp-content/uploads/massupload/6579434Jorma%20Tacccone%20&%20Max%20Pierre.jpg",
+    "imdb": "https://www.imdb.com/name/nm1181586/"
+  }]
+},
+{
+  "item": 404,
+  "title": "Spencer",
+  "runtime": 117,
+  "mpaa": "R",
+  "poster": "https://img4.hulu.com/user/v3/artwork/6a4e4519-def0-41f8-898d-f4d3b8521af5?base_image_bucket_name=image_manager&base_image=5abb01b4-8d9e-4c49-9f3a-332bf8befcfc&size=1200x630&format=jpeg",
+  "description": "The marriage between Princess Diana and Prince Charles has long since grown cold. Though rumors of affairs and a divorce abound, peace is ordained for the Christmas festivities at the queen's estate. There's eating and drinking, shooting and hunting. Diana knows the game, but this year, things will be profoundly different.",
+  "genre": ["drama", "biopic"],
+  "link": "https://www.hulu.com/movie/spencer-6a4e4519-def0-41f8-898d-f4d3b8521af5",
+  "director": [{
+    "name": "Pablo Larraín",
+    "image": "https://www.castingnetworks.com/wp-content/uploads/2021/11/shutterstock_501240904-1024x670.jpg",
+    "imdb": "https://www.imdb.com/name/nm1883257/"
+  }],
+  "actors": [{
+    "name": "Kristen Stewart",
+    "image": "https://m.media-amazon.com/images/M/MV5BZGE0NGM4NjAtMDgyZC00NjAyLWE0ZTktYmRiMWY4NmE2ZjNkXkEyXkFqcGdeQXZ3ZXNsZXk@._V1_QL75_UX500_CR0,0,500,281_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0829576/"
+  }, {
+    "name": "Sally Hawkins",
+    "image": "https://deadline.com/wp-content/uploads/2023/07/GettyImages-635484128-e1690825268601.jpg",
+    "imdb": "https://www.imdb.com/name/nm1020089/"
+  }, {
+    "name": "Timothy Spall",
+    "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRoP4j8oDNBRbHisogJbZaHKNTS1_4lsHhmXM_I8LLjkYxavlhuxmvBHu1UZNorTYfGfwUm82KQeCcDx9Q",
+    "imdb": "https://www.imdb.com/name/nm0001758/"
+  }]
+},
+{
+  "item": 405,
+  "title": "Hustlers",
+  "runtime": 110,
+  "mpaa": "R",
+  "poster": "https://img2.hulu.com/user/v3/artwork/a03d28ac-90ef-4e75-8f40-081a52e85f20?base_image_bucket_name=image_manager&base_image=7f9274cd-b3fe-4fd9-8d1d-445774deafc7&size=600x338&format=jpeg",
+  "description": "Inspired by a true story, Hustlers follows a group of savvy former strip club employees who band together to turn the tables on their wealthy Wall Street clients.",
+  "genre": ["comedy", "crime", "drama"],
+  "link": "https://www.hulu.com/movie/hustlers-a03d28ac-90ef-4e75-8f40-081a52e85f20",
+  "director": [{
+    "name": "Lorene Scafaria",
+    "image": "https://people.com/thmb/YKreSi-Fip_9a_myd1oEF06LIU4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x584:1001x586)/bo-burnham-lorene-scafaria-1-2910f458f38e4a7fb2ea7267348c6def.jpg",
+    "imdb": "https://www.imdb.com/name/nm1032817/"
+  }],
+  "actors": [{
+    "name": "Constance Wu",
+    "image": "https://deadline.com/wp-content/uploads/2021/09/thumbnail_CW-Headshot-Mark-Seigler-e1631637017782.jpeg",
+    "imdb": "https://www.imdb.com/name/nm1935086/"
+  }, {
+    "name": "Jennifer Lopez",
+    "image": "https://variety.com/wp-content/uploads/2024/02/Jennifer-Lopez-Variety-Cover-Story-1.jpg?crop=0px%2C178px%2C1918px%2C1080px&resize=1920%2C1080",
+    "imdb": "https://www.imdb.com/name/nm0000182/?ref_=tt_cl_t_2"
+  }, {
+    "name": "Julia Stiles",
+    "image": "https://ew.com/thmb/IxgG-FFcCnrGllHigRoo_8F-tao=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/julia-stiles_0-79f4c55fe38f437cbc6d96d4cdc92386.jpg",
+    "imdb": "https://www.imdb.com/name/nm0005466/"
+  }]
+}
+,
+{
+  "item": 406,
+  "title": "The Assistant",
+  "runtime": 87,
+  "mpaa": "R",
+  "poster": "https://img4.hulu.com/user/v3/artwork/94c3d0f4-b5d2-4252-aa12-b959e3f5c6f3?base_image_bucket_name=image_manager&base_image=4b094e24-696d-4ebe-abc7-9b1fe04100ad&size=600x338&format=jpeg",
+  "description": "Follow Jane, a recent college graduate, as she navigates her entry-level job as an assistant to a powerful entertainment mogul. As she becomes increasingly aware of the systemic abuse and harassment in the workplace, she must decide whether to speak out or stay silent.",
+  "genre": ["drama", "indie"],
+  "link": "https://www.hulu.com/movie/the-assistant-94c3d0f4-b5d2-4252-aa12-b959e3f5c6f3",
+  "director": [{
+    "name": "Kitty Green",
+    "image": "https://lwlies.com/wp-content/uploads/2020/04/the-assistant-kitty-green.jpg",
+    "imdb": "https://www.imdb.com/name/nm2781044/"
+  }],
+  "actors": [{
+    "name": "Julia Garner",
+    "image": "https://media.glamour.com/photos/6409fe414842ed12223ab4c3/master/w_2560%2Cc_limit/0308-juliagarner.png",
+    "imdb": "https://www.imdb.com/name/nm2400045/"
+  }, {
+    "name": "Matthew Macfadyen",
+    "image": "https://media.npr.org/assets/img/2022/01/26/matthew-macfadyen_wide-04d6dc1baf0889f6ccd4447630865cc07c57d4ef-s1100-c50.jpg",
+    "imdb": "https://www.imdb.com/name/nm0531652/"
+  }, {
+    "name": "Makenzie Leigh",
+    "image": "https://media.vanityfair.com/photos/57fd117d0c3020dd42f78599/master/w_1440,h_960,c_limit/t-makenzie-leigh-vanities-girl-november-2016-ss.jpg",
+    "imdb": "https://www.imdb.com/name/nm3005535/"
+  }]
+},
 
 
   ],
   // start peacock array
   [
+    {    
+      "item": "P436",
+      "title": "Oppenheimer",
+      "runtime": 180,
+      "mpaa": "R",
+      "poster": "https://www.peacocktv.com/dam/growth/assets/Campaign/P1/oppenheimer/oppenheimer-social.jpg",
+      "description": "During World War II, Lt. Gen. Leslie Groves Jr. appoints physicist J. Robert Oppenheimer to work on the top-secret Manhattan Project. Oppenheimer and a team of scientists spend years developing and designing the atomic bomb. Their work comes to fruition on July 16, 1945, as they witness the world's first nuclear explosion, forever changing the course of history.",
+	"genre": ["biopic", "drama"],
+    "link": "https://www.peacocktv.com/stream-movies/oppenheimer",
+    "director": [{
+      "name": "Christopher Nolan",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/christopher-nolan-attends-the-oppenheimer-premiere-at-news-photo-1704643272.jpg",
+      "imdb": "https://www.imdb.com/name/nm0634240/",
+    }],
+    "actors": [{
+      "name": "Cillian Murphy",
+      "image": "https://assets3.cbsnewsstatic.com/hub/i/r/2024/02/21/a0ab1286-a64e-4cdc-8a99-25fd202a9350/thumbnail/1280x720/1f47d561ff5c069ee21d8507394dd4df/0221-cmo-cillianmurphy-intv-mid-2699502-640x360.jpg?v=873773698949ef4145348bb09cabd43d",
+      "imdb": "https://www.imdb.com/name/nm0614165/",
+    }, {
+      "name": "Robert Downey Jr.",
+      "image": "https://www.hollywoodreporter.com/wp-content/uploads/2023/06/Robert-Downey-Jr.-Getty-H-2023.jpg?w=1296",
+      "imdb": "https://www.imdb.com/name/nm0000375/"
+    }, {
+      "name": "Emily Blunt",
+      "image": "https://variety.com/wp-content/uploads/2023/09/GettyImages-1540936189.jpg?w=1024",
+      "imdb": "https://www.imdb.com/name/nm1289434/",
+    }, {
+      "name": "Florence Pugh",
+    "image": "https://media1.popsugar-assets.com/files/thumbor/QssutrME6tERtz-5fRr6nHFgLS0=/fit-in/792x528/top/filters:format_auto():upscale()/2023/01/12/747/n/1922398/tmp_kCwFvt_67ee3c82b10d784a_GettyImages-1446980033.jpg",
+    "imdb": "https://www.imdb.com/name/nm2185547/"
+    }]
+    },
+
+
+
+
 
   ],
   // start apple array
