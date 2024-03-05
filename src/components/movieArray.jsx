@@ -12158,6 +12158,67 @@ const moviesArray = [
   }]
 }
 ,
+{
+  "item": 397,
+  "title": "Masterminds",
+  "runtime": 95,
+  "mpaa": "PG-13",
+  "poster": "https://img1.hulu.com/user/v3/artwork/a8010702-21f2-4900-b96b-4d616dbc5039?base_image_bucket_name=image_manager&base_image=c458d7e4-918b-4d42-aadb-4f7e1437eaba&size=600x338&format=jpeg",
+  "description": "Based on the true story of the 1997 Loomis Fargo robbery, this comedy follows David Ghantt, a naive armored car driver, who is persuaded by his work crush and her accomplices to steal $17 million.",
+  "genre": ["action", "comedy", "crime"],
+  "link": "https://www.hulu.com/movie/masterminds-a8010702-21f2-4900-b96b-4d616dbc5039",
+  "director": [{
+    "name": "Jared Hess",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTI0ODkwODY2OV5BMl5BanBnXkFtZTYwODExNjA3._V1_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0382706/"
+  }],
+  "actors": [{
+    "name": "Zach Galifianakis",
+    "image": "https://m.media-amazon.com/images/M/MV5BNjc5ZTY5NGItY2JiMC00OGFjLWI5YjAtNmIwYzYxZmFlZjU2XkEyXkFqcGdeQWxpenpp._V1_QL75_UX500_CR0,0,500,281_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0302108/"
+  }, {
+    "name": "Owen Wilson",
+    "image": "https://www.hollywoodreporter.com/wp-content/uploads/2021/08/GettyImages-1328382839-H-2021.jpg?w=1296",
+    "imdb": "https://www.imdb.com/name/nm0005562/"
+  }, {
+    "name": "Kristen Wiig",
+    "image": "https://people.com/thmb/0dDxscDgChqOghle1f4GF2tzVKY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(937x499:939x501)/kristen-wiig-1-a6ece2c7e8d943b6b5c93be0a25878f1.jpg",
+    "imdb": "https://www.imdb.com/name/nm1325419/?ref_=nv_sr_srsg_0_tt_2_nm_6_q_kristen%2520wi"
+  }, {
+    "name": "Jason Sudeikis",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjI4OGZjYmQtMWMwYi00NTcwLWFhYWMtYzVmMWE4NzJlZWE5XkEyXkFqcGdeQXJoYW5uYWg@._V1_QL75_UX500_CR0,0,500,281_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0837177/"
+  }]
+}
+,
+{
+  "item": 398,
+  "title": "Arizona",
+  "runtime": 85,
+  "mpaa": "R",
+  "poster": "https://img.hulu.com/user/v3/artwork/5f8425e1-fc32-4c4b-8da6-467de41f5910?base_image_bucket_name=image_manager&base_image=320542ce-84b4-4abc-ab5b-2f9cdf4299e5&size=600x338&format=jpeg",
+  "description": "In the midst of the 2009 housing crisis, a single mother and real estate agent, Cassie, becomes entangled in a dangerous situation when she discovers that her client, Sonny, is a murderous sociopath.",
+  "genre": ["comedy", "crime", "thriller"],
+  "link": "https://www.hulu.com/movie/arizona-5f8425e1-fc32-4c4b-8da6-467de41f5910",
+  "director": [{
+    "name": "Jonathan Watson",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjEzNzk0NDgwNV5BMl5BanBnXkFtZTgwODAzOTE2NDM@._V1_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0914834/"
+  }],
+  "actors": [{
+    "name": "Danny McBride",
+    "image": "https://facts.net/wp-content/uploads/2023/09/45-facts-about-danny-mcbride-1695992854.jpg",
+    "imdb": "https://www.imdb.com/name/nm0565099/"
+  }, {
+    "name": "Rosemarie DeWitt",
+    "image": "https://variety.com/wp-content/uploads/2022/05/rosemarie-dewitt.jpg",
+    "imdb": "https://www.imdb.com/name/nm0223607/"
+  }, {
+    "name": "Luke Wilson",
+    "image": "https://deadline.com/wp-content/uploads/2022/08/GettyImages-538522248.jpg?w=681&h=383&crop=1",
+    "imdb": "https://www.imdb.com/name/nm0005562/"
+  }]
+},
 
   ],
   // start peacock array
