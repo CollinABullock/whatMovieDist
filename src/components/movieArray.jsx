@@ -11942,7 +11942,156 @@ const moviesArray = [
   }]
 }
 ,
-
+{
+  "item": 390,
+  "title": "Personal Shopper",
+  "runtime": 105,
+  "mpaa": "R",
+  "poster": "https://img3.hulu.com/user/v3/artwork/8187fbc5-435d-453d-bcce-2684856a67d1?base_image_bucket_name=image_manager&base_image=48bbe0e4-e814-488b-b0d2-c6b21a89343a&size=600x338&format=jpeg",
+  "description": "Maureen, a personal shopper for a wealthy celebrity, tries to connect with her deceased twin brother's spirit while dealing with her own grief and uncertainties about her future.",
+  "genre": ["drama", "mystery", "thriller", "foreign"],
+  "link": "https://www.hulu.com/movie/personal-shopper-8187fbc5-435d-453d-bcce-2684856a67d1",
+  "director": [{
+    "name": "Olivier Assayas",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjIyOTI5NjUwOV5BMl5BanBnXkFtZTcwNzk4ODYzNQ@@._V1_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001913/"
+  }],
+  "actors": [{
+    "name": "Kristen Stewart",
+    "image": "https://m.media-amazon.com/images/M/MV5BZGE0NGM4NjAtMDgyZC00NjAyLWE0ZTktYmRiMWY4NmE2ZjNkXkEyXkFqcGdeQXZ3ZXNsZXk@._V1_QL75_UX500_CR0,0,500,281_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0829576/"
+  }, {
+    "name": "Lars Eidinger",
+    "image": "https://www.hollywoodreporter.com/wp-content/uploads/2024/02/Sterben-Lars-Eidinger.jpeg?w=1600&h=900&crop=1",
+    "imdb": "https://www.imdb.com/name/nm1017605/"
+  }]
+},
+{
+  "item": 391,
+  "title": "Once Upon a Time in Hollywood",
+  "runtime": 161,
+  "mpaa": "R",
+  "poster": "https://img2.hulu.com/user/v3/artwork/53ad86e8-d796-4a5f-b6ac-b3339482c22c?base_image_bucket_name=image_manager&base_image=ab3057ce-54f6-4572-88b6-1ea29edcf2ea&size=1200x630&format=jpeg",
+  "description": "In 1969 Los Angeles, aging television actor Rick Dalton and his stunt double Cliff Booth navigate the changing film industry and encounter the Manson Family.",
+  "genre": ["comedy", "drama", "history"],
+  "link": "https://img2.hulu.com/user/v3/artwork/53ad86e8-d796-4a5f-b6ac-b3339482c22c?base_image_bucket_name=image_manager&base_image=ab3057ce-54f6-4572-88b6-1ea29edcf2ea&size=1200x630&format=jpeg",
+  "director": [{
+    "name": "Quentin Tarantino",
+    "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTfp1z_B7M3pWBZ__wU1PSwBAhIZRd6MyxYbc_25PDvGs6MlzsTLejJDtdOh772ILYJch3Fn-hOq8woi-o",
+    "imdb": "https://www.imdb.com/name/nm0000233/",
+  }],
+  "actors": [{
+    "name": "Leonardo DiCaprio",
+    "image": "https://phantom-marca.unidadeditorial.es/0e1996b37d1147008cea1fb6be3dc73a/resize/828/f/jpg/assets/multimedia/imagenes/2023/07/14/16893608205539.jpg",
+    "imdb": "https://www.imdb.com/name/nm0000138/",
+  }, {
+    "name": "Brad Pitt",
+    "image": "https://m.media-amazon.com/images/M/MV5BMWRkMDE5MjUtN2MyYi00MzAyLWIwOWMtNWU0NzNkZDczOWUyXkEyXkFqcGdeQUlNRGJWaWRlb1RodW1ibmFpbFNlcnZpY2U@._V1_QL75_UX500_CR0,0,500,281_.jpg"
+  }, {
+    "name": "Margot Robbie",
+    "image": "https://media.npr.org/assets/img/2015/03/02/margotrobbie-eb727edf7b18cbe8b755d8372cf271d4f4d6e3a7-s1100-c50.jpg",
+    "imdb": "https://www.imdb.com/name/nm3053338/?ref_=tt_ov_st",
+  }, {
+    "name": "Emile Hirsch",
+    "image": "https://ew.com/thmb/sN2bcgci0G_CIrMhXY39TMrSbrY=/800x524/filters:no_upscale():max_bytes(150000):strip_icc()/Emile-Hirsch-061623-d3d29995d627474d931af09646cb6ea6.jpg",
+    "imdb": "https://www.imdb.com/name/nm0386472/?ref_=nv_sr_srsg_0_tt_0_nm_8_q_emile%2520hirsch",
+  }]
+},
+{
+  "item": 392,
+  "title": "Tropic Thunder",
+  "runtime": 107,
+  "mpaa": "R",
+  "poster": "https://img.hulu.com/user/v3/artwork/73ed908e-b3b0-4033-8937-1d91b1a12e94?base_image_bucket_name=image_manager&base_image=65f06108-f098-4a67-8496-cc60e644ef2f&size=600x338&format=jpeg",
+  "description": "A group of self-absorbed actors shooting a big-budget war movie are forced to become the soldiers they are portraying when they are caught behind enemy lines.",
+  "genre": ["action", "comedy", "war"],
+  "link": "https://www.hulu.com/movie/tropic-thunder-73ed908e-b3b0-4033-8937-1d91b1a12e94",
+  "director": [{
+    "name": "Ben Stiller",
+    "image": "https://www.indiewire.com/wp-content/uploads/2022/08/Ben-Stiller.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001774/?ref_=tt_ov_st",
+  }],
+  "actors": [{
+    "name": "Ben Stiller",
+        "image": "https://www.indiewire.com/wp-content/uploads/2022/08/Ben-Stiller.jpg",
+        "imdb": "https://www.imdb.com/name/nm0001774/?ref_=tt_ov_st",
+  }, {
+    "name": "Jack Black",
+    "image": "https://static.foxnews.com/foxnews.com/content/uploads/2019/12/Jack-Black.jpg",
+    "imdb": "https://www.imdb.com/name/nm0085312/?ref_=tt_ov_st",
+  }, {
+    "name": "Robert Downey Jr.",
+    "image": "https://www.hollywoodreporter.com/wp-content/uploads/2023/06/Robert-Downey-Jr.-Getty-H-2023.jpg?w=1296",
+    "imdb": "https://www.imdb.com/name/nm0000375/"
+  }, {
+    "name": "Tom Cruise",
+    "image": "https://media.cnn.com/api/v1/images/stellar/prod/230710085438-tom-cruise-0703-restricted.jpg?c=16x9&q=h_833,w_1480,c_fill",
+    "imdb": "https://www.imdb.com/name/nm0000129/"
+  }]
+}
+,
+{
+  "item": 393,
+  "title": "Straight Outta Compton",
+  "runtime": 147,
+  "mpaa": "R",
+  "poster": "https://img1.hulu.com/user/v3/artwork/a32f9ed4-5820-4dc0-8551-ac6d87961024?base_image_bucket_name=image_manager&base_image=9d35bc1c-4cd8-435c-b74f-08c76a56c938&size=600x338&format=jpeg",
+  "description": "This biographical drama chronicles the rise and fall of the influential rap group N.W.A., exploring their music, conflicts, and impact on hip-hop culture.",
+  "genre": ["biography", "drama", "musical"],
+  "link": "https://www.hulu.com/movie/straight-outta-compton-a32f9ed4-5820-4dc0-8551-ac6d87961024",
+  "director": [{
+    "name": "F. Gary Gray",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTQ5ODcyMzExMF5BMl5BanBnXkFtZTgwMTgxMjAwMjE@._V1_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0336620/"
+  }],
+  "actors": [{
+    "name": "O'Shea Jackson Jr.",
+    "image": "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/8/21/1440161672462/af1a4d51-c1fa-4998-bfa9-13e8d5bba1e4-2060x1236.jpeg?width=465&dpr=1&s=none",
+    "imdb": "https://www.imdb.com/name/nm0815345/"
+  }, {
+    "name": "Corey Hawkins",
+    "image": "https://deadline.com/wp-content/uploads/2024/01/Corey-Hawkins.jpg?w=1000",
+    "imdb": "https://www.imdb.com/name/nm3729721/"
+  }, {
+    "name": "Jason Mitchell",
+    "image": "https://newsone.com/wp-content/uploads/sites/22/2021/11/1636049273806.jpg?quality=80&strip=all&w=1024&crop=0,0,100,683px",
+    "imdb": "https://www.imdb.com/name/nm2784935/"
+  }, {
+    "name": "Paul Giamatti",
+    "image": "https://people.com/thmb/7vnf3B_fcUWGT7MIacFocGbb37c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(734x120:736x122)/paul-giamatti-mag-rollout-1-tout-120523-1cb744c7221f4defb5576b9a6c04207b.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001292/"
+  }]
+}
+,
+{
+  "item": 394,
+  "title": "Empire Records",
+  "runtime": 90,
+  "mpaa": "PG-13",
+  "poster": "https://img.hulu.com/user/v3/artwork/25ca3de3-9925-4ad4-a9c6-170318bff1c1?base_image_bucket_name=image_manager&base_image=7c098603-2fa8-43c0-8d24-7621ace3d1b8&size=600x338&format=jpeg",
+  "description": "Follow the misadventures of the eclectic staff of Empire Records, an independent record store, over the course of one chaotic day as they struggle to save their beloved store from being sold to a large chain.",
+  "genre": ["comedy", "drama"],
+  "link": "https://www.hulu.com/movie/empire-records-25ca3de3-9925-4ad4-a9c6-170318bff1c1",
+  "director": [{
+    "name": "Allan Moyle",
+    "image": "https://www.northernstars.ca/wp-content/uploads/2013/03/Allan_Moyle-New-Waterford-Girl.jpg",
+    "imdb": "https://www.imdb.com/name/nm0600004/"
+  }],
+  "actors": [{
+    "name": "Anthony LaPaglia",
+    "image": "https://i.guim.co.uk/img/media/a0e807b7aa48d549534f627e70802cfde6137e50/0_62_3508_2105/master/3508.jpg?width=1200&quality=85&auto=format&fit=max&s=b6bb3cfda66b8049a0560e9110c64d53",
+    "imdb": "https://www.imdb.com/name/nm0001448/"
+  }, {
+    "name": "Liv Tyler",
+    "image": "https://m.media-amazon.com/images/M/MV5BNjdlZWM4YzAtMzg2NS00MzZhLThjY2UtZDcwZWFiMjY5YjRkXkEyXkFqcGdeQXVyMTE4ODQ1Mjc3._V1_FMjpg_UX1000_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0000239/"
+  }, {
+    "name": "Rory Cochrane",
+    "image": "https://i.ytimg.com/vi/Wjq_heXCUyM/maxresdefault.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001053/"
+  }]
+}
+,
   ],
   // start peacock array
   [
