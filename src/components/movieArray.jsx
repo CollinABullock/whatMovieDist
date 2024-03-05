@@ -10488,7 +10488,40 @@ const moviesArray = [
         "imdb": "https://www.imdb.com/name/nm0512146/"
       }]
     }
-,    
+,  
+{
+  "item": 434,
+  "title": "Nymphomaniac: Part 1",
+  "runtime": 117,
+  "mpaa": "NC-17",
+  "poster": "https://img1.hulu.com/user/v3/artwork/2e78760f-ae5d-465d-afe2-302f447b9c4a?base_image_bucket_name=image_manager&base_image=83a9fe43-db73-4032-9f8e-a0c4632c3cbd&size=600x338&format=jpeg",
+  "description": "Delve into the provocative and controversial world of Joe, a self-diagnosed nymphomaniac, as she recounts her erotic experiences to a stranger after being found beaten in an alley. Director Lars von Trier crafts a visually stunning and emotionally charged exploration of sexuality, desire, and human connection.",
+  "genre": ["drama", "foreign"],
+  "link": "https://www.hulu.com/movie/nymphomaniac-volume-i-extended-directors-cut-2e78760f-ae5d-465d-afe2-302f447b9c4a",
+  "director": [{
+    "name": "Lars von Trier",
+    "image": "https://media.newyorker.com/photos/638785b12d5d9a5ef49876c5/3:2/w_1500,h_1000,c_limit/Nayman-Von-Trier.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001885/"
+  }],
+  "actors": [{
+    "name": "Charlotte Gainsbourg",
+    "image": "https://www.hollywoodreporter.com/wp-content/uploads/2022/08/Charlotte-Gainsbourg-Getty-1382390655-Carlos-Alvarez_Getty-Images.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001251/"
+  }, {
+    "name": "Stellan Skarsgård",
+    "image": "https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1688,w_3000,x_0,y_0/dpr_1.5/c_limit,w_1600/fl_lossy,q_auto/v1618385638/210409-stern-Stellan-Skarsgard-tease_kf7hql",
+    "imdb": "https://www.imdb.com/name/nm0001745/"
+  }, {
+    "name": "Shia Labeouf",
+    "image": "https://media.gq.com/photos/5f4952b38dc8847e289114e8/4:3/w_1024%2Cc_limit/GQ-Shia-Grooming-082820.jpeg",
+    "imdb": "https://www.imdb.com/name/nm0479471/?ref_=nv_sr_srsg_0_tt_2_nm_6_q_shia%2520leb"
+  }, {
+    "name": "Christian Slater",
+    "image": "https://m.media-amazon.com/images/M/MV5BMzZmMWJmZmMtMDBjYi00NTFiLWI3ZWYtOTA4NWMwMDg5NjFlXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0000225/"
+  }]
+},
+
     
 
     {
