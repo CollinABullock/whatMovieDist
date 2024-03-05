@@ -3720,6 +3720,76 @@ const moviesArray = [
   [
 
     {
+      "item": 421,
+      "title": "Capturing the Friedmans",
+      "runtime": 108,
+      "mpaa": "Not Rated",
+      "poster": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/89f21e68-5cdf-4be2-9ff7-ae45e6e53ba3/98a45aa7361e548af073ee51fb6d288128824aeb.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom",
+      "description": "The Friedmans seem at first to be a typical family - until one Thanksgiving while they are gathered at home preparing for a quiet holiday dinner, a police battering ram splinters the front door and officers rush into the house searching every corner and seizing boxes of the family's possessions. Arnold and his 18-year old son Jesse are both arrested. As the police pursue the investigation, and the community reacts, the fabric of the family begins to disintegrate, revealing disturbing questions.",
+      "genre": ["documentary", "crime"],
+      "link": "https://www.max.com/movies/capturing-the-friedmans/89f21e68-5cdf-4be2-9ff7-ae45e6e53ba3?reason=anonymous&returnUrl=https%3A%2F%2Fplay.max.com%2Fmovie%2F89f21e68-5cdf-4be2-9ff7-ae45e6e53ba3",
+      "director": [{
+        "name": "Andrew Jarecki",
+        "image": "https://cdn.vox-cdn.com/thumbor/nZhhXRRweMsTfwfApK0Evi6TCdQ=/0x61:3088x2377/1200x800/filters:focal(0x61:3088x2377)/cdn.vox-cdn.com/uploads/chorus_image/image/45844518/jarecki.0.0.jpg",
+        "imdb": "https://www.imdb.com/name/nm1285613/"
+      }],
+      "actors": []
+    },
+    {
+      "item": 422,
+      "title": "Hoop Dreams",
+      "runtime": 170,
+      "mpaa": "PG-13",
+      "poster": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/8de6f0f3-38a2-48f8-88ad-7b2805d72782/ff861b8f78294036b0448fdd21cd52b192777d6a.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom",
+      "description": "Follow the journey of two inner-city Chicago boys with dreams of becoming professional basketball players. Over the span of five years, the film documents their struggles with family, education, race, and the competitive world of basketball.",
+      "genre": ["documentary", "sports", "classic"],
+      "link": "https://play.max.com/movie/8de6f0f3-38a2-48f8-88ad-7b2805d72782",
+      "director": [{
+        "name": "Steve James",
+        "image": "",
+        "imdb": "https://www.imdb.com/name/nm0417024/"
+      }],
+      "actors": []
+    },
+
+    {
+      "item": 423,
+      "title": "Grey Gardens",
+      "runtime": 94,
+      "mpaa": "PG",
+      "poster": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/1da58c29-5bfc-4198-8ac6-055f8cd0eee6/4dc94dee2141415dce88080eadd124c70669e1ec.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom",
+      "description": "Explore the eccentric lives of Edith Bouvier Beale and her daughter, Edie, relatives of Jacqueline Kennedy Onassis, as they reside in a decaying mansion in East Hampton, New York. This captivating documentary delves into their isolated existence, past glories, and complex mother-daughter relationship.",
+      "genre": ["documentary", "classic"],
+      "link": "https://play.max.com/movie/1da58c29-5bfc-4198-8ac6-055f8cd0eee6?tab=generic-movie-page-rail-content-details-tab",
+      "director": [{
+        "name": "Albert Maysles",
+        "image": "https://static01.nyt.com/images/2015/03/07/arts/07maysles-1-obit/07maysles-1-obit-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
+        "imdb": "https://www.imdb.com/name/nm0563099/"
+      }, {
+        "name": "David Maysles",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/filmmaking-brothers-albert-and-david-maysles-w-motion-news-photo-1707332600.jpg",
+        "imdb": "https://www.imdb.com/name/nm0563042/"
+      }],
+      "actors": []
+    },
+    {
+      "item": 424,
+      "title": "Harlan County USA",
+      "runtime": 103,
+      "mpaa": "Not Rated",
+      "poster": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/1e53285f-4f19-4f8e-aefc-fc4b033a9080/15d572c15677a4bc9560683dd003b05bc88d4e5a.jpg?submitted=1684654546243&host=wbd-images.prod-vod.h264.io&partner=beamcom",
+      "description": "Delve into the coal mining community of Harlan County, Kentucky, as director Barbara Kopple chronicles the bitter 1973 strike against the Duke Power Company. Through intimate interviews and powerful footage, the film captures the struggles, solidarity, and sacrifices of the miners and their families in their fight for better working conditions and fair treatment.",
+      "genre": ["documentary", "classic"],
+      "link": "https://play.max.com/movie/1e53285f-4f19-4f8e-aefc-fc4b033a9080",
+      "director": [{
+        "name": "Barbara Kopple",
+        "image": "",
+        "imdb": "https://www.imdb.com/name/nm0465732/"
+      }],
+      "actors": []
+    },
+
+    {
       "item": 335,
       "title": "Spirited Away",
       "runtime": 125,
@@ -7197,6 +7267,29 @@ const moviesArray = [
   }]
 },
 
+{
+  "item": 420,
+  "title": "Jasper Mall",
+  "runtime": 85,
+  "mpaa": "Not Rated",
+  "poster": "https://m.media-amazon.com/images/S/pv-target-images/55e96b4f5d1f9cdf061ea812d65abc8b092d8c5b7d7e422b2b9ef5f00fcd2857.jpg",
+  "description": "Explore the fading glory of the Jasper Mall, once a bustling hub of community activity, now struggling to survive in the age of online shopping. Through intimate portraits of the mall's tenants and patrons, this documentary offers a poignant reflection on the changing landscape of American retail and small-town life.",
+  "genre": ["documentary", "history"],
+  "link": "https://www.amazon.com/gp/video/detail/B088MGQ7T1/ref=atv_ge_agd_1_c_hUhMb1_brws_1_15?jic=8%7CEgRzdm9k",
+  "director": [{
+    "name": "Bradford Thomason",
+    "image": "https://images.mubicdn.net/images/film/231420/cache-419711-1552734304/image-w1280.jpg?size=400x",
+    "imdb": "https://www.imdb.com/name/nm9322203/"
+  }, {
+    "name": "Brett Whitcomb",
+    "image": "https://tapeop.com/_m/photologue/photos/cache/rich_williams%20(1)_disp_horizontal_bw.jpg",
+    "imdb": "https://www.imdb.com/name/nm3581873/"
+  }],
+  "actors": []
+},
+
+
+
     {    
       "item": "202",
       "title": "Saltburn",
@@ -7884,7 +7977,7 @@ const moviesArray = [
       "mpaa": "PG-13",
       "poster": "https://m.media-amazon.com/images/S/pv-target-images/958ccc5bca2267a09dfe9e0f6521bca22dbfd3c9ef38711893e3665647c359e0.jpg",
       "description": "NASCAR superstar Ricky Bobby faces various challenges when French Formula One driver Jean Girard challenges him for the top spot in auto racing.",
-      "genre": ["comedy", "sport"],
+      "genre": ["comedy", "sports"],
       "link": "https://www.amazon.com/Talladega-Nights-Ballad-Ricky-Unrated/dp/B018R7MTPQ/ref=sr_1_1?crid=LEKN8CA76OEA&dib=eyJ2IjoiMSJ9.SmdnXU1uP0uAnfQNH2LwoxHi9HYYPXbjKQqTPiGclCxNwWn9YRYOzUIeYs2ci9kwMfeQ-DH5BhuIMvb1FIDXNrQ_qL2wptPxfsWQygCUNBTJUP77eloFlC3mbyMdVpmauivjFA9e8ELWIvYfkLTmQ8d1UwfiH4m4FjPG5qJZqjTTGjyNq5br3nATYxjb7Vyv4riEI0SELtsKS_cDttykblvYl04x45jr_-v1cSzFKoI.JQnYBtMrEfl7Tyc9WOh9kslrb17xzfsIuzS6t9hfOns&dib_tag=se&keywords=talladega+nights+the+ballad+of+ricky+bobby&qid=1709231475&s=instant-video&sprefix=talla%2Cinstant-video%2C215&sr=1-1",
       "director": [{
         "name": "Adam McKay",
@@ -8492,7 +8585,7 @@ const moviesArray = [
       "mpaa": "PG-13",
       "poster": "https://m.media-amazon.com/images/S/pv-target-images/e60627e0080707b1c3a63aff289fb4993177bd526c89d94cd770776816f6826c._UR1920,1080_.jpg",
       "description": "In 2002, two rival Olympic ice skaters were stripped of their gold medals and permanently banned from men's single competition. Presently, however, they've found a loophole that will allow them to qualify as a pairs team.",
-      "genre": ["comedy", "sport"],
+      "genre": ["comedy", "sports"],
       "link": "https://www.amazon.com/gp/video/detail/B00C3MTMSO/ref=atv_dp_amz_c_TS5124c5_1_2?jic=16%7CCgNhbGwSA2FsbA%3D%3D",
       "director": [{
         "name": "Josh Gordon & Will Speck",
