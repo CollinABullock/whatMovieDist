@@ -12219,6 +12219,139 @@ const moviesArray = [
     "imdb": "https://www.imdb.com/name/nm0005562/"
   }]
 },
+{
+  "item": 399,
+  "title": "I Think We're Alone Now",
+  "runtime": 93,
+  "mpaa": "R",
+  "poster": "https://img.hulu.com/user/v3/artwork/0f859921-0844-4c4c-b4ae-bcf50a92013f?base_image_bucket_name=image_manager&base_image=dd4174cd-bfc6-453b-987c-e113a51f58cd&size=600x338&format=jpeg",
+  "description": "Del, a lonely survivor in a post-apocalyptic world, enjoys his solitude until Grace, another survivor, arrives on the scene. As they form an unlikely bond, Del's carefully constructed world begins to unravel.",
+  "genre": ["drama", "mystery", "science-fiction"],
+  "link": "https://www.hulu.com/movie/i-think-were-alone-now-0f859921-0844-4c4c-b4ae-bcf50a92013f",
+  "director": [{
+    "name": "Reed Morano",
+    "image": "https://www.premiumbeat.com/blog/wp-content/uploads/2020/07/Reed-Morano-Cover-New.jpg",
+    "imdb": "https://www.imdb.com/name/nm0607681/"
+  }],
+  "actors": [{
+    "name": "Peter Dinklage",
+    "image": "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/8/5/1438770901233/Peter-Dinklage--009.jpg?width=700&quality=85&auto=format&fit=max&s=2ded45e451e959c1404eabe01bb1ec7d",
+    "imdb": "https://www.imdb.com/name/nm0227759/"
+  }, {
+    "name": "Elle Fanning",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/elle-fanning-attends-the-6th-annual-instyle-awards-on-news-photo-1637084431.jpg?crop=1xw:0.78537xh;center,top",
+    "imdb": "https://www.imdb.com/name/nm1102577/"
+  }]
+},
+{
+  "item": 400,
+  "title": "Eight Crazy Nights",
+  "runtime": 76,
+  "mpaa": "PG-13",
+  "poster": "https://img2.hulu.com/user/v3/artwork/e3c5d5e2-dcd2-41bc-bee4-8756eaec56ef?base_image_bucket_name=image_manager&base_image=611289d2-f874-4e06-8be7-849c67082182&size=600x338&format=jpeg",
+  "description": "Davey Stone, a 33-year-old party animal, is given one last chance to redeem himself when he's sentenced to community service as a youth basketball referee. Along the way, he learns the true meaning of the holiday season.",
+  "genre": ["animation", "comedy", "musical"],
+  "link": "https://www.hulu.com/movie/adam-sandlers-eight-crazy-nights-dc4db4af-ab04-4be6-a0f6-d2c11bdc9491",
+  "director": [{
+    "name": "Seth Kearsley",
+    "image": "https://static.wikia.nocookie.net/looneytunes/images/f/f4/Sethkearsley.jpg/revision/latest/thumbnail/width/360/height/360?cb=20130810133506",
+    "imdb": "https://www.imdb.com/name/nm0444828/"
+  }],
+  "actors": [{
+    "name": "Adam Sandler",
+    "image": "https://variety.com/wp-content/uploads/2022/09/GettyImages-1400536441.jpg?w=1000&h=563&crop=1",
+    "imdb": "https://www.imdb.com/name/nm0001191/"
+  }, {
+    "name": "Rob Schneider",
+    "image": "https://i.ticketweb.com/i/00/08/74/54/11/Original.jpg?v=2",
+    "imdb": "https://www.imdb.com/name/nm0001702/"
+  }]
+},
+{
+  "item": 401,
+  "title": "High School High",
+  "runtime": 86,
+  "mpaa": "PG-13",
+  "poster": "https://img4.hulu.com/user/v3/artwork/7b589e71-0fef-45dd-b0ee-e8b47361b362?base_image_bucket_name=image_manager&base_image=34839c03-856d-4c29-9956-fe3d1b1b08f2&size=600x338&format=jpeg",
+  "description": "Richard Clark, an idealistic teacher, takes on a challenging job at Marion Barry High School, where he encounters a chaotic environment filled with unruly students and dysfunctional staff. Despite the obstacles, he's determined to make a difference.",
+  "genre": ["comedy"],
+  "link": "https://www.hulu.com/movie/high-school-high-7b589e71-0fef-45dd-b0ee-e8b47361b362",
+  "director": [{
+    "name": "Hart Bochner",
+    "image": "https://media.gettyimages.com/id/1477150270/photo/actor-hart-bochner-portrait-session-november-27-1984-in-los-angeles-california.jpg?s=612x612&w=gi&k=20&c=3RMX-25ZPSJHu0hdICWgL-Joyka7-R_DiVtS5Ahyla8=",
+    "imdb": "https://www.imdb.com/name/nm0001955/"
+  }],
+  "actors": [{
+    "name": "Jon Lovitz",
+    "image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/e7/0d/3c.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001484/"
+  }, {
+    "name": "Tia Carrere",
+    "image": "https://facts.net/wp-content/uploads/2023/10/23-intriguing-facts-about-tia-carrere-1696552866.jpg",
+    "imdb": "https://www.imdb.com/name/nm0000112/"
+  }]
+},
+{
+  "item": 402,
+  "title": "Popstar: Never Stop Never Stopping",
+  "runtime": 87,
+  "mpaa": "R",
+  "poster": "https://img2.hulu.com/user/v3/artwork/e2bb5a87-e1da-448b-94a0-8c7d94a02e0a?base_image_bucket_name=image_manager&base_image=e753f4d7-3ea5-484c-b931-f1bc3af42e94&size=600x338&format=jpeg",
+  "description": "This mockumentary follows the rise and fall of Conner4Real, a former boy band member turned solo superstar. As his latest album bombs and his fame wanes, Conner must navigate the challenges of reinventing himself and rebuilding his career.",
+  "genre": ["comedy", "music"],
+  "link": "https://www.hulu.com/movie/popstar-never-stop-never-stopping-e2bb5a87-e1da-448b-94a0-8c7d94a02e0a",
+  "director": [{
+    "name": "Akiva Schaffer",
+    "image": "https://www.looper.com/img/gallery/akiva-schaffer-on-directing-chip-n-dale-rescue-rangers-and-his-favorite-snl-memory-exclusive-interview/l-intro-1653052107.jpg",
+    "imdb": "https://www.imdb.com/name/nm0772147/"
+  }, {
+    "name": "Jorma Taccone",
+    "image": "https://worldredeye.com/wp-content/uploads/massupload/6579434Jorma%20Tacccone%20&%20Max%20Pierre.jpg",
+    "imdb": "https://www.imdb.com/name/nm1181586/"
+  }],
+  "actors": [{
+    "name": "Andy Samberg",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/andy-samberg-attends-the-imdb-studio-at-acura-festival-news-photo-1690831221.jpg",
+    "imdb": "https://www.imdb.com/name/nm1676221/"
+  }, {
+    "name": "Akiva Schaffer",
+    "image": "https://www.looper.com/img/gallery/akiva-schaffer-on-directing-chip-n-dale-rescue-rangers-and-his-favorite-snl-memory-exclusive-interview/l-intro-1653052107.jpg",
+    "imdb": "https://www.imdb.com/name/nm0772147/"
+  }, {
+    "name": "Jorma Taccone",
+    "image": "https://worldredeye.com/wp-content/uploads/massupload/6579434Jorma%20Tacccone%20&%20Max%20Pierre.jpg",
+    "imdb": "https://www.imdb.com/name/nm1181586/"
+  }]
+},
+{
+  "item": 404,
+  "title": "Spencer",
+  "runtime": 117,
+  "mpaa": "R",
+  "poster": "https://img4.hulu.com/user/v3/artwork/6a4e4519-def0-41f8-898d-f4d3b8521af5?base_image_bucket_name=image_manager&base_image=5abb01b4-8d9e-4c49-9f3a-332bf8befcfc&size=1200x630&format=jpeg",
+  "description": "The marriage between Princess Diana and Prince Charles has long since grown cold. Though rumors of affairs and a divorce abound, peace is ordained for the Christmas festivities at the queen's estate. There's eating and drinking, shooting and hunting. Diana knows the game, but this year, things will be profoundly different.",
+  "genre": ["drama", "biopic"],
+  "link": "https://www.hulu.com/movie/spencer-6a4e4519-def0-41f8-898d-f4d3b8521af5",
+  "director": [{
+    "name": "Pablo Larraín",
+    "image": "https://www.castingnetworks.com/wp-content/uploads/2021/11/shutterstock_501240904-1024x670.jpg",
+    "imdb": "https://www.imdb.com/name/nm1883257/"
+  }],
+  "actors": [{
+    "name": "Kristen Stewart",
+    "image": "https://m.media-amazon.com/images/M/MV5BZGE0NGM4NjAtMDgyZC00NjAyLWE0ZTktYmRiMWY4NmE2ZjNkXkEyXkFqcGdeQXZ3ZXNsZXk@._V1_QL75_UX500_CR0,0,500,281_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0829576/"
+  }, {
+    "name": "Sally Hawkins",
+    "image": "https://deadline.com/wp-content/uploads/2023/07/GettyImages-635484128-e1690825268601.jpg",
+    "imdb": "https://www.imdb.com/name/nm1020089/"
+  }, {
+    "name": "Timothy Spall",
+    "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRoP4j8oDNBRbHisogJbZaHKNTS1_4lsHhmXM_I8LLjkYxavlhuxmvBHu1UZNorTYfGfwUm82KQeCcDx9Q",
+    "imdb": "https://www.imdb.com/name/nm0001758/"
+  }]
+}
+
 
   ],
   // start peacock array
