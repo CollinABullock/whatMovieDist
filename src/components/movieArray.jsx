@@ -396,7 +396,8 @@ const moviesArray = [
       "actors": [{
         "name": "Jennifer Lopez",
       "image": "https://variety.com/wp-content/uploads/2024/02/Jennifer-Lopez-Variety-Cover-Story-1.jpg?crop=0px%2C178px%2C1918px%2C1080px&resize=1920%2C1080",
-      "imdb": "https://www.imdb.com/name/nm0000182/?ref_=tt_cl_t_2",}
+      "imdb": "https://www.imdb.com/name/nm0000182/?ref_=tt_cl_t_2"
+    }
       ]
     },
     
@@ -12350,7 +12351,64 @@ const moviesArray = [
     "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRoP4j8oDNBRbHisogJbZaHKNTS1_4lsHhmXM_I8LLjkYxavlhuxmvBHu1UZNorTYfGfwUm82KQeCcDx9Q",
     "imdb": "https://www.imdb.com/name/nm0001758/"
   }]
+},
+{
+  "item": 405,
+  "title": "Hustlers",
+  "runtime": 110,
+  "mpaa": "R",
+  "poster": "https://img2.hulu.com/user/v3/artwork/a03d28ac-90ef-4e75-8f40-081a52e85f20?base_image_bucket_name=image_manager&base_image=7f9274cd-b3fe-4fd9-8d1d-445774deafc7&size=600x338&format=jpeg",
+  "description": "Inspired by a true story, Hustlers follows a group of savvy former strip club employees who band together to turn the tables on their wealthy Wall Street clients.",
+  "genre": ["comedy", "crime", "drama"],
+  "link": "https://www.hulu.com/movie/hustlers-a03d28ac-90ef-4e75-8f40-081a52e85f20",
+  "director": [{
+    "name": "Lorene Scafaria",
+    "image": "https://people.com/thmb/YKreSi-Fip_9a_myd1oEF06LIU4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x584:1001x586)/bo-burnham-lorene-scafaria-1-2910f458f38e4a7fb2ea7267348c6def.jpg",
+    "imdb": "https://www.imdb.com/name/nm1032817/"
+  }],
+  "actors": [{
+    "name": "Constance Wu",
+    "image": "https://deadline.com/wp-content/uploads/2021/09/thumbnail_CW-Headshot-Mark-Seigler-e1631637017782.jpeg",
+    "imdb": "https://www.imdb.com/name/nm1935086/"
+  }, {
+    "name": "Jennifer Lopez",
+    "image": "https://variety.com/wp-content/uploads/2024/02/Jennifer-Lopez-Variety-Cover-Story-1.jpg?crop=0px%2C178px%2C1918px%2C1080px&resize=1920%2C1080",
+    "imdb": "https://www.imdb.com/name/nm0000182/?ref_=tt_cl_t_2"
+  }, {
+    "name": "Julia Stiles",
+    "image": "https://ew.com/thmb/IxgG-FFcCnrGllHigRoo_8F-tao=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/julia-stiles_0-79f4c55fe38f437cbc6d96d4cdc92386.jpg",
+    "imdb": "https://www.imdb.com/name/nm0005466/"
+  }]
 }
+,
+{
+  "item": 406,
+  "title": "The Assistant",
+  "runtime": 87,
+  "mpaa": "R",
+  "poster": "https://img4.hulu.com/user/v3/artwork/94c3d0f4-b5d2-4252-aa12-b959e3f5c6f3?base_image_bucket_name=image_manager&base_image=4b094e24-696d-4ebe-abc7-9b1fe04100ad&size=600x338&format=jpeg",
+  "description": "Follow Jane, a recent college graduate, as she navigates her entry-level job as an assistant to a powerful entertainment mogul. As she becomes increasingly aware of the systemic abuse and harassment in the workplace, she must decide whether to speak out or stay silent.",
+  "genre": ["drama", "indie"],
+  "link": "https://www.hulu.com/movie/the-assistant-94c3d0f4-b5d2-4252-aa12-b959e3f5c6f3",
+  "director": [{
+    "name": "Kitty Green",
+    "image": "https://lwlies.com/wp-content/uploads/2020/04/the-assistant-kitty-green.jpg",
+    "imdb": "https://www.imdb.com/name/nm2781044/"
+  }],
+  "actors": [{
+    "name": "Julia Garner",
+    "image": "https://media.glamour.com/photos/6409fe414842ed12223ab4c3/master/w_2560%2Cc_limit/0308-juliagarner.png",
+    "imdb": "https://www.imdb.com/name/nm2400045/"
+  }, {
+    "name": "Matthew Macfadyen",
+    "image": "https://media.npr.org/assets/img/2022/01/26/matthew-macfadyen_wide-04d6dc1baf0889f6ccd4447630865cc07c57d4ef-s1100-c50.jpg",
+    "imdb": "https://www.imdb.com/name/nm0531652/"
+  }, {
+    "name": "Makenzie Leigh",
+    "image": "https://media.vanityfair.com/photos/57fd117d0c3020dd42f78599/master/w_1440,h_960,c_limit/t-makenzie-leigh-vanities-girl-november-2016-ss.jpg",
+    "imdb": "https://www.imdb.com/name/nm3005535/"
+  }]
+},
 
 
   ],
