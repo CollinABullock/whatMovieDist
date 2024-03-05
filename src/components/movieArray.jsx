@@ -11844,7 +11844,104 @@ const moviesArray = [
   ]
 }
 ,
-
+{
+  "item": 387,
+  "title": "Melancholia",
+  "runtime": 136,
+  "mpaa": "R",
+  "poster": "https://img1.hulu.com/user/v3/artwork/271959fb-260a-46ae-9cb7-e319ee1f99d7?base_image_bucket_name=image_manager&base_image=cb64a24f-0aa8-4925-81d0-7ee954b1492e&size=600x338&format=jpeg",
+  "description": "Justine, a woman struggling with depression, finds herself amidst family tensions as her sister Claire's lavish wedding celebration unravels. Meanwhile, a mysterious planet named Melancholia hurtles towards Earth, threatening all life on the planet.",
+  "genre": ["drama", "science-fiction"],
+  "link": "https://www.hulu.com/movie/melancholia-271959fb-260a-46ae-9cb7-e319ee1f99d7",
+  "director": [{
+    "name": "Lars von Trier",
+    "image": "https://media.newyorker.com/photos/638785b12d5d9a5ef49876c5/3:2/w_1500,h_1000,c_limit/Nayman-Von-Trier.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001885/"
+  }],
+  "actors": [{
+    "name": "Kirsten Dunst",
+    "image": "https://people.com/thmb/t0tfzxEbftdvKZxRNNfDYz_u-ps=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(809x274:811x276)/kirsten-dunst-4c8ebd76adbd4eb2931f5c455c5be858.jpg",
+    "imdb": "https://www.imdb.com/name/nm0000379/"
+  }, {
+    "name": "Charlotte Gainsbourg",
+    "image": "https://www.hollywoodreporter.com/wp-content/uploads/2022/08/Charlotte-Gainsbourg-Getty-1382390655-Carlos-Alvarez_Getty-Images.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001251/"
+  }, {
+    "name": "Alexander Skarsgård",
+    "image": "https://www.hollywoodreporter.com/wp-content/uploads/2022/04/4179_PP_D001_00695_RC-h-2022.jpg?w=1296",
+    "imdb": "https://www.imdb.com/name/nm0002907/"
+  }, {
+    "name": "Kiefer Sutherland",
+    "image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2024/01/1200/675/KieferSutherlandCriticsChoice.jpg?ve=1&tl=1",
+    "imdb": "https://www.imdb.com/name/nm0000662/"
+  }]
+}
+,
+{
+  "item": 388,
+  "title": "The House That Jack Built",
+  "runtime": 152,
+  "mpaa": "R",
+  "poster": "https://img4.hulu.com/user/v3/artwork/b5bf8de6-67b5-4f5d-8397-9f19ba319f45?base_image_bucket_name=image_manager&base_image=7936a934-f2c9-487e-9886-f30aaa461530&size=1200x630&format=jpeg",
+  "description": "Follow the life and actions of Jack, a highly intelligent and sophisticated serial killer, over a span of 12 years, and the inevitable consequences of his crimes.",
+  "genre": ["crime", "drama", "horror"],
+  "link": "https://www.hulu.com/movie/the-house-that-jack-built-b5bf8de6-67b5-4f5d-8397-9f19ba319f45",
+  "director": [{
+    "name": "Lars von Trier",
+    "image": "https://media.newyorker.com/photos/638785b12d5d9a5ef49876c5/3:2/w_1500,h_1000,c_limit/Nayman-Von-Trier.jpg",
+    "imdb": "https://www.imdb.com/name/nm0001885/"
+  }],
+  "actors": [{
+    "name": "Matt Dillon",
+    "image": "https://imgix.ranker.com/list_img_v2/4694/2004694/original/young-matt-dillon-u2?fit=crop&fm=pjpg&q=80&dpr=2&w=1200&h=720",
+    "imdb": "https://www.imdb.com/name/nm0000369/"
+  }, {
+    "name": "Bruno Ganz",
+    "image": "https://m.media-amazon.com/images/M/MV5BOGViODI1YTMtNjA4Ny00Mjg1LTgzNTgtNzQwMWIwMjhlNDNiXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0000658/"
+  }, {
+    "name": "Uma Thurman",
+    "image": "https://m.media-amazon.com/images/M/MV5BOTViOTM2NzItZTA5Yi00Y2ZkLWJlYTgtZjFmMDBlYmJiYzJkXkEyXkFqcGdeQW1pYnJ5YW50._V1_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0000235/"
+  }, {
+    "name": "Siobhan Fallon Hogan",
+    "image": "https://s.yimg.com/ny/api/res/1.2/P2mTMbusbhlkMx_pq64OXA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTI3Ng--/https://s.yimg.com/os/creatr-uploaded-images/2023-12/eeb45200-9912-11ee-9f7f-0d932dc3463f",
+    "imdb": "https://www.imdb.com/name/nm0266550/"
+  }]
+},
+{
+  "item": 389,
+  "title": "Swallow",
+  "runtime": 94,
+  "mpaa": "R",
+  "poster": "https://img3.hulu.com/user/v3/artwork/4a32a3a0-536c-4ed8-babc-8382dff3d656?base_image_bucket_name=image_manager&base_image=7bb88cb9-4c3b-4030-b580-2eb77bf45dad&size=600x338&format=jpeg",
+  "description": "Hunter, a young housewife, develops an unusual and dangerous compulsion to swallow inedible objects. As her behavior becomes more erratic, she must confront the underlying trauma that drives her compulsions.",
+  "genre": ["drama", "thriller", "indie"],
+  "link": "https://www.hulu.com/movie/swallow-4a32a3a0-536c-4ed8-babc-8382dff3d656",
+  "director": [{
+    "name": "Carlo Mirabella-Davis",
+    "image": "https://filmmakermagazine.com/wp-content/uploads/2019/08/Carlo-Mirabella-Davis-headshot-copy-628x348.jpg",
+    "imdb": "https://www.imdb.com/name/nm1981778/"
+  }],
+  "actors": [{
+    "name": "Haley Bennett",
+    "image": "https://pyxis.nymag.com/v1/imgs/8f3/746/fb2bcb61177ea2e28224951d21c499ee0f-04-haley-bennett-jlaw-002.2x.rhorizontal.w710.jpg",
+    "imdb": "https://www.imdb.com/name/nm2030490/"
+  }, {
+    "name": "Austin Stowell",
+    "image": "https://deadline.com/wp-content/uploads/2019/11/austin-stowell.jpg?w=1000",
+    "imdb": "https://www.imdb.com/name/nm1858905/"
+  }, {
+    "name": "Elizabeth Marvel",
+    "image": "https://ca-times.brightspotcdn.com/dims4/default/7c2aef0/2147483647/strip/true/crop/2048x1439+0+0/resize/1200x843!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F1a%2F3d%2Febb743f09347619c5b73ed3d25ca%2Fla-1536692369-z4xqxqnlqb-snap-image",
+    "imdb": "https://www.imdb.com/name/nm0559832/"
+  }, {
+    "name": "David Rasche",
+    "image": "https://www.insidehook.com/wp-content/uploads/2023/07/david-rasche-e1688756534928.jpeg?fit=1005%2C669",
+    "imdb": "https://www.imdb.com/name/nm0711187/"
+  }]
+}
+,
 
   ],
   // start peacock array
