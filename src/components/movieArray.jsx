@@ -3843,7 +3843,30 @@ const moviesArray = [
       "actors": []
     },
 
-    
+    {    
+      "item": "m420",
+      "title": "Navalny",
+      "runtime": 99,
+      "mpaa": "R",
+      "poster": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/11a4cff7-b90a-44c0-8cb6-c56b5cbfe5aa/c69eef8569801f9d0dbbedc4359d504032cb7a92.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom&w=500",
+      "description": "This eye-opening documentary chronicles the investigation into the brazen 2020 assassination attempt of late Russian opposition leader Alexei Navalny.",
+	"genre": ["documentary"],
+    "link": "https://play.max.com/movie/11a4cff7-b90a-44c0-8cb6-c56b5cbfe5aa",
+    "director": [{
+    "name": "Daniel Roher",
+    "image": "https://media.cnn.com/api/v1/images/stellar/prod/220424133008-rs-f-block-roher.jpg?c=original",
+    "imdb": "https://www.imdb.com/name/nm4173215/",
+    }],
+    "actors": [{
+      "name": "Alexei Navalny",
+      "image": "https://www.politico.eu/cdn-cgi/image/width=1160,height=773,quality=80,onerror=redirect,format=auto/wp-content/uploads/2024/02/26/GettyImages-2025100283-scaled.jpg",
+      "imdb": "https://www.imdb.com/name/nm6281092/",
+    }]
+    },
+
+
+
+
 
     {
       "item": 335,
