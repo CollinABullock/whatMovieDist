@@ -12951,6 +12951,42 @@ const moviesArray = [
   ],
   // start peacock array
   [
+    {    
+      "item": "P436",
+      "title": "Oppenheimer",
+      "runtime": 180,
+      "mpaa": "R",
+      "poster": "https://www.peacocktv.com/dam/growth/assets/Campaign/P1/oppenheimer/oppenheimer-social.jpg",
+      "description": "During World War II, Lt. Gen. Leslie Groves Jr. appoints physicist J. Robert Oppenheimer to work on the top-secret Manhattan Project. Oppenheimer and a team of scientists spend years developing and designing the atomic bomb. Their work comes to fruition on July 16, 1945, as they witness the world's first nuclear explosion, forever changing the course of history.",
+	"genre": ["biopic", "drama"],
+    "link": "https://www.peacocktv.com/stream-movies/oppenheimer",
+    "director": [{
+      "name": "Christopher Nolan",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/christopher-nolan-attends-the-oppenheimer-premiere-at-news-photo-1704643272.jpg",
+      "imdb": "https://www.imdb.com/name/nm0634240/",
+    }],
+    "actors": [{
+      "name": "Cillian Murphy",
+      "image": "https://assets3.cbsnewsstatic.com/hub/i/r/2024/02/21/a0ab1286-a64e-4cdc-8a99-25fd202a9350/thumbnail/1280x720/1f47d561ff5c069ee21d8507394dd4df/0221-cmo-cillianmurphy-intv-mid-2699502-640x360.jpg?v=873773698949ef4145348bb09cabd43d",
+      "imdb": "https://www.imdb.com/name/nm0614165/",
+    }, {
+      "name": "Robert Downey Jr.",
+      "image": "https://www.hollywoodreporter.com/wp-content/uploads/2023/06/Robert-Downey-Jr.-Getty-H-2023.jpg?w=1296",
+      "imdb": "https://www.imdb.com/name/nm0000375/"
+    }, {
+      "name": "Emily Blunt",
+      "image": "https://variety.com/wp-content/uploads/2023/09/GettyImages-1540936189.jpg?w=1024",
+      "imdb": "https://www.imdb.com/name/nm1289434/",
+    }, {
+      "name": "Florence Pugh",
+    "image": "https://media1.popsugar-assets.com/files/thumbor/QssutrME6tERtz-5fRr6nHFgLS0=/fit-in/792x528/top/filters:format_auto():upscale()/2023/01/12/747/n/1922398/tmp_kCwFvt_67ee3c82b10d784a_GettyImages-1446980033.jpg",
+    "imdb": "https://www.imdb.com/name/nm2185547/"
+    }]
+    },
+
+
+
+
 
   ],
   // start apple array

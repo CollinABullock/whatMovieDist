@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { motion } from "framer-motion";
-import { moviesArray, netflixArray, maxArray, primeArray, huluArray } from './movieArray';
+import { moviesArray, netflixArray, maxArray, primeArray, huluArray, peacockArray } from './movieArray';
 
 export default function RandomMovie({ selectedRuntime  }) {
   const [randomMovie, setRandomMovie] = useState(null);
@@ -62,7 +62,9 @@ export default function RandomMovie({ selectedRuntime  }) {
           serviceMovies = serviceMovies.concat(primeArray);
         } else if (service === "Hulu") {
           serviceMovies = serviceMovies.concat(huluArray);
-        } 
+        } else if (service === "Peacock") {
+          serviceMovies = serviceMovies.concat(peacockArray);
+        }
         // Add more conditions for other services if needed
       });
       filtered = serviceMovies.filter(movie => movie.runtime <= selectedRuntime);
@@ -172,6 +174,16 @@ if (preferredDirectors && preferredDirectors.length > 0) {
         <img
           src="https://wallpapers.com/images/featured/hulu-fxo5g9d2z5nmrq7p.jpg"
           alt="Hulu Logo"
+          style={{ width: '100px', height: 'auto' }}
+        />
+        </a>
+      );
+    } else if (hostname === 'www.peacocktv.com') {
+      return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://akns-images.eonline.com/eol_images/Entire_Site/20191131/rs_1024x759-191231151709-1024x759.peacock-logo-lp.123119.jpg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top"
+          alt="Peacock Logo"
           style={{ width: '100px', height: 'auto' }}
         />
         </a>
