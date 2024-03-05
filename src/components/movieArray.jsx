@@ -7154,6 +7154,49 @@ const moviesArray = [
       "actors": []
     },
 
+    {
+  "item": 418,
+  "title": "The Resurrection of Jake the Snake",
+  "runtime": 93,
+  "mpaa": "Not Rated",
+  "poster": "https://m.media-amazon.com/images/S/pv-target-images/4e1256356eac9b35c482dfbccdfcf2312fd7b1708e6c74faa074727ad235dda0.jpg",
+  "description": "Follow the journey of professional wrestler Jake 'The Snake' Roberts as he attempts to overcome personal struggles and reclaim his life and career with the help of fellow wrestler Diamond Dallas Page. The film documents Roberts' battles with addiction and his transformation through yoga and rehabilitation, offering an intimate look into his life and the challenges he faces on his path to recovery.",
+  "genre": ["documentary", "sports", "biopic"],
+  "link": "https://www.amazon.com/gp/video/detail/B08BNKGZ9D/ref=atv_ge_agd_1_c_hUhMb1_brws_1_9?jic=8%7CEgRzdm9k",
+  "director": [{
+    "name": "Steve Yu",
+    "image": "https://www.ajc.com/resizer/UNFgDHMLmj_2UqF8L3347tVPZjo=/500x282/cloudfront-us-east-1.images.arcpublishing.com/ajc/APJN5L76TSETBPNASIXSXBB4VM.jpg",
+    "imdb": "https://www.imdb.com/name/nm3201804/"
+  }],
+  "actors": [{
+    "name": "Jake Roberts",
+    "image": "https://m.media-amazon.com/images/M/MV5BNTdjMzYzMTUtNGZhNS00ZTRiLWI3Y2YtMjc3YTM1NjhkZjg3XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_QL75_UX500_CR0,47,500,281_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0731195/",
+
+  }]
+},
+
+{
+  "item": 419,
+  "title": "Conan O'Brien Can't Stop",
+  "runtime": 89,
+  "mpaa": "R",
+  "poster": "https://m.media-amazon.com/images/S/pv-target-images/84aa591a3664b14fed2bda86d7fe8b41cb2257a06a3681644d782d63137aa31a.jpg",
+  "description": "Follow Conan O'Brien's post-'Tonight Show' comedy tour as he struggles with the aftermath of losing his show and the pressures of creating new material. Despite setbacks and exhaustion, O'Brien's irrepressible energy and wit shine through as he entertains audiences across the country.",
+  "genre": ["documentary", "comedy"],
+  "link": "https://www.amazon.com/gp/video/detail/B00BR7Z4WY/ref=atv_ge_agd_1_c_hUhMb1_brws_1_10?jic=8%7CEgRzdm9k",
+  "director": [{
+    "name": "Rodman Flender",
+    "image": "https://m.media-amazon.com/images/M/MV5BZTc2ZmU5NDMtOTEwZS00YjE4LWIxODctNWQ2YzY5MzljMWIxXkEyXkFqcGdeQXVyNTI5ODg0MjQ@._V1_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0281635/"
+  }],
+  "actors": [{
+    "name": "Conan O'Brien",
+    "image": "https://dims.apnews.com/dims4/default/0bb131d/2147483647/strip/false/crop/3000x2122+0+0/resize/1486x1051!/quality/90/?url=https%3A%2F%2Fstorage.googleapis.com%2Fafs-prod%2Fmedia%2F73c914338bd7484f9ee86b83132b1ac2%2F3000.jpeg",
+    "imdb": "https://www.imdb.com/name/nm0005277/"
+  }]
+},
+
     {    
       "item": "202",
       "title": "Saltburn",
