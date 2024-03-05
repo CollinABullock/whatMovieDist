@@ -3783,11 +3783,67 @@ const moviesArray = [
       "link": "https://play.max.com/movie/1e53285f-4f19-4f8e-aefc-fc4b033a9080",
       "director": [{
         "name": "Barbara Kopple",
-        "image": "",
+        "image": "https://cloudfront-us-east-1.images.arcpublishing.com/opb/2SPJS3PH4NBR5LW2XOEBT5IMUA.png",
         "imdb": "https://www.imdb.com/name/nm0465732/"
       }],
       "actors": []
     },
+    {
+      "item": 425,
+      "title": "Don't Look Back",
+      "runtime": 96,
+      "mpaa": "Not Rated",
+      "poster": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/4bd1bd9d-4697-4765-9cbc-44d41ea7fea9/5843fab096fe446e36ae516ef517cdd325a52889.jpg?submitted=1684658273598&host=wbd-images.prod-vod.h264.io&partner=beamcom&w=500",
+      "description": "Experience the legendary 1965 concert tour of Bob Dylan through the lens of filmmaker D.A. Pennebaker. This groundbreaking documentary captures Dylan's enigmatic personality, iconic performances, and behind-the-scenes moments, providing an intimate portrait of the influential singer-songwriter during a pivotal period of his career.",
+      "genre": ["documentary", "music", "classic"],
+      "link": "https://play.max.com/movie/4bd1bd9d-4697-4765-9cbc-44d41ea7fea9",
+      "director": [{
+        "name": "D.A. Pennebaker",
+        "image": "https://www.indiewire.com/wp-content/uploads/2019/08/5872226b.jpg",
+        "imdb": "https://www.imdb.com/name/nm0671933/"
+      }],
+      "actors": [{
+        "name": "Bob Dylan",
+        "image": "https://miro.medium.com/v2/resize:fit:8384/1*_EDEWvWLREzlAvaQRfC_SQ.jpeg",
+        "imdb": "https://www.imdb.com/name/nm0001168/"
+      }]
+    },
+
+    {
+      "item": 426,
+      "title": "Nanook of the North",
+      "runtime": 79,
+      "mpaa": "Not Rated",
+      "poster": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/d69498b9-5881-4097-8e36-db1c87080088/e8ce47dcaaddfd42d258afaa5b3676b9f9df3d8d.jpg?submitted=1684684626553&host=wbd-images.prod-vod.h264.io&partner=beamcom",
+      "description": "Experience the groundbreaking documentary by director Robert J. Flaherty, depicting the daily life of an Inuk family in the Canadian Arctic. Filmed in 1922, the film provides a captivating glimpse into the survival skills, traditions, and challenges faced by Nanook and his family as they navigate the harsh Arctic environment.",
+      "genre": ["documentary", "classic"],
+      "link": "https://play.max.com/movie/d69498b9-5881-4097-8e36-db1c87080088",
+      "director": [{
+        "name": "Robert J. Flaherty",
+        "image": "https://www.sensesofcinema.com/wp-content/uploads/2002/12/Robert-Flaherty.png",
+        "imdb": "https://www.imdb.com/name/nm0281107/"
+      }],
+      "actors": []
+    },
+
+    {
+      "item": 427,
+      "title": "Hearts and Minds",
+      "runtime": 112,
+      "mpaa": "R",
+      "poster": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/2c43837c-73a0-4de2-af8e-43a7410b27a8/f5e75cbf57edebe2363a27a2d55730133e838760.jpg?submitted=1684655665813&host=wbd-images.prod-vod.h264.io&partner=beamcom",
+      "description": "Experience the powerful documentary directed by Peter Davis, exploring the impact of the Vietnam War on both the Vietnamese and American populations. Through interviews, archival footage, and emotional testimonials, the film delves into the complexities of war, its human toll, and the societal divisions it engenders.",
+      "genre": ["documentary", "war", "classic"],
+      "link": "https://play.max.com/movie/2c43837c-73a0-4de2-af8e-43a7410b27a8",
+      "director": [{
+        "name": "Peter Davis",
+        "image": "https://villonfilms.ca/img/asset/bWFpbi9TSURFLUJZLVNJREVfWklNMDgxX1BFVEVSLURBVklTLmpwZw==/SIDE-BY-SIDE_ZIM081_PETER-DAVIS.jpg?w=1200&h=628&q=80&fit=crop&s=2ecf7d057106180c571a6f870e201b3b",
+        "imdb": "https://www.imdb.com/name/nm0204782/"
+      }],
+      "actors": []
+    },
+
+    
 
     {
       "item": 335,
