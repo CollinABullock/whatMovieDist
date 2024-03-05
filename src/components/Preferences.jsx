@@ -170,8 +170,13 @@ export default function MoviePreferenceComponent({ onPreferenceChange, data }) {
       sessionStorage.setItem('selectedServices', JSON.stringify(updatedServices));
   
       return updatedServices;
-    });
+    }
+    )
+    
+    ;
   };
+
+ 
   
 // Sort directors alphabetically by last name
 const directorSet = new Set();
@@ -546,6 +551,7 @@ return (
       <div style={{ display: 'flex', justifyContent: 'center' }}>
   <Button
     onClick={() => {
+      sessionStorage.clear();
       setSelectedGenres([]);
       setPreferredGenres([]);
       setRuntime(240);
