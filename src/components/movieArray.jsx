@@ -7007,6 +7007,153 @@ const moviesArray = [
 
       // start prime array
   [
+    {
+      "item": 407,
+      "title": "Dear Zachary: A Letter to a Son About His Father",
+      "runtime": 95,
+      "mpaa": "Not Rated",
+      "poster": "https://m.media-amazon.com/images/S/pv-target-images/4f8b22cf475e238cd11b02ded538ce69c4bf61389e219ec342ecd4239690f92d.jpg",
+      "description": "This heartbreaking documentary is a letter to Zachary, the son of Andrew Bagby, who was murdered by his ex-girlfriend. As his friends and family recount Andrew's life, the film also serves as a testament to the love and loss experienced by those left behind.",
+      "genre": ["documentary", "crime", "biography"],
+      "link": "https://www.amazon.com/gp/video/detail/B00MB6F3QW/ref=atv_ge_agd_1_c_hUhMb1_brws_1_4?jic=8%7CEgRzdm9k",
+      "director": [{
+        "name": "Kurt Kuenne",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjE2NzYyMzcyM15BMl5BanBnXkFtZTgwNjk3ODgxNDE@._V1_.jpg",
+        "imdb": "https://www.imdb.com/name/nm0474155/"
+      }],
+      "actors": []
+    },
+
+    {
+      "item": 409,
+      "title": "Scandalous: The Untold Story of the National Enquirer",
+      "runtime": 97,
+      "mpaa": "Not Rated",
+      "poster": "https://m.media-amazon.com/images/S/pv-target-images/ec46fe0de01698319e42be5cb3bce5ef077bb14379b394138eb86044448a31c3._SX1080_FMjpg_.jpg",
+      "description": "Delve into the controversial history and inner workings of the National Enquirer, a tabloid newspaper renowned for its sensationalist coverage of celebrity scandals. Through interviews and archival footage, explore the tabloid's rise to prominence, its impact on American culture, and the ethical dilemmas surrounding its reporting practices.",
+      "genre": ["documentary"],
+      "link": "https://www.amazon.com/gp/video/detail/B0B7B9MH8D/ref=atv_ge_agd_1_c_hUhMb1_brws_1_2?jic=8%7CEgRzdm9k",
+      "director": [{
+        "name": "Mark Landsman",
+        "image": "https://miro.medium.com/v2/resize:fit:1400/1*8P36gR9pdo-oh58ZqxAiQg.jpeg",
+        "imdb": "https://www.imdb.com/name/nm0486469/"
+      }],
+      "actors": []
+    },
+
+    {
+      "item": 410,
+      "title": "Val",
+      "runtime": 108,
+      "mpaa": "Not Rated",
+      "poster": "https://m.media-amazon.com/images/S/pv-target-images/a80ec7f05d4dc5a0517bf09fe9fc6548e70aeea50497f86702d543f04ee17805.jpg",
+      "description": "A look at the daily life of actor Val Kilmer with never-before-seen images spanning forty years of his career.",
+      "genre": ["documentary", "biopic"],
+      "link": "https://www.amazon.com/gp/video/detail/B0988VKGW6/ref=atv_ge_agd_1_c_hUhMb1_brws_1_6?jic=8%7CEgRzdm9k",
+      "director": [{
+        "name": "Ting Poo",
+        "image": "https://i.ytimg.com/vi/CZqb9g-DKh4/hqdefault.jpg",
+        "imdb": "https://www.imdb.com/name/nm2593979/"
+      }, {
+        "name": "Leo Scott",
+        "image": "https://i.ytimg.com/vi/CZqb9g-DKh4/hqdefault.jpg",
+        "imdb": "https://www.imdb.com/name/nm2816195/"
+      }],
+      "actors": [
+        {"name": "Val Kilmer",
+        "image": "https://imageio.forbes.com/specials-images/imageserve/4c927758a4dc45b69f2d3ad7b8a887be/960x0.jpg?height=503&width=711&fit=bounds",
+        "imdb": "https://www.imdb.com/name/nm0000174/"}
+      ]
+    },
+    {
+      "item": 411,
+      "title": "When You're Strange",
+      "runtime": 86,
+      "mpaa": "R",
+      "poster": "https://m.media-amazon.com/images/S/pv-target-images/004229387bbf3c29259a0a42ee0ea1bc024c9ac44ef7e59c54b533ec18479f1d.jpg",
+      "description": "Explore the captivating journey of the iconic rock band The Doors in this documentary narrated by Johnny Depp. Through rare footage and interviews, delve into the band's rise to fame, their tumultuous relationships, and the enduring legacy of their music.",
+      "genre": ["documentary", "music"],
+      "link": "https://www.amazon.com/gp/video/detail/B07QQ4D123/ref=atv_dp_amz_c_TS5124c5_1_1?jic=16%7CCgNhbGwSA2FsbA%3D%3D",
+      "director": [{
+        "name": "Tom DiCillo",
+        "image": "https://www.tomdicillo.com/wp-content/uploads/2023/06/haleluyah-8-1-scaled.jpg",
+        "imdb": "https://www.imdb.com/name/nm0225726/"
+      }],
+      "actors": [{
+        "name": "Johnny Depp",
+        "image": "https://www.hollywoodreporter.com/wp-content/uploads/2023/05/Johnny-Depp-Puffins-Promotion-GettyImages-1235985361-H-2023.jpg?w=1296",
+        "imdb": "https://www.imdb.com/name/nm0000136/"
+      }]
+    },
+
+    {
+      "item": 412,
+      "title": "Soaked in Bleach",
+      "runtime": 90,
+      "mpaa": "Not Rated",
+      "poster": "https://m.media-amazon.com/images/S/pv-target-images/e1f6c4723a4e2b3d6f8dcb818a4557f39ebf37a40ffdc4354657d5de42bb73e4._UR1920,1080_SX720_FMjpg_.jpg",
+      "description": "Investigate the controversial circumstances surrounding the death of Kurt Cobain, the lead singer of Nirvana, in this documentary. Through interviews and evidence examination, the film questions the official ruling of suicide and explores alternative theories.",
+      "genre": ["documentary", "crime", "music"],
+      "link": "https://www.amazon.com/gp/video/detail/B078PS557R/ref=atv_dp_amz_c_TS5124c5_1_5?jic=16%7CCgNhbGwSA2FsbA%3D%3D",
+      "director": [{
+        "name": "Benjamin Statler",
+        "image": "https://i.iheart.com/v3/re/assets.coast2coast/ba50f76a443213e6692ee0a87c261cc9?ops=gravity(%22north%22),fit(1200,675),quality(65)",
+        "imdb": "https://www.imdb.com/name/nm1985356/"
+      }],
+      "actors": []
+    },
+
+    {
+      "item": 413,
+      "title": "Hype!",
+      "runtime": 83,
+      "mpaa": "Not Rated",
+      "poster": "https://m.media-amazon.com/images/S/pv-target-images/94f155964d4936a4fe3e3f17780341d3dc76123d7c06f0dc2c7722fe4579232b.jpg",
+      "description": "Explore the emergence of the Seattle grunge music scene in the early 1990s through this documentary. Featuring interviews with musicians, journalists, and industry insiders, the film examines the cultural impact of bands like Nirvana, Pearl Jam, and Soundgarden.",
+      "genre": ["documentary", "music"],
+      "link": "https://www.amazon.com/gp/video/detail/B00D5C9T70/ref=atv_dp_amz_c_TS5124c5_1_5?jic=16%7CCgNhbGwSA2FsbA%3D%3D",
+      "director": [{
+        "name": "Doug Pray",
+        "image": "https://media.baselineresearch.com/images/255377/255377_full.jpg",
+        "imdb": "https://www.imdb.com/name/nm0695046/"
+      }],
+      "actors": []
+    },
+
+    {
+      "item": 414,
+      "title": "Hired Gun",
+      "runtime": 98,
+      "mpaa": "Not Rated",
+      "poster": "https://m.media-amazon.com/images/S/pv-target-images/5a828da79c219e462671de35c2fc3b755d8c296c8c56468ae5b06cbe7c24dcd8.jpg",
+      "description": "Delve into the world of professional musicians known as 'hired guns' who are hired by famous artists and bands to accompany them on tours and recordings. Through interviews and performances, this documentary sheds light on the unsung heroes behind some of the biggest names in music.",
+      "genre": ["documentary", "music"],
+      "link": "https://www.amazon.com/gp/video/detail/B073RFVW36/ref=atv_dp_amz_c_TS5124c5_1_5?jic=16%7CCgNhbGwSA2FsbA%3D%3D",
+      "director": [{
+        "name": "Fran Strine",
+        "image": "https://media.gettyimages.com/id/1469318566/photo/fran-strine-documentary-award.jpg?s=612x612&w=gi&k=20&c=jkHXkBBzOzfDwIaTXHvq5inNQJ5xbYva9ppQGoVoSpM=",
+        "imdb": "https://www.imdb.com/name/nm1355010/"
+      }],
+      "actors": []
+    },
+
+    {
+      "item": 417,
+      "title": "Man on Wire",
+      "runtime": 94,
+      "mpaa": "PG-13",
+      "poster": "https://i.ytimg.com/vi/MhPSl00UDVE/maxresdefault.jpg",
+      "description": "Experience the astonishing true story of Philippe Petit, a French high-wire artist who walked between the Twin Towers of the World Trade Center in 1974. Through archival footage and reenactments, this documentary captures Petit's daring feat and the meticulous planning that went into it.",
+      "genre": ["documentary", "biopic", "crime"],
+      "link": "https://www.amazon.com/gp/video/detail/B00CV1AKWE/ref=atv_ge_agd_1_c_hUhMb1_brws_1_7?jic=8%7CEgRzdm9k",
+      "director": [{
+        "name": "James Marsh",
+        "image": "https://www.hollywoodreporter.com/wp-content/uploads/2016/03/gettyimages-461021666-h_2016.jpg",
+        "imdb": "https://www.imdb.com/name/nm0550321/"
+      }],
+      "actors": []
+    },
+
     {    
       "item": "202",
       "title": "Saltburn",
