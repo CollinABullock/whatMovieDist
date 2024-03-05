@@ -12092,6 +12092,73 @@ const moviesArray = [
   }]
 }
 ,
+{
+  "item": 395,
+  "title": "Grandma's Boy",
+  "runtime": 94,
+  "mpaa": "R",
+  "poster": "https://img2.hulu.com/user/v3/artwork/3cc07d84-3c42-4555-9989-397ff2b40ad6?base_image_bucket_name=image_manager&base_image=bd4f0a82-f52d-484a-9a9b-a00e5958d9d6&size=600x338&format=jpeg",
+  "description": "When Alex, a 35-year-old video game tester, is kicked out of his apartment, he has to move in with his grandmother and her friends. As he tries to develop a new video game and navigate his new living situation, hilarity ensues.",
+  "genre": ["comedy"],
+  "link": "https://www.hulu.com/movie/grandmas-boy-3cc07d84-3c42-4555-9989-397ff2b40ad6",
+  "director": [{
+    "name": "Nicholaus Goossen",
+    "image": "https://pbs.twimg.com/media/GHtic8oaQAAxeil?format=jpg&name=4096x4096",
+    "imdb": "https://www.imdb.com/name/nm0331101/"
+  }],
+  "actors": [{
+    "name": "Allen Covert",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTM2NzE5NDE5NF5BMl5BanBnXkFtZTcwNDkyNTU0NA@@._V1_.jpg",
+    "imdb": "https://www.imdb.com/name/nm0178246/"
+  }, {
+    "name": "Linda Cardellini",
+    "image": "https://static01.nyt.com/images/2013/06/05/arts/linda/linda-superJumbo.jpg",
+    "imdb": "https://www.imdb.com/name/nm0004804/"
+  }, {
+    "name": "Peter Dante",
+    "image": "https://i.ytimg.com/vi/mlC-RfdsJLU/maxresdefault.jpg",
+    "imdb": "https://www.imdb.com/name/nm0200701/"
+  }, {
+    "name": "Shirley Jones",
+    "image": "https://cdn.aarp.net/content/aarpe/en/home/entertainment/books/info-08-2013/shirley-jones-discusses-memoir/_jcr_content/root/container_main/container_body_main/container_image/articlecontentfragme/cfimage.coreimg.jpeg/content/dam/aarp/entertainment/books/2013-08/740-actress-shirley-jones-smiling-portrait.jpg",
+    "imdb": "https://www.imdb.com/name/nm0005064/"
+  }]
+}
+,
+{
+  "item": 396,
+  "title": "Heat",
+  "runtime": 170,
+  "mpaa": "R",
+  "poster": "https://img3.hulu.com/user/v3/artwork/88be9f24-47f7-41b5-8dd2-5d99b3101cdf?base_image_bucket_name=image_manager&base_image=210c8afc-7a7b-408f-97b4-894e9d9c4b8b&size=600x338&format=jpeg",
+  "description": "A group of professional bank robbers led by Neil McCauley and a dedicated LAPD detective, Vincent Hanna, pursue each other in a deadly cat-and-mouse game.",
+  "genre": ["crime", "drama", "thriller"],
+  "link": "https://www.hulu.com/movie/heat-88be9f24-47f7-41b5-8dd2-5d99b3101cdf",
+  "director": [{
+    "name": "Michael Mann",
+    "image": "https://variety.com/wp-content/uploads/2024/01/Michael-Mann-Variety-Directors-on-Directors.jpg?w=1000&h=563&crop=1",
+    "imdb": "https://www.imdb.com/name/nm0000520/"
+  }],
+  "actors": [{
+    "name": "Al Pacino",
+    "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSvNvCnfwhUJomL6srW4j0x21ntqd2R0HDGGyD-MLZA7OUZ52_3XZtjGq_B4G0dmM9-WfF0zMp6seOS_BM",
+    "imdb": "https://www.imdb.com/name/nm0000199/",
+  }, {
+    "name": "Robert De Niro",
+    "image": "https://www.usatoday.com/gcdn/presto/2020/08/17/USAT/7a0449c7-ffa8-450d-b65f-77a920a61757-Robert_De_Niro.JPG",
+    "imdb": "https://www.imdb.com/name/nm0000134/?ref_=tt_ov_st"
+  }, {
+    "name": "Val Kilmer",
+    "image": "https://imageio.forbes.com/specials-images/imageserve/4c927758a4dc45b69f2d3ad7b8a887be/960x0.jpg?height=503&width=711&fit=bounds",
+    "imdb": "https://www.imdb.com/name/nm0000174/"
+  }, {
+    "name": "Jon Voight",
+    "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/07/02/08/Angelina-Jon-Getty.jpg",
+    "imdb": "https://www.imdb.com/name/nm0000685/"
+  }]
+}
+,
+
   ],
   // start peacock array
   [
