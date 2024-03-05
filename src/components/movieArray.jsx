@@ -10379,6 +10379,118 @@ const moviesArray = [
   ], 
   // start hulu array
   [
+
+    {
+      "item": 429,
+      "title": "Minding the Gap",
+      "runtime": 93,
+      "mpaa": "Not Rated",
+      "poster": "https://img3.hulu.com/user/v3/artwork/efcd9be9-9541-46b4-abbc-dd8b0606b304?base_image_bucket_name=image_manager&base_image=459411eb-4834-4a54-a64e-90fd6269f1c4&size=1200x630&format=jpeg&operations=%5B%7B%22gradient_vector%22%3A%22(0%2C0%2C0%2C0.5)%7C(0%2C0%2C0%2C0)%7C(0%2C600)%7C(0%2C240)%22%7D%2C%7B%22overlay%22%3A%7B%22position%22%3A%22SouthEast%7C(30%2C30)%22%2C%22operations%22%3A%5B%7B%22image%22%3A%22image_manager%7C869e68d8-de1f-4c66-ac40-521d403076eb%22%7D%2C%7B%22resize%22%3A%22204x204%7Cmax%22%7D%2C%7B%22extent%22%3A%22204x204%22%7D%5D%7D%7D%2C%5D",
+      "description": "Follow three young skateboarders from Rockford, Illinois, as they navigate the challenges of adolescence and adulthood while using skateboarding as an escape from troubled family lives. Director Bing Liu explores themes of race, class, masculinity, and trauma in this intimate and moving documentary.",
+      "genre": ["documentary", "sports", "biopic"],
+      "link": "https://www.hulu.com/movie/minding-the-gap-efcd9be9-9541-46b4-abbc-dd8b0606b304?cmp=11932&utm_source=google&utm_medium=SEM&utm_campaign=CM_SEM_Various+Niche+Originals&utm_term=&gad_source=1&gclid=CjwKCAiAopuvBhBCEiwAm8jaMc3LSftiBn98XyzGwZ85Ttu4TOQVwCbI7P0l8Gr__sY8Am4EIItFuxoCU4UQAvD_BwE&gclsrc=aw.ds",
+      "director": [{
+        "name": "Bing Liu",
+        "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/1282/2023/11/16171645/MWFF-Friday-83-copy.webp",
+        "imdb": "https://www.imdb.com/name/nm7256169/"
+      }],
+      "actors": []
+    },
+
+    {
+      "item": 430,
+      "title": "Hail Satan?",
+      "runtime": 95,
+      "mpaa": "R",
+      "poster": "https://img.hulu.com/user/v3/artwork/88dd0321-84b5-426d-a57d-bb7875e69bf5?base_image_bucket_name=image_manager&base_image=ec8bba2f-46f4-44c4-aa11-c7e94ab9477b&size=600x338&format=jpeg",
+      "description": "Explore the rise of The Satanic Temple, a controversial religious organization advocating for the separation of church and state and promoting social justice causes. Through interviews and archival footage, the documentary sheds light on the group's activism, challenges, and impact on American society.",
+      "genre": ["documentary", "comedy"],
+      "link": "https://www.hulu.com/movie/hail-satan-88dd0321-84b5-426d-a57d-bb7875e69bf5",
+      "director": [{
+        "name": "Penny Lane",
+        "image": "https://womenandhollywood.com/wp-content/uploads/2022/07/lane.png",
+        "imdb": "https://www.imdb.com/name/nm1753772/"
+      }],
+      "actors": []
+    },
+
+    {
+      "item": 431,
+      "title": "The Worst Person in the World",
+      "runtime": 127,
+      "mpaa": "R",
+      "poster": "https://img2.hulu.com/user/v3/artwork/e30177ce-5201-402d-a346-6333ca2fe5b8?base_image_bucket_name=image_manager&base_image=93492891-4075-4b9c-b211-5cea3f108aaf&size=600x338&format=jpeg",
+      "description": "Follow the journey of Julie, a young woman in Oslo, as she navigates the complexities of love, career, and identity over the course of several years. Director Joachim Trier crafts a poignant and relatable portrait of modern adulthood, exploring themes of ambition, relationships, and self-discovery.",
+      "genre": ["drama", "comedy", "romance", "foreign"],
+      "link": "https://www.hulu.com/movie/the-worst-person-in-the-world-e30177ce-5201-402d-a346-6333ca2fe5b8",
+      "director": [{
+        "name": "Joachim Trier",
+        "image": "https://d27csu38upkiqd.cloudfront.net/eyJidWNrZXQiOiJmZGMtc2l0ZXB1YmxpYy1tZWRpYS1wcm9kIiwia2V5IjoidXBsb2Fkc1wvMjAxN1wvMDRcLzYwYjFhOTcxODI5NTUyY2IzYjliZDBiNDc3OTA3YjE5LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAyOCwiZml0IjoiY292ZXIifX19",
+        "imdb": "https://www.imdb.com/name/nm0873093/"
+      }],
+      "actors": [{
+        "name": "Renate Reinsve",
+        "image": "https://lh3.googleusercontent.com/proxy/2sdjrpBsvVnJW2KCbyeZzHB-E1fRk-W0p932en161TEpK2622LjpAN-T9xP5UlWADmVE_Z0WgZUIyyQyYsYCiy4-QVMb1cgrMpT9Cktkttm9QlruWLXo-sOUVAVuw1djlfwGAibQMvViGbJSKUIO25I",
+        "imdb": "https://www.imdb.com/name/nm4535655/"
+      }, {
+        "name": "Anders Danielsen Lie",
+        "image": "https://pyxis.nymag.com/v1/imgs/128/9d3/e985c399b492007c43307d20dba3d4c505-anders-danielsen-lie.2x.rsocial.w600.jpg",
+        "imdb": "https://www.imdb.com/name/nm0200473/"
+      }, {
+        "name": "Herbert Nordrum",
+        "image": "https://m.media-amazon.com/images/M/MV5BMmI2ZWY4YzItODFlYy00NTA4LTk1ZTktMTIxMWE5ZTZlZGM5XkEyXkFqcGdeQWxiaWFtb250._V1_QL75_UX500_CR0,0,500,281_.jpg",
+        "imdb": "https://www.imdb.com/name/nm2180503/"
+      }]
+    },
+
+    {
+      "item": 432,
+      "title": "Bad Luck Banging or Loony Porn",
+      "runtime": 106,
+      "mpaa": "Not Rated",
+      "poster": "https://img1.hulu.com/user/v3/artwork/d55bd317-c0ea-4782-905b-b0b9f5c94237?base_image_bucket_name=image_manager&base_image=af6248dd-c343-46a5-a19f-541fac8cc55a&size=600x338&format=jpeg",
+      "description": "Follow the story of a schoolteacher whose private sex tape is leaked online, causing a scandal that reverberates throughout her life. Director Radu Jude explores themes of privacy, morality, and societal norms in this provocative and satirical film.",
+      "genre": ["drama", "comedy", "foreign"],
+      "link": "https://www.hulu.com/movie/bad-luck-banging-or-loony-porn-d55bd317-c0ea-4782-905b-b0b9f5c94237",
+      "director": [{
+        "name": "Radu Jude",
+        "image": "https://m.media-amazon.com/images/M/MV5BN2U1NTFlMmQtYTU0Yi00M2MyLTlhODUtZTg5ZjI2N2NhZjVlXkEyXkFqcGdeQXVyNDkzNTM2ODg@._V1_.jpg",
+        "imdb": "https://www.imdb.com/name/nm0431838/"
+      }],
+      "actors": [{
+        "name": "Katia Pascariu",
+        "image": "https://www.filmsinframe.com/wp-content/uploads/2023/01/films_in_frame_katia_pascariu_imagine_reprezentativa-scaled.jpg",
+        "imdb": "https://www.imdb.com/name/nm3714165/"
+      }]
+    },
+
+    {
+      "item": 433,
+      "title": "Titane",
+      "runtime": 108,
+      "mpaa": "R",
+      "poster": "https://img2.hulu.com/user/v3/artwork/bcf42641-5348-4bdb-a9bc-cf1e123aab7e?base_image_bucket_name=image_manager&base_image=a864feb1-2232-40ba-af9e-a74c1271a26b&size=600x338&format=jpeg",
+      "description": "Experience the surreal journey of a young woman named Alexia who has a mysterious and violent connection to cars. As she flees the law, she forms an unexpected bond with a firefighter on the run. Director Julia Ducournau delivers a visceral and provocative exploration of identity, desire, and human connection.",
+      "genre": ["drama", "horror", "foreign"],
+      "link": "https://www.hulu.com/movie/titane-bcf42641-5348-4bdb-a9bc-cf1e123aab7e",
+      "director": [{
+        "name": "Julia Ducournau",
+        "image": "https://www.semainedelacritique.com/uploads/news/image_big_f666c2091f029a9c5c73dac7d28cfbbe.jpg",
+        "imdb": "https://www.imdb.com/name/nm2934937/"
+      }],
+      "actors": [{
+        "name": "Agathe Rousselle",
+        "image": "https://a-rabbitsfoot.com/wp-content/uploads/2022/06/AGATHE-ROUSSELLE-%E2%80%93-Credit_-Fiona-Torre-scaled-edited-scaled.jpeg",
+        "imdb": "https://www.imdb.com/name/nm8638569/"
+      }, {
+        "name": "Vincent Lindon",
+        "image": "https://www.nydailynews.com/wp-content/uploads/migration/2022/04/28/DJ53S7PSCBGN3EBEHKYVV3APNQ.jpg",
+        "imdb": "https://www.imdb.com/name/nm0512146/"
+      }]
+    }
+,    
+    
+
     {
       "item": 338,
       "title": "The Lost City",
