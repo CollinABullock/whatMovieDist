@@ -288,7 +288,7 @@ if (preferredDirectors && preferredDirectors.length > 0) {
   <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: "center" }}>
     <img src={actorImageSrc} alt="Actor" style={{ maxWidth: '100%', maxHeight: '100%' }} /> <br/>
     <h1 style={{ fontFamily: "SignWood", color: "whitesmoke", textShadow: "2px 2px 2px black" }}>{actorNameSrc}</h1>
-    <a href={actorIMDBSrc}>FART<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png" alt="imdb" style={{width: "25%", height: "25%", margin: "0 auto"}} /></a>
+    <a href={actorIMDBSrc}><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png" alt="imdb" style={{width: "25%", height: "25%", margin: "0 auto"}} /></a>
   </div>
 </Modal.Body>
 
