@@ -104,6 +104,13 @@ if (preferredDirectors && preferredDirectors.length > 0) {
     );
 }
 
+const preferredActors = JSON.parse(sessionStorage.getItem('preferredActors'));
+if (preferredActors && preferredActors.length > 0) {
+    filtered = filtered.filter(movie =>
+        movie.actors && movie.actors.some(act => preferredActors.includes(act.name))
+    );
+}
+
 
   
     if (filtered.length > 0) {
