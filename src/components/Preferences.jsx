@@ -256,17 +256,18 @@ const sortedDirectors = data
 
 
   // filter actors by last name
-const sortedActors = data
-  // Filter out movies without directors
+  const sortedActors = data
+  // Filter out movies without actors
   .filter(movie => movie.actors && movie.actors.length > 0)
-  // Extract and sort director names alphabetically by last name
+  // Extract and sort actor names alphabetically by last name
   .flatMap(movie => movie.actors)
   .sort((a, b) => {
-    const lastNameA = a.name.split(' ').pop(); // Get last name of director A
-    const lastNameB = b.name.split(' ').pop(); // Get last name of director B
+    // Check if name property exists before splitting
+    const lastNameA = a.name ? a.name.split(' ').pop() : ''; // Get last name of actor A
+    const lastNameB = b.name ? b.name.split(' ').pop() : ''; // Get last name of actor B
     return lastNameA.localeCompare(lastNameB); // Compare last names
   })
-  // Filter out duplicate director names
+  // Filter out duplicate actor names
   .filter(actor => {
     if (!actorSet.has(actor.name)) {
       actorSet.add(actor.name);
@@ -638,7 +639,7 @@ return (
         <input
           type="text"
           placeholder="Search actors..."
-          value={actorSea}
+          value={actorSearch}
           onChange={handleActorSearch}
           style={{ marginBottom: '10px' }}
         />
@@ -685,7 +686,7 @@ return (
                     </React.Fragment>
                   )}
                   {/* Display director's name */}
-                  <p style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray' }}>{actor.name}</p>
+                  <p style={{ margin: '0', color: preferredActors.includes(actor.name) ? 'green' : 'gray' }}>{actor.name}</p>
                 </div>
               </div>
             ))
