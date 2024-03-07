@@ -14,9 +14,13 @@ export default function MoviePreferenceComponent({ onPreferenceChange, data }) {
   const [isSelectedGenresOpen, setIsSelectedGenresOpen] = useState(false);
   const [isDirectorOpen, setIsDirectorOpen] = useState(false);
   const [isSelectedDirectorOpen, setIsSelectedDirectorOpen] = useState(false);
+  const [isActorOpen, setIsActorOpen] = useState(false);
   const [directorSearch, setDirectorSearch] = useState('');
+  const [actorSearch, setActorSearch] = useState('');
   const [filteredDirectors, setFilteredDirectors] = useState([]);
+  const [filteredActors, setFilteredActors] = useState([]);
   const [preferredDirectors, setPreferredDirectors] = useState([]);
+  const [preferredActors, setPreferredActors] = useState([]);
   const [selectedDirectors, setSelectDirectors] = useState([]);
 
 
@@ -28,8 +32,6 @@ export default function MoviePreferenceComponent({ onPreferenceChange, data }) {
       }
       return acc;
     }, []);
-
-    
   
     const uniqueDirectors = new Set(); // Set to keep track of unique directors
     const filtered = searchTerm === '' ?
@@ -48,9 +50,40 @@ export default function MoviePreferenceComponent({ onPreferenceChange, data }) {
     setDirectorSearch(event.target.value);
   };
 
+  const handleActorSearch = (event) => {
+    const searchTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
+    const flattenedActors = data.reduce((acc, movie) => {
+      if (movie.actor) {
+        acc.push(...movie.actor);
+      }
+      return acc;
+    }, []);
+  
+    const uniqueActors = new Set(); // Set to keep track of unique directors
+    const filtered = searchTerm === '' ?
+      [] :
+      flattenedActors.filter(actor => {
+        const lowerCaseName = actor.name.trim().toLowerCase(); // Remove whitespace and convert to lowercase
+        // Check if director's name includes search term and if it's not already in uniqueDirectors
+        if (lowerCaseName.includes(searchTerm) && !uniqueActors.has(lowerCaseName)) {
+          uniqueActors.add(lowerCaseName); // Add actor's name to set
+          return true;
+        }
+        return false;
+      });
+  
+    setFilteredActors(filtered);
+    setActorSearch(event.target.value);
+  };
+
   useEffect(() => {
     const storedPreferredDirectors = JSON.parse(sessionStorage.getItem('preferredDirectors')) || [];
     setPreferredDirectors(storedPreferredDirectors);
+  }, []);
+
+  useEffect(() => {
+    const storedPreferredActors = JSON.parse(sessionStorage.getItem('preferredActors')) || [];
+    setPreferredActors(storedPreferredActors);
   }, []);
 
   useEffect(() => {
@@ -62,6 +95,10 @@ export default function MoviePreferenceComponent({ onPreferenceChange, data }) {
   useEffect(() => {
     sessionStorage.setItem('preferredDirectors', JSON.stringify(preferredDirectors));
   }, [preferredDirectors]);
+
+  useEffect(() => {
+    sessionStorage.setItem('preferredActors', JSON.stringify(preferredActors));
+  }, [preferredActors]);
 
   useEffect(() => {
     sessionStorage.setItem('selectedDirectors', JSON.stringify(selectedDirectors));
@@ -93,6 +130,21 @@ export default function MoviePreferenceComponent({ onPreferenceChange, data }) {
       // Add director to preferredDirectors array
       const updatedSelectedDirectors = [...selectedDirectors, directorName];
       setSelectDirectors(updatedSelectedDirectors);
+    }
+  };
+
+  // define handle actor click
+  const handleActorClick = (actorName) => {
+    // Toggle director selection
+    const isSelected = preferredActors.includes(actorName);
+    if (isSelected) {
+      // Remove actor from preferredActors array
+      const updatedActors = preferredActors.filter(actor => actor !== actorName);
+      setPreferredActors(updatedActors);
+    } else {
+      // Add actor to preferredActors array
+      const updatedActors = [...preferredActors, actorName];
+      setPreferredActors(updatedActors);
     }
   };
   
@@ -200,9 +252,31 @@ const sortedDirectors = data
     return false;
   });
 
+  const actorSet = new Set();
 
- console.log("filtered directors", filteredDirectors);
- console.log("director search", directorSearch);
+
+  // filter actors by last name
+const sortedActors = data
+  // Filter out movies without directors
+  .filter(movie => movie.actors && movie.actors.length > 0)
+  // Extract and sort director names alphabetically by last name
+  .flatMap(movie => movie.actors)
+  .sort((a, b) => {
+    const lastNameA = a.name.split(' ').pop(); // Get last name of director A
+    const lastNameB = b.name.split(' ').pop(); // Get last name of director B
+    return lastNameA.localeCompare(lastNameB); // Compare last names
+  })
+  // Filter out duplicate director names
+  .filter(actor => {
+    if (!actorSet.has(actor.name)) {
+      actorSet.add(actor.name);
+      return true;
+    }
+    return false;
+  });
+
+ console.log("filtered actors", filteredActors);
+ console.log("actor search", actorSearch);
 
 return (
   <div style={{ width: '100%', padding: '0 10px' }}>
@@ -438,9 +512,11 @@ return (
     
       </div>
 
+      {/* START OF SELECTED DIRECTORS SECTION, DIRECTORS THEY WANT TO AVOID */}
+
       <div style={{ marginBottom: '30px', border: '1px solid #ccc', padding: '15px' }}>
     <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', marginBottom: '10px' }} onClick={() => setIsSelectedDirectorOpen(!isSelectedDirectorOpen)}>
-    <h4>Any directors you<span style={{ color: 'red', fontSize: '1.2em', textDecoration: 'underline' }}> ARE NOT</span>  fond of?</h4>
+    <h4>Any Directors you<span style={{ color: 'red', fontSize: '1.2em', textDecoration: 'underline' }}> ARE NOT</span>  fond of?</h4>
       {isSelectedDirectorOpen ? <BsChevronUp style={{ boxShadow: '5px 5px 5px green', margin: '10px' }} /> : <BsChevronDown style={{ boxShadow: '5px 5px 5px red', margin: '10px' }} />}
     </div>
     {isSelectedDirectorOpen && (
@@ -448,7 +524,7 @@ return (
         <div style={{display: "flex", justifyContent: "center"}}>
         <input
           type="text"
-          placeholder="Search directors..."
+          placeholder="Search Directors..."
           value={directorSearch}
           onChange={handleDirectorSearch}
           style={{ marginBottom: '10px' }}
@@ -538,6 +614,122 @@ return (
                   )}
                   {/* Display director's name */}
                   <p style={{ margin: '0', color: selectedDirectors.includes(director.name) ? 'green' : 'gray' }}>{director.name}</p>
+                </div>
+              </div>
+            ))
+          )}
+        </div>
+      </div>
+    )}
+    
+      </div>
+
+      {/* end selected directors section */}
+      {/* start preferred actors section, the section for actors they want to include */}
+
+      <div style={{ marginBottom: '30px', border: '1px solid #ccc', padding: '15px' }}>
+    <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', marginBottom: '10px' }} onClick={() => setIsActorOpen(!isActorOpen)}>
+    <h4>Any actors you<span style={{ color: 'red', fontSize: '1.2em', textDecoration: 'underline' }}> ARE</span>  fond of?</h4>
+      {isActorOpen ? <BsChevronUp style={{ boxShadow: '5px 5px 5px green', margin: '10px' }} /> : <BsChevronDown style={{ boxShadow: '5px 5px 5px red', margin: '10px' }} />}
+    </div>
+    {isActorOpen && (
+      <div>
+        <div style={{display: "flex", justifyContent: "center"}}>
+        <input
+          type="text"
+          placeholder="Search actors..."
+          value={actorSea}
+          onChange={handleActorSearch}
+          style={{ marginBottom: '10px' }}
+        />
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '20px', maxWidth: "80%", margin: "0 auto" }}>
+        {(!actorSearch || filteredActors.length === 0) ? (
+            // Check if directors array is not empty before rendering
+            sortedActors.map(actor => (
+              <div
+                className='filtered-actor-item'
+                onClick={() => handleActorClick(actor.name)}
+                key={actor.name}
+                style={{ textAlign: 'center' }}
+              >
+                <div style={{ position: 'relative', display: 'inline-block', maxWidth: "100%" }}>
+                  {/* Image rendering */}
+                  {actor.image && (
+                    <React.Fragment>
+                      <div style={{display: "flex", alignItems: "center"}}>
+                      <img
+                        className='filtered-actor-img'
+                        src={actor.image}
+                        alt={actor.name}
+                        style={{ width: '170px', height: '150px', objectFit: "cover", marginBottom: '10px', margin: "0 auto" }}
+                      />
+                      {/* Conditional rendering for the checkmark */}
+                      {preferredActors.includes(actor.name) && (
+                        <div style={{
+                          position: 'absolute',
+                          top: '-10px',
+                          right: '-10px',
+                          backgroundColor: 'green',
+                          borderRadius: '50%',
+                          padding: '3px',
+                          zIndex: '1'
+                        }}>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                            <path fill="#FFFFFF" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                          </svg>
+                        </div>
+                        
+                      )}
+                      </div>
+                    </React.Fragment>
+                  )}
+                  {/* Display director's name */}
+                  <p style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray' }}>{actor.name}</p>
+                </div>
+              </div>
+            ))
+            
+          ) : (
+            // Render filtered directors based on search query
+            filteredActors.map(actor => (
+              
+              <div
+                className='filtered-director-item'
+                onClick={() => handleActorClick(actor.name)}
+                key={actor.name}
+                style={{ textAlign: 'center' }}
+              >
+                <div style={{ position: 'relative', display: 'inline-block', maxWidth: "100%" }}>
+                  {/* Image rendering */}
+                  {actor.image && (
+                    <React.Fragment>
+                      <img
+                        className='filtered-director-img'
+                        src={actor.image}
+                        alt={actor.name}
+                        style={{ width: '200px', height: '150px', objectFit: "cover", marginBottom: '10px' }}
+                      />
+                      {/* Conditional rendering for the checkmark */}
+                      {preferredActors.includes(actor.name) && (
+                        <div style={{
+                          position: 'absolute',
+                          top: '-10px',
+                          right: '-10px',
+                          backgroundColor: 'green',
+                          borderRadius: '50%',
+                          padding: '3px',
+                          zIndex: '1'
+                        }}>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                            <path fill="#FFFFFF" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                          </svg>
+                        </div>
+                      )}
+                    </React.Fragment>
+                  )}
+                  {/* Display director's name */}
+                  <p style={{ margin: '0', color: preferredActors.includes(actor.name) ? 'green' : 'gray' }}>{actor.name}</p>
                 </div>
               </div>
             ))
