@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs';
+import { FaArrowUp } from 'react-icons/fa'; // Import the arrow icon
 
 export default function MoviePreferenceComponent({ onPreferenceChange, data }) {
+  const [showScroll, setShowScroll] = useState(false); // State to track scroll position
   const [runtime, setRuntime] = useState(sessionStorage.getItem('selectedRuntime') || 240);
   const [selectedGenres, setSelectedGenres] = useState(JSON.parse(sessionStorage.getItem('selectedGenres')) || []);
   const [preferredGenres, setPreferredGenres] = useState(JSON.parse(sessionStorage.getItem('preferredGenres')) || []);
@@ -23,6 +25,28 @@ export default function MoviePreferenceComponent({ onPreferenceChange, data }) {
   const [preferredActors, setPreferredActors] = useState([]);
   const [selectedDirectors, setSelectDirectors] = useState([]);
 
+
+  // useEffect to monitor scroll position and determine whether or not to show the arrow button
+  useEffect(() => {
+    const handleScroll = () => {
+      // scrolling past 300px will trigger arrow up icon
+      if (window.pageYOffset > 300) {
+        setShowScroll(true);
+      } else {
+        setShowScroll(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+
+    // remove the event listener when the component unmounts (so it doesnt run forever)
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const handleDirectorSearch = (event) => {
     const searchTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
@@ -644,6 +668,9 @@ return (
           style={{ marginBottom: '10px' }}
         />
         </div>
+        <div>
+  {/* Arrow to scroll to top */}
+  </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '20px', maxWidth: "80%", margin: "0 auto" }}>
         {(!actorSearch || filteredActors.length === 0) ? (
             // Check if directors array is not empty before rendering
@@ -685,18 +712,18 @@ return (
                       </div>
                     </React.Fragment>
                   )}
-                  {/* Display director's name */}
+                  {/* Display actor's name */}
                   <p style={{ margin: '0', color: preferredActors.includes(actor.name) ? 'green' : 'gray' }}>{actor.name}</p>
                 </div>
               </div>
             ))
             
           ) : (
-            // Render filtered directors based on search query
+            // Render filtered actors based on search query
             filteredActors.map(actor => (
               
               <div
-                className='filtered-director-item'
+                className='filtered-actor-item'
                 onClick={() => handleActorClick(actor.name)}
                 key={actor.name}
                 style={{ textAlign: 'center' }}
@@ -729,7 +756,7 @@ return (
                       )}
                     </React.Fragment>
                   )}
-                  {/* Display director's name */}
+                  {/* Display actor's name */}
                   <p style={{ margin: '0', color: preferredActors.includes(actor.name) ? 'green' : 'gray' }}>{actor.name}</p>
                 </div>
               </div>
@@ -738,6 +765,11 @@ return (
         </div>
       </div>
     )}
+      {showScroll && (
+        <div className="scroll-to-top" onClick={scrollToTop} style={{ position: "fixed", bottom: "20px", right: "20px", cursor: "pointer", backgroundColor: "yellow", padding: "20px", borderRadius: "50%" }}>
+        <FaArrowUp style={{ color: "black", fontSize:'1.5rem' }} />
+      </div>
+      )}
     
       </div>
 
@@ -750,6 +782,7 @@ return (
       setRuntime(240);
       setSelectedServices([]);
       setPreferredDirectors([]);
+      setPreferredActors([]);
       window.alert("Preferences have been reset. Happy viewing!");
     }}
     style={{ fontSize: "2em", backgroundColor: "red" }}
