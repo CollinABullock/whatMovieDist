@@ -3,7 +3,7 @@ import NavBar from './components/navbar';
 import RandomMovie from './components/randomMovieCard';
 import Footer from './components/footer';
 import { useState, useEffect } from 'react';
-
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { moviesArray } from './components/movieArray';
 
 function App() {
@@ -31,29 +31,18 @@ function App() {
     setPreferredGenres(preferredGenres); // Set preferredGenres state
   };
 
-  let netflixArray;
-
-async function fetchNetflixArray() {
-    try {
-        const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/netflixArray');
-        const data = await response.json();
-        netflixArray = data;
-        console.log('Netflix Array:', netflixArray);
-    } catch (error) {
-        console.error('Error fetching Netflix array:', error);
-    }
-}
-
-fetchNetflixArray();
-
 
   return (
     <>
+
+
+
       <NavBar
         data={moviesArray}
         onPreferenceChange={handlePreferenceChange}
         uniqueGenres={uniqueGenres} // Pass uniqueGenres
       />
+    
       <div className="container">
         <RandomMovie selectedRuntime={selectedRuntime} selectedGenres={selectedGenres} preferredGenres={preferredGenres} /> {/* Pass preferredGenres */}
       </div>

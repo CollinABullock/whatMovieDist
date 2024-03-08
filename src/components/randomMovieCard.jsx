@@ -166,7 +166,7 @@ if (preferredActors && preferredActors.length > 0) {
       return (
         <a href={link} target="_blank" rel="noopener noreferrer">
         <img
-          src="https://pbs.twimg.com/media/Fth6aQMXwQEb4NU.jpg"
+          src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2023/04/879441e7-38a1-4c08-97c6-38b5694f00ea_1920x1080.jpg?fit=1200%2C675&quality=89&ssl=1"
           alt="Max Logo"
           style={{ width: '100px', height: 'auto' }}
         />
