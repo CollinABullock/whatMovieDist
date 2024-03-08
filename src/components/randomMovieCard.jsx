@@ -96,6 +96,13 @@ export default function RandomMovie({ selectedRuntime  }) {
       );
   }
 
+  const selectedActors = JSON.parse(sessionStorage.getItem("selectedActors"));
+  if (selectedActors && selectedActors.length > 0) {
+    filtered = filtered.filter(movie =>
+        movie.actors && !movie.actors.some(act => selectedActors.includes(act.name))
+    );
+}
+
  // Filter based on preferred directors
 const preferredDirectors = JSON.parse(sessionStorage.getItem('preferredDirectors'));
 if (preferredDirectors && preferredDirectors.length > 0) {
