@@ -341,6 +341,7 @@ const sortedDirectors = data
 
 const closeModal = () => {
   setIsModalOpen(false);
+  setSelectedModalDirector([]);
 };
 
 return (
@@ -524,6 +525,12 @@ return (
                   {/* Display director's name */}
                   <p style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray' }}>{director.name}</p>
                 </div>
+                <p
+        style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray', cursor: 'pointer' }}
+        onClick={() => handleModalDirectorClick(director.name)}
+      >
+        Their Films
+      </p>
               </div>
             ))
             
@@ -569,6 +576,12 @@ return (
                   <p style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray' }}>{director.name}</p>
                  
                 </div>
+                <p
+        style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray', cursor: 'pointer' }}
+        onClick={() => handleModalDirectorClick(director.name)}
+      >
+        Their Films
+      </p>
               </div>
               
             ))
@@ -584,10 +597,20 @@ return (
       <div style={{ marginBottom: '30px', border: '1px solid #ccc', padding: '15px' }}>
       <div>
     {/* Other JSX elements */}
-      <Modal show={isModalOpen} style={{backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "text-shadow: 2px 2px 2px black;", fontFamily: "Signwood"}}>
-        <h1>{selectedModalDirector}</h1>
-        <button onClick={closeModal}>Close</button>
-      </Modal>
+    <Modal show={isModalOpen} style={{ backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center"}}>
+  <h1>{selectedModalDirector}</h1>
+  <div className="movie-grid">
+    {filteredModalMovies.map(movie => (
+      <a href={movie.link} target="_blank" rel="noopener noreferrer" key={movie.title}>
+        <img src={movie.poster} alt={movie.title} />
+        <p>{movie.title}</p>
+      </a>
+    ))}
+  </div>
+  <button onClick={closeModal}>Close</button>
+</Modal>
+
+
     
   </div>
     <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', marginBottom: '10px' }} onClick={() => setIsSelectedDirectorOpen(!isSelectedDirectorOpen)}>
@@ -702,6 +725,12 @@ return (
                   {/* Display director's name */}
                   <p style={{ margin: '0', color: selectedDirectors.includes(director.name) ? 'green' : 'gray' }}>{director.name}</p>
                 </div>
+                <p
+        style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray', cursor: 'pointer' }}
+        onClick={() => handleModalDirectorClick(director.name)}
+      >
+        Their Films
+      </p>
               </div>
             ))
 
