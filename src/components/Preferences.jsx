@@ -338,27 +338,6 @@ const sortedDirectors = data
  console.log("movies by selected modal directors:", filteredModalMovies);
  console.log("is modal open:", isModalOpen)
 
- const movieModal = ({ isModalOpen, closeModal, filteredModalMovies }) => {
-  // Render the modal only if isModalOpen is true
-  if (!isModalOpen) return null;
-
-  return (
-    <div className="modal">
-      <div className="modal-content">
-        <span className="close" onClick={closeModal}>&times;</span>
-        <div className="movie-grid">
-          {/* Map over the filteredModalMovies array */}
-          {filteredModalMovies.map(movie => (
-            <a href={movie.link} target="_blank" rel="noopener noreferrer" key={movie.title}>
-              <img src={movie.poster} alt={movie.title} />
-              <p>{movie.title}</p>
-            </a>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const closeModal = () => {
   setIsModalOpen(false);
@@ -603,6 +582,14 @@ return (
       {/* START OF SELECTED DIRECTORS SECTION, DIRECTORS THEY WANT TO AVOID */}
 
       <div style={{ marginBottom: '30px', border: '1px solid #ccc', padding: '15px' }}>
+      <div>
+    {/* Other JSX elements */}
+      <Modal show={isModalOpen} style={{backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "text-shadow: 2px 2px 2px black;", fontFamily: "Signwood"}}>
+        <h1>{selectedModalDirector}</h1>
+        <button onClick={closeModal}>Close</button>
+      </Modal>
+    
+  </div>
     <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', marginBottom: '10px' }} onClick={() => setIsSelectedDirectorOpen(!isSelectedDirectorOpen)}>
     <h4>Any Directors you<span style={{ color: 'red', fontSize: '1.2em', textDecoration: 'underline' }}> ARE NOT</span>  fond of?</h4>
       {isSelectedDirectorOpen ? <BsChevronUp style={{ boxShadow: '5px 5px 5px green', margin: '10px' }} /> : <BsChevronDown style={{ boxShadow: '5px 5px 5px red', margin: '10px' }} />}
@@ -717,12 +704,17 @@ return (
                 </div>
               </div>
             ))
+
           )}
         </div>
+        
       </div>
     )}
     
+    
       </div>
+
+      
 
       {/* end selected directors section */}
       {/* start preferred actors section, the section for actors they want to include */}
@@ -944,7 +936,7 @@ return (
                     </React.Fragment>
                   )}
                   {/* Display director's name */}
-                  <p style={{ margin: '0', color: selectedDirectors.includes(director.name) ? 'green' : 'gray' }}>{actor.name}</p>
+                  <p style={{ margin: '0', color: selectedActors.includes(actor.name) ? 'green' : 'gray' }}>{actor.name}</p>
                 </div>
               </div>
             ))
@@ -972,9 +964,6 @@ return (
     Reset Preferences
   </Button>
 </div>
-{isModalOpen && (
-        <Modal filteredModalMovies={filteredModalMovies} closeModal={closeModal} />
-      )}
       </div>);
 
    
