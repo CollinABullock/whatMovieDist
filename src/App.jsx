@@ -3,8 +3,9 @@ import NavBar from './components/navbar';
 import RandomMovie from './components/randomMovieCard';
 import Footer from './components/footer';
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { moviesArray } from './components/movieArray';
+import MoviePreferenceComponent from './components/Preferences';
 
 function App() {
   const [selectedRuntime, setSelectedRuntime] = useState(null);

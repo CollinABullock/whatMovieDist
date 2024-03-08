@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs';
-import { FaArrowUp } from 'react-icons/fa'; // Import the arrow icon
 
 export default function MoviePreferenceComponent({ onPreferenceChange, data }) {
   const [runtime, setRuntime] = useState(sessionStorage.getItem('selectedRuntime') || 240);
@@ -310,7 +309,7 @@ return (
   {/* Collapsible streaming services section */}
   <div style={{ marginBottom: '30px', width: "100%", border: '1px solid #ccc', padding: '15px' }}>
   <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', marginBottom: '10px' }} onClick={() => setStreamingServicesOpen(!isStreamingServicesOpen)}>
-<h4 style={{ marginRight: '5px' }}>What streaming services are you currently paying for and/or stealing?</h4>
+<h4 style={{ marginRight: '5px' }}>Which streaming services do you currently have?</h4>
 {isStreamingServicesOpen ? <BsChevronUp style={{"boxShadow": "5px 5px 5px green", "margin": "10px"}}/> : <BsChevronDown style={{"boxShadow": "5px 5px 5px gred", "margin": "10px"}} />} {/* Display the arrow icon based on the state */}
 </div>
 
