@@ -336,6 +336,33 @@ const sortedDirectors = data
  console.log("actor search", actorSearch);
  console.log("selected modal directors:", selectedModalDirector)
  console.log("movies by selected modal directors:", filteredModalMovies);
+ console.log("is modal open:", isModalOpen)
+
+ const movieModal = ({ isModalOpen, closeModal, filteredModalMovies }) => {
+  // Render the modal only if isModalOpen is true
+  if (!isModalOpen) return null;
+
+  return (
+    <div className="modal">
+      <div className="modal-content">
+        <span className="close" onClick={closeModal}>&times;</span>
+        <div className="movie-grid">
+          {/* Map over the filteredModalMovies array */}
+          {filteredModalMovies.map(movie => (
+            <a href={movie.link} target="_blank" rel="noopener noreferrer" key={movie.title}>
+              <img src={movie.poster} alt={movie.title} />
+              <p>{movie.title}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const closeModal = () => {
+  setIsModalOpen(false);
+};
 
 return (
   <div style={{ width: '100%', padding: '0 10px' }}>
@@ -639,10 +666,13 @@ return (
       >
         Their Films
       </p>
+      
               </div>
+
 
               
             ))
+            
             
           ) : (
             // Render filtered directors based on search query
@@ -942,6 +972,9 @@ return (
     Reset Preferences
   </Button>
 </div>
+{isModalOpen && (
+        <Modal filteredModalMovies={filteredModalMovies} closeModal={closeModal} />
+      )}
       </div>);
 
    
