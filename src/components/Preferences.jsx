@@ -487,7 +487,6 @@ return (
             sortedDirectors.map(director => (
               <div
                 className='filtered-director-item'
-                onClick={() => handleDirectorClick(director.name)}
                 key={director.name}
                 style={{ textAlign: 'center' }}
               >
@@ -500,6 +499,7 @@ return (
                         className='filtered-director-img'
                         src={director.image}
                         alt={director.name}
+                        onClick={() => handleDirectorClick(director.name)}
                         style={{ width: '170px', height: '150px', objectFit: "cover", marginBottom: '10px', margin: "0 auto" }}
                       />
                       {/* Conditional rendering for the checkmark */}
@@ -523,10 +523,10 @@ return (
                     </React.Fragment>
                   )}
                   {/* Display director's name */}
-                  <p style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray' }}>{director.name}</p>
+                  <p onClick={() => handleDirectorClick(director.name)} style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray' }}>{director.name}</p>
                 </div>
                 <p
-        style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray', cursor: 'pointer' }}
+        style={{ margin: '0', color: 'gray', cursor: 'pointer' }}
         onClick={() => handleModalDirectorClick(director.name)}
       >
         Their Films
@@ -540,7 +540,7 @@ return (
               
               <div
                 className='filtered-director-item'
-                onClick={() => handleDirectorClick(director.name)}
+                
                 key={director.name}
                 style={{ textAlign: 'center' }}
               >
@@ -549,6 +549,7 @@ return (
                   {director.image && (
                     <React.Fragment>
                       <img
+                      onClick={() => handleDirectorClick(director.name)}
                         className='filtered-director-img'
                         src={director.image}
                         alt={director.name}
@@ -573,11 +574,11 @@ return (
                     </React.Fragment>
                   )}
                   {/* Display director's name */}
-                  <p style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray' }}>{director.name}</p>
+                  <p onClick={() => handleDirectorClick(director.name)} style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray' }}>{director.name}</p>
                  
                 </div>
                 <p
-        style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray', cursor: 'pointer' }}
+        style={{ margin: '0', color: 'gray', cursor: 'pointer' }}
         onClick={() => handleModalDirectorClick(director.name)}
       >
         Their Films
@@ -603,7 +604,7 @@ return (
     {filteredModalMovies.map(movie => (
       <a href={movie.link} target="_blank" rel="noopener noreferrer" key={movie.title}>
         <img src={movie.poster} alt={movie.title} />
-        <p>{movie.title}</p>
+        <h1>{movie.title}</h1>
       </a>
     ))}
   </div>
@@ -643,6 +644,7 @@ return (
                   {director.image && (
                     <React.Fragment>
                       <img
+                      onClick={() => handleSelectedDirectorClick(director.name)}
                         className='filtered-director-img'
                         src={director.image}
                         alt={director.name}
@@ -667,11 +669,11 @@ return (
                     </React.Fragment>
                   )}
                   {/* Display director's name */}
-                  <p style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray' }}>{director.name}</p>
+                  <p onClick={() => handleSelectedDirectorClick(director.name)} style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray' }}>{director.name}</p>
                   
                 </div>
                 <p
-        style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray', cursor: 'pointer' }}
+        style={{ margin: '0', color: 'gray', cursor: 'pointer' }}
         onClick={() => handleModalDirectorClick(director.name)}
       >
         Their Films
@@ -690,7 +692,7 @@ return (
               
               <div
                 className='filtered-director-item'
-                onClick={() => handleSelectedDirectorClick(director.name)}
+               
                 key={director.name}
                 style={{ textAlign: 'center' }}
               >
@@ -699,6 +701,7 @@ return (
                   {director.image && (
                     <React.Fragment>
                       <img
+                       onClick={() => handleSelectedDirectorClick(director.name)}
                         className='filtered-director-img'
                         src={director.image}
                         alt={director.name}
@@ -723,10 +726,10 @@ return (
                     </React.Fragment>
                   )}
                   {/* Display director's name */}
-                  <p style={{ margin: '0', color: selectedDirectors.includes(director.name) ? 'green' : 'gray' }}>{director.name}</p>
+                  <p  onClick={() => handleSelectedDirectorClick(director.name)} style={{ margin: '0', color: selectedDirectors.includes(director.name) ? 'green' : 'gray' }}>{director.name}</p>
                 </div>
                 <p
-        style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray', cursor: 'pointer' }}
+        style={{ margin: '0', color: 'gray', cursor: 'pointer' }}
         onClick={() => handleModalDirectorClick(director.name)}
       >
         Their Films
