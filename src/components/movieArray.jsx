@@ -12951,204 +12951,1305 @@ const moviesArray = [
   ],
   // start peacock array
   [
-    {    
-      "item": "P436",
-      "title": "Oppenheimer",
-      "runtime": 180,
-      "mpaa": "R",
-      "poster": "https://www.peacocktv.com/dam/growth/assets/Campaign/P1/oppenheimer/oppenheimer-social.jpg",
-      "description": "During World War II, Lt. Gen. Leslie Groves Jr. appoints physicist J. Robert Oppenheimer to work on the top-secret Manhattan Project. Oppenheimer and a team of scientists spend years developing and designing the atomic bomb. Their work comes to fruition on July 16, 1945, as they witness the world's first nuclear explosion, forever changing the course of history.",
-  "genre": ["biopic", "drama"],
-    "link": "https://www.peacocktv.com/stream-movies/oppenheimer",
-    "director": [{
-      "name": "Christopher Nolan",
-      "image": "https://hips.hearstapps.com/hmg-prod/images/christopher-nolan-attends-the-oppenheimer-premiere-at-news-photo-1704643272.jpg",
-      "imdb": "https://www.imdb.com/name/nm0634240/"
-    }],
-    "actors": [{
-      "name": "Cillian Murphy",
-      "image": "https://assets3.cbsnewsstatic.com/hub/i/r/2024/02/21/a0ab1286-a64e-4cdc-8a99-25fd202a9350/thumbnail/1280x720/1f47d561ff5c069ee21d8507394dd4df/0221-cmo-cillianmurphy-intv-mid-2699502-640x360.jpg?v=873773698949ef4145348bb09cabd43d",
-      "imdb": "https://www.imdb.com/name/nm0614165/"
-    }, {
-      "name": "Robert Downey Jr.",
-      "image": "https://www.hollywoodreporter.com/wp-content/uploads/2023/06/Robert-Downey-Jr.-Getty-H-2023.jpg?w=1296",
-      "imdb": "https://www.imdb.com/name/nm0000375/"
-    }, {
-      "name": "Emily Blunt",
-      "image": "https://variety.com/wp-content/uploads/2023/09/GettyImages-1540936189.jpg?w=1024",
-      "imdb": "https://www.imdb.com/name/nm1289434/"
-    }, {
-      "name": "Florence Pugh",
-    "image": "https://media1.popsugar-assets.com/files/thumbor/QssutrME6tERtz-5fRr6nHFgLS0=/fit-in/792x528/top/filters:format_auto():upscale()/2023/01/12/747/n/1922398/tmp_kCwFvt_67ee3c82b10d784a_GettyImages-1446980033.jpg",
-    "imdb": "https://www.imdb.com/name/nm2185547/"
-    }]
-    }
-    ,
-    {
-      "item": "129",
-      "title": "Kick-Ass",
-      "runtime": 117,
-      "mpaa": "R",
-      "poster": "https://imageservice.disco.peacocktv.com/uuid/b8700949-f8da-37ff-bc59-5f70678e68ea/TITLE_TREATMENT?language=eng&territory=US&proposition=NBCUOTT&version=47ff2ddc-b9ff-39ca-afd8-19456cbee91d",
-      "description": "Dave Lizewski is an unnoticed high school student and comic book fan who one day decides to become a superhero, even though he has no powers, training or meaningful reason to do so.",
-      "genre": ["action", "comedy", "comic-book"],
-      "link": "https://www.peacocktv.com/watch-online/movies/action-and-adventure/kick-ass/56c20b1c-2447-3777-a737-722f262d48f3",
+      {    
+        "item": "P436",
+        "title": "Oppenheimer",
+        "runtime": 180,
+        "mpaa": "R",
+        "poster": "https://www.peacocktv.com/dam/growth/assets/Campaign/P1/oppenheimer/oppenheimer-social.jpg",
+        "description": "During World War II, Lt. Gen. Leslie Groves Jr. appoints physicist J. Robert Oppenheimer to work on the top-secret Manhattan Project. Oppenheimer and a team of scientists spend years developing and designing the atomic bomb. Their work comes to fruition on July 16, 1945, as they witness the world's first nuclear explosion, forever changing the course of history.",
+    "genre": ["biopic", "drama"],
+      "link": "https://www.peacocktv.com/stream-movies/oppenheimer",
       "director": [{
-        "name": "Matthew Vaughn",
-        "image": "https://www.hollywoodreporter.com/wp-content/uploads/2023/10/Matthew-Vaughn-getty-H-2023.jpg",
-        "imdb": "https://www.imdb.com/name/nm0891216/"
+        "name": "Christopher Nolan",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/christopher-nolan-attends-the-oppenheimer-premiere-at-news-photo-1704643272.jpg",
+        "imdb": "https://www.imdb.com/name/nm0634240/"
       }],
       "actors": [{
-        "name": "Aaron Taylor-Johnson",
-        "image": "https://manofmany.com/wp-content/uploads/2022/12/Aaron-Taylor-Honson-Bond-1200x900.png",
-        "imdb": "https://www.imdb.com/name/nm1093951/bio/",
+        "name": "Cillian Murphy",
+        "image": "https://assets3.cbsnewsstatic.com/hub/i/r/2024/02/21/a0ab1286-a64e-4cdc-8a99-25fd202a9350/thumbnail/1280x720/1f47d561ff5c069ee21d8507394dd4df/0221-cmo-cillianmurphy-intv-mid-2699502-640x360.jpg?v=873773698949ef4145348bb09cabd43d",
+        "imdb": "https://www.imdb.com/name/nm0614165/"
       }, {
-        "name": "Chloë Grace Moretz",
-        "image": "https://people.com/thmb/9IFHq7ro_NpRArFus-8z2TDvLSA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/Chloe-Grace-40f6ae15bfc5493097f606b0a08d408f.jpg",
-        "imdb": "https://www.imdb.com/name/nm1631269/"
+        "name": "Robert Downey Jr.",
+        "image": "https://www.hollywoodreporter.com/wp-content/uploads/2023/06/Robert-Downey-Jr.-Getty-H-2023.jpg?w=1296",
+        "imdb": "https://www.imdb.com/name/nm0000375/"
       }, {
-        "name": "Nicolas Cage",
-        "image": "https://variety.com/wp-content/uploads/2023/03/Nicolas-Cage-Variety-Award-092.jpg?w=1000&h=563&crop=1",
-        "imdb": "https://www.imdb.com/name/nm0000115/"
+        "name": "Emily Blunt",
+        "image": "https://variety.com/wp-content/uploads/2023/09/GettyImages-1540936189.jpg?w=1024",
+        "imdb": "https://www.imdb.com/name/nm1289434/"
       }, {
-        "name": "Christopher Mintz-Plasse",
-        "image": "https://m.media-amazon.com/images/M/MV5BNDU4NjQyOTk1Nl5BMl5BanBnXkFtZTgwNzkxNTgxMzI@._V1_.jpg",
-        "imdb": "https://www.imdb.com/name/nm1561971/"
+        "name": "Florence Pugh",
+      "image": "https://media1.popsugar-assets.com/files/thumbor/QssutrME6tERtz-5fRr6nHFgLS0=/fit-in/792x528/top/filters:format_auto():upscale()/2023/01/12/747/n/1922398/tmp_kCwFvt_67ee3c82b10d784a_GettyImages-1446980033.jpg",
+      "imdb": "https://www.imdb.com/name/nm2185547/"
       }]
-    }
+      }
+      ,
+      {
+        "item": "129",
+        "title": "Kick-Ass",
+        "runtime": 117,
+        "mpaa": "R",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/b8700949-f8da-37ff-bc59-5f70678e68ea/TITLE_TREATMENT?language=eng&territory=US&proposition=NBCUOTT&version=47ff2ddc-b9ff-39ca-afd8-19456cbee91d",
+        "description": "Dave Lizewski is an unnoticed high school student and comic book fan who one day decides to become a superhero, even though he has no powers, training or meaningful reason to do so.",
+        "genre": ["action", "comedy", "comic-book"],
+        "link": "https://www.peacocktv.com/watch-online/movies/action-and-adventure/kick-ass/56c20b1c-2447-3777-a737-722f262d48f3",
+        "director": [{
+          "name": "Matthew Vaughn",
+          "image": "https://www.hollywoodreporter.com/wp-content/uploads/2023/10/Matthew-Vaughn-getty-H-2023.jpg",
+          "imdb": "https://www.imdb.com/name/nm0891216/"
+        }],
+        "actors": [{
+          "name": "Aaron Taylor-Johnson",
+          "image": "https://manofmany.com/wp-content/uploads/2022/12/Aaron-Taylor-Honson-Bond-1200x900.png",
+          "imdb": "https://www.imdb.com/name/nm1093951/bio/"
+        }, {
+          "name": "Chloë Grace Moretz",
+          "image": "https://people.com/thmb/9IFHq7ro_NpRArFus-8z2TDvLSA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/Chloe-Grace-40f6ae15bfc5493097f606b0a08d408f.jpg",
+          "imdb": "https://www.imdb.com/name/nm1631269/"
+        }, {
+          "name": "Nicolas Cage",
+          "image": "https://variety.com/wp-content/uploads/2023/03/Nicolas-Cage-Variety-Award-092.jpg?w=1000&h=563&crop=1",
+          "imdb": "https://www.imdb.com/name/nm0000115/"
+        }, {
+          "name": "Christopher Mintz-Plasse",
+          "image": "https://m.media-amazon.com/images/M/MV5BNDU4NjQyOTk1Nl5BMl5BanBnXkFtZTgwNzkxNTgxMzI@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm1561971/"
+        }]
+      }
+      ,
+      {
+        "item": "130",
+        "title": "One for the Money",
+        "runtime": 91,
+        "mpaa": "PG-13",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/4a4c81af-dd1e-3dbd-b831-253d33b32ada/TITLE_ART_16_9?language=eng&territory=US&proposition=NBCUOTT&version=26ec94fd-64d6-3275-995e-468fc86db061",
+        "description": "Unemployed and newly-divorced Stephanie Plum lands a job at her cousin's bail-bond business, where her first assignment puts her on the trail of a wanted local cop from her romantic past.",
+        "genre": ["comedy", "crime", "mystery"],
+        "link": "https://www.peacocktv.com/watch-online/movies/one-for-the-money/26b026f1-6883-3b73-81a6-32ef0824b6eb",
+        "director": [{
+          "name": "Julie Anne Robinson",
+          "image": "https://m.media-amazon.com/images/M/MV5BNGMxNWM3ODAtYzI1Yi00ZGRmLTlmMWQtNzc4M2FkNWU2M2I0XkEyXkFqcGdeQXVyMjk3NTUyOTc@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm0732966/"
+        }],
+        "actors": [{
+          "name": "Katherine Heigl",
+          "image": "https://media.zenfs.com/en/bang_showbiz_628/3556a4b24c2928e8c1973e304d5c3a1b",
+          "imdb": "https://www.imdb.com/name/nm0001337/"
+        }, {
+          "name": "Jason O'Mara",
+          "image": "https://www.hollywoodreporter.com/wp-content/uploads/2016/08/jason_omara_getty_h_2016.jpg?w=1296",
+          "imdb": "https://www.imdb.com/name/nm0641924/"
+        }, {
+          "name": "Daniel Sunjata",
+          "image": "https://www.essence.com/wp-content/uploads/2022/01/PTQ2_203_040921_0141_a_1800x1200.jpg",
+          "imdb": "https://www.imdb.com/name/nm0838971/"
+        }, {
+          "name": "John Leguizamo",
+          "image": "https://images.hola.com/us/images/027f-17a87ad07fda-6c31393b7469-1000/horizontal-1200/prime-video-39-s-quot-the-power-quot-new-york-premiere.jpg",
+          "imdb": "https://www.imdb.com/name/nm0000491/"
+        }]
+      }
+      ,
+      {
+        "item": "131",
+        "title": "13 Assassins",
+        "runtime": 141,
+        "mpaa": "R",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/a2496c62-690d-37c8-988e-10e92d5ebe74/LAND_16_9?language=eng&territory=US&proposition=NBCUOTT&version=7594b1ba-582d-3f29-831d-55ffa5130cf0",
+        "description": "A group of assassins come together for a suicide mission to kill an evil lord.",
+        "genre": ["action", "drama", "thriller", "history", "foreign"],
+        "link": "https://www.peacocktv.com/watch-online/movies/13-assassins/8dc180d6-9168-3013-aae2-24c58c9f9c55",
+        "director": [{
+          "name": "Takashi Miike",
+          "image": "https://variety.com/wp-content/uploads/2022/10/Miike-Connect-2-lcr-res.jpg?w=1024",
+          "imdb": "https://www.imdb.com/name/nm0586281/"
+        }],
+        "actors": [{
+          "name": "Koji Yakusho",
+          "image": "https://i0.wp.com/www.thewrap.com/wp-content/uploads/2023/12/CMS-Koji-Yakusho.jpg?fit=990%2C557&ssl=1",
+          "imdb": "https://www.imdb.com/name/nm0946473/"
+        }, {
+          "name": "Takayuki Yamada",
+          "image": "https://variety.com/wp-content/uploads/2018/10/takayuki-yamada-landscape-crop-rexfeatures_8861210z.jpg?w=1000&h=563&crop=1",
+          "imdb": "https://www.imdb.com/name/nm1061979/"
+        }, {
+          "name": "Yusuke Iseya",
+          "image": "https://i0.wp.com/www.celebrity-cutouts.com/wp-content/uploads/2018/11/yusuke-iseya-moustache-celebrity-mask.png?fit=1200%2C600&ssl=1",
+          "imdb": "https://www.imdb.com/name/nm1026949/"
+        }, {
+          "name": "Goro Inagaki",
+          "image": "https://m.media-amazon.com/images/M/MV5BN2FlOTBiNzctODFhOS00NmZiLTllMDItZmM2YjJiZTJkZTU3XkEyXkFqcGdeQXVyMTI3MDk3MzQ@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm0407598/"
+        }]
+      },
+      {
+        "item": "132",
+        "title": "Season of the Witch",
+        "runtime": 95,
+        "mpaa": "PG-13",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/0779b3d7-e8ae-3557-91be-b949e31b339b/TITLE_ART_3_4/640/480?language=eng&territory=US&version=69ff98d8-1cdf-390e-9d42-9d03735f5c32&output-format=webp",
+        "description": "A knight and his friend are tasked with transporting a suspected witch to a monastery, where monks will perform a ritual to rid her of her supposed powers.",
+        "genre": ["action", "adventure", "fantasy"],
+        "link": "https://www.peacocktv.com/watch-online/movies/season-of-the-witch/9671be41-ee42-3cda-915a-7000426940a5",
+        "director": [{
+          "name": "Dominic Sena",
+          "image": "https://c8.alamy.com/comp/F6HWN5/jul-23-2002-hollywood-ca-usa-director-dominic-sena-actor-delroy-lindo-F6HWN5.jpg",
+          "imdb": "https://www.imdb.com/name/nm0786485/"
+        }],
+        "actors": [{
+          "name": "Nicolas Cage",
+            "image": "https://variety.com/wp-content/uploads/2023/03/Nicolas-Cage-Variety-Award-092.jpg?w=1000&h=563&crop=1",
+            "imdb": "https://www.imdb.com/name/nm0000115/"
+        }, {
+          "name": "Ron Perlman",
+          "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQEQMGZGDHTkHlBHShM7dMDS7THQOMZvXvstjDsXs_c1WeIdoQpPjMubbNEev4DhVBFgOl2cRF5ECKjOGY",
+          "imdb": "https://www.imdb.com/name/nm0000579/"
+        }, {
+          "name": "Claire Foy",
+          "image": "https://m.media-amazon.com/images/M/MV5BNTMyNjk2NjI0Ml5BMl5BanBnXkFtZTgwMDgxOTA5NDM@._CR229,77,1638,922_QL75_UX500_CR0,0,500,281_.jpg",
+          "imdb": "https://www.imdb.com/name/nm2946516/"
+        }, {
+          "name": "Stephen Graham",
+          "image": "https://m.media-amazon.com/images/M/MV5BZjU0MjhlN2ItZGIwZC00YTk2LTg5OTYtZmE1OGI3N2EyOGE0XkEyXkFqcGdeQWFybm8@._V1_QL75_UX500_CR0,0,500,281_.jpg",
+          "imdb": "https://www.imdb.com/name/nm0334475/"
+        }]
+      }
+      ,
+      {
+        "item": "133",
+        "title": "The VelociPastor",
+        "runtime": 75,
+        "mpaa": "Not Rated",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/352d947a-cb15-36c0-88c1-7c8ad9eaad34/TITLE_ART_3_4/640/480?language=eng&territory=US&version=cfaa75d5-f91b-3a4b-946b-7d7332c8ae0f&output-format=webp",
+        "description": "After losing his parents, a priest travels to China, where he inherits a mysterious ability that allows him to turn into a dinosaur. He uses his newfound power to fight crime and ninjas.",
+        "genre": ["action", "comedy", "horror"],
+        "link": "https://www.peacocktv.com/watch-online/movies/the-velocipastor/64cfd9c8-1ae2-34fb-852a-48cba69df3ac",
+        "director": [{
+          "name": "Brendan Steere",
+          "image": "https://m.media-amazon.com/images/M/MV5BZDg4NzhhMTgtY2JlOC00OTFlLWFjNTktNDM1MDcwOTFhOGYyXkEyXkFqcGdeQXVyMTAyNDc1MTg5._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm4011460/"
+        }],
+        "actors": [{
+          "name": "Greg Cohan",
+          "image": "https://static.wixstatic.com/media/28ddcc_e39dc4aa6965413a970869a9d88b9a3e~mv2_d_3861_2574_s_4_2.jpg/v1/fill/w_3861,h_2574,al_c/28ddcc_e39dc4aa6965413a970869a9d88b9a3e~mv2_d_3861_2574_s_4_2.jpg",
+          "imdb": "https://www.imdb.com/name/nm4685059/"
+        }, {
+          "name": "Alyssa Kempinski",
+          "image": "https://m.media-amazon.com/images/M/MV5BNWIxNGRlZWUtYmY3Mi00MDI3LTkwZjItNGZiMzJmNzQ5MTc4XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm6308509/"
+        }, {
+          "name": "Daniel Steere",
+          "image": "https://m.media-amazon.com/images/M/MV5BNTJiNmQ3MmEtNjYwMi00ODFlLTk1YWYtNDA2ZTEyMWFiY2UwXkEyXkFqcGdeQXVyNjgzNDU2ODI@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm4684851/"
+        }, {
+          "name": "Fernando Pacheco De Castro",
+          "image": "https://media.licdn.com/dms/image/C5605AQGDqg_1GuB90A/feedshare-thumbnail_720_1280/0/1672859055240?e=2147483647&v=beta&t=ohaNcWSqKVV9BdpAo0OoT15CAPVH8QeSVPVk0mAPB-g",
+          "imdb": "https://www.imdb.com/name/nm8708685/"
+        }]
+      }
+      ,
+      {
+        "item": "134",
+        "title": "Violet & Daisy",
+        "runtime": 88,
+        "mpaa": "R",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/cbfaf6f3-ec93-3464-9d98-c072ed0d50ee/TITLE_ART_3_4/640/480?language=eng&territory=US&version=d362fa95-a3d5-3df0-8411-6712b22f53a7&output-format=webp",
+        "description": "Two teenage assassins, Violet and Daisy, accept what they think will be a quick-and-easy job, until an unexpected target throws them off their plan.",
+        "genre": ["action", "comedy", "crime"],
+        "link": "https://www.peacocktv.com/watch-online/movies/action-and-adventure/violet-and-daisy/227c77f3-9a9c-38b0-9208-af80389c0fbc",
+        "director": [{
+          "name": "Geoffrey Fletcher",
+          "image": "https://deadline.com/wp-content/uploads/2018/01/geoffrey-fletcher.jpg",
+          "imdb": "https://www.imdb.com/name/nm0281670/"
+        }],
+        "actors": [{
+          "name": "Saoirse Ronan",
+          "image": "https://m.media-amazon.com/images/M/MV5BYzRmZDc4MjEtY2VmMC00NGY5LWFmNmYtOTRiYWJiYmUzNzg2XkEyXkFqcGdeQW1pYnJ5YW50._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm1519680/"
+        }, {
+          "name": "Alexis Bledel",
+          "image": "https://www.thelist.com/img/gallery/alexis-bledel-playfully-reveals-which-gilmore-girls-character-she-wanted-rory-to-end-up-with/l-intro-1656538166.jpg",
+          "imdb": "https://www.imdb.com/name/nm0088127/"
+        }, {
+          "name": "James Gandolfini",
+          "image": "https://nypost.com/wp-content/uploads/sites/2/2021/12/hbo-concern-james-gandolfini-02.jpg?quality=75&strip=all",
+          "imdb": "https://www.imdb.com/name/nm0001254/"
+        }, {
+          "name": "Marianne Jean-Baptiste",
+          "image": "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/6/12/1434105239180/a9c43334-85e9-481b-bff6-f483b6942b5b-2060x1236.jpeg?width=700&quality=85&auto=format&fit=max&s=0fdebdb7717d41cd8350852c7fb3acfe",
+          "imdb": "https://www.imdb.com/name/nm0419956/"
+        }]
+      }
+      ,
+      {
+        "item": "135",
+        "title": "Turbo Kid",
+        "runtime": 93,
+        "mpaa": "Not Rated",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/0cec71a1-25d9-3dc7-8c5e-b5587bb58e49/TITLE_ART_3_4/640/480?language=eng&territory=US&version=5a4f76b2-6b9d-3982-8eac-e6b2579ad7b5&output-format=webp",
+        "description": "In a post-apocalyptic wasteland, a young scavenger becomes the unlikely hero known as Turbo Kid when he meets a mysterious girl named Apple and embarks on a quest to save his friend and stop an evil warlord.",
+        "genre": ["action", "adventure", "science-fiction", "kids"],
+        "link": "https://imageservice.disco.peacocktv.com/uuid/0cec71a1-25d9-3dc7-8c5e-b5587bb58e49/TITLE_ART_3_4/640/480?language=eng&territory=US&version=5a4f76b2-6b9d-3982-8eac-e6b2579ad7b5&output-format=webp",
+        "director": [{
+          "name": "François Simard",
+          "image": "https://pbs.twimg.com/profile_images/1268267336529858565/cW-C-XR6_400x400.jpg",
+          "imdb": "https://www.imdb.com/name/nm1339945/"
+        }, {
+          "name": "Anouk Whissell",
+          "image": "https://m.media-amazon.com/images/M/MV5BMWRlYzk3YzMtM2E0Yi00ODlmLWFlZGItOWUyYWMzZWJlN2JjXkEyXkFqcGdeQXVyMzk3NDMxNTM@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm4178155/"
+        }, {
+          "name": "Yoann-Karl Whissell",
+          "image": "https://m.media-amazon.com/images/M/MV5BMjE5NDU3MDMxNl5BMl5BanBnXkFtZTgwODQwNjc5NTM@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm4178148/"
+        }],
+        "actors": [{
+          "name": "Munro Chambers",
+          "image": "https://i.ytimg.com/vi/j93zRXnNwjA/hqdefault.jpg",
+          "imdb": "https://www.imdb.com/name/nm1831604/"
+        }, {
+          "name": "Laurence Leboeuf",
+          "image": "https://www.bellmedia.ca/lede/wp-content/uploads/2023/11/transplant_406_UHD_still_865672-1.jpg",
+          "imdb": "https://www.imdb.com/name/nm0495461/"
+        }, {
+          "name": "Michael Ironside",
+          "image": "https://www.slashfilm.com/img/gallery/michael-ironside-didnt-understand-why-paul-verhoeven-would-direct-starship-troopers/l-intro-1668513992.jpg",
+          "imdb": "https://www.imdb.com/name/nm0000461/"
+        }]
+      }
+      ,
+      {
+        "item": "136",
+        "title": "A Christmas in Vermont",
+        "runtime": 86,
+        "mpaa": "Not Rated",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/bf9deb6a-7344-3149-b225-b6051f669db0/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=c45c5ebe-8551-347b-9a4a-92f2c2970fa8&output-format=webp",
+        "description": "After being fired, a woman travels to a small town in Vermont for a holiday job as a housekeeper at the local inn. While there, she discovers the true spirit of Christmas and finds unexpected love.",
+        "genre": ["romance", "comedy", "drama", "christmas"],
+        "link": "https://www.peacocktv.com/watch-online/movies/comedy/a-christmas-in-vermont/468812c0-7b58-31ba-a686-134096fd2303",
+        "director": [{
+          "name": "Fred Olen Ray",
+          "image": "https://m.media-amazon.com/images/M/MV5BYzhmYWQ4NjktZDA5ZC00ZTQ0LTg3MjgtMTU0NjA4Njc4ZjMxXkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm0712956/"
+        }],
+        "actors": [{
+          "name": "Ashley Williams",
+          "image": "https://heavy.com/wp-content/uploads/2021/02/1750584-e1614273753765.jpg?quality=65&strip=all",
+          "imdb": "https://www.imdb.com/name/nm0931396/"
+        }, {
+          "name": "Erin Boyes",
+          "image": "https://static.wixstatic.com/media/865f01_c0997a41bbc04f03bc55727f4b3e0a11.jpg/v1/fill/w_570,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/865f01_c0997a41bbc04f03bc55727f4b3e0a11.jpg",
+          "imdb": "https://www.imdb.com/name/nm5791185/"
+        }, {
+          "name": "Kate Bolger",
+          "image": "",
+          "imdb": "https://www.imdb.com/name/nm2593322/"
+        }]
+      }
+      ,
+      {
+        "item": "137",
+        "title": "A Cinderella Christmas",
+        "runtime": 93,
+        "mpaa": "Not Rated",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/0d3a95ab-719b-3267-b259-687215cebe75/TITLE_ART_3_4/640/480?language=eng&territory=US&version=990a7e05-b7c1-31ad-8a86-ff9bafa17a82&output-format=webp",
+        "description": "A woman named Angie works hard to run her uncle's events business while her cousin Candace takes the credit. At a Christmas Masquerade Ball, Angie meets a wealthy bachelor and must hide her identity, while Candace gets to know him as herself.",
+        "genre": ["romance", "comedy", "christmas"],
+        "link": "https://www.peacocktv.com/watch-online/movies/comedy/a-cinderella-christmas/3f4906a3-c234-3090-9306-c546051b1f5b",
+        "director": [{
+          "name": "Tosca Musk",
+          "image": "https://www.tampabay.com/resizer/f46uzDXXKscmxVa9nB-a6KB8NLw=/1200x900/smart/cloudfront-us-east-1.images.arcpublishing.com/tbt/EA6UT6WIIYI6TGNIIBWI6S7HAY.jpg",
+          "imdb": "https://www.imdb.com/name/nm2304373/"
+        }],
+        "actors": [{
+          "name": "Emma Rigby",
+          "image": "https://i.dailymail.co.uk/1s/2020/07/18/10/30909372-0-image-a-25_1595063435941.jpg",
+          "imdb": "https://www.imdb.com/name/nm2668955/"
+        }, {
+          "name": "Peter Porte",
+          "image": "https://www.soapsindepth.com/wp-content/uploads/sites/3/2023/05/Peter-Porte.jpg",
+          "imdb": "https://www.imdb.com/name/nm1653476/"
+        }, {
+          "name": "Sarah Stouffer",
+          "image": "https://m.media-amazon.com/images/M/MV5BM2IzZDIyOWQtYjA2Yy00OWZmLWIyNWYtMDkyNzAxZjgwNjU2XkEyXkFqcGdeQXVyMjA1OTU1MTM@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm2494266/"
+        }]
+      }
+      ,
+      {
+        "item": "138",
+        "title": "A Doggone Christmas",
+        "runtime": 82,
+        "mpaa": "Not Rated",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/40764a8f-c9de-3d77-9161-dc5745f0d9e6/TITLE_ART_3_4/640/480?language=eng&territory=US&version=c2d42c44-3ba1-33f8-b6c7-aaca9cb13a54&output-format=webp",
+        "description": "When the CIA and the K-9 cyber units learn that Santa Claus has been kidnapped by an alien impostor, they team up to rescue him and save Christmas.",
+        "genre": ["family", "comedy", "adventure", "christmas"],
+        "link": "https://www.peacocktv.com/watch-online/movies/comedy/a-doggone-christmas/eb39ee17-c547-3d7c-a48f-1776c9974452",
+        "director": [{
+          "name": "Jim Wynorski",
+          "image": "https://www.joblo.com/wp-content/uploads/2022/05/jim-wynorski-interview-1280x720.jpg",
+          "imdb": "https://www.imdb.com/name/nm0944186/"
+        }],
+        "actors": [{
+          "name": "Rib Hillis",
+          "image": "https://www.naludamagazine.com/wp-content/uploads/2024/01/naluda-Rib-Hillis.jpg",
+          "imdb": "https://www.imdb.com/name/nm0384419/"
+        }, {
+          "name": "Lauren Parkinson",
+          "image": "https://m.media-amazon.com/images/M/MV5BMzgyMjU4MmItMDRmNi00ZjUwLWEwYjAtYjlhNzQ0YmNjNjExXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm3728150/"
+        }, {
+          "name": "David DeLuise",
+          "image": "https://m.media-amazon.com/images/M/MV5BNTlmOWFhZGYtMjNhOC00MTE1LWJjZjMtODFmZWIxNTI3ZTE0XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm0216176/"
+        }]
+      }
+      ,
+      {
+        "item": "139",
+        "title": "A Dogwalker's Christmas Tale",
+        "runtime": 86,
+        "mpaa": "Not Rated",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/a4d07587-1ff6-356a-a649-eb77ce6c8852/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=bee035b1-aa10-3f6e-89f9-a90bfd38a433&output-format=webp",
+        "description": "When Luce Lockhart, a dogwalker, falls in love with a businessman, she finds herself in the middle of a dog show competition and must win over his skeptical daughter while trying to hide her true identity.",
+        "genre": ["romance", "comedy", "christmas"],
+        "link": "https://www.peacocktv.com/watch-online/movies/comedy-drama/a-dogwalkers-christmas-tale/643e046e-a063-3787-99b0-519a183b5f97",
+        "director": [{
+          "name": "Letia Clouston",
+          "image": "https://m.media-amazon.com/images/M/MV5BMjljOTMyZTItNDJlZi00MTI3LThmNDQtOWRjMmFmNTc3YWY1XkEyXkFqcGdeQXVyMTkxMDYwMDI@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm1933371/"
+        }],
+        "actors": [{
+          "name": "Lexi Giovagnoli",
+          "image": "https://m.media-amazon.com/images/M/MV5BZWU5MjI1OTgtY2E0NS00NDU3LTkyM2UtYzIxYzcwNDE0ZDE1XkEyXkFqcGdeQWRpZWdtb25n._V1_QL75_UX500_CR0,0,500,281_.jpg",
+          "imdb": "https://www.imdb.com/name/nm2399321/"
+        }, {
+          "name": "Jonathan Bennett",
+          "image": "https://hallmark.brightspotcdn.com/dims4/default/b354fbd/2147483647/strip/true/crop/1874x984+0+192/resize/1200x630!/quality/90/?url=http%3A%2F%2Fhallmark-channel-brightspot.s3.amazonaws.com%2F7b%2F9c%2F86c634134a65b1559e32fd04d0a8%2Fthechristmashouse-brandon-0021g-cb.jpg",
+          "imdb": "https://www.imdb.com/name/nm1251729/"
+        }, {
+          "name": "Dina Meyer",
+          "image": "https://m.media-amazon.com/images/M/MV5BZTc2OGMzNmQtY2VlYS00NmVjLTlhYTgtODZlNTk0MWQ3ZGM3XkEyXkFqcGdeQXVyMzY1MDkyMTM@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm0582561/"
+        }]
+      }
+      ,
+      {
+        "item": "140",
+        "title": "A Jersey Christmas",
+        "runtime": 90,
+        "mpaa": "Not Rated",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/0b096add-c396-331b-9ea2-3eb75e59300b/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=f449865b-23d2-3cdc-9cce-8a3581a6c653&output-format=webp",
+        "description": "In this heartwarming holiday tale, a single mother from New Jersey struggles to make ends meet. With Christmas approaching, she finds unexpected joy and love when she opens her heart to the magic of the season.",
+        "genre": ["romance", "drama", "christmas"],
+        "link": "https://www.peacocktv.com/watch-online/movies/a-jersey-christmas/35bcf3c6-c0e6-32d9-bf05-82edb82e77b8",
+        "director": [{
+          "name": "Bernard Salzmann",
+          "image": "https://m.media-amazon.com/images/M/MV5BMjY3Y2QwYzAtZmRkMS00YWYyLTkwZjYtNTdhMmI4ZTFhOTBmXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm0759268/"
+        }],
+        "actors": [{
+          "name": "Alan Powell",
+          "image": "https://m.media-amazon.com/images/M/MV5BNmNlMGM5MGQtOGI3My00NDI4LWE1MDQtM2ZiMmFiNDIzZmI5XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm2767414/"
+        }, {
+          "name": "Annie Heise",
+          "image": "https://m.media-amazon.com/images/M/MV5BMjAyMTU3MTg2OF5BMl5BanBnXkFtZTgwOTI4NTYxMTE@._V1_QL75_UX500_CR0,47,500,281_.jpg",
+          "imdb": "https://www.imdb.com/name/nm1914185/"
+        }, {
+          "name": "Ion Overman",
+          "image": "https://m.media-amazon.com/images/M/MV5BNDA5MmIxNGEtNGI5Mi00NjNiLWFjYTMtODY3NjA5NzFmN2RiXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_QL75_UX500_CR0,0,500,281_.jpg",
+          "imdb": "https://www.imdb.com/name/nm0653280/"
+        }]
+      }
+      ,
+      {
+        "item": "141",
+        "title": "A Fantastic Fear of Everything",
+        "runtime": 100,
+        "mpaa": "R",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/073878e4-126f-384b-b871-51d9dcc6513b/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=76e944c5-eada-3cb8-8560-4c938a3769fb&output-format=webp",
+        "description": "A former children's author turned crime novelist experiences a deep-seated fear of everything after researching the lives of Victorian serial killers for his latest book. Paranoia and madness ensue as he locks himself in his apartment, becoming increasingly afraid of even the most mundane things.",
+        "genre": ["comedy", "thriller"],
+        "link": "https://www.peacocktv.com/watch-online/movies/a-fantastic-fear-of-everything/95379635-72d0-3909-b3f6-eae9bf723eb7",
+        "director": [{
+          "name": "Crispian Mills",
+          "image": "https://m.media-amazon.com/images/M/MV5BMzU5MTQ1MjU1Ml5BMl5BanBnXkFtZTgwMTQwMjc2NjM@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm0590154/"
+        }, {
+          "name": "Chris Hopewell",
+          "image": "https://i.discogs.com/XBbLzYLfx8MZwgPQUDeCzZaulrtO7mF4fV7ClpMVxPM/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTY5OTU1/MS0xNTU2NDY2Nzg2/LTU5NjguanBlZw.jpeg",
+          "imdb": "https://www.imdb.com/name/nm2799751/"
+        }],
+        "actors": [{
+          "name": "Simon Pegg",
+          "image": "https://hips.hearstapps.com/hmg-prod/images/simon-pegg-visits-siriusxm-at-siriusxm-studios-on-july-13-news-photo-1658584819.jpg?crop=1xw:0.8526xh;center,top",
+          "imdb": "https://www.imdb.com/name/nm0670408/"
+        }, {
+          "name": "Amara Karan",
+          "image": "https://www.telegraph.co.uk/multimedia/archive/02215/amarakaran_2215902b.jpg",
+          "imdb": "https://www.imdb.com/name/nm2590158/"
+        }, {
+          "name": "Alan Drake",
+          "image": "https://e6ywb98uq7m.exactdn.com/wp-content/uploads/2020/06/Alan-Drake-Headshot.jpg?strip=all&lossy=1&ssl=1",
+          "imdb": "https://www.imdb.com/name/nm1730274/"
+        }, {
+          "name": "Paul Freeman",
+          "image": "https://m.media-amazon.com/images/M/MV5BZjI0YzVjZDItMjllZi00ZjU0LTk1NWEtMTVhMjUxOWNkYjBlXkEyXkFqcGdeQXVyMTI3MDk3MzQ@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm0293455/"
+        }]
+      },
+      {
+        "item": "142",
+        "title": "A Little Bit of Heaven",
+        "runtime": 106,
+        "mpaa": "PG-13",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/b2a2461f-82d5-3d00-b873-31cf34b28f14/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=bd5ec0a6-8cef-3088-967b-c2774e8447ca&output-format=webp",
+        "description": "A vivacious woman named Marley discovers she has terminal cancer and embarks on a journey of self-discovery and love. Despite her diagnosis, she finds joy and humor in life, forming deep connections with those around her.",
+        "genre": ["drama", "romance", "comedy"],
+        "link": "https://www.peacocktv.com/watch-online/movies/comedy-drama/a-little-bit-of-heaven/bfac6b85-3556-3fd3-bfa0-f51101d61c02",
+        "director": [{
+          "name": "Nicole Kassell",
+          "image": "https://deadline.com/wp-content/uploads/2021/02/Nicole-Kassell-featured.jpg",
+          "imdb": "https://www.imdb.com/name/nm0441348/"
+        }],
+        "actors": [{
+          "name": "Kate Hudson",
+          "image": "https://media.cnn.com/api/v1/images/stellar/prod/210914103244-01-kate-hudson-met-gala-2021.jpg?q=w_4062,h_2708,x_0,y_0,c_fill",
+          "imdb": "https://www.imdb.com/name/nm0005028/"
+        }, {
+          "name": "G+ael García Bernal",
+          "image": "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/6/3/1433331232979/Gael-Garcia-Bernalin-The--009.jpg?width=700&quality=85&auto=format&fit=max&s=09af5e12994f777cfbea4114b5c9e162",
+          "imdb": "https://www.imdb.com/name/nm0305558/"
+        }, {
+          "name": "Kathy Bates",
+          "image": "https://lwlies.com/wp-content/uploads/2022/05/kathy-bates-misery.jpg",
+          "imdb": "https://www.imdb.com/name/nm0000870/"
+        }, {
+          "name": "Peter Dinklage",
+          "image": "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/8/5/1438770901233/Peter-Dinklage--009.jpg?width=700&quality=85&auto=format&fit=max&s=2ded45e451e959c1404eabe01bb1ec7d",
+          "imdb": "https://www.imdb.com/name/nm0227759/"
+        }]
+      }
+      ,
+      {
+        "item": "143",
+        "title": "12 Days of Christmas Eve",
+        "runtime": 89,
+        "mpaa": "Not Rated",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/6ff7ba51-463e-3f2d-94a8-8eb55e4ac1fe/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=0993024e-6225-3116-b760-d88f86c11742&output-format=webp",
+        "description": "On Christmas Eve, a cold-hearted businessman named Calvin Carter finds himself trapped in a time loop, forced to relive the same Christmas Eve repeatedly. As he begins to understand the true meaning of the holiday, he strives to make amends for past mistakes and find redemption.",
+        "genre": ["comedy", "drama", "fantasy", "christmas"],
+        "link": "https://www.peacocktv.com/watch-online/movies/comedy/12-days-of-christmas-eve/a96dbc64-e0b9-3267-896d-b31906476155",
+        "director": [{
+          "name": "Martha Coolidge",
+          "image": "https://media.baselineresearch.com/images/287546/287546_full.jpg",
+          "imdb": "https://www.imdb.com/name/nm0177933/"
+        }],
+        "actors": [{
+          "name": "Steven Weber",
+          "image": "https://www.audiofilemagazine.com/content/uploaded/articlesprevious/2020/05/Steven-Weber-by-Getty-Images.jpg",
+          "imdb": "https://www.imdb.com/name/nm0916387/"
+        }, {
+          "name": "Molly Shannon",
+          "image": "https://m.media-amazon.com/images/M/MV5BMWMzMDNkOTMtNTkxOS00ZTRiLWFhOGItMGJiNmM0ZDA2ZDJlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm0789716/"
+        }, {
+          "name": "Mark Krysko",
+          "image": "https://m.media-amazon.com/images/M/MV5BMjFkMWQ5ZWYtMWY4ZS00ZGRkLTg0NGQtYzZjNzdlYzQ0YWFiXkEyXkFqcGdeQXVyMTE0MTY1MjM@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm1558220/"
+        }]
+      }
+      ,
+      {
+        "item": "78787878",
+        "title": "8 Mile",
+        "runtime": 110,
+        "mpaa": "R",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/8daa17dd-25dc-3347-a886-f00526c79022/TITLE_ART_3_4/640/480?language=eng&territory=US&version=a8d767bb-6a09-3187-b21b-8efd889e0722&output-format=webp",
+        "description": "8 Mile is a gripping drama that follows the struggles of Jimmy Smith Jr., a young man from Detroit trying to make a name for himself in the rap scene. Set against the backdrop of the city's gritty underground hip-hop culture, Jimmy battles personal demons and societal obstacles as he pursues his dream of becoming a successful rapper. With raw emotion and powerful performances, 8 Mile is a tale of determination, resilience, and the power of self-expression.",
+        "genre": ["drama", "music"],
+        "link": "https://www.peacocktv.com/watch-online/movies/8-mile/5fe50394-8758-3d89-92c8-3147b7ca522d",
+        "director": [{
+          "name": "Curtis Hanson",
+          "image": "https://variety.com/wp-content/uploads/2015/03/curtis-hanson-dead1.jpg?w=1000",
+          "imdb": "https://www.imdb.com/name/nm0001310/"
+        }],
+        "actors": [{
+          "name": "Eminem",
+          "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6XSiyGcXWei4bA4Lu96214yjOjx90SEXbg-udQNpMiGyShSrB",
+          "imdb": "https://www.imdb.com/name/nm0004896/"
+        }, {
+          "name": "Kim Basinger",
+          "image": "https://nationaltoday.com/wp-content/uploads/2022/11/59-Kim-Basinger-1200x834.jpg",
+          "imdb": "https://www.imdb.com/name/nm0000107/"
+        }, {
+          "name": "Mekhi Phifer",
+          "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTCy4ZKMCv2GbHeraJ54RuGPHAxRoefaV7Ffp7ZG14vYt0ElsOE1Z-ZdcpRFC2P0KxcbQnX2P1Ou1vAZhk",
+          "imdb": "https://www.imdb.com/name/nm0001615/"
+        }, {
+          "name": "Brittany Murphy",
+          "image": "https://cdn.jwplayer.com/v2/media/WvlZoNIO/poster.jpg?width=720",
+          "imdb": "https://www.imdb.com/name/nm0005261/"
+        }
+        ]
+      }
+      ,
+      {
+        "item": "111115",
+        "title": "9 to 5",
+        "runtime": 109,
+        "mpaa": "PG",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/49746fa5-ead3-3c82-983c-bc905b7638a5/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=e7067512-8132-33ae-a4d9-e484aa0a9325&output-format=webp",
+        "description": "9 to 5 is a classic workplace comedy that follows the misadventures of three women - Judy, Violet, and Doralee - who team up to overthrow their sexist and egotistical boss. Frustrated by his chauvinistic behavior, the trio takes matters into their own hands, concocting hilarious schemes to teach him a lesson while revolutionizing the workplace in the process. With its sharp wit, memorable performances, and timeless message of female empowerment, 9 to 5 remains a beloved comedy favorite.",
+        "genre": ["comedy"],
+        "link": "https://www.peacocktv.com/watch-online/movies/9-to-5/db423ac8-88f4-353d-9e4c-04df41dc6689",
+        "director": [{
+          "name": "Colin Higgins",
+          "image": "https://m.media-amazon.com/images/M/MV5BZGMxMTg0NTItNzY3Ni00Y2FkLThjYTYtOWViMGMwM2M3N2IxXkEyXkFqcGdeQXVyMTEwODg2MDY@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm0383484/"
+        }],
+        "actors": [{
+          "name": "Jane Fonda",
+          "image": "https://media.vanityfair.com/photos/63e6611d8f7ab1e0a87404f2/master/w_2560%2Cc_limit/Jane%2520Fonda%2520HnM.jpg",
+          "imdb": "https://www.imdb.com/name/nm0000404/"
+        }, {
+          "name": "Lily Tomlin",
+          "image": "https://m.media-amazon.com/images/M/MV5BNDM3OTU2YzItMmNkYy00MTA3LTk5NmEtMzQ3ZTFiYTdlZmZjXkEyXkFqcGdeQW1pYnJ5YW50._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm0005499/"
+        }, {
+          "name": "Dolly Parton",
+          "image": "https://static.foxbusiness.com/foxbusiness.com/content/uploads/2023/11/DollyPartonDallasCowboys.jpg",
+          "imdb": "https://www.imdb.com/name/nm0000573/"
+        }]
+      }
+      ,
+      {
+        "item": "P911",
+        "title": "9/11",
+        "runtime": 90,
+        "mpaa": "R",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/14ddceb3-ec94-3701-8327-2bf8b37e1ba4/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=8a01125b-b3c9-3319-b901-35bc2689be48&output-format=webp",
+        "description": "9/11 is a gripping drama that unfolds in the aftermath of the tragic events of September 11, 2001. The film follows five strangers trapped in an elevator inside the World Trade Center's North Tower during the terrorist attacks. As they struggle to survive and come to terms with the harrowing reality unfolding outside, tensions rise, and bonds are formed amidst the chaos. With its powerful performances and poignant storytelling, 9/11 offers a raw and emotional portrayal of hope and humanity in the face of unspeakable tragedy.",
+        "genre": ["drama", "thriller", "history"],
+        "link": "https://www.peacocktv.com/watch-online/movies/911/7bcce21c-47a6-3b91-bea9-f36872db7e6e",
+        "director": [{
+          "name": "Martin Guigui",
+          "image": "https://images.squarespace-cdn.com/content/v1/60285869663ff80493496a21/1630539583825-U2CNMJXCAPE5HUQXC14Y/Screen+Shot+2021-09-01+at+4.39.31+PM.png",
+          "imdb": "https://www.imdb.com/name/nm0345865/"
+        }],
+        "actors": [{
+          "name": "Charlie Sheen",
+          "image": "https://cdn.24.co.za/files/Cms/General/d/9463/12eba3f95f2a4090a6a40b4ba391e26d.jpg",
+          "imdb": "https://www.imdb.com/name/nm0000221/"
+        }, {
+          "name": "Whoopi Goldberg",
+          "image": "https://achievement.org/wp-content/uploads/2016/10/2-tumblr_nbyuw3x3bY1rujq2eo1_1280.jpg",
+          "imdb": "https://www.imdb.com/name/nm0000155/"
+        }, {
+          "name": "Gina Gershon",
+          "image": "https://imgc.allpostersimages.com/img/posters/gina-gershon_u-L-PW5V9T0.jpg?artHeight=350&artPerspective=n&artWidth=550&background=fbfbfb",
+          "imdb": "https://www.imdb.com/name/nm0000155/"
+        }]
+      }
+      ,
+      {
+        "item": "5832",
+        "title": "99 Homes",
+        "runtime": 112,
+        "mpaa": "R",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/c8a50c7a-d4ef-310e-893e-0867bf59777e/TITLE_ART_3_4/640/480?language=eng&territory=US&version=2e769952-b5a5-370a-af8c-ba73928d8f86&output-format=webp",
+        "description": "After being evicted from his home, a father struggles to get it back by working for the greedy real estate broker who's the source of his frustration.",
+        "genre": ["drama", "thriller"],
+        "link": "https://www.peacocktv.com/watch-online/movies/99-homes/454a3245-41b6-3ebf-9ef7-fb0f64e29f61",
+        "director": [{
+          "name": "Ramin Bahrani",
+          "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQJbaJYN9Z1Vdy831spH_HYQQmMg5uts_D1Y7aDopIC_K02CsUj809vvUcfOH7Oz8KmqBIqxH4pSs8tEJI",
+          "imdb": "https://www.imdb.com/name/nm1176096/"
+        }],
+        "actors": [{
+            "name": "Andrew Garfield",
+            "image": "https://media.vanityfair.com/photos/629e56c32347921cee05b4aa/16:9/w_2560%2Cc_limit/andrew-garfield-lgm.jpg",
+            "imdb": "https://www.imdb.com/name/nm1940449/"
+          }, {
+            "name": "Michael Shannon",
+            "image": "https://i.insider.com/648f0d3751ea980019d6c580?width=700",
+            "imdb": "https://www.imdb.com/name/nm0788335/"
+          }, {
+            "name": "Laura Dern",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz8B1L_gE8-8JVy9hp_U0BE_s0XTMEloq5JGv5dQAGBXBERFig",
+            "imdb": "https://www.imdb.com/name/nm0000368/"
+          }, {
+            "name": "Noah Lomax",
+            "image": "https://i0.wp.com/thekoalition.com/images/2020/09/Screenshot-2020-09-27-at-4.47.12-PM.png?fit=747%2C497&ssl=1",
+            "imdb": "https://www.imdb.com/name/nm2849872/"
+          }]
+      }
     ,
     {
-      "item": "130",
-      "title": "One for the Money",
-      "runtime": 91,
-      "mpaa": "PG-13",
-      "poster": "https://imageservice.disco.peacocktv.com/uuid/4a4c81af-dd1e-3dbd-b831-253d33b32ada/TITLE_ART_16_9?language=eng&territory=US&proposition=NBCUOTT&version=26ec94fd-64d6-3275-995e-468fc86db061",
-      "description": "Unemployed and newly-divorced Stephanie Plum lands a job at her cousin's bail-bond business, where her first assignment puts her on the trail of a wanted local cop from her romantic past.",
-      "genre": ["comedy", "crime", "mystery"],
-      "link": "https://www.peacocktv.com/watch-online/movies/one-for-the-money/26b026f1-6883-3b73-81a6-32ef0824b6eb",
+      "item": "7621",
+      "title": "A Child's Christmas in Wales",
+      "runtime": 55,
+      "mpaa": "Not Rated",
+      "poster": "https://imageservice.disco.peacocktv.com/uuid/1d2c14dd-78bb-3671-9cda-67e3a6b82664/TITLE_ART_3_4/640/480?language=eng&territory=US&version=03d5af09-79fc-33ba-8292-dc676e9828cf&output-format=webp",
+      "description": "Based on the classic story by Dylan Thomas, this film recalls a Christmas from the viewpoint of a young boy in Wales.",
+      "genre": ["drama", "family", "christmas"],
+      "link": "https://www.peacocktv.com/watch-online/movies/a-childs-christmas-in-wales/8510b396-f5bf-3ce7-b0c6-a74dcd16d8f8",
       "director": [{
-        "name": "Julie Anne Robinson",
-        "image": "https://m.media-amazon.com/images/M/MV5BNGMxNWM3ODAtYzI1Yi00ZGRmLTlmMWQtNzc4M2FkNWU2M2I0XkEyXkFqcGdeQXVyMjk3NTUyOTc@._V1_.jpg",
-        "imdb": "https://www.imdb.com/name/nm0732966/"
+        "name": "Donovan Cook",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTQyODEyMDk1NF5BMl5BanBnXkFtZTYwOTYyOTAz._V1_.jpg",
+        "imdb": "https://www.imdb.com/name/nm0177124/"
       }],
       "actors": [{
-        "name": "Katherine Heigl",
-        "image": "https://media.zenfs.com/en/bang_showbiz_628/3556a4b24c2928e8c1973e304d5c3a1b",
-        "imdb": "https://www.imdb.com/name/nm0001337/"
-      }, {
-        "name": "Jason O'Mara",
-        "image": "https://www.hollywoodreporter.com/wp-content/uploads/2016/08/jason_omara_getty_h_2016.jpg?w=1296",
-        "imdb": "https://www.imdb.com/name/nm0641924/"
-      }, {
-        "name": "Daniel Sunjata",
-        "image": "https://www.essence.com/wp-content/uploads/2022/01/PTQ2_203_040921_0141_a_1800x1200.jpg",
-        "imdb": "https://www.imdb.com/name/nm0838971/"
-      }, {
-        "name": "John Leguizamo",
-        "image": "https://images.hola.com/us/images/027f-17a87ad07fda-6c31393b7469-1000/horizontal-1200/prime-video-39-s-quot-the-power-quot-new-york-premiere.jpg",
-        "imdb": "https://www.imdb.com/name/nm0000491/"
-      }]
-    }
+          "name": "Denholm Elliott",
+          "image": "https://cdn.britannica.com/33/254833-050-272A166C/english-actor-denholm-elliott-roles-in-indiana-jones-films.jpg",
+          "imdb": "https://www.imdb.com/name/nm0001185/"
+        }, {
+          "name": "Mathonwy Reeves",
+          "image": "https://images.mubicdn.net/images/film/128849/cache-179123-1703516464/image-w1280.jpg?size=400x",
+          "imdb": "https://www.imdb.com/name/nm0716227/"
+        }, {
+          "name": "Glynis Davies",
+          "image": "https://static.wikia.nocookie.net/stargate/images/2/29/Glynis_Davies.jpg/revision/latest/scale-to-width-down/1200?cb=20150527040334",
+          "imdb": "https://www.imdb.com/name/nm0204036/"
+        }]
+    }  
     ,
     {
-      "item": "131",
-      "title": "13 Assassins",
-      "runtime": 141,
+      "item": "1267",
+      "title": "Steel Country",
+      "runtime": 89,
       "mpaa": "R",
-      "poster": "https://imageservice.disco.peacocktv.com/uuid/a2496c62-690d-37c8-988e-10e92d5ebe74/LAND_16_9?language=eng&territory=US&proposition=NBCUOTT&version=7594b1ba-582d-3f29-831d-55ffa5130cf0",
-      "description": "A group of assassins come together for a suicide mission to kill an evil lord.",
-      "genre": ["action", "drama", "thriller", "history", "foreign"],
-      "link": "https://www.peacocktv.com/watch-online/movies/13-assassins/8dc180d6-9168-3013-aae2-24c58c9f9c55",
+      "poster": "https://imageservice.disco.peacocktv.com/uuid/64d2f2a5-ad1f-3c68-a9f2-e69e41db4617/TITLE_ART_3_4/640/480?language=eng&territory=US&version=77ae084d-639e-3f51-8e83-2df08e3e8b61&output-format=webp",
+      "description": "When a young boy's body is found in a small Pennsylvania town, a local sanitation truck driver becomes obsessed with finding out the truth behind his death.",
+      "genre": ["mystery", "thriller", "drama"],
+      "link": "https://www.peacocktv.com/watch-online/movies/a-dark-place/debcdc7e-3011-3c48-a4e9-7c55b38a2b41",
       "director": [{
-        "name": "Takashi Miike",
-        "image": "https://variety.com/wp-content/uploads/2022/10/Miike-Connect-2-lcr-res.jpg?w=1024",
-        "imdb": "https://www.imdb.com/name/nm0586281/"
+        "name": "Simon Fellows",
+        "image": "https://media.gettyimages.com/id/91466057/photo/barcelona-spain-directors-tom-shankland-paul-solet-and-simon-fellows-attend-the-photocall-for.jpg?s=612x612&w=gi&k=20&c=ealJulT_U7IT2STr3DjrgrEW81XUlcnG3TtNjSSTvJo=",
+        "imdb": "https://www.imdb.com/name/nm0271490/"
       }],
       "actors": [{
-        "name": "Koji Yakusho",
-        "image": "https://i0.wp.com/www.thewrap.com/wp-content/uploads/2023/12/CMS-Koji-Yakusho.jpg?fit=990%2C557&ssl=1",
-        "imdb": "https://www.imdb.com/name/nm0946473/"
+          "name": "Andrew Scott",
+          "image": "https://www.out.com/media-library/andrew-scott-sexy-gay-actor.gif?id=51061892&width=210",
+          "imdb": "https://www.imdb.com/name/nm0778831/"
+        }, {
+          "name": "Bronagh Waugh",
+          "image": "https://www.the-sun.com/wp-content/uploads/sites/6/2021/04/NINTCHDBPICT000646159390.jpg?w=620",
+          "imdb": "https://www.imdb.com/name/nm0914570/"
+        }, {
+          "name": "Denise Gough",
+          "image": "https://i2-prod.irishstar.com/incoming/article29841719.ece/ALTERNATES/s615b/2_FpR-J88aMAEOaAJjpeg.jpg",
+          "imdb": "https://www.imdb.com/name/nm1601667/"
+        }]
+    }
+      ,
+      {
+        "item": "2354",
+        "title": "A Faster Horse",
+        "runtime": 90,
+        "mpaa": "Not Rated",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/036c289f-1b5d-3c10-a3e6-32c9d32ba424/TITLE_ART_3_4/640/480?language=eng&territory=US&version=0c23b372-200a-3362-9982-bd5934569b0d&output-format=webp",
+        "description": "This documentary explores the creation and development of the iconic Ford Mustang, tracing its history and impact on American culture.",
+        "genre": ["documentary"],
+        "link": "https://www.peacocktv.com/watch-online/movies/documentary/a-faster-horse/64a4cd4c-145c-3b87-a02c-9d79a0d3989c",
+        "director": [{
+          "name": "David Gelb",
+          "image": "https://m.media-amazon.com/images/M/MV5BMjAyMDgzNDYzOF5BMl5BanBnXkFtZTgwNTIzMzIzNTE@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm3125244/"
+        }],
+        "actors": []
+      }
+      ,
+      {
+        "item": "7890",
+        "title": "A Friend Of The Family: True Evil",
+        "runtime": 89,
+        "mpaa": "Not Rated",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/f7119a72-7de3-3bba-a604-59e39ba526ff/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=ee00b9c5-c789-3a8f-990d-7ca3f852a43c&output-format=webp",
+        "description": "",
+        "genre": ["documentary", "crime"],
+        "link": "https://www.peacocktv.com/watch-online/movies/a-friend-of-the-family-true-evil/9e88bb51-7181-3335-aac7-89ed3ef00f09",
+        "director": [{
+          "name": "Eliza Hittman",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUmSadTDCqkdGT7y0EoteKHgZqRIJKCYppnGGDDABEe8LuBLW3",
+          "imdb": "https://www.imdb.com/name/nm2151374/"
+        }],
+        "actors": []
+      }
+      ,
+      {
+        "item": "4367",
+        "title": "A Guide to Recognizing Your Saints",
+        "runtime": 100,
+        "mpaa": "R",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/292f44c3-aed4-3dac-9c6c-49422bc7dfb4/TITLE_ART_3_4/640/480?language=eng&territory=US&version=d3bd9da7-a8a3-3b42-94c0-72c5c44194e3&output-format=webp",
+        "description": "This drama follows a young man who returns to his old neighborhood in Queens, New York, to confront the past and the people who shaped him.",
+        "genre": ["drama"],
+        "link": "https://www.peacocktv.com/watch-online/movies/drama/a-guide-to-recognizing-your-saints/38abd747-d6df-3cce-bae8-c0653d471bce",
+        "director": [{
+          "name": "Dito Montiel",
+          "image": "https://variety.com/wp-content/uploads/2018/08/dito-montiel.jpg",
+          "imdb": "https://www.imdb.com/name/nm0593230/"
+        }],
+        "actors": [{
+          "name": "Robert Downey Jr.",
+          "image": "https://www.hollywoodreporter.com/wp-content/uploads/2023/06/Robert-Downey-Jr.-Getty-H-2023.jpg?w=1296",
+          "imdb": "https://www.imdb.com/name/nm0000375/"
+          }, {
+            "name": "Shia LaBeouf",
+            "image": "https://media.cnn.com/api/v1/images/stellar/prod/220826104837-shia-labeouf-file-2019.jpg?c=original",
+            "imdb": "https://www.imdb.com/name/nm0479471/"
+          }, {
+            "name": "Rosario Dawson",
+            "image": "https://res.cloudinary.com/graham-media-group/image/upload/f_auto/q_auto/c_thumb,w_700/v1/production/public/JIPZ5WTBS5ENJJWY4EZ534XZSY.jpg?_a=ATAPphC0",
+            "imdb": "https://www.imdb.com/name/nm0206257/"
+          }]
+      }
+      ,
+      {
+        "item": "5392",
+        "title": "A Long Way Down",
+        "runtime": 96,
+        "mpaa": "R",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/7ac71ee0-dbbe-3c18-ab37-4ebba0d5fbe1/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=43b5d5fc-9ce4-3c0c-9f77-971ce06b3949&output-format=webp",
+        "description": "Four strangers meet on New Year's Eve atop a London building, each intending to commit suicide. However, their plans are thwarted when they form a bond and make a pact to stay alive until Valentine's Day.",
+        "genre": ["comedy", "drama"],
+        "link": "https://www.peacocktv.com/watch-online/movies/a-long-way-down/291640df-4c74-3bfa-af94-68638d2e82f1",
+        "director": [{
+          "name": "Pascal Chaumeil",
+          "image": "https://m.media-amazon.com/images/M/MV5BMjIwMzQ1OTUyNl5BMl5BanBnXkFtZTgwNDQ1NDc2MTE@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm0153929/"
+        }],
+        "actors": [{
+            "name": "Pierce Brosnan",
+            "image": "https://imgs.smoothradio.com/images/324652?width=1950&crop=4_3&signature=7tzaQJptvNXCtWNbAWY-E8i_3dA=",
+            "imdb": "https://www.imdb.com/name/nm0000112/"
+          }, {
+            "name": "Toni Collette",
+            "image": "https://variety.com/wp-content/uploads/2021/03/Toni-Collette.jpg",
+            "imdb": "https://www.imdb.com/name/nm0001057/"
+          }, {
+            "name": "Imogen Poots",
+            "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVvu8RUf6udHTeQvE-IzPpkbJqT-h4WTCBEC6YA9w2WrSAvSjP",
+            "imdb": "https://www.imdb.com/name/nm1602660/"
+          }]
+      },
+      {
+        "item": "7314",
+        "title": "A Little Trip to Heaven",
+        "runtime": 98,
+        "mpaa": "R",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/8c3d490f-076e-3476-abfa-7b8aee037dbf/TITLE_ART_3_4/640/480?language=eng&territory=US&version=ed63588c-8a32-375b-8947-c747be8cac56&output-format=webp",
+        "description": "A claims investigator for an insurance company travels to a small town in Iceland to verify the death of a man whose life insurance policy is worth millions. As he delves deeper into the case, he uncovers a web of deception and murder.",
+        "genre": ["drama", "thriller", "crime"],
+        "link": "https://www.peacocktv.com/watch-online/movies/thriller/a-little-trip-to-heaven/8578ffe5-3ef0-3dca-97ef-4685d38fdbcc",
+        "director": [{
+          "name": "Baltasar Kormákur",
+          "image": "https://variety.com/wp-content/uploads/2013/08/baltasar-kormakur-photo-6-20-13.jpg?w=1000&h=563&crop=1",
+          "imdb": "https://www.imdb.com/name/nm0461872/"
+        }],
+        "actors": [{
+            "name": "Forest Whitaker",
+            "image": "https://oyster.ignimgs.com/wordpress/stg.ign.com/2015/06/maxresdefault2.jpg",
+            "imdb": "https://www.imdb.com/name/nm0001845/"
+          }, {
+            "name": "Julia Stiles",
+            "image": "https://ew.com/thmb/IxgG-FFcCnrGllHigRoo_8F-tao=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/julia-stiles_0-79f4c55fe38f437cbc6d96d4cdc92386.jpg",
+            "imdb": "https://www.imdb.com/name/nm0005466/"
+          }, {
+            "name": "Jeremy Renner",
+            "image": "https://www.rgj.com/gcdn/presto/2023/04/14/PREN/32184f0b-f20b-4c1f-8f9a-c9eebc45104b-REN_JEREMY_RENNER_04.JPG?width=660&height=371&fit=crop&format=pjpg&auto=webp",
+            "imdb": "https://www.imdb.com/name/nm0719637/"
+          }]
+      }
+      ,
+      {
+        "item": "8792",
+        "title": "A League of Their Own",
+        "runtime": 128,
+        "mpaa": "PG",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/dcc6f270-24cf-3b73-ae64-d804f3ffafae/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=7acf3368-de8a-3c60-8bb5-b2c7995cde11&output-format=webp",
+        "description": "During World War II, with many professional baseball players joining the armed forces, a women's baseball league is formed. The film follows the Rockford Peaches and their journey through the league's inaugural season, highlighting the challenges they face both on and off the field.",
+        "genre": ["comedy", "drama", "sport"],
+        "link": "https://www.peacocktv.com/watch-online/movies/a-league-of-their-own/6069c9be-5728-365c-836e-308729a7a951",
+        "director": [{
+          "name": "Penny Marshall",
+          "image": "https://www.ocregister.com/wp-content/uploads/2018/12/GettyImages-1350245831.jpg?w=620",
+          "imdb": "https://www.imdb.com/name/nm0001508/"
+        }],
+        "actors": [{
+            "name": "Tom Hanks",
+            "image": "https://variety.com/wp-content/uploads/2019/11/tom-hanks-16x9.jpg?w=1000",
+            "imdb": "https://www.imdb.com/name/nm0000158/"
+          }, {
+            "name": "Geena Davis",
+            "image": "https://images.seattletimes.com/wp-content/uploads/2022/05/urn-publicid-ap-org-6eb60eb404aeb8587c983d9edd19e38bBooks_Geena_Davis_72558.jpg?d=2040x1494",
+            "imdb": "https://www.imdb.com/name/nm0000133/"
+          }, {
+            "name": "Lori Petty",
+            "image": "https://ew.com/thmb/A91Ee2X3MQiOGoqqz3E4bQwyJHU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/point-break-lori-petty-5aadd40800244c6983f47b27afb4a519.jpg",
+            "imdb": "https://www.imdb.com/name/nm0001615/"
+          }, {
+            "name": "Madonna",
+            "image": "https://variety.com/wp-content/uploads/2024/03/madonna-GettyImages-1736271104-e1709666829226.jpg?w=1000&h=563&crop=1",
+            "imdb": "https://www.imdb.com/name/nm0000187/"
+          }]
+      },
+      {
+        "item": "5914",
+        "title": "A Map of the World",
+        "runtime": 125,
+        "mpaa": "R",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/f11e7805-b5a5-3320-807a-40ed08d8cdc4/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=b6a70f05-bdf1-3bb5-b176-81beaa66739c&output-format=webp",
+        "description": "A rural Wisconsin couple's lives are shattered when their daughter's friend drowns in their pond and their best friend is accused of abusing their children.",
+        "genre": ["drama"],
+        "link": "https://www.peacocktv.com/watch-online/movies/drama/a-map-of-the-world/31a804f8-0ca4-3f22-829e-cc154934289f",
+        "director": [{
+          "name": "Scott Elliott",
+          "image": "https://assets.playbill.com/editorial/_articleLeadImage/e53c2df8d5e8742279b010237b467b54-newdramat16.jpg",
+          "imdb": "https://www.imdb.com/name/nm0254305/"
+        }],
+        "actors": [{
+            "name": "Sigourney Weaver",
+            "image": "https://ew.com/thmb/-ongROf-gKybPgetJRMh5jV96yk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ghostbusters-02-6796c544dc2443578df3b5370640d2f5.jpg",
+            "imdb": "https://www.imdb.com/name/nm0000244/"
+          }, {
+            "name": "Julianne Moore",
+            "image": "https://www.livingwellmag.com/wp-content/uploads/2016/05/Julianne-Moore.jpg",
+            "imdb": "https://www.imdb.com/name/nm0000194/"
+          }, {
+            "name": "David Strathairn",
+            "image": "https://facts.net/wp-content/uploads/2023/10/16-astounding-facts-about-david-strathairn-1697336945.jpg",
+            "imdb": "https://www.imdb.com/name/nm0000657/"
+          }]
+      },
+      {
+        "item": "3847",
+        "title": "A Rainy Day in New York",
+        "runtime": 92,
+        "mpaa": "PG-13",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/183e6270-2bd0-34ea-97d8-4f9ae44c3181/TITLE_ART_3_4/640/480?language=eng&territory=US&version=5d94bd28-bc7b-3a37-9504-171ffa0db009&output-format=webp",
+        "description": "Two young people, Gatsby and Ashleigh, spend a weekend in New York City where their romantic and career aspirations clash with the realities of adulthood.",
+        "genre": ["comedy", "romance"],
+        "link": "https://www.peacocktv.com/watch-online/movies/comedy/a-rainy-day-in-new-york/090f687d-477d-3256-9e44-e4ce378bc01d",
+        "director": [{
+          "name": "Woody Allen",
+          "image": "https://deadline.com/wp-content/uploads/2023/09/woody-allen-soon-yi-previn.jpg",
+          "imdb": "https://www.imdb.com/name/nm0000095/"
+        }],
+        "actors": [{
+            "name": "Timothée Chalamet",
+            "image": "https://m.media-amazon.com/images/M/MV5BNThiOTM4NTAtMDczNy00YzlkLWJhNTEtZTZhNDVmYzlkZWI0XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg",
+            "imdb": "https://www.imdb.com/name/nm3154303/"
+          }, {
+            "name": "Elle Fanning",
+            "image": "https://hips.hearstapps.com/hmg-prod/images/elle-fanning-attends-the-6th-annual-instyle-awards-on-news-photo-1637084431.jpg?crop=1xw:0.78537xh;center,top",
+            "imdb": "https://www.imdb.com/name/nm1102577/"
+          }, {
+            "name": "Selena Gomez",
+            "image": "https://assets.teenvogue.com/photos/646a4a3a51b8bb13dc4475d4/16:9/w_2560%2Cc_limit/1455627681",
+            "imdb": "https://www.imdb.com/name/nm1411125/"
+          }]
+      },
+      {
+        "item": "9275",
+        "title": "Addicted to Fresno",
+        "runtime": 85,
+        "mpaa": "R",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/983c9af2-6bf9-3d81-94e0-0ef03a8885b4/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=40fb7e3a-04bb-3ab2-8a19-56265c5023fe&output-format=webp",
+        "description": "Sisters Shannon and Martha accidentally kill a guest while working at a hotel in Fresno, California. As they try to cover up the crime, their lives spiral out of control.",
+        "genre": ["comedy", "crime"],
+        "link": "https://www.peacocktv.com/watch-online/movies/comedy/addicted-to-fresno/8067e94b-f493-3463-aa97-20dd0cff50ef",
+        "director": [{
+          "name": "Jamie Babbit",
+          "image": "https://shaker.life/wp-content/uploads/2017/04/Jamie_CoverPic.jpg",
+          "imdb": "https://www.imdb.com/name/nm0044796/"
+        }],
+        "actors": [{
+            "name": "Natasha Lyonne",
+            "image": "https://media.npr.org/assets/img/2023/01/27/gettyimages-14566283971_wide-3c03ce4ee0a594f9db3643abd2530b1ccad83df8.jpg",
+            "imdb": "https://www.imdb.com/name/nm0005169/"
+          }, {
+            "name": "Judy Greer",
+            "image": "https://media.vanityfair.com/photos/55b8f5d79e9755183d97bed0/1:1/w_957,h_638,c_limit/a-judy-greer-jurassic-world-tomorrowland-antman.jpg",
+            "imdb": "https://www.imdb.com/name/nm0339460/"
+          }, {
+            "name": "Aubrey Plaza",
+            "image": "https://static.wikia.nocookie.net/snl/images/c/ce/Aubrey-Plaza.jpeg/revision/latest?cb=20230109042920",
+            "imdb": "https://www.imdb.com/name/nm2201555/"
+          }]
+      },
+      {
+        "item": "6318",
+        "title": "Afternoon Delight",
+        "runtime": 97,
+        "mpaa": "R",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/3fcc1fb2-01c6-3d4c-9310-749a1327e85f/TITLE_ART_3_4/640/480?language=eng&territory=US&version=43647785-f416-347b-bcf6-2d48dc78cd18&output-format=webp",
+        "description": "Rachel, a stay-at-home mom feeling unfulfilled, seeks to spice up her marriage by visiting a strip club. There, she meets McKenna, a young stripper, and decides to hire her as a live-in nanny, leading to unexpected consequences.",
+        "genre": ["comedy", "drama"],
+        "link": "https://www.peacocktv.com/watch-online/movies/comedy-drama/afternoon-delight/17f0935c-5c7e-358e-a1a4-be48a8d1c5af",
+        "director": [{
+          "name": "Jill Soloway",
+          "image": "https://media.gq.com/photos/5bcded2fd4f009539e0d94b2/master/pass/Jill-Soloway-interview-she-wants-it-memoir-gq.jpg",
+          "imdb": "https://www.imdb.com/name/nm0811181/"
+        }],
+        "actors": [{
+            "name": "Kathryn Hahn",
+            "image": "https://ew.com/thmb/1bHz8RV1b3LR1DWnlnOGJfDiH4g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Kathryn-Hahn-73fb8599864d45dbb0c065131220592a.jpg",
+            "imdb": "https://www.imdb.com/name/nm0352373/"
+            }, {
+              "name": "Juno Temple",
+              "image": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe44f6d2e-cc4f-11ea-b702-e559f69f5512.jpg?crop=5714%2C3214%2C162%2C296",
+              "imdb": "https://www.imdb.com/name/nm1013538/"
+            }, {
+              "name": "Josh Radnor",
+              "image": "https://people.com/thmb/lZnWSpFt3qDA88X7K3QwAX5xsg8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(911x369:913x371)/Josh-Radnors-Wedding-tout-012224-eb9f8b9ada734f53b65c73af7e3ad3bd.jpg",
+              "imdb": "https://www.imdb.com/name/nm0707/"
+            }, {
+            "name": "Jane Lynch",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTYzODY3OTg2MV5BMl5BanBnXkFtZTgwMjM3Nzg3NjM@._CR38,34,1984,1116_UX1248_UY702_QL75_UX500_CR0,0,500,281_.jpg",
+            "imdb": "https://www.imdb.com/name/nm0528331/"
+          }]
+      },
+      {
+        "item": "2719",
+        "title": "Basmati Blues",
+        "runtime": 106,
+        "mpaa": "Not Rated",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/40979f75-e826-33ad-a848-a77fc9c1b096/TITLE_ART_3_4/640/480?language=eng&territory=US&version=2e5883f9-e3b7-374c-8642-da0e25bcb5e2&output-format=webp",
+        "description": "A young scientist is sent to India to sell genetically modified rice to rural farmers. However, as she learns more about the impact of her work on the local community and environment, she begins to question her company's motives.",
+        "genre": ["comedy", "romance", "musical"],
+        "link": "https://www.peacocktv.com/watch-online/movies/comedy/basmati-blues/9de5a0e5-ff0f-3b62-b956-f6942c50eb8a",
+        "director": [{
+          "name": "Dan Baron",
+          "image": "https://pyxis.nymag.com/v1/imgs/bcf/cec/cf5a4626de3c8a36c4f5953061b8b5aa14-06-basmati-blues-3.rsocial.w1200.jpg",
+          "imdb": "https://www.imdb.com/name/nm1573841/"
+        }],
+        "actors": [{
+            "name": "Brie Larson",
+            "image": "https://www.screengeek.net/wp-content/uploads/2023/04/brie-larson-1.jpg",
+            "imdb": "https://www.imdb.com/name/nm0488953/"
+          }, {
+            "name": "Utkarsh Ambudkar",
+            "image": "https://facts.net/wp-content/uploads/2023/07/34-facts-about-utkarsh-ambudkar-1690738729.jpg",
+            "imdb": "https://www.imdb.com/name/nm2431912/"
+          }, {
+            "name": "Scott Bakula",
+            "image": "https://i.guim.co.uk/img/media/680baf08ad1d73c171acd3af1b02a87eea497ada/0_288_2129_1277/master/2129.jpg?width=465&dpr=1&s=none",
+            "imdb": "https://www.imdb.com/name/nm0000835/"
+          }]
+      },
+      {
+        "item": "1254",
+        "title": "Behaving Badly",
+        "runtime": 97,
+        "mpaa": "R",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/af27c713-e302-3b9d-8f33-c436580e532f/TITLE_ART_3_4/640/480?language=eng&territory=US&version=33d83eab-76db-324b-b69c-cf1da0d2cdc0&output-format=webp",
+        "description": "Teenager Rick Stevens becomes infatuated with his friend's mother while dealing with various misadventures, including drug dealers, mobsters, and strippers.",
+        "genre": ["comedy", "crime"],
+        "link": "https://www.peacocktv.com/watch-online/movies/romance/behaving-badly/7bc09cca-d1f9-313a-a69a-430683d0eb8e",
+        "director": [{
+          "name": "Tim Garrick",
+          "image": "https://m.media-amazon.com/images/M/MV5BZTU4ZjQ3NmMtZjc5NC00MTY1LTkwYTEtMzlmOTBhZmE1YzI4XkEyXkFqcGdeQXVyMDY2MTg1MQ@@._V1_.jpg",
+          "imdb": "https://www.imdb.com/name/nm0308679/"
+        }],
+        "actors": [{
+            "name": "Nat Wolff",
+            "image": "https://deadline.com/wp-content/uploads/2019/03/nat-wolff.jpg",
+            "imdb": "https://www.imdb.com/name/nm1894936/"
+          }, {
+            "name": "Selena Gomez",
+            "image": "https://parade.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkzNDg3NzQzODQwNDI5NzU3/selena-gomez-net-worth.jpg",
+            "imdb": "https://www.imdb.com/name/nm1411125/"
+          }, {
+            "name": "Mary-Louise Parker",
+            "image": "https://people.com/thmb/cS6srJKVwCVfcSNS2FggTA3ryKA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(704x299:706x301)/Mary-Louise-Parker_01-815680ff39b64f6da48d9586c47ea194.jpg",
+            "imdb": "https://www.imdb.com/name/nm0000571/"
+          }]
+      }
+      ,
+      {
+        "item": "7458",
+        "title": "Death Becomes Her",
+        "runtime": 104,
+        "mpaa": "PG-13",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/b3daad96-523e-39fb-b764-e4728aae89aa/TITLE_ART_3_4/640/480?language=eng&territory=US&version=b8daf304-45a7-39a9-83ac-fe5188f233f9&output-format=webp",
+        "description": "In this dark comedy, two rivals, a fading actress and a writer, both drink a potion that promises eternal youth. However, they soon discover that immortality comes with unexpected consequences.",
+        "genre": ["comedy", "fantasy"],
+        "link": "https://www.peacocktv.com/watch-online/movies/comedy/death-becomes-her/fb6c2b9d-2d4f-3a26-8659-b5123b26c11c",
+        "director": [{
+          "name": "Robert Zemeckis",
+          "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcT5u8sjV1AbBhjSgq2QV0XmosLZfjdcxpebi41ZTZjnHcBu5NM-mKO_eN-KtmMfrSt54Yp5gUQXDzdbHb4",
+          "imdb": "https://www.imdb.com/name/nm0000709/"
+        }],
+        "actors": [{
+            "name": "Meryl Streep",
+            "image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRqC_eLgeqOO6G9MIyuy4rSNP0qjOyP2lGuEbAniOY20uEQW5FrSAxdls0mN187JOwW8MERxHJQ4oiE338",
+            "imdb": "https://www.imdb.com/name/nm0000658/"
+          }, {
+            "name": "Goldie Hawn",
+            "image": "https://images.squarespace-cdn.com/content/v1/59f76c9af14aa1219138e485/1708359395995-L85XTN21199V7TKPL0OL/GoldieHawn-21.jpg",
+            "imdb": "https://www.imdb.com/name/nm0000445/"
+          }, {
+            "name": "Bruce Willis",
+            "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLg_SIgxsuQOn9hifx7kAH4YJK4Mdl3ulS-5nzfMDHjDIwxgNb",
+            "imdb": "https://www.imdb.com/name/nm0000246/"
+          }]
+      }
+      ,
+      {
+        "item": "5987",
+        "title": "Delirious",
+        "runtime": 107,
+        "mpaa": "Not Rated",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/e1de0fac-f9e7-3641-b5ce-322eececb718/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=9dc276e3-5894-36dc-a822-aa078d2668e5&output-format=webp",
+        "description": "A homeless man befriends a celebrity photographer and gets a job as his assistant. As he becomes more involved in the celebrity world, their relationship becomes strained.",
+        "genre": ["comedy", "drama"],
+        "link": "https://www.peacocktv.com/watch-online/movies/delirious/de141f37-d980-3174-ae7f-afd250faddfb",
+        "director": [{
+          "name": "Tom DiCillo",
+          "image": "https://geekwithclipons.files.wordpress.com/2020/07/img_7043.png?w=840",
+          "imdb": "https://www.imdb.com/name/nm0225219/"
+        }],
+        "actors": [{
+          "name": "Steve Buscemi",
+          "image": "https://media.gq.com/photos/5ec54119c3bdb476c711d4c0/16:9/w_1280,c_limit/steve-buscemi-gq-june-july-2020-02-16x9.jpg",
+          "imdb": "https://www.imdb.com/name/nm0000114/"
+        }, {
+          "name": "Michael Pitt",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBQwna8jqAslelLvbm65r3LxyHtkSz4u6vQDrtG7Sji-lv--Rk",
+          "imdb": "https://www.imdb.com/name/nm0685854/"
+        }]
+      },
+      {
+        "item": "7856",
+        "title": "Egg",
+        "runtime": 90,
+        "mpaa": "Not Rated",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/2c501f89-56ad-3f04-9e52-cdb104c541a9/TITLE_ART_3_4/640/480?language=eng&territory=US&version=c13991a5-9a7b-3c54-9799-617a3e36eb3b&output-format=webp",
+        "description": "A comedic look at the complexities of female friendship and motherhood, as two artistic couples come together to discuss parenthood over dinner.",
+        "genre": ["comedy", "drama"],
+        "link": "https://www.peacocktv.com/watch-online/movies/egg/dedee6d3-8285-38a0-bebb-81635015d179",
+        "director": [{
+          "name": "Marianna Palka",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2GywDUvUE4xhx9SIr5-vKDccQf-d1-98qtMN85VBg9eKF8B5o",
+          "imdb": "https://www.imdb.com/name/nm1702442/"
+        }],
+        "actors": [{
+          "name": "Christina Hendricks",
+          "image": "https://static.independent.co.uk/2023/12/15/08/GettyImages-1205172956.jpg",
+          "imdb": "https://www.imdb.com/name/nm0376716/"
+        }, {
+          "name": "Alysia Reiner",
+          "image": "https://www.kveller.com/wp-content/uploads/2019/11/reiner6.jpg",
+          "imdb": "https://www.imdb.com/name/nm0717613/"
+        }]
+      }
+      ,
+      {
+        "item": "3974",
+        "title": "Fear of a Black Hat",
+        "runtime": 88,
+        "mpaa": "R",
+        "poster": "https://imageservice.disco.peacocktv.com/uuid/edee143d-d906-398f-add6-4cb2390c996f/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=998d40d1-a7c8-38e0-aae4-528d24dda94a&output-format=webp",
+        "description": "A mockumentary that satirizes the world of hip hop, following the rise and fall of the rap group NWH (Niggaz With Hats) as they navigate the music industry.",
+        "genre": ["comedy", "music"],
+        "link": "https://www.peacocktv.com/watch-online/movies/comedy/fear-of-a-black-hat/935d471c-829b-3835-978c-cec7a033179d",
+        "director": [{
+          "name": "Rusty Cundieff",
+          "image": "https://app.blacklivingknowledge.com/wp-content/uploads/2016/02/rusty-cundieff.jpg",
+          "imdb": "https://www.imdb.com/name/nm0192112/"
+        }],
+        "actors": [{
+          "name": "Larry B. Scott",
+          "image": "https://facts.net/wp-content/uploads/2023/11/20-astounding-facts-about-larry-b-scott-1700031249.jpg",
+          "imdb": "https://www.imdb.com/name/nm0778750/"
+        }, {
+          "name": "Rusty Cundieff",
+          "image": "https://app.blacklivingknowledge.com/wp-content/uploads/2016/02/rusty-cundieff.jpg",
+          "imdb": "https://www.imdb.com/name/nm0192112/"
+        }, {
+          "name": "Mark Christopher Lawrence",
+          "image": "https://imengine.prod.srp.navigacloud.com/?uuid=bced944a-94d7-5d2d-b808-0fc26d909ebc&type=primary&q=72&width=960&height=720&function=cropresize&crop_w=0.99999&crop_h=0.6&x=1.0E-5&y=0.128",
+          "imdb": "https://www.imdb.com/name/nm0492961/"
+        }]
+      },
+    
+    {
+      "item": "5482",
+      "title": "Eternal Sunshine of the Spotless Mind",
+      "runtime": 108,
+      "mpaa": "R",
+      "poster": "https://imageservice.disco.peacocktv.com/uuid/2e26dbea-b75c-3722-8afc-949113bf7d7e/TITLE_ART_3_4/640/480?language=eng&territory=US&version=129157c9-ad62-3450-a1bb-0564c37c4096&output-format=webp",
+      "description": "After a painful breakup, Joel Barish decides to undergo a procedure to erase memories of his ex-girlfriend Clementine Kruczynski. As the process unfolds, Joel reconsiders his decision and fights to hold onto the memories of their tumultuous relationship.",
+      "genre": ["drama", "romance", "science-fiction"],
+      "link": "https://www.peacocktv.com/watch-online/movies/drama/eternal-sunshine-of-the-spotless-mind/788c8e18-2d35-355e-b9c5-f25133c76ae1",
+      "director": [{
+        "name": "Michel Gondry",
+        "image": "https://m.media-amazon.com/images/M/MV5BY2MzY2UwYmEtMDkwNC00MTM3LWJkZGYtYjljMjZkNTVkYjdlXkEyXkFqcGdeQXVyMTk5NTk1MDI@._V1_.jpg",
+        "imdb": "https://www.imdb.com/name/nm0327273/"
+      }],
+      "actors": [{
+          "name": "Jim Carrey",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8f8vfM285BNBppHh9aILItafPdiSyk4eJwF25L0MdPzY-HZ6K",
+          "imdb": "https://www.imdb.com/name/nm0000120/"
+        }, {
+          "name": "Kate Winslet",
+          "image": "https://people.com/thmb/CnN__ZQPUiWoOqMp7_mpMS4gNVo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x389:751x391)/cannes-kate-winslet-091922-c6e4e620bd014eeca15399d3462bd92d.jpg",
+          "imdb": "https://www.imdb.com/name/nm0000701/"
+        }, {
+          "name": "Tom Wilkinson",
+          "image": "https://ichef.bbci.co.uk/news/480/cpsprodpb/A84E/production/_130068034_tomwilkinsonjpeg.jpgcrop.jpg.webp",
+          "imdb": "https://www.imdb.com/name/nm0929489/"
+        }, {
+          "name": "Elijah Wood",
+          "image": "https://parade.com/.image/t_share/MjAyOTc0MzIxMzA2NTEwNDA0/elijah-wood-net-worth.jpg",
+          "imdb": "https://www.imdb.com/name/nm0000704/"
+        }]
+    },
+    {
+      "item": "3910",
+      "title": "American Psycho 2",
+      "runtime": 88,
+      "mpaa": "R",
+      "poster": "https://imageservice.disco.peacocktv.com/uuid/66323580-8da7-3b81-a30f-0b7f6d893555/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=73a1f247-eb50-3983-ad03-1f45a6a453e7&output-format=webp",
+      "description": "In this direct-to-video sequel to 'American Psycho,' a driven criminology student becomes obsessed with her professor and begins to eliminate anyone who stands in her way of becoming his teaching assistant.",
+      "genre": ["horror", "thriller", "comedy", "sequel"],
+      "link": "https://www.peacocktv.com/watch-online/movies/horror/american-psycho-ii-all-american-girl/549c73eb-6f24-365b-86f8-6d726bcfa2cd",
+      "director": [{
+        "name": "Morgan J. Freeman",
+        "image": "https://static01.nyt.com/images/2010/08/29/arts/29freeman-span/29freeman-span-articleLarge.jpg",
+        "imdb": "https://www.imdb.com/name/nm0293531/"
+      }],
+      "actors": [{
+        "name": "Mila Kunis",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1OlgZOAEREvkIiPGoDLAFknCi64mLLBzw7XuaWZwcr3guueme",
+        "imdb": "https://www.imdb.com/name/nm0005109/"
       }, {
-        "name": "Takayuki Yamada",
-        "image": "https://variety.com/wp-content/uploads/2018/10/takayuki-yamada-landscape-crop-rexfeatures_8861210z.jpg?w=1000&h=563&crop=1",
-        "imdb": "https://www.imdb.com/name/nm1061979/"
-      }, {
-        "name": "Yusuke Iseya",
-        "image": "https://i0.wp.com/www.celebrity-cutouts.com/wp-content/uploads/2018/11/yusuke-iseya-moustache-celebrity-mask.png?fit=1200%2C600&ssl=1",
-        "imdb": "https://www.imdb.com/name/nm1026949/"
-      }, {
-        "name": "Goro Inagaki",
-        "image": "https://m.media-amazon.com/images/M/MV5BN2FlOTBiNzctODFhOS00NmZiLTllMDItZmM2YjJiZTJkZTU3XkEyXkFqcGdeQXVyMTI3MDk3MzQ@._V1_.jpg",
-        "imdb": "https://www.imdb.com/name/nm0407598/"
+        "name": "William Shatner",
+        "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRqGypLfmTmtwtPC4kbBsVi71aMh26q4XkTjZpgoDlUmPKauet1e9-_Bpsn8c6OVfy43ZpzlrEiQ3bfXZI",
+        "imdb": "https://www.imdb.com/name/nm0000638/"
       }]
     },
     {
-      "item": "132",
-      "title": "Season of the Witch",
-      "runtime": 95,
-      "mpaa": "PG-13",
-      "poster": "https://imageservice.disco.peacocktv.com/uuid/0779b3d7-e8ae-3557-91be-b949e31b339b/TITLE_ART_3_4/640/480?language=eng&territory=US&version=69ff98d8-1cdf-390e-9d42-9d03735f5c32&output-format=webp",
-      "description": "A knight and his friend are tasked with transporting a suspected witch to a monastery, where monks will perform a ritual to rid her of her supposed powers.",
-      "genre": ["action", "adventure", "fantasy"],
-      "link": "https://www.peacocktv.com/watch-online/movies/season-of-the-witch/9671be41-ee42-3cda-915a-7000426940a5",
+      "item": "1923",
+      "title": "Birdemic: Shock and Terror",
+      "runtime": 93,
+      "mpaa": "Not Rated",
+      "poster": "https://imageservice.disco.peacocktv.com/uuid/306151f4-b6d4-36ec-93fd-ca3444684da7/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=a588fa72-f284-30d0-9aa8-33e5ef48ddf9&output-format=webp",
+      "description": "A romantic couple's date night is interrupted by a series of deadly bird attacks. As they struggle to survive, they join forces with other survivors in a fight against the avian menace.",
+      "genre": ["horror", "romance", "science-fiction", "comedy"],
+      "link": "https://www.peacocktv.com/watch-online/movies/birdemic-shock-and-terror/bd79975e-25c8-3d0d-8288-b88e7c3ec6e6",
       "director": [{
-        "name": "Dominic Sena",
-        "image": "https://c8.alamy.com/comp/F6HWN5/jul-23-2002-hollywood-ca-usa-director-dominic-sena-actor-delroy-lindo-F6HWN5.jpg",
-        "imdb": "https://www.imdb.com/name/nm0786485/"
+        "name": "James Nguyen",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd6GaIGyEv_nMcDulGESHtWQjJuL4jP4-a6rnP6gKxXcm-D62K",
+        "imdb": "https://www.imdb.com/name/nm2199030/"
       }],
       "actors": [{
-        "name": "Nicolas Cage",
-          "image": "https://variety.com/wp-content/uploads/2023/03/Nicolas-Cage-Variety-Award-092.jpg?w=1000&h=563&crop=1",
-          "imdb": "https://www.imdb.com/name/nm0000115/"
+        "name": "Alan Bagh",
+        "image": "https://m.media-amazon.com/images/M/MV5BYzM4NGFkNDMtNzA3MC00MGEwLTkyZDItNjI5N2RlMGIyMzVmXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg",
+        "imdb": "https://www.imdb.com/name/nm3247232/"
       }, {
-        "name": "Ron Perlman",
-        "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQEQMGZGDHTkHlBHShM7dMDS7THQOMZvXvstjDsXs_c1WeIdoQpPjMubbNEev4DhVBFgOl2cRF5ECKjOGY",
-        "imdb": "https://www.imdb.com/name/nm0000579/"
+        "name": "Whitney Moore",
+        "image": "https://m.media-amazon.com/images/M/MV5BODAwOTM4ZDYtM2VlNy00MWViLWI3YTYtZjU1YzFkNGI4YWEyXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_QL75_UX500_CR0,47,500,281_.jpg",
+        "imdb": "https://www.imdb.com/name/nm2756127/"
+      }]
+    },
+    {
+      "item": "5942",
+      "title": "Black Christmas",
+      "runtime": 98,
+      "mpaa": "R",
+      "poster": "https://imageservice.disco.peacocktv.com/uuid/9690ee2a-cdeb-31be-81f0-a24fe15a594c/TITLE_ART_3_4/640/480?language=eng&territory=US&version=f34c3f7c-6097-3bd0-a1a0-632fd64785bb&output-format=webp",
+      "description": "During the Christmas break, a group of sorority sisters begin receiving threatening phone calls from a mysterious stranger. As their housemates start to disappear, they realize that they are being targeted by a deranged killer.",
+      "genre": ["horror", "christmas", "classic"],
+      "link": "https://www.peacocktv.com/watch-online/movies/horror/black-christmas/324ebbad-8030-3dd3-9e0e-b04c49ee80c2",
+      "director": [{
+        "name": "Bob Clark",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjA3Njg5Mzc0NF5BMl5BanBnXkFtZTcwMDQxNDgwMw@@._V1_.jpg",
+        "imdb": "https://www.imdb.com/name/nm0164334/"
+      }],
+      "actors": [{
+        "name": "Olivia Hussey",
+        "image": "https://nilsendavid.files.wordpress.com/2017/04/hussey-2.jpg",
+        "imdb": "https://www.imdb.com/name/nm0001376/"
       }, {
-        "name": "Claire Foy",
-        "image": "https://m.media-amazon.com/images/M/MV5BNTMyNjk2NjI0Ml5BMl5BanBnXkFtZTgwMDgxOTA5NDM@._CR229,77,1638,922_QL75_UX500_CR0,0,500,281_.jpg",
-        "imdb": "https://www.imdb.com/name/nm2946516/"
+        "name": "Keir Dullea",
+        "image": "https://lh3.googleusercontent.com/proxy/SSNcHxhJZW0QdnBdggpVJpJsfQdaVXXsGSCtymCTvQDyuRrhw0LdDb0o2oI_l9BCUyUoLmkUYu3KCk0o04QtLsJAO41ScEwDqtwmpxWeZOaLIwXW6lTOMMnhxWSabBlvD_6KVmLLT3IrZFgSFsKwjjaDTf5_9n78EI8",
+        "imdb": "https://www.imdb.com/name/nm0001159/"
       }, {
-        "name": "Stephen Graham",
-        "image": "https://m.media-amazon.com/images/M/MV5BZjU0MjhlN2ItZGIwZC00YTk2LTg5OTYtZmE1OGI3N2EyOGE0XkEyXkFqcGdeQWFybm8@._V1_QL75_UX500_CR0,0,500,281_.jpg",
-        "imdb": "https://www.imdb.com/name/nm0334475/"
+        "name": "Margot Kidder",
+        "image": "https://www.rollingstone.com/wp-content/uploads/2018/06/margot-kidder-f39426fd-cc9a-410a-a832-abc38847bad4.jpg",
+        "imdb": "https://www.imdb.com/name/nm0450943/"
+      }]
+    },
+    {
+      "item": "1345",
+      "title": "Class of Nuke 'Em High",
+      "runtime": 85,
+      "mpaa": "R",
+      "poster": "https://imageservice.disco.peacocktv.com/uuid/ab91228d-cf7f-37e4-aaec-7674f1896763/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=530bbd47-a85e-355f-9092-c99c21eb9287&output-format=webp",
+      "description": "At Tromaville High School, a nearby nuclear power plant leaks toxic waste into the school's water supply, resulting in bizarre mutations among the student body.",
+      "genre": ["comedy", "horror", "science-fiction"],
+      "link": "https://www.peacocktv.com/watch-online/movies/class-of-nuke-em-high/c7be24ed-94b6-3f2e-a737-c2bdad3bbbdd",
+      "director": [{
+        "name": "Lloyd Kaufman",
+        "image": "https://nypost.com/wp-content/uploads/sites/2/2022/06/220614_Yang_NYP_Features___Lloyd_Kaufman_and_Pat_Swinney_Kaufma_20.jpg?quality=75&strip=all&w=1024",
+        "imdb": "https://www.imdb.com/name/nm0442910/"
+      }],
+      "actors": [{
+        "name": "Janelle Brady",
+        "image": "https://m.media-amazon.com/images/M/MV5BZGYxOWE2NGItNjMxMS00ZjQwLWE4NmQtODgyMWFkZTEyYTU3XkEyXkFqcGdeQXVyMjUyNDk2ODc@._V1_FMjpg_UX1000_.jpg",
+        "imdb": "https://www.imdb.com/name/nm0103835/"
+      }, {
+        "name": "Gil Brenton",
+        "image": "https://m.media-amazon.com/images/M/MV5BNDY0MGZlYjktMWI3NS00NmU2LWFkZGQtZjg0NThmNDQxMDZmXkEyXkFqcGdeQXVyOTY5NjI2Mg@@._V1_.jpg",
+        "imdb": "https://www.imdb.com/name/nm0107547/"
+      }]
+    },
+    {
+      "item": "2768",
+      "title": "Dead Snow 2: Red vs. Dead",
+      "runtime": 100,
+      "mpaa": "Not Rated",
+      "poster": "https://imageservice.disco.peacocktv.com/uuid/45acc490-c770-3075-b726-48f2760c04e3/TITLE_ART_3_4/640/480?language=eng&territory=US&proposition=NBCUOTT&version=f9523047-387b-3691-966c-31475dc112be&output-format=webp",
+      "description": "In this sequel to 'Dead Snow,' Martin teams up with a group of American zombie enthusiasts to fight against Herzog and his horde of Nazi zombies, who are terrorizing a small town.",
+      "genre": ["action", "comedy", "horror"],
+      "link": "https://www.peacocktv.com/watch-online/movies/horror/dead-snow-2-red-vs.-dead/fd030398-351b-331b-9105-c79cff6fa91b",
+      "director": [{
+        "name": "Tommy Wirkola",
+        "image": "https://m.media-amazon.com/images/M/MV5BNTViNDhhMTktNTk0Ni00MDUzLTk2ODgtYjkwZTQ3ZDQ0N2M1XkEyXkFqcGdeQXVyMTM4MzMxMzk@._V1_.jpg",
+        "imdb": "https://www.imdb.com/name/nm1321650/"
+      }],
+      "actors": []
+    },
+    {
+      "item": "8312",
+      "title": "Final Girl",
+      "runtime": 90,
+      "mpaa": "R",
+      "poster": "https://imageservice.disco.peacocktv.com/uuid/d48b0d67-ce7e-332c-b806-e508f66d715f/TITLE_ART_16_9?language=eng&territory=US&proposition=NBCUOTT&version=581797a9-9d7b-3858-a936-137178e0e992",
+      "description": "A group of sadistic boys lure beautiful young women into the woods to hunt them down for sport. However, their latest target, Veronica, turns out to be more than they bargained for as she possesses lethal skills taught to her by a mysterious mentor.",
+      "genre": ["action", "thriller"],
+      "link": "https://www.peacocktv.com/watch-online/movies/horror/final-girl/8a1e7c3c-6af4-3afd-8cea-cf8ec0a6ac46",
+      "director": [{
+        "name": "Tyler Shields",
+        "image": "https://i.ytimg.com/vi/kNAAfSHB9Ms/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDryJJZ8uk23XdREZiOBFdaQiEn_w",
+        "imdb": "https://www.imdb.com/name/nm1325222/"
+      }],
+      "actors": [{
+        "name": "Abigail Breslin",
+        "image": "https://variety.com/wp-content/uploads/2015/07/abigail_breslin_new.jpg?w=1000&h=563&crop=1",
+        "imdb": "https://www.imdb.com/name/nm1113550/"
+      }, {
+        "name": "Wes Bentley",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/wes-bentley-1673250691.jpg?crop=1.00xw:0.691xh;0,0.0224xh&resize=1200:*",
+        "imdb": "https://www.imdb.com/name/nm0004747/"
       }]
     }
-  ,
-  {
-    "item": "133",
-    "title": "The VelociPastor",
-    "runtime": 75,
-    "mpaa": "Not Rated",
-    "poster": "https://imageservice.disco.peacocktv.com/uuid/352d947a-cb15-36c0-88c1-7c8ad9eaad34/TITLE_ART_3_4/640/480?language=eng&territory=US&version=cfaa75d5-f91b-3a4b-946b-7d7332c8ae0f&output-format=webp",
-    "description": "After losing his parents, a priest travels to China, where he inherits a mysterious ability that allows him to turn into a dinosaur. He uses his newfound power to fight crime and ninjas.",
-    "genre": ["action", "comedy", "horror"],
-    "link": "https://www.peacocktv.com/watch-online/movies/the-velocipastor/64cfd9c8-1ae2-34fb-852a-48cba69df3ac",
-    "director": [{
-      "name": "Brendan Steere",
-      "image": "https://m.media-amazon.com/images/M/MV5BZDg4NzhhMTgtY2JlOC00OTFlLWFjNTktNDM1MDcwOTFhOGYyXkEyXkFqcGdeQXVyMTAyNDc1MTg5._V1_.jpg",
-      "imdb": "https://www.imdb.com/name/nm4011460/"
-    }],
-    "actors": [{
-      "name": "Greg Cohan",
-      "image": "https://static.wixstatic.com/media/28ddcc_e39dc4aa6965413a970869a9d88b9a3e~mv2_d_3861_2574_s_4_2.jpg/v1/fill/w_3861,h_2574,al_c/28ddcc_e39dc4aa6965413a970869a9d88b9a3e~mv2_d_3861_2574_s_4_2.jpg",
-      "imdb": "https://www.imdb.com/name/nm4685059/"
-    }, {
-      "name": "Alyssa Kempinski",
-      "image": "https://m.media-amazon.com/images/M/MV5BNWIxNGRlZWUtYmY3Mi00MDI3LTkwZjItNGZiMzJmNzQ5MTc4XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg",
-      "imdb": "https://www.imdb.com/name/nm6308509/"
-    }, {
-      "name": "Daniel Steere",
-      "image": "https://m.media-amazon.com/images/M/MV5BNTJiNmQ3MmEtNjYwMi00ODFlLTk1YWYtNDA2ZTEyMWFiY2UwXkEyXkFqcGdeQXVyNjgzNDU2ODI@._V1_.jpg",
-      "imdb": "https://www.imdb.com/name/nm4684851/"
-    }, {
-      "name": "Fernando Pacheco De Castro",
-      "image": "https://media.licdn.com/dms/image/C5605AQGDqg_1GuB90A/feedshare-thumbnail_720_1280/0/1672859055240?e=2147483647&v=beta&t=ohaNcWSqKVV9BdpAo0OoT15CAPVH8QeSVPVk0mAPB-g",
-      "imdb": "https://www.imdb.com/name/nm8708685/"
-    }]
-  }
-  
-  ],
+    ,
+    ],
   // start apple array
   [
 

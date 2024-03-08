@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs';
+import Modal from 'react-bootstrap/Modal';
+import { moviesArray } from './movieArray';
 
 export default function MoviePreferenceComponent({ onPreferenceChange, data }) {
   const [runtime, setRuntime] = useState(sessionStorage.getItem('selectedRuntime') || 240);
@@ -24,7 +26,24 @@ export default function MoviePreferenceComponent({ onPreferenceChange, data }) {
   const [preferredActors, setPreferredActors] = useState([]);
   const [selectedDirectors, setSelectDirectors] = useState([]);
   const [selectedActors, setSelectedActors] = useState([]);
-
+  const [selectedModalDirector, setSelectedModalDirector] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+ 
+  const handleModalDirectorClick = (directorName) => {
+    setSelectedModalDirector(directorName);
+    setIsModalOpen(true);
+  };
+  
+  const filterMoviesBySelectedModalDirector = () => {
+    if (!selectedModalDirector) {
+      return []; // Return an empty array if selectedModalDirector is not defined
+    }
+  
+    return moviesArray.filter(movie =>
+      movie.director.some(director => director.name === selectedModalDirector)
+    );
+  };
+  
 
   const handleDirectorSearch = (event) => {
     const searchTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
@@ -129,6 +148,11 @@ export default function MoviePreferenceComponent({ onPreferenceChange, data }) {
       setPreferredDirectors(updatedDirectors);
     }
   };
+
+
+
+  
+
 
   const handleSelectedDirectorClick = (directorName) => {
     // Toggle director selection
@@ -303,6 +327,7 @@ const sortedDirectors = data
 
  console.log("filtered actors", filteredActors);
  console.log("actor search", actorSearch);
+ console.log("selected modal directors:", selectedModalDirector)
 
 return (
   <div style={{ width: '100%', padding: '0 10px' }}>
@@ -528,14 +553,16 @@ return (
                   )}
                   {/* Display director's name */}
                   <p style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray' }}>{director.name}</p>
+                 
                 </div>
               </div>
+              
             ))
           )}
         </div>
       </div>
     )}
-    
+      
       </div>
 
       {/* START OF SELECTED DIRECTORS SECTION, DIRECTORS THEY WANT TO AVOID */}
@@ -596,8 +623,17 @@ return (
                   )}
                   {/* Display director's name */}
                   <p style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray' }}>{director.name}</p>
+                  
                 </div>
+                <p
+        style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray', cursor: 'pointer' }}
+        onClick={() => handleModalDirectorClick(director.name)}
+      >
+        Their Films
+      </p>
               </div>
+
+              
             ))
             
           ) : (
