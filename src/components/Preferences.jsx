@@ -30,7 +30,10 @@ export default function MoviePreferenceComponent({ onPreferenceChange, data }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
  
   const handleModalDirectorClick = (directorName) => {
+    // Set the new director name as the selectedModalDirector
     setSelectedModalDirector(directorName);
+    
+    // Open the modal
     setIsModalOpen(true);
   };
   
@@ -39,10 +42,14 @@ export default function MoviePreferenceComponent({ onPreferenceChange, data }) {
       return []; // Return an empty array if selectedModalDirector is not defined
     }
   
-    return moviesArray.filter(movie =>
-      movie.director.some(director => director.name === selectedModalDirector)
+    return data.filter(movie =>
+      (movie.director ?? []).some(director => director.name === selectedModalDirector)
     );
   };
+  
+
+  const filteredModalMovies = filterMoviesBySelectedModalDirector();
+
   
 
   const handleDirectorSearch = (event) => {
@@ -328,6 +335,7 @@ const sortedDirectors = data
  console.log("filtered actors", filteredActors);
  console.log("actor search", actorSearch);
  console.log("selected modal directors:", selectedModalDirector)
+ console.log("movies by selected modal directors:", filteredModalMovies);
 
 return (
   <div style={{ width: '100%', padding: '0 10px' }}>
