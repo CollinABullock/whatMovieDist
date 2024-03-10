@@ -31,11 +31,34 @@ export default function RandomMovie({ selectedRuntime  }) {
   }
   
   async function main() {
-    const netflixArray2 = await fetchNetflixArray();
-    console.log(netflixArray2);
+    const netflixArray = await fetchNetflixArray();
+    console.log(netflixArray);
   }
   
   main();
+
+  async function fetchMaxArray() {
+    try {
+      const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/maxArray');
+      if (!response.ok) {
+        throw new Error('Network response was not ok.');
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('Error fetching Netflix array:', error);
+      return null;
+    }
+  }
+  
+  async function main() {
+    const maxArray = await fetchMaxArray();
+    console.log(maxArray);
+  }
+  
+  main();
+
+
 
 
 
