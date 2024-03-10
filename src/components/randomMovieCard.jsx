@@ -93,6 +93,92 @@ export default function RandomMovie({ selectedRuntime  }) {
     fetchHuluArray();
   }, []);
 
+  useEffect(() => {
+    async function fetchPeacockArray() {
+      try {
+        const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/peacockArray');
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        const data = await response.json();
+        setPeacockArray(data);
+      } catch (error) {
+        console.error('Error fetching Max array:', error);
+        setPeacockArray([]);
+      }
+    }
+    fetchPeacockArray();
+  }, []);
+
+  useEffect(() => {
+    async function fetchAppleArray() {
+      try {
+        const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/appleArray');
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        const data = await response.json();
+        setPeacockArray(data);
+      } catch (error) {
+        console.error('Error fetching Max array:', error);
+        setAppleArray([]);
+      }
+    }
+    fetchAppleArray();
+  }, []);
+
+  useEffect(() => {
+    async function fetchDisneyArray() {
+      try {
+        const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/disneyArray');
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        const data = await response.json();
+        setDisneyArray(data);
+      } catch (error) {
+        console.error('Error fetching Max array:', error);
+        setDisneyArray([]);
+      }
+    }
+    fetchDisneyArray();
+  }, []);
+
+  useEffect(() => {
+    async function fetchParamountArray() {
+      try {
+        const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/paramountArray');
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        const data = await response.json();
+        setParamountArray(data);
+      } catch (error) {
+        console.error('Error fetching Max array:', error);
+        setPeacockArray([]);
+      }
+    }
+    fetchParamountArray();
+  }, []);
+
+  useEffect(() => {
+    async function fetchCriterionArray() {
+      try {
+        const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/criterionArray');
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        const data = await response.json();
+        setCriterionArray(data);
+      } catch (error) {
+        console.error('Error fetching Max array:', error);
+        setCriterionArray([]);
+      }
+    }
+    fetchCriterionArray();
+  }, []);
+
+
 
   console.log("netflix array:", netflixArray);
 
@@ -144,6 +230,14 @@ export default function RandomMovie({ selectedRuntime  }) {
           serviceMovies = serviceMovies.concat(huluArray);
         } else if (service === "Peacock") {
           serviceMovies = serviceMovies.concat(peacockArray);
+        } else if (service === "Apple") {
+          serviceMovies = serviceMovies.concat(appleArray);
+        } else if (service === "Disney") {
+          serviceMovies = serviceMovies.concat(disneyArray);
+        } else if (service === "Paramount") {
+          serviceMovies = serviceMovies.concat(paramountArray);
+        } else if (service === "Criterion") {
+          serviceMovies = serviceMovies.concat(criterionArray);
         }
         // Add more conditions for other services if needed
       });
