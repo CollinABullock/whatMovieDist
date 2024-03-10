@@ -3,7 +3,6 @@ import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { motion } from "framer-motion";
-import { moviesArray, netflixArray, maxArray, primeArray, huluArray, peacockArray } from './movieArray';
 
 export default function RandomMovie({ selectedRuntime  }) {
   const [randomMovie, setRandomMovie] = useState(null);
@@ -15,27 +14,24 @@ export default function RandomMovie({ selectedRuntime  }) {
   const [actorImageSrc, setActorImageSrc] = useState('');
   const [actorNameSrc, setActorNameSrc] = useState('');
   const [actorIMDBSrc, setActorIMDBSrc] = useState('');
+  const [netflixArray, setNetflixArray] = useState([])
  
-  async function fetchNetflixArray() {
-    try {
-      const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/netflixArray');
-      if (!response.ok) {
-        throw new Error('Network response was not ok.');
+  useEffect(() => {
+    async function fetchNetflixArray() {
+      try {
+        const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/netflixArray');
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        const data = await response.json();
+        setNetflixArray(data);
+      } catch (error) {
+        console.error('Error fetching Netflix array:', error);
+        setNetflixArray([]);
       }
-      const data = await response.json();
-      return data;
-    } catch (error) {
-      console.error('Error fetching Netflix array:', error);
-      return null;
     }
-  }
-  
-  async function main() {
-    const netflixArray = await fetchNetflixArray();
-    console.log(netflixArray);
-  }
-  
-  main();
+    fetchNetflixArray();
+  }, []);
 
   async function fetchMaxArray() {
     try {
@@ -58,13 +54,14 @@ export default function RandomMovie({ selectedRuntime  }) {
   
   main();
 
+  console.log("netflix array:", netflixArray);
 
 
 
 
   useEffect(() => {
     // Merge all movie arrays into one
-    const allMovies = [].concat(...moviesArray);
+    const allMovies = [].concat(...netflixArray);
 
     // Filter movies based on selected runtime
     const filtered = allMovies.filter(movie => movie.runtime <= selectedRuntime);
