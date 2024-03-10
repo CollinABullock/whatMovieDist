@@ -178,6 +178,23 @@ export default function RandomMovie({ selectedRuntime  }) {
     fetchCriterionArray();
   }, []);
 
+  useEffect(() => {
+    async function fetchTubiArray() {
+      try {
+        const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/tubiArray');
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        const data = await response.json();
+        setTubiArray(data);
+      } catch (error) {
+        console.error('Error fetching Max array:', error);
+        setTubiArray([]);
+      }
+    }
+    fetchTubiArray();
+  }, []);
+
 
 
   console.log("netflix array:", netflixArray);
@@ -238,6 +255,8 @@ export default function RandomMovie({ selectedRuntime  }) {
           serviceMovies = serviceMovies.concat(paramountArray);
         } else if (service === "Criterion") {
           serviceMovies = serviceMovies.concat(criterionArray);
+        } else if (service === "Tubi") {
+          serviceMovies = serviceMovies.concat(tubiArray);
         }
         // Add more conditions for other services if needed
       });
