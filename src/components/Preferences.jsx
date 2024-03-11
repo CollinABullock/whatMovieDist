@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs';
 import Modal from 'react-bootstrap/Modal';
-import { moviesArray } from './movieArray';
 
-export default function MoviePreferenceComponent({ onPreferenceChange, data }) {
+export default function MoviePreferenceComponent({ onPreferenceChange }) {
   const [runtime, setRuntime] = useState(sessionStorage.getItem('selectedRuntime') || 240);
   const [selectedGenres, setSelectedGenres] = useState(JSON.parse(sessionStorage.getItem('selectedGenres')) || []);
   const [preferredGenres, setPreferredGenres] = useState(JSON.parse(sessionStorage.getItem('preferredGenres')) || []);
@@ -28,6 +27,16 @@ export default function MoviePreferenceComponent({ onPreferenceChange, data }) {
   const [selectedActors, setSelectedActors] = useState([]);
   const [selectedModalDirector, setSelectedModalDirector] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [netflixArray, setNetflixArray] = useState([]);
+  const [maxArray, setMaxArray] = useState([]);
+  const [primeArray, setPrimeArray] = useState([]);
+  const [huluArray, setHuluArray] = useState([]);
+  const [peacockArray, setPeacockArray] = useState([]);
+  const [appleArray, setAppleArray] = useState([]);
+  const [disneyArray, setDisneyArray] = useState([]);
+  const [paramountArray, setParamountArray] = useState([]);
+  const [criterionArray, setCriterionArray] = useState([]);
+  const [tubiArray, setTubiArray] = useState([]);
  
   const handleModalDirectorClick = (directorName) => {
     // Set the new director name as the selectedModalDirector
@@ -36,6 +45,191 @@ export default function MoviePreferenceComponent({ onPreferenceChange, data }) {
     // Open the modal
     setIsModalOpen(true);
   };
+
+   
+  useEffect(() => {
+    async function fetchNetflixArray() {
+      try {
+        const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/netflixArray');
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        const data = await response.json();
+        setNetflixArray(data);
+      } catch (error) {
+        console.error('Error fetching Netflix array:', error);
+        setNetflixArray([]);
+      }
+    }
+    fetchNetflixArray();
+  }, []);
+
+  useEffect(() => {
+    async function fetchMaxArray() {
+      try {
+        const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/maxArray');
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        const data = await response.json();
+        setMaxArray(data);
+      } catch (error) {
+        console.error('Error fetching Max array:', error);
+        setMaxArray([]);
+      }
+    }
+    fetchMaxArray();
+  }, []);
+
+  useEffect(() => {
+    async function fetchPrimeArray() {
+      try {
+        const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/primeArray');
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        const data = await response.json();
+        setPrimeArray(data);
+      } catch (error) {
+        console.error('Error fetching Max array:', error);
+        setPrimeArray([]);
+      }
+    }
+    fetchPrimeArray();
+  }, []);
+
+  useEffect(() => {
+    async function fetchHuluArray() {
+      try {
+        const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/huluArray');
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        const data = await response.json();
+        setHuluArray(data);
+      } catch (error) {
+        console.error('Error fetching Max array:', error);
+        setHuluArray([]);
+      }
+    }
+    fetchHuluArray();
+  }, []);
+
+  useEffect(() => {
+    async function fetchPeacockArray() {
+      try {
+        const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/peacockArray');
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        const data = await response.json();
+        setPeacockArray(data);
+      } catch (error) {
+        console.error('Error fetching Max array:', error);
+        setPeacockArray([]);
+      }
+    }
+    fetchPeacockArray();
+  }, []);
+
+  useEffect(() => {
+    async function fetchAppleArray() {
+      try {
+        const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/appleArray');
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        const data = await response.json();
+        setPeacockArray(data);
+      } catch (error) {
+        console.error('Error fetching Max array:', error);
+        setAppleArray([]);
+      }
+    }
+    fetchAppleArray();
+  }, []);
+
+  useEffect(() => {
+    async function fetchDisneyArray() {
+      try {
+        const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/disneyArray');
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        const data = await response.json();
+        setDisneyArray(data);
+      } catch (error) {
+        console.error('Error fetching Max array:', error);
+        setDisneyArray([]);
+      }
+    }
+    fetchDisneyArray();
+  }, []);
+
+  useEffect(() => {
+    async function fetchParamountArray() {
+      try {
+        const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/paramountArray');
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        const data = await response.json();
+        setParamountArray(data);
+      } catch (error) {
+        console.error('Error fetching Max array:', error);
+        setPeacockArray([]);
+      }
+    }
+    fetchParamountArray();
+  }, []);
+
+  useEffect(() => {
+    async function fetchCriterionArray() {
+      try {
+        const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/criterionArray');
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        const data = await response.json();
+        setCriterionArray(data);
+      } catch (error) {
+        console.error('Error fetching Max array:', error);
+        setCriterionArray([]);
+      }
+    }
+    fetchCriterionArray();
+  }, []);
+
+  useEffect(() => {
+    async function fetchTubiArray() {
+      try {
+        const response = await fetch('https://whatmoviebackend-91243c1c417b.herokuapp.com/tubiArray');
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        const data = await response.json();
+        setTubiArray(data);
+      } catch (error) {
+        console.error('Error fetching Max array:', error);
+        setTubiArray([]);
+      }
+    }
+    fetchTubiArray();
+  }, []);
+
+  const data = [
+    ...netflixArray,
+    ...maxArray,
+    ...primeArray,
+    ...huluArray,
+    ...peacockArray,
+    ...appleArray,
+    ...disneyArray,
+    ...paramountArray,
+    ...criterionArray,
+    ...tubiArray
+
+  ]
   
   const filterMoviesBySelectedModalDirector = () => {
     if (!selectedModalDirector) {

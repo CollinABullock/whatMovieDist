@@ -935,7 +935,7 @@ const moviesArray = [
     "actors": [{
       "name": "Adam Driver",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfHXwIoFRZIuw12sbWKGf6w0IEQ5wdnZzopg&usqp=CAU",
-      "imdb": "https://www.imdb.com/name/nm3485845/",
+      "imdb": "https://www.imdb.com/name/nm3485845/"
     }, {
       "name": "Ariana Greenblat",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3i8tkG8XLq0SiMUdxFhhY_2pawyyovZN4nw&usqp=CAU",
@@ -1544,7 +1544,7 @@ const moviesArray = [
     "actors": [{
       "name": "Jennifer Garner",
       "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/newscms/2023_26/2008627/230629-shopping-diaries-jennifer-garner-kb-2x1.jpg",
-      "imdb": "https://www.imdb.com/name/nm0004950/?ref_=tt_ov_st",
+      "imdb": "https://www.imdb.com/name/nm0004950/?ref_=tt_ov_st"
     }, {
       "name": "Mark Ruffalo",
       "image": "https://d.newsweek.com/en/full/2298700/mark-ruffalo-june-2023.png?w=1200&f=7082c879b50355fdc025b4e12f2a43d5",
@@ -1627,7 +1627,7 @@ const moviesArray = [
     "actors": [{
       "name": "Leonardo DiCaprio",
       "image": "https://phantom-marca.unidadeditorial.es/0e1996b37d1147008cea1fb6be3dc73a/resize/828/f/jpg/assets/multimedia/imagenes/2023/07/14/16893608205539.jpg",
-      "imdb": "https://www.imdb.com/name/nm0000138/",
+      "imdb": "https://www.imdb.com/name/nm0000138/"
     }, {
       "name": "Jennifer Lawrence",
       "image": "https://media.vanityfair.com/photos/618c0614fdf674f0522a9fb7/master/w_2560%2Cc_limit/LBY_210805_JENNIFER_LAWRENCE_VF_09G_Shot_10_028_QC_sRGB_LR.jpg",
