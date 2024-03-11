@@ -526,11 +526,6 @@ const sortedDirectors = data
     return false;
   });
 
- console.log("filtered actors", filteredActors);
- console.log("actor search", actorSearch);
- console.log("selected modal directors:", selectedModalDirector)
- console.log("movies by selected modal directors:", filteredModalMovies);
- console.log("is modal open:", isModalOpen)
 
 
 const closeModal = () => {
