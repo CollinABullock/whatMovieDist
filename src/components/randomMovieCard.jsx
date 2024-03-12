@@ -24,6 +24,8 @@ export default function RandomMovie({ selectedRuntime  }) {
   const [paramountArray, setParamountArray] = useState([]);
   const [criterionArray, setCriterionArray] = useState([]);
   const [tubiArray, setTubiArray] = useState([]);
+
+  console.log("selected runtime:", selectedRuntime);
  
   useEffect(() => {
     async function fetchNetflixArray() {
@@ -196,20 +198,10 @@ export default function RandomMovie({ selectedRuntime  }) {
   }, []);
 
 
+  const moviesArray = [...netflixArray, ...maxArray, ...primeArray, ...huluArray,...disneyArray, ...paramountArray, ...appleArray, ...criterionArray, ...tubiArray];
 
-  console.log("netflix array:", netflixArray);
+  console.log("movies array:", moviesArray);
 
-  const moviesArray = [...netflixArray, ...maxArray, ...primeArray];
-
-
-  useEffect(() => {
-    // Merge all movie arrays into one
-    const allMovies = [].concat(...moviesArray);
-
-    // Filter movies based on selected runtime
-    const filtered = allMovies.filter(movie => movie.runtime <= selectedRuntime);
-    setFilteredMovies(filtered);
-  }, [selectedRuntime]);
 
   
   // Function to handle opening actor's image modal, and the loading of the various details from the array
@@ -228,47 +220,43 @@ export default function RandomMovie({ selectedRuntime  }) {
     setActorImageModalOpen(false);
   };
 
-  console.log("disney array:", disneyArray);
-  console.log("peacock array:", peacockArray);
-  console.log("apple array:", appleArray);
+ 
 
-
-   const handleRandomMovie = () => {
-    // Filter based on selected services
+  const handleRandomMovie = () => {
+    console.log("is handle random movie working?");
     window.scroll(0, 0);
+    let filtered = []; // Initialize with an empty array
+
+    // Construct the filtered array based on selected services
     const selectedServices = JSON.parse(sessionStorage.getItem('selectedServices'));
-    let filtered = [];
     if (selectedServices && selectedServices.length > 0) {
-      let serviceMovies = [];
       selectedServices.forEach(service => {
-        if (service === 'Netflix') {
-          serviceMovies = serviceMovies.concat(netflixArray);
-        } else if (service === 'Max') {
-          serviceMovies = serviceMovies.concat(maxArray);
-        } else if (service === "Prime") {
-          serviceMovies = serviceMovies.concat(primeArray);
-        } else if (service === "Hulu") {
-          serviceMovies = serviceMovies.concat(huluArray);
-        } else if (service === "Peacock") {
-          serviceMovies = serviceMovies.concat(peacockArray);
-        } else if (service === "Apple") {
-          serviceMovies = serviceMovies.concat(appleArray);
-        } else if (service === "Disney") {
-          serviceMovies = serviceMovies.concat(disneyArray);
-        } else if (service === "Paramount") {
-          serviceMovies = serviceMovies.concat(paramountArray);
-        } else if (service === "Criterion") {
-          serviceMovies = serviceMovies.concat(criterionArray);
-        } else if (service === "Tubi") {
-          serviceMovies = serviceMovies.concat(tubiArray);
+        switch (service) {
+          case 'Netflix':
+            filtered = filtered.concat(netflixArray);
+            break;
+          case 'Max':
+            filtered = filtered.concat(maxArray);
+            break;
+          case 'Prime':
+            filtered = filtered.concat(primeArray);
+            break;
+          case 'Hulu':
+            filtered = filtered.concat(huluArray);
+            break;
+          // Add cases for other services as needed
+          default:
+            break;
         }
-        // Add more conditions for other services if needed
       });
-      filtered = serviceMovies.filter(movie => movie.runtime <= selectedRuntime);
     } else {
       // If no services are selected, use all movies
-      filtered = [...filteredMovies];
+      filtered = [...moviesArray];
     }
+
+    
+
+    filtered = filtered.filter(movie => movie.runtime <= selectedRuntime);
   
     // Filter based on selected genres to avoid
     const selectedGenres = JSON.parse(sessionStorage.getItem('selectedGenres'));
@@ -285,37 +273,35 @@ export default function RandomMovie({ selectedRuntime  }) {
         movie.genre && preferredGenres.every(genre => movie.genre.includes(genre))
       );
     }
-
+  
     const selectedDirectors = JSON.parse(sessionStorage.getItem("selectedDirectors"));
     if (selectedDirectors && selectedDirectors.length > 0) {
       filtered = filtered.filter(movie =>
           movie.director && !movie.director.some(dir => selectedDirectors.includes(dir.name))
       );
-  }
-
-  const selectedActors = JSON.parse(sessionStorage.getItem("selectedActors"));
-  if (selectedActors && selectedActors.length > 0) {
-    filtered = filtered.filter(movie =>
-        movie.actors && !movie.actors.some(act => selectedActors.includes(act.name))
-    );
-}
-
- // Filter based on preferred directors
-const preferredDirectors = JSON.parse(sessionStorage.getItem('preferredDirectors'));
-if (preferredDirectors && preferredDirectors.length > 0) {
-    filtered = filtered.filter(movie =>
+    }
+  
+    const selectedActors = JSON.parse(sessionStorage.getItem("selectedActors"));
+    if (selectedActors && selectedActors.length > 0) {
+      filtered = filtered.filter(movie =>
+          movie.actors && !movie.actors.some(act => selectedActors.includes(act.name))
+      );
+    }
+  
+    // Filter based on preferred directors
+    const preferredDirectors = JSON.parse(sessionStorage.getItem('preferredDirectors'));
+    if (preferredDirectors && preferredDirectors.length > 0) {
+      filtered = filtered.filter(movie =>
         movie.director && movie.director.some(dir => preferredDirectors.includes(dir.name))
-    );
-}
-
-const preferredActors = JSON.parse(sessionStorage.getItem('preferredActors'));
-if (preferredActors && preferredActors.length > 0) {
-    filtered = filtered.filter(movie =>
+      );
+    }
+  
+    const preferredActors = JSON.parse(sessionStorage.getItem('preferredActors'));
+    if (preferredActors && preferredActors.length > 0) {
+      filtered = filtered.filter(movie =>
         movie.actors && movie.actors.some(act => preferredActors.includes(act.name))
-    );
-}
-
-
+      );
+    }
   
     if (filtered.length > 0) {
       const randomIndex = Math.floor(Math.random() * filtered.length);
@@ -325,9 +311,8 @@ if (preferredActors && preferredActors.length > 0) {
     } else {
       setRandomMovie(null);
     }
-    console.log("DIRECTORS FROM SESSION STORAGE:", preferredDirectors);
   };
-
+  
   
   
 
