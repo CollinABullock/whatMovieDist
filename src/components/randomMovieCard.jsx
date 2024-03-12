@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 
 export default function RandomMovie({ selectedRuntime  }) {
   const [randomMovie, setRandomMovie] = useState(null);
-  const [filteredMovies, setFilteredMovies] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [animationKey, setAnimationKey] = useState(0);
   // setting up states to control the opening of the image modal as well as the source of the actor's image
@@ -24,8 +23,6 @@ export default function RandomMovie({ selectedRuntime  }) {
   const [paramountArray, setParamountArray] = useState([]);
   const [criterionArray, setCriterionArray] = useState([]);
   const [tubiArray, setTubiArray] = useState([]);
-
-  console.log("selected runtime:", selectedRuntime);
  
   useEffect(() => {
     async function fetchNetflixArray() {
@@ -43,6 +40,8 @@ export default function RandomMovie({ selectedRuntime  }) {
     }
     fetchNetflixArray();
   }, []);
+
+  
 
   useEffect(() => {
     async function fetchMaxArray() {
@@ -198,7 +197,7 @@ export default function RandomMovie({ selectedRuntime  }) {
   }, []);
 
 
-  const moviesArray = [...netflixArray, ...maxArray, ...primeArray, ...huluArray,...disneyArray, ...paramountArray, ...appleArray, ...criterionArray, ...tubiArray];
+  const moviesArray = [...netflixArray, ...maxArray, ...primeArray, ...huluArray,...disneyArray, ...paramountArray, ...appleArray, ...criterionArray, ...tubiArray, ...peacockArray];
 
   console.log("movies array:", moviesArray);
 
@@ -244,7 +243,24 @@ export default function RandomMovie({ selectedRuntime  }) {
           case 'Hulu':
             filtered = filtered.concat(huluArray);
             break;
-          // Add cases for other services as needed
+            case 'Peacock':
+              filtered = filtered.concat(peacockArray);
+              break;
+              case 'Apple':
+            filtered = filtered.concat(appleArray);
+            break;
+            case 'Disney':
+            filtered = filtered.concat(disneyArray);
+            break;
+            case 'Paramount':
+            filtered = filtered.concat(paramountArray);
+            break;
+            case 'Criterion':
+            filtered = filtered.concat(criterionArray);
+            case 'Tubi':
+            filtered = filtered.concat(tubiArray);
+            break;
+            break;
           default:
             break;
         }
