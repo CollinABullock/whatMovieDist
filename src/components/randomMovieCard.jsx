@@ -257,10 +257,10 @@ export default function RandomMovie({ selectedRuntime  }) {
             break;
             case 'Criterion':
             filtered = filtered.concat(criterionArray);
+            break;
             case 'Tubi':
             filtered = filtered.concat(tubiArray);
-            break;
-            break;
+          break;
           default:
             break;
         }
@@ -400,7 +400,57 @@ export default function RandomMovie({ selectedRuntime  }) {
         />
         </a>
       );
-    } 
+    } else if (hostname === 'tv.apple.com') {
+      return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://cdn.vox-cdn.com/thumbor/V5762AmEUyH1T3WNIzVbySZ0Mf4=/0x0:1632x918/1200x800/filters:focal(686x329:946x589)/cdn.vox-cdn.com/uploads/chorus_image/image/65608618/Apple_TV_Plus_logo.0.0.jpg"
+          alt="Apple TV Logo"
+          style={{ width: '100px', height: 'auto' }}
+        />
+        </a>
+      );
+    }  else if (hostname === 'www.disneyplus.com') {
+      return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://ca-times.brightspotcdn.com/dims4/default/9336457/2147483647/strip/false/crop/1920x1080+0+0/resize/1486x836!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F52%2Fad%2F65a1ea8a41718ef56032d9e14302%2Fdisney-with-studio-tag-copy.jpg"
+          alt="Disney Plus Logo"
+          style={{ width: '100px', height: 'auto' }}
+        />
+        </a>
+      );
+    }   else if (hostname === 'www.paramountplus.com') {
+      return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://www.themanual.com/wp-content/uploads/sites/9/2021/04/paramount-plus-logo-tm.jpg?fit=800%2C800&p=1"
+          alt="Paramount Plus Logo"
+          style={{ width: '100px', height: 'auto' }}
+        />
+        </a>
+      );
+    }    else if (hostname === 'www.criterionchannel.com') {
+      return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://vhx.imgix.net/criterionchannelchartersu/assets/0a871ff0-6742-42aa-a6f9-377cefa10b42.jpeg?auto=format%2Ccompress&fit=crop&h=720&q=75&w=1280"
+          alt="Criterion Logo"
+          style={{ width: '100px', height: 'auto' }}
+        />
+        </a>
+      );
+    }     else if (hostname === 'tubitv.com') {
+      return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://variety.com/wp-content/uploads/2024/02/Tubi-Logo.png?w=1000&h=563&crop=1"
+          alt="Tubi Logo"
+          style={{ width: '100px', height: 'auto' }}
+        />
+        </a>
+      );
+    }
     else {
       return (
         <a href={link} target="_blank" style={{ color: 'blue', textDecoration: 'none', cursor: 'pointer' }}>Watch Now</a>
