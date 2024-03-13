@@ -73,7 +73,7 @@ margin: 10px !important;
 
 .randomMovie {
   width: 100%;
-  font-size: 4em; 
+  font-size: 3em; 
   background-color: red;
   color: whitesmoke; 
   text-shadow: 2px 2px 2px black;  
@@ -92,12 +92,13 @@ margin: 10px !important;
 .randomCard {
   margin: 0 auto;
   border: 0;
-  margin-top: -150px;
-  width: 80%;
+  /* margin-top: -100px; */
+  width: 100%;
  
   @media (max-width: 768px) {
-    margin-top: -200px !important;
+    margin-top: -250px !important;
     width: 100% !important;
+    height: 500px;
  
 }
 }

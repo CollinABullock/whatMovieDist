@@ -459,7 +459,7 @@ export default function RandomMovie({ selectedRuntime  }) {
   };
 
   return (
-    <div className='randomCard' style={{ textAlign: "center", width: "60%" }}>
+    <div className='randomCard' style={{ textAlign: "center", width: "100%" }}>
       {randomMovie ? (
         <motion.div
           key={animationKey}
