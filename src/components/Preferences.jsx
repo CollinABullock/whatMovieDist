@@ -290,8 +290,8 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
     const uniqueActors = new Set(); // Set to keep track of unique directors
     const filtered = searchTerm === '' ?
       [] :
-      flattenedActors.filter(actors => {
-        const lowerCaseName = actors.name.trim().toLowerCase(); // Remove whitespace and convert to lowercase
+      flattenedActors.filter(actor => {
+        const lowerCaseName = actor.name.trim().toLowerCase(); // Remove whitespace and convert to lowercase
         // Check if director's name includes search term and if it's not already in uniqueDirectors
         if (lowerCaseName.includes(searchTerm) && !uniqueActors.has(lowerCaseName)) {
           uniqueActors.add(lowerCaseName); // Add actor's name to set
