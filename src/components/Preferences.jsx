@@ -786,19 +786,31 @@ return (
 
       <div style={{ marginBottom: '30px', border: '1px solid #ccc', padding: '15px' }}>
       <div>
-    {/* Other JSX elements */}
-    <Modal show={isModalOpen} style={{ backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center"}}>
+      <Modal show={isModalOpen} style={{ backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center"}}>
   <h1>{selectedModalDirector}</h1>
   <div className="movie-grid">
-    {filteredModalMovies.map(movie => (
-      <a href={movie.link} target="_blank" rel="noopener noreferrer" key={movie.title}>
-        <img src={movie.poster} alt={movie.title} />
-        <h1>{movie.title}</h1>
-      </a>
-    ))}
+    {filteredModalMovies
+      .slice() // Create a copy of the array to avoid mutating the original
+      .sort((a, b) => {
+        // Function to sort movies alphabetically, ignoring "the"
+        const getTitleForComparison = (title) => {
+          const words = title.split(" ");
+          return words[0].toLowerCase() === "the" ? words.slice(1).join(" ") : title;
+        };
+        const titleA = getTitleForComparison(a.title);
+        const titleB = getTitleForComparison(b.title);
+        return titleA.localeCompare(titleB, 'en', { sensitivity: 'base' }); // Case-insensitive comparison
+      })
+      .map(movie => (
+        <a href={movie.link} target="_blank" rel="noopener noreferrer" key={movie.title}>
+          <img src={movie.poster} alt={movie.title} />
+          <h3>{movie.title}</h3>
+        </a>
+      ))}
   </div>
   <button onClick={closeModal}>Close</button>
 </Modal>
+
 
 
     
