@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import { motion } from "framer-motion";
 
 export default function RandomMovie({ selectedRuntime  }) {
+  const [lastSelectedMovieTitle, setLastSelectedMovieTitle] = useState("");
   const [randomMovie, setRandomMovie] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [animationKey, setAnimationKey] = useState(0);
@@ -222,7 +223,6 @@ export default function RandomMovie({ selectedRuntime  }) {
  
 
   const handleRandomMovie = () => {
-    console.log("is handle random movie working?");
     window.scroll(0, 0);
     let filtered = []; // Initialize with an empty array
   
@@ -271,6 +271,8 @@ export default function RandomMovie({ selectedRuntime  }) {
     }
   
     filtered = filtered.filter(movie => movie.runtime <= selectedRuntime);
+
+    filtered = filtered.filter(movie => movie.title !== lastSelectedMovieTitle);
   
     // Filter based on selected genres to avoid
     const selectedGenres = JSON.parse(sessionStorage.getItem('selectedGenres'));
@@ -321,6 +323,7 @@ export default function RandomMovie({ selectedRuntime  }) {
       const randomIndex = Math.floor(Math.random() * filtered.length);
       const selectedMovie = filtered[randomIndex];
       setRandomMovie(selectedMovie);
+      setLastSelectedMovieTitle(selectedMovie.title);
       setAnimationKey(prevKey => prevKey + 1);
     } else {
       window.alert("No movies meet that criteria, please be less picky");
