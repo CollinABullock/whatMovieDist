@@ -254,6 +254,8 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
       }
       return acc;
     }, []);
+
+    console.log("flattened directors:", flattenedDirectors);
   
     const uniqueDirectors = new Set(); // Set to keep track of unique directors
     const filtered = searchTerm === '' ?
@@ -275,17 +277,21 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   const handleActorSearch = (event) => {
     const searchTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
     const flattenedActors = data.reduce((acc, movie) => {
-      if (movie.actor) {
-        acc.push(...movie.actor);
+      if (movie.actors) {
+        acc.push(...movie.actors);
       }
       return acc;
     }, []);
+
+    console.log("flattened actors:", flattenedActors);
+
+
   
     const uniqueActors = new Set(); // Set to keep track of unique directors
     const filtered = searchTerm === '' ?
       [] :
-      flattenedActors.filter(actor => {
-        const lowerCaseName = actor.name.trim().toLowerCase(); // Remove whitespace and convert to lowercase
+      flattenedActors.filter(actors => {
+        const lowerCaseName = actors.name.trim().toLowerCase(); // Remove whitespace and convert to lowercase
         // Check if director's name includes search term and if it's not already in uniqueDirectors
         if (lowerCaseName.includes(searchTerm) && !uniqueActors.has(lowerCaseName)) {
           uniqueActors.add(lowerCaseName); // Add actor's name to set
