@@ -225,7 +225,7 @@ export default function RandomMovie({ selectedRuntime  }) {
     console.log("is handle random movie working?");
     window.scroll(0, 0);
     let filtered = []; // Initialize with an empty array
-
+  
     // Construct the filtered array based on selected services
     const selectedServices = JSON.parse(sessionStorage.getItem('selectedServices'));
     if (selectedServices && selectedServices.length > 0) {
@@ -243,24 +243,24 @@ export default function RandomMovie({ selectedRuntime  }) {
           case 'Hulu':
             filtered = filtered.concat(huluArray);
             break;
-            case 'Peacock':
-              filtered = filtered.concat(peacockArray);
-              break;
-              case 'Apple':
+          case 'Peacock':
+            filtered = filtered.concat(peacockArray);
+            break;
+          case 'Apple':
             filtered = filtered.concat(appleArray);
             break;
-            case 'Disney':
+          case 'Disney':
             filtered = filtered.concat(disneyArray);
             break;
-            case 'Paramount':
+          case 'Paramount':
             filtered = filtered.concat(paramountArray);
             break;
-            case 'Criterion':
+          case 'Criterion':
             filtered = filtered.concat(criterionArray);
             break;
-            case 'Tubi':
+          case 'Tubi':
             filtered = filtered.concat(tubiArray);
-          break;
+            break;
           default:
             break;
         }
@@ -269,9 +269,7 @@ export default function RandomMovie({ selectedRuntime  }) {
       // If no services are selected, use all movies
       filtered = [...moviesArray];
     }
-
-    
-
+  
     filtered = filtered.filter(movie => movie.runtime <= selectedRuntime);
   
     // Filter based on selected genres to avoid
@@ -325,9 +323,11 @@ export default function RandomMovie({ selectedRuntime  }) {
       setRandomMovie(selectedMovie);
       setAnimationKey(prevKey => prevKey + 1);
     } else {
+      window.alert("No movies meet that criteria, please be less picky");
       setRandomMovie(null);
     }
   };
+  
   
   
   
