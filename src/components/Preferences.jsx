@@ -788,7 +788,7 @@ return (
       <div>
       <Modal show={isModalOpen} style={{ backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center"}}>
   <h1>{selectedModalDirector}</h1>
-  <div className="movie-grid">
+  <div className="movie-grid" >
     {filteredModalMovies
       .slice() // Create a copy of the array to avoid mutating the original
       .sort((a, b) => {
@@ -801,15 +801,26 @@ return (
         const titleB = getTitleForComparison(b.title);
         return titleA.localeCompare(titleB, 'en', { sensitivity: 'base' }); // Case-insensitive comparison
       })
+      .reduce((acc, movie) => {
+        // Filtering out duplicates
+        const key = movie.title.toLowerCase(); // Using lowercase for case-insensitive comparison
+        if (!acc.seenTitles.has(key)) {
+          acc.seenTitles.add(key);
+          acc.uniqueMovies.push(movie);
+        }
+        return acc;
+      }, { seenTitles: new Set(), uniqueMovies: [] })
+      .uniqueMovies
       .map(movie => (
         <a href={movie.link} target="_blank" rel="noopener noreferrer" key={movie.title}>
           <img src={movie.poster} alt={movie.title} />
-          <h3>{movie.title}</h3>
+          <h2>{movie.title}</h2>
         </a>
       ))}
   </div>
   <button onClick={closeModal}>Close</button>
 </Modal>
+
 
 
 
