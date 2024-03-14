@@ -274,32 +274,7 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
     setDirectorBSearch(event.target.value);
   };
 
-  const handleActorSearch = (event) => {
-    const searchTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
-    const flattenedActors = data.reduce((acc, movie) => {
-      if (movie.actors) {
-        acc.push(...movie.actors);
-      }
-      return acc;
-    }, []);
-
   
-    const uniqueActors = new Set(); // Set to keep track of unique actors
-    const filtered = searchTerm === '' ?
-      [] :
-      flattenedActors.filter(actor => {
-        const lowerCaseName = actor.name.trim().toLowerCase(); // Remove whitespace and convert to lowercase
-        // Check if director's name includes search term and if it's not already in uniqueDirectors
-        if (lowerCaseName.includes(searchTerm) && !uniqueActors.has(lowerCaseName)) {
-          uniqueActors.add(lowerCaseName); // Add director's name to set
-          return true;
-        }
-        return false;
-      });
-  
-    setFilteredActors(filtered);
-    setActorSearch(event.target.value);
-  };
   
   const handleDirectorSearch = (event) => {
     const searchTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
@@ -328,7 +303,29 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
     setDirectorSearch(event.target.value);
   };
   
+  console.log("actor search:", actorSearch);
+  console.log("filtered actors:", filteredActors);
 
+  const handleActorSearch = (event) => {
+    // Check if event object and target property exist
+    if (event && event.target) {
+      const searchTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
+    
+      // Filter the sortedActors array based on the search term
+      const filtered = sortedActors.filter(actor => {
+        const lowerCaseName = actor.name.trim().toLowerCase(); // Remove whitespace and convert to lowercase
+        return lowerCaseName.includes(searchTerm);
+      });
+  
+      setFilteredActors(filtered);
+    }
+  };
+
+    // Call handleActorSearch whenever actorSearch changes
+    useEffect(() => {
+      handleActorSearch(actorSearch);
+    }, [actorSearch]);
+  
 
   useEffect(() => {
     const storedPreferredDirectors = JSON.parse(sessionStorage.getItem('preferredDirectors')) || [];
@@ -1007,7 +1004,7 @@ return (
           type="text"
           placeholder="Search actors..."
           value={actorSearch}
-          onChange={handleActorSearch}
+          onChange={(event) => setActorSearch(event.target.value)} 
           style={{ marginBottom: '10px' }}
         />
         </div>
@@ -1015,7 +1012,7 @@ return (
  
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '20px', maxWidth: "80%", margin: "0 auto" }}>
         {(!actorSearch || filteredActors.length === 0) ? (
-            // Check if directors array is not empty before rendering
+            // Check if actors array is not empty before rendering
             sortedActors.map(actor => (
               <div
                 className='filtered-actor-item'
