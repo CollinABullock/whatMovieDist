@@ -248,10 +248,11 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   
   const handleActorSearch = (event) => {
     const searchTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
+    
     const flattenedActors = data.reduce((acc, movie) => {
       if (movie.actors) {
         movie.actors.forEach(actor => {
-          acc.push(actor.name);
+          acc.push(actor); // Push the entire actor object
         });
       }
       return acc;
@@ -259,24 +260,24 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   
     const uniqueActors = new Set(); // Set to keep track of unique actors
     const filtered = searchTerm === '' ?
-  [] :
-  flattenedActors.filter(actorName => {
-    if (!actorName) {
-      return false; // Skip this iteration if actorName is undefined
-    }
-    const lowerCaseName = actorName.trim().toLowerCase(); // Remove whitespace and convert to lowercase
-    // Check if actor's name includes search term and if it's not already in uniqueActors
-    if (lowerCaseName.includes(searchTerm) && !uniqueActors.has(lowerCaseName)) {
-      uniqueActors.add(lowerCaseName); // Add actor's name to set
-      return true;
-    }
-    return false;
-  });
+      [] :
+      flattenedActors.filter(actor => {
+        if (!actor || !actor.name) {
+          return false; // Skip this iteration if actor or actor's name is undefined
+        }
+        const lowerCaseName = actor.name.trim().toLowerCase(); // Remove whitespace and convert to lowercase
+        // Check if actor's name includes search term and if it's not already in uniqueActors
+        if (lowerCaseName.includes(searchTerm) && !uniqueActors.has(lowerCaseName)) {
+          uniqueActors.add(lowerCaseName); // Add actor's name to set
+          return true;
+        }
+        return false;
+      });
   
     setFilteredActors(filtered);
     setActorSearch(event.target.value);
-    console.log("is this being called?  Fart fart fuck");
   };
+  
   
   
 
