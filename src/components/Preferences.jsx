@@ -343,7 +343,7 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   
   console.log("actor search:", actorSearch);
   console.log("filtered actors:", filteredActors);
-  
+  console.log("filtered directors:", filteredDirectors);
 
   useEffect(() => {
     const storedPreferredDirectors = JSON.parse(sessionStorage.getItem('preferredDirectors')) || [];
