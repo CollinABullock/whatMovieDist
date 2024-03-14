@@ -24,6 +24,8 @@ export default function RandomMovie({ selectedRuntime  }) {
   const [paramountArray, setParamountArray] = useState([]);
   const [criterionArray, setCriterionArray] = useState([]);
   const [tubiArray, setTubiArray] = useState([]);
+
+  
  
   useEffect(() => {
     async function fetchNetflixArray() {
@@ -331,7 +333,14 @@ export default function RandomMovie({ selectedRuntime  }) {
     }
   };
   
-  
+  const truncateDescription = (description, maxLength) => {
+    if (description.length <= maxLength) {
+      return description;
+    }
+    const truncated = description.substring(0, maxLength);
+    const lastSpaceIndex = truncated.lastIndexOf(' ');
+    return truncated.substring(0, lastSpaceIndex) + '...';
+  };
   
   
 
@@ -481,7 +490,7 @@ export default function RandomMovie({ selectedRuntime  }) {
 /></a>
 <button onClick={handleRandomMovie} style={{ backgroundColor: "red", color: "white", textShadow: "2px 2px 2px black", marginBottom: "10px" }}>I'm not feeling it, give me another</button>
               <Card.Text style={{ textAlign: "start", fontFamily: "SignWood"}}>
-                <h4 style={{marginBottom: "10px", fontSize: "2em"}}>{randomMovie.description}<br />
+                <h4 style={{marginBottom: "10px", fontSize: "2em"}}> {truncateDescription(randomMovie.description, 200)}<br />
                 <div style={{ width: "100%", margin: "0 auto", padding: "10px", display: "flex", justifyContent: "space-between", alignItems: "center", }}>
                     {renderWatchOnLink()}
                     <button onClick={handleDetails} style={{ backgroundColor: "black", color: 'white', cursor: 'pointer', fontFamily: "Signwood", border: "2px solid black", textShadow: "2px 2px 2px black" }}>More Details</button>
@@ -493,7 +502,7 @@ export default function RandomMovie({ selectedRuntime  }) {
         </motion.div>
       ) : (
         <Card style={{backgroundColor: "#58355E", alignItems: "center"}}>
-          <h1 style={{color: "white", textShadow: "2px 2px 2px black"}}>What movie should you watch tonight?</h1>
+          <h1 className='movieShould' style={{color: "white", textShadow: "2px 2px 2px black"}}>What movie should you watch tonight?</h1>
           <button className="randomMovie" onClick={handleRandomMovie}>Pick a random movie</button>
         </Card>
       )}

@@ -89,6 +89,14 @@ margin: 10px !important;
   margin: 0 !important;
 }
 
+.movieShould {
+  margin-top: 100px;
+  @media (max-width: 768px) {
+    margin-top: 200px
+ 
+}  
+}
+
 .randomCard {
   margin: 0 auto;
   border: 0;
