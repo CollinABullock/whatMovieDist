@@ -20,8 +20,10 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   const [isActorOpen, setIsActorOpen] = useState(false);
   const [directorSearch, setDirectorSearch] = useState('');
   const [actorSearch, setActorSearch] = useState('');
+  const [actorBSearch, setActorBSearch] = useState('');
   const [filteredDirectors, setFilteredDirectors] = useState([]);
   const [filteredActors, setFilteredActors] = useState([]);
+  const [filteredBActors, setFilteredBActors] = useState([]);
   const [filteredBDirectors, setFilteredBDirectors] = useState([]);
   const [preferredDirectors, setPreferredDirectors] = useState([]);
   const [preferredActors, setPreferredActors] = useState([]);
@@ -278,6 +280,38 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
     setActorSearch(event.target.value);
   };
   
+  const handleActorBSearch = (event) => {
+    const searchTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
+    
+    const flattenedActors = data.reduce((acc, movie) => {
+      if (movie.actors) {
+        movie.actors.forEach(actor => {
+          acc.push(actor); // Push the entire actor object
+        });
+      }
+      return acc;
+    }, []);
+  
+    const uniqueActors = new Set(); // Set to keep track of unique actors
+    const filtered = searchTerm === '' ?
+      [] :
+      flattenedActors.filter(actor => {
+        if (!actor || !actor.name) {
+          return false; // Skip this iteration if actor or actor's name is undefined
+        }
+        const lowerCaseName = actor.name.trim().toLowerCase(); // Remove whitespace and convert to lowercase
+        // Check if actor's name includes search term and if it's not already in uniqueActors
+        if (lowerCaseName.includes(searchTerm) && !uniqueActors.has(lowerCaseName)) {
+          uniqueActors.add(lowerCaseName); // Add actor's name to set
+          return true;
+        }
+        return false;
+      });
+  
+    setFilteredBActors(filtered);
+    setActorBSearch(event.target.value);
+  };
+  
   
   
 
@@ -342,9 +376,7 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
     setDirectorSearch(event.target.value);
   };
   
-  console.log("actor search:", actorSearch);
-  console.log("filtered actors:", filteredActors);
-  console.log("filtered directors:", filteredDirectors);
+
 
   useEffect(() => {
     const storedPreferredDirectors = JSON.parse(sessionStorage.getItem('preferredDirectors')) || [];
@@ -1140,12 +1172,12 @@ return (
         <input
           type="text"
           placeholder="Search Actors..."
-          onChange={handleActorSearch}
+          onChange={handleActorBSearch}
           style={{ marginBottom: '10px' }}
         />
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '20px', maxWidth: "80%", margin: "0 auto" }}>
-        {(!actorSearch || filteredActors.length === 0) ? (
+        {(!actorBSearch || filteredBActors.length === 0) ? (
             // Check if directors array is not empty before rendering
             sortedActors.map(actor => (
               <div
@@ -1190,7 +1222,7 @@ return (
             
           ) : (
             // Render filtered directors based on search query
-            filteredActors.map(actor => (
+            filteredBActors.map(actor => (
               
               <div
                 className='filtered-director-item'
