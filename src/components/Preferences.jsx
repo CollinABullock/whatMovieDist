@@ -41,30 +41,7 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   const [tubiArray, setTubiArray] = useState([]);
  
 
-  useEffect(() => {
-    // Function to check session storage for actorSearch value
-    const getActorSearchFromSessionStorage = () => {
-      const actorSearchFromStorage = sessionStorage.getItem('actorSearch');
-      if (actorSearchFromStorage) {
-        // Update filteredActors with the value from session storage
-        setFilteredActors(actorSearchFromStorage);
-      }
-    };
-
-    // Call the function initially to check session storage
-    getActorSearchFromSessionStorage();
-
-    // Set up a listener to check for changes in session storage
-    const handleStorageChange = () => {
-      getActorSearchFromSessionStorage();
-    };
-    window.addEventListener('storage', handleStorageChange);
-
-    // Clean up the listener when the component unmounts
-    return () => {
-      window.removeEventListener('storage', handleStorageChange);
-    };
-  }, []); //
+  
 
   const handleModalDirectorClick = (directorName) => {
     // Set the new director name as the selectedModalDirector
@@ -269,6 +246,41 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
     );
   };
   
+  const handleActorSearch = (event) => {
+    const searchTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
+    const flattenedActors = data.reduce((acc, movie) => {
+      if (movie.actors) {
+        movie.actors.forEach(actor => {
+          acc.push(actor.name);
+        });
+      }
+      return acc;
+    }, []);
+  
+    const uniqueActors = new Set(); // Set to keep track of unique actors
+    const filtered = searchTerm === '' ?
+  [] :
+  flattenedActors.filter(actorName => {
+    if (!actorName) {
+      return false; // Skip this iteration if actorName is undefined
+    }
+    const lowerCaseName = actorName.trim().toLowerCase(); // Remove whitespace and convert to lowercase
+    // Check if actor's name includes search term and if it's not already in uniqueActors
+    if (lowerCaseName.includes(searchTerm) && !uniqueActors.has(lowerCaseName)) {
+      uniqueActors.add(lowerCaseName); // Add actor's name to set
+      return true;
+    }
+    return false;
+  });
+  
+    setFilteredActors(filtered);
+    setActorSearch(event.target.value);
+    console.log("is this being called?  Fart fart fuck");
+  };
+  
+  
+
+
 
   const filteredModalMovies = filterMoviesBySelectedModalDirector();
 
@@ -1010,11 +1022,7 @@ return (
           type="text"
           placeholder="Search actors..."
           value={actorSearch}
-          onChange={(event) => {
-            const { value } = event.target;
-            setActorSearch(value);
-            sessionStorage.setItem('actorSearch', value); // Store actorSearch in session storage
-          }}
+          onChange={handleActorSearch} 
           style={{ marginBottom: '10px' }}
         />
         </div>
@@ -1131,7 +1139,7 @@ return (
         <input
           type="text"
           placeholder="Search Actors..."
-          
+          onChange={handleActorSearch}
           style={{ marginBottom: '10px' }}
         />
         </div>
