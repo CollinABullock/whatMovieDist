@@ -20,10 +20,9 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   const [isActorOpen, setIsActorOpen] = useState(false);
   const [directorSearch, setDirectorSearch] = useState('');
   const [actorSearch, setActorSearch] = useState('');
-  const [actorBSearch, setActorBSearch] = useState('');
   const [filteredDirectors, setFilteredDirectors] = useState([]);
-  const [filteredBDirectors, setFilteredBDirectors] = useState([]);
   const [filteredActors, setFilteredActors] = useState([]);
+  const [filteredBDirectors, setFilteredBDirectors] = useState([]);
   const [preferredDirectors, setPreferredDirectors] = useState([]);
   const [preferredActors, setPreferredActors] = useState([]);
   const [selectedDirectors, setSelectDirectors] = useState([]);
@@ -275,6 +274,33 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
     setDirectorBSearch(event.target.value);
   };
 
+  const handleActorSearch = (event) => {
+    const searchTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
+    const flattenedActors = data.reduce((acc, movie) => {
+      if (movie.actors) {
+        acc.push(...movie.actors);
+      }
+      return acc;
+    }, []);
+
+  
+    const uniqueActors = new Set(); // Set to keep track of unique actors
+    const filtered = searchTerm === '' ?
+      [] :
+      flattenedActors.filter(actor => {
+        const lowerCaseName = actor.name.trim().toLowerCase(); // Remove whitespace and convert to lowercase
+        // Check if director's name includes search term and if it's not already in uniqueDirectors
+        if (lowerCaseName.includes(searchTerm) && !uniqueActors.has(lowerCaseName)) {
+          uniqueActors.add(lowerCaseName); // Add director's name to set
+          return true;
+        }
+        return false;
+      });
+  
+    setFilteredActors(filtered);
+    setActorSearch(event.target.value);
+  };
+  
   const handleDirectorSearch = (event) => {
     const searchTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
     const flattenedDirectors = data.reduce((acc, movie) => {
@@ -303,37 +329,6 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   };
   
 
-const handleActorSearch = (event) => {
-  const searchTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
-  
-  const flattenedActors = data.reduce((acc, movie) => {
-    if (movie.actors) {
-      acc.push(...movie.actors);
-    }
-    return acc;
-  }, []);
-
-  const uniqueActors = new Set(); // Set to keep track of unique actors
-  
-  const filteredActors = searchTerm === '' ?
-    [] :
-    flattenedActors.filter(actor => {
-      const lowerCaseName = actor.name.trim().toLowerCase(); // Remove whitespace and convert to lowercase
-      // Check if actor's name includes search term and if it's not already in uniqueActors
-      if (lowerCaseName.includes(searchTerm) && !uniqueActors.has(lowerCaseName)) {
-        uniqueActors.add(lowerCaseName); // Add actor's name to set
-        return true;
-      }
-      return false;
-    });
-
-  setFilteredActors(filteredActors);
-  setActorSearch(event.target.value);
-};
-
-  
-  console.log("filtered actors:", filteredActors);
-  console.log("actor search:", actorSearch);
 
   useEffect(() => {
     const storedPreferredDirectors = JSON.parse(sessionStorage.getItem('preferredDirectors')) || [];
@@ -1129,8 +1124,7 @@ return (
         <input
           type="text"
           placeholder="Search Actors..."
-          value={actorSearch}
-          onChange={handleActorSearch}
+          
           style={{ marginBottom: '10px' }}
         />
         </div>
