@@ -509,7 +509,7 @@ const moviesArray = [
     "actors": [{
       "name": "Michael Fassbender",
       "image": "https://variety.com/wp-content/uploads/2024/02/fassbender-e1709057463472.jpg?w=861",
-      "imdb": "https://www.imdb.com/name/nm1055413/",
+      "imdb": "https://www.imdb.com/name/nm1055413/"
     }, {
       "name": "Tilda Swinton",
       "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRK9jrqMa484_bOUOls6P-egKvI9YLJopHVIj0cCKJZ27ldLoylGlYA7H8Dm3CVan9irp9GSs-ELU05nHI",
@@ -652,7 +652,7 @@ const moviesArray = [
     "actors": [{
       "name": "Scarlett Johansson",
       "image": "https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/UQ836S9qDWRgX1TYCkzykIuWIK8=/1660x1107/smart/filters:no_upscale()/cloudfront-us-east-1.images.arcpublishing.com/dmn/63MMCIXPOAOUKAMXJMW7HTAWCU.jpg",
-      "imdb": "https://www.imdb.com/name/nm0424060/",
+      "imdb": "https://www.imdb.com/name/nm0424060/"
     },
     {
       "name": "Morgan Freeman",
@@ -3158,7 +3158,7 @@ const moviesArray = [
     "actors": [{
       "name": "Chris Evans",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEdnkLrjpVJDcNcR5qmQHCgdsgOEpFmnYAqO0hApkmiQGLkaT9ZINqLLXgHPoJV3rlr30&usqp=CAU",
-      "imdb": "https://www.imdb.com/name/nm0262635/",
+      "imdb": "https://www.imdb.com/name/nm0262635/"
     }, {
       "name": "Kang-Ho Song",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7bMlKoo0ORq302AMo3Tc9RFwzqlZLZaYHD1-9bhapjdfHxJIb",
@@ -3303,7 +3303,7 @@ const moviesArray = [
     "actors": [{
       "name": "Natalie Portman",
       "image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT8e-jdFFzJbIQIY6yiFQarC2Zx2JE8HeAdMrX5wpKDcDaF-jYixu18_PqOeh_SiiUVrlKFYAfm6wFyZyw",
-      "imdb": "https://www.imdb.com/name/nm0000204/",
+      "imdb": "https://www.imdb.com/name/nm0000204/"
     }, {
       "name": "Julianne Moore",
       "image": "https://media.vanityfair.com/photos/62d832d66b77832a6a80ae89/16:9/w_2000,h_1125,c_limit/julianne-moore-site-story-image.jpg",
@@ -6019,7 +6019,7 @@ const moviesArray = [
     "actors": [{
       "name": "Brie Larson",
       "image": "https://people.com/thmb/2MILsdf35weyJcQtQAWYwrY0PfA=/400x262/filters:no_upscale():max_bytes(150000):strip_icc():focal(750x224:752x226)/sag-awards-2024-brie-larson-tout-022424-5d61b688c3834c0f9745692d3f083697.jpg",
-      "imdb": "https://www.imdb.com/name/nm0488953/",
+      "imdb": "https://www.imdb.com/name/nm0488953/"
     }, {
       "name": "Armie Hammer",
       "image": "https://www.rollingstone.com/wp-content/uploads/2021/01/armie-hammer.jpg",

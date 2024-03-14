@@ -14,12 +14,15 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   const [isPreferredGenresOpen, setIsPreferredGenresOpen] = useState(false);
   const [isSelectedGenresOpen, setIsSelectedGenresOpen] = useState(false);
   const [isDirectorOpen, setIsDirectorOpen] = useState(false);
+  const [directorBSearch, setDirectorBSearch] = useState('');
   const [isSelectedDirectorOpen, setIsSelectedDirectorOpen] = useState(false);
   const [isSelectedActorOpen, setIsSelectedActorOpen] = useState(false);
   const [isActorOpen, setIsActorOpen] = useState(false);
   const [directorSearch, setDirectorSearch] = useState('');
   const [actorSearch, setActorSearch] = useState('');
+  const [actorBSearch, setActorBSearch] = useState('');
   const [filteredDirectors, setFilteredDirectors] = useState([]);
+  const [filteredBDirectors, setFilteredBDirectors] = useState([]);
   const [filteredActors, setFilteredActors] = useState([]);
   const [preferredDirectors, setPreferredDirectors] = useState([]);
   const [preferredActors, setPreferredActors] = useState([]);
@@ -245,6 +248,32 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   const filteredModalMovies = filterMoviesBySelectedModalDirector();
 
   
+  const handleDirectorBSearch = (event) => {
+    const searchBTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
+    const flattenedBDirectors = data.reduce((acc, movie) => {
+      if (movie.director) {
+        acc.push(...movie.director);
+      }
+      return acc;
+    }, []);
+
+  
+    const uniqueBDirectors = new Set(); // Set to keep track of unique directors
+    const filteredB = searchBTerm === '' ?
+      [] :
+      flattenedBDirectors.filter(director => {
+        const lowerCaseName = director.name.trim().toLowerCase(); // Remove whitespace and convert to lowercase
+        // Check if director's name includes search term and if it's not already in uniqueDirectors
+        if (lowerCaseName.includes(searchBTerm) && !uniqueBDirectors.has(lowerCaseName)) {
+          uniqueBDirectors.add(lowerCaseName); // Add director's name to set
+          return true;
+        }
+        return false;
+      });
+  
+    setFilteredBDirectors(filteredB);
+    setDirectorBSearch(event.target.value);
+  };
 
   const handleDirectorSearch = (event) => {
     const searchTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
@@ -255,7 +284,6 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
       return acc;
     }, []);
 
-    console.log("flattened directors:", flattenedDirectors);
   
     const uniqueDirectors = new Set(); // Set to keep track of unique directors
     const filtered = searchTerm === '' ?
@@ -273,36 +301,39 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
     setFilteredDirectors(filtered);
     setDirectorSearch(event.target.value);
   };
+  
 
-  const handleActorSearch = (event) => {
-    const searchTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
-    const flattenedActors = data.reduce((acc, movie) => {
-      if (movie.actors) {
-        acc.push(...movie.actors);
+const handleActorSearch = (event) => {
+  const searchTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
+  
+  const flattenedActors = data.reduce((acc, movie) => {
+    if (movie.actors) {
+      acc.push(...movie.actors);
+    }
+    return acc;
+  }, []);
+
+  const uniqueActors = new Set(); // Set to keep track of unique actors
+  
+  const filteredActors = searchTerm === '' ?
+    [] :
+    flattenedActors.filter(actor => {
+      const lowerCaseName = actor.name.trim().toLowerCase(); // Remove whitespace and convert to lowercase
+      // Check if actor's name includes search term and if it's not already in uniqueActors
+      if (lowerCaseName.includes(searchTerm) && !uniqueActors.has(lowerCaseName)) {
+        uniqueActors.add(lowerCaseName); // Add actor's name to set
+        return true;
       }
-      return acc;
-    }, []);
+      return false;
+    });
 
-    console.log("flattened actors:", flattenedActors);
-
+  setFilteredActors(filteredActors);
+  setActorSearch(event.target.value);
+};
 
   
-    const uniqueActors = new Set(); // Set to keep track of unique directors
-    const filtered = searchTerm === '' ?
-      [] :
-      flattenedActors.filter(actor => {
-        const lowerCaseName = actor.name.trim().toLowerCase(); // Remove whitespace and convert to lowercase
-        // Check if director's name includes search term and if it's not already in uniqueDirectors
-        if (lowerCaseName.includes(searchTerm) && !uniqueActors.has(lowerCaseName)) {
-          uniqueActors.add(lowerCaseName); // Add actor's name to set
-          return true;
-        }
-        return false;
-      });
-  
-    setFilteredActors(filtered);
-    setActorSearch(event.target.value);
-  };
+  console.log("filtered actors:", filteredActors);
+  console.log("actor search:", actorSearch);
 
   useEffect(() => {
     const storedPreferredDirectors = JSON.parse(sessionStorage.getItem('preferredDirectors')) || [];
@@ -842,13 +873,13 @@ return (
         <input
           type="text"
           placeholder="Search Directors..."
-          value={directorSearch}
-          onChange={handleDirectorSearch}
+          value={directorBSearch}
+          onChange={handleDirectorBSearch}
           style={{ marginBottom: '10px' }}
         />
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '20px', maxWidth: "80%", margin: "0 auto" }}>
-        {(!directorSearch || filteredDirectors.length === 0) ? (
+        {(!directorBSearch || filteredBDirectors.length === 0) ? (
             // Check if directors array is not empty before rendering
             sortedDirectors.map(director => (
               <div
@@ -906,7 +937,7 @@ return (
             
           ) : (
             // Render filtered directors based on search query
-            filteredDirectors.map(director => (
+            filteredBDirectors.map(director => (
               
               <div
                 className='filtered-director-item'
