@@ -40,6 +40,32 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   const [criterionArray, setCriterionArray] = useState([]);
   const [tubiArray, setTubiArray] = useState([]);
  
+
+  useEffect(() => {
+    // Function to check session storage for actorSearch value
+    const getActorSearchFromSessionStorage = () => {
+      const actorSearchFromStorage = sessionStorage.getItem('actorSearch');
+      if (actorSearchFromStorage) {
+        // Update filteredActors with the value from session storage
+        setFilteredActors(actorSearchFromStorage);
+      }
+    };
+
+    // Call the function initially to check session storage
+    getActorSearchFromSessionStorage();
+
+    // Set up a listener to check for changes in session storage
+    const handleStorageChange = () => {
+      getActorSearchFromSessionStorage();
+    };
+    window.addEventListener('storage', handleStorageChange);
+
+    // Clean up the listener when the component unmounts
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, []); //
+
   const handleModalDirectorClick = (directorName) => {
     // Set the new director name as the selectedModalDirector
     setSelectedModalDirector(directorName);
@@ -305,26 +331,6 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   
   console.log("actor search:", actorSearch);
   console.log("filtered actors:", filteredActors);
-
-  const handleActorSearch = (event) => {
-    // Check if event object and target property exist
-    if (event && event.target) {
-      const searchTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
-    
-      // Filter the sortedActors array based on the search term
-      const filtered = sortedActors.filter(actor => {
-        const lowerCaseName = actor.name.trim().toLowerCase(); // Remove whitespace and convert to lowercase
-        return lowerCaseName.includes(searchTerm);
-      });
-  
-      setFilteredActors(filtered);
-    }
-  };
-
-    // Call handleActorSearch whenever actorSearch changes
-    useEffect(() => {
-      handleActorSearch(actorSearch);
-    }, [actorSearch]);
   
 
   useEffect(() => {
@@ -1004,7 +1010,11 @@ return (
           type="text"
           placeholder="Search actors..."
           value={actorSearch}
-          onChange={(event) => setActorSearch(event.target.value)} 
+          onChange={(event) => {
+            const { value } = event.target;
+            setActorSearch(value);
+            sessionStorage.setItem('actorSearch', value); // Store actorSearch in session storage
+          }}
           style={{ marginBottom: '10px' }}
         />
         </div>
