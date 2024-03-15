@@ -725,19 +725,19 @@ return (
   {isPreferredGenresOpen ? <BsChevronUp style={{ boxShadow: '5px 5px 5px green', margin: '10px' }} /> : <BsChevronDown style={{ boxShadow: '5px 5px 5px gred', margin: '10px' }} />}
   </div>
   {isPreferredGenresOpen && (
-  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '10px' }}>
-    {uniqueGenres.map(genre => (
-      <label key={genre} style={{ display: 'flex', alignItems: 'center' }}>
-        <input
-          type="checkbox"
-          value={genre}
-          checked={preferredGenres.includes(genre)}
-          onChange={handlePreferredCheckboxChange}
-        />
-        {genre}
-      </label>
-    ))}
-  </div>
+  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '10px' }}>
+  {uniqueGenres.map(genre => (
+    <label key={genre} style={{ display: 'flex', alignItems: 'center' }}>
+      <input
+        type="checkbox"
+        value={genre}
+        checked={preferredGenres.includes(genre)}
+        onChange={handlePreferredCheckboxChange}
+      />
+      {genre}
+    </label>
+  ))}
+</div>
   )}
 </div>
 
