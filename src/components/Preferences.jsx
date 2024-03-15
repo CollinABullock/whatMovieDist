@@ -727,7 +727,7 @@ return (
   {isPreferredGenresOpen && (
   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '10px' }}>
   {uniqueGenres.map(genre => (
-    <label key={genre} style={{ display: 'flex', alignItems: 'center', margin: "10px" }}>
+    <label key={genre} style={{ display: 'flex', alignItems: 'center'}}>
       <input
         type="checkbox"
         value={genre}
