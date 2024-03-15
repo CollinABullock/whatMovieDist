@@ -727,7 +727,7 @@ return (
   {isPreferredGenresOpen && (
   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '10px' }}>
   {uniqueGenres.map(genre => (
-    <label key={genre} style={{ display: 'flex', alignItems: 'center' }}>
+    <label key={genre} style={{ display: 'flex', alignItems: 'center', margin: "10px" }}>
       <input
         type="checkbox"
         value={genre}
@@ -747,7 +747,7 @@ return (
   {isSelectedGenresOpen ? <BsChevronUp style={{"boxShadow": "5px 5px 5px green", "margin": "10px"}}/> : <BsChevronDown style={{"boxShadow": "5px 5px 5px gred", "margin": "10px"}} />} {/* Display the arrow icon based on the state */}
   </div>
   {isSelectedGenresOpen && (
-  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '10px' }}>
+ <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '10px' }}>
     {uniqueGenres.filter(genre => !preferredGenres.includes(genre)).map(genre => (
       <label key={genre} style={{ display: 'flex', alignItems: 'center' }}>
         <input
