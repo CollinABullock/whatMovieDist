@@ -1280,6 +1280,14 @@ return (
       setSelectedServices([]);
       setPreferredDirectors([]);
       setPreferredActors([]);
+      setIsActorOpen(false);
+      setIsDirectorOpen(false);
+      setIsSelectedActorOpen(false);
+      setIsSelectedDirectorOpen(false);
+      setActorBSearch("");
+      setActorSearch("");
+      setDirectorBSearch("");
+      setDirectorSearch("");
       window.alert("Preferences have been reset. Happy viewing!");
     }}
     style={{ fontSize: "2em", backgroundColor: "red" }}

@@ -489,7 +489,8 @@ export default function RandomMovie({ selectedRuntime  }) {
   style={{ width: '75%', height: '50%', objectFit: 'cover', margin: '0', padding: '0', marginBottom: "20px" }} 
 /></a>
               <Card.Text style={{ textAlign: "start", fontFamily: "SignWood"}}>
-                <h4 style={{marginBottom: "10px", fontSize: "2em"}}> {truncateDescription(randomMovie.description, 200)}<span onClick={handleDetails} style={{ cursor: 'pointer', fontFamily: "Signwood", textShadow: "2px 2px 2px black" }}> More Details</span><br />
+                <h4 style={{marginBottom: "10px", fontSize: "2em"}}> {truncateDescription(randomMovie.description, 200)}<span onClick={handleDetails} style={{ cursor: 'pointer', fontFamily: "Signwood", textShadow: "2px 2px 2px black", color: "blue", textDecoration: "underline", fontWeight: "bold" }}>More Details</span>
+<br />
                     <div style={{margin: "30px", display: "flex", justifyContent: "space-evenly", alignItems: "stretch"}}>
                     {renderWatchOnLink()} <button onClick={handleRandomMovie} style={{ backgroundColor: "red", color: "white", textShadow: "2px 2px 2px black", fontSize: ".55em", width: "40%" }}>I'm not feeling it, give me another</button>
                     </div>
