@@ -30,7 +30,9 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   const [selectedDirectors, setSelectDirectors] = useState([]);
   const [selectedActors, setSelectedActors] = useState([]);
   const [selectedModalDirector, setSelectedModalDirector] = useState(null);
+  const [selectedModalActor, setSelectedModalActor] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isActorModalOpen, setIsActorModalOpen] = useState(false);
   const [netflixArray, setNetflixArray] = useState([]);
   const [maxArray, setMaxArray] = useState([]);
   const [primeArray, setPrimeArray] = useState([]);
@@ -53,6 +55,19 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
     setIsModalOpen(true);
   };
 
+  const handleModalActorClick = (actorName) => {
+    // Set the new director name as the selectedModalDirector
+    setSelectedModalActor(actorName);
+  
+    // Open the modal
+    setIsActorModalOpen(true);
+  };
+
+ 
+  const closeActorModal = () => {
+    setIsActorModalOpen(false);
+    setSelectedModalActor([]);
+  };
    
   useEffect(() => {
     async function fetchNetflixArray() {
@@ -279,6 +294,19 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
     setFilteredActors(filtered);
     setActorSearch(event.target.value);
   };
+
+  const filterMoviesBySelectedModalActor = () => {
+    if (!selectedModalActor) {
+      return []; // Return an empty array if selectedModalDirector is not defined
+    }
+  
+    return data.filter(movie =>
+      (movie.actors ?? []).some(actor => actor.name === selectedModalActor)
+    );
+  };
+
+  const filteredActorModalMovies = filterMoviesBySelectedModalActor();
+
   
   const handleActorBSearch = (event) => {
     const searchTerm = event.target.value.trim().toLowerCase(); // Remove whitespace and convert to lowercase
@@ -769,7 +797,7 @@ return (
                         src={director.image}
                         alt={director.name}
                         onClick={() => handleDirectorClick(director.name)}
-                        style={{ width: '170px', height: '150px', objectFit: "cover", marginBottom: '10px', margin: "0 auto" }}
+                        style={{ width: '170px', height: '150px', objectFit: "cover", margin: '60px', margin: "0 auto" }}
                       />
                       {/* Conditional rendering for the checkmark */}
                       {preferredDirectors.includes(director.name) && (
@@ -795,7 +823,7 @@ return (
                   <p onClick={() => handleDirectorClick(director.name)} style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray' }}>{director.name}</p>
                 </div>
                 <p
-        style={{ margin: '0', color: 'gray', cursor: 'pointer' }}
+        style={{ margin: '5px', color: 'gray', cursor: 'pointer' }}
         onClick={() => handleModalDirectorClick(director.name)}
       >
         Their Films
@@ -901,6 +929,40 @@ return (
   <button onClick={closeModal}>Close</button>
 </Modal>
 
+<Modal show={isActorModalOpen} style={{ backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center"}}>
+  <h1>{selectedModalActor}</h1>
+  <div className="movie-grid" >
+    {filteredActorModalMovies
+      .slice() // Create a copy of the array to avoid mutating the original
+      .sort((a, b) => {
+        // Function to sort movies alphabetically, ignoring "the"
+        const getTitleForComparison = (title) => {
+          const words = title.split(" ");
+          return words[0].toLowerCase() === "the" ? words.slice(1).join(" ") : title;
+        };
+        const titleA = getTitleForComparison(a.title);
+        const titleB = getTitleForComparison(b.title);
+        return titleA.localeCompare(titleB, 'en', { sensitivity: 'base' }); // Case-insensitive comparison
+      })
+      .reduce((acc, movie) => {
+        // Filtering out duplicates
+        const key = movie.title.toLowerCase(); // Using lowercase for case-insensitive comparison
+        if (!acc.seenTitles.has(key)) {
+          acc.seenTitles.add(key);
+          acc.uniqueMovies.push(movie);
+        }
+        return acc;
+      }, { seenTitles: new Set(), uniqueMovies: [] })
+      .uniqueMovies
+      .map(movie => (
+        <a href={movie.link} target="_blank" rel="noopener noreferrer" key={movie.title}>
+          <img src={movie.poster} alt={movie.title} />
+          <h2>{movie.title}</h2>
+        </a>
+      ))}
+  </div>
+  <button onClick={closeActorModal}>Close</button>
+</Modal>
 
 
 
@@ -1067,7 +1129,6 @@ return (
             sortedActors.map(actor => (
               <div
                 className='filtered-actor-item'
-                onClick={() => handleActorClick(actor.name)}
                 key={actor.name}
                 style={{ textAlign: 'center' }}
               >
@@ -1078,6 +1139,7 @@ return (
                       <div style={{display: "flex", alignItems: "center"}}>
                       <img
                         className='filtered-actor-img'
+                        onClick={() => handleActorClick(actor.name)}
                         src={actor.image}
                         alt={actor.name}
                         style={{ width: '170px', height: '150px', objectFit: "cover", marginBottom: '10px', margin: "0 auto" }}
@@ -1103,8 +1165,14 @@ return (
                     </React.Fragment>
                   )}
                   {/* Display actor's name */}
-                  <p style={{ margin: '0', color: preferredActors.includes(actor.name) ? 'green' : 'gray' }}>{actor.name}</p>
+                  <p  onClick={() => handleActorClick(actor.name)} style={{ margin: '0', color: preferredActors.includes(actor.name) ? 'green' : 'gray' }}>{actor.name}</p>
                 </div>
+                <p
+        style={{ margin: '0', color: 'gray', cursor: 'pointer' }}
+        onClick={() => handleModalActorClick(actor.name)}
+      >
+        Their Films
+      </p>
               </div>
             ))
             
@@ -1114,7 +1182,6 @@ return (
               
               <div
                 className='filtered-actor-item'
-                onClick={() => handleActorClick(actor.name)}
                 key={actor.name}
                 style={{ textAlign: 'center' }}
               >
@@ -1124,6 +1191,7 @@ return (
                     <React.Fragment>
                       <img
                         className='filtered-director-img'
+                        onClick={() => handleActorClick(actor.name)}
                         src={actor.image}
                         alt={actor.name}
                         style={{ width: '200px', height: '150px', objectFit: "cover", marginBottom: '10px' }}
@@ -1143,12 +1211,19 @@ return (
                             <path fill="#FFFFFF" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
                           </svg>
                         </div>
+
                       )}
                     </React.Fragment>
                   )}
                   {/* Display actor's name */}
-                  <p style={{ margin: '0', color: preferredActors.includes(actor.name) ? 'green' : 'gray' }}>{actor.name}</p>
+                  <p onClick={() => handleActorClick(actor.name)} style={{ margin: '0', color: preferredActors.includes(actor.name) ? 'green' : 'gray' }}>{actor.name}</p>
                 </div>
+                <p
+        style={{ margin: '0', color: 'gray', cursor: 'pointer' }}
+        onClick={() => handleModalActorClick(actor.name)}
+      >
+        Their Films
+      </p>
               </div>
             ))
           )}
@@ -1182,7 +1257,7 @@ return (
             sortedActors.map(actor => (
               <div
                 className='filtered-director-item'
-                onClick={() => handleSelectedActorClick(actor.name)}
+              
                 key={actor.name}
                 style={{ textAlign: 'center' }}
               >
@@ -1191,6 +1266,7 @@ return (
                   {actor.image && (
                     <React.Fragment>
                       <img
+                        onClick={() => handleSelectedActorClick(actor.name)}
                         className='filtered-director-img'
                         src={actor.image}
                         alt={actor.name}
@@ -1215,8 +1291,14 @@ return (
                     </React.Fragment>
                   )}
                   {/* Display director's name */}
-                  <p style={{ margin: '0', color: selectedActors.includes(actor.name) ? 'green' : 'gray' }}>{actor.name}</p>
+                  <p   onClick={() => handleSelectedActorClick(actor.name)} style={{ margin: '0', color: selectedActors.includes(actor.name) ? 'green' : 'gray' }}>{actor.name}</p>
                 </div>
+                <p
+        style={{ margin: '0', color: 'gray', cursor: 'pointer' }}
+        onClick={() => handleModalActorClick(actor.name)}
+      >
+        Their Films
+      </p>
               </div>
             ))
             
@@ -1226,7 +1308,6 @@ return (
               
               <div
                 className='filtered-director-item'
-                onClick={() => handleSelectedActorClick(actor.name)}
                 key={actor.name}
                 style={{ textAlign: 'center' }}
               >
@@ -1235,6 +1316,7 @@ return (
                   {actor.image && (
                     <React.Fragment>
                       <img
+                       onClick={() => handleSelectedActorClick(actor.name)}
                         className='filtered-director-img'
                         src={actor.image}
                         alt={actor.name}
@@ -1259,8 +1341,14 @@ return (
                     </React.Fragment>
                   )}
                   {/* Display director's name */}
-                  <p style={{ margin: '0', color: selectedActors.includes(actor.name) ? 'green' : 'gray' }}>{actor.name}</p>
+                  <p  onClick={() => handleSelectedActorClick(actor.name)} style={{ margin: '0', color: selectedActors.includes(actor.name) ? 'green' : 'gray' }}>{actor.name}</p>
                 </div>
+                <p
+        style={{ margin: '0', color: 'gray', cursor: 'pointer' }}
+        onClick={() => handleModalActorClick(actor.name)}
+      >
+        Their Films
+      </p>
               </div>
             ))
           )}
