@@ -619,6 +619,7 @@ const sortedDirectors = data
   .filter(movie => movie.actors && movie.actors.length > 0)
   // Extract and sort actor names alphabetically by last name
   .flatMap(movie => movie.actors)
+  .filter(actor => actor.name && actor.image) // Filter out actors without name or image
   .sort((a, b) => {
     // Check if name property exists before splitting
     const lastNameA = a.name ? a.name.split(' ').pop() : ''; // Get last name of actor A
@@ -633,6 +634,7 @@ const sortedDirectors = data
     }
     return false;
   });
+
 
 
 

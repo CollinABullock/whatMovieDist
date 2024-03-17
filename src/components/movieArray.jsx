@@ -1861,30 +1861,30 @@ const moviesArray = [
     }]
     },
 
-    {    
-      "item": "46",
-      "title": "Gravity",
-      "runtime": 90,
-      "mpaa": "PG-13",
-      "poster": "https://occ-0-92-90.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABZg18wquH4ivi2STVibYaqLpp28cQw6Ea6oSE8OdfOKCn5bPu12UzyL8RXpgcBR1hnt-xz56j-iAYY-_Z49Vud81A96lAeqNdO2B.jpg?r=256",
-      "description": "When debris destroys their shuttle, a medical engineer and a seasoned astronaut find themselves floating through space with no connection to Earth.",
-	"genre": ["drama", "thriller", "science-fiction"],
-    "link": "https://www.netflix.com/title/70274337",
-    "director": [{
-    "name": "Alfonso Cuarón",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpEPp10vDSnxNHdr87jtOCpuRVWbhHQfhY3WmcTiz3U_EABIYK",
-    "imdb": "https://www.imdb.com/name/nm0190859/",
-    }],
-    "actors": [{
-      "name": "Sandra Bullock",
-      "image": "https://media.vanityfair.com/photos/623353678ca53d3267e25b7c/16:9/w_3599,h_2024,c_limit/1384684341",
-      "imdb": "https://www.imdb.com/name/nm0000113/?ref_=tt_cl_t_1",
-    }, {
-      "name": "George Clooney",
-      "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRYIaq1IibD0byPwoCA61TVzHOu11u8JjcIclfwijR0EvFA59KLCk0RM1DDpeeRnFaTZEO1mVmnMzzFKjg",
-      "imdb": "https://www.imdb.com/name/nm0000123/"
-    }]
-    },
+  //   {    
+  //     "item": "46",
+  //     "title": "Gravity",
+  //     "runtime": 90,
+  //     "mpaa": "PG-13",
+  //     "poster": "https://occ-0-92-90.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABZg18wquH4ivi2STVibYaqLpp28cQw6Ea6oSE8OdfOKCn5bPu12UzyL8RXpgcBR1hnt-xz56j-iAYY-_Z49Vud81A96lAeqNdO2B.jpg?r=256",
+  //     "description": "When debris destroys their shuttle, a medical engineer and a seasoned astronaut find themselves floating through space with no connection to Earth.",
+	// "genre": ["drama", "thriller", "science-fiction"],
+  //   "link": "https://www.netflix.com/title/70274337",
+  //   "director": [{
+  //   "name": "Alfonso Cuarón",
+  //   "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpEPp10vDSnxNHdr87jtOCpuRVWbhHQfhY3WmcTiz3U_EABIYK",
+  //   "imdb": "https://www.imdb.com/name/nm0190859/",
+  //   }],
+  //   "actors": [{
+  //     "name": "Sandra Bullock",
+  //     "image": "https://media.vanityfair.com/photos/623353678ca53d3267e25b7c/16:9/w_3599,h_2024,c_limit/1384684341",
+  //     "imdb": "https://www.imdb.com/name/nm0000113/?ref_=tt_cl_t_1",
+  //   }, {
+  //     "name": "George Clooney",
+  //     "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRYIaq1IibD0byPwoCA61TVzHOu11u8JjcIclfwijR0EvFA59KLCk0RM1DDpeeRnFaTZEO1mVmnMzzFKjg",
+  //     "imdb": "https://www.imdb.com/name/nm0000123/"
+  //   }]
+  //   },
 
     {    
       "item": "47",
