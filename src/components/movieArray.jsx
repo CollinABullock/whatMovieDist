@@ -3298,7 +3298,7 @@ const moviesArray = [
     "director": [{
     "name": "Todd Haynes",
     "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQIqf3QdJsBJensDkBMoozIo33SIj_rHXf8ojc0VL6qd-U0zU-m66WLS6_K-Mk-7914-BVdT0FVOyfg_Cc",
-    "imdb": "https://www.imdb.com/name/nm0001331/",
+    "imdb": "https://www.imdb.com/name/nm0001331/"
     }],
     "actors": [{
       "name": "Natalie Portman",
@@ -6602,7 +6602,7 @@ const moviesArray = [
   "actors": [{
     "name": "Will Smith",
       "image": "https://m.media-amazon.com/images/M/MV5BMGI3OTI0NjctMjM2ZC00MjZiLWIxMjctODczN2M4MTFjZmY1XkEyXkFqcGdeQXJoYW5uYWg@._V1_QL75_UX500_CR0,0,500,281_.jpg",
-      "imdb": "https://www.imdb.com/name/nm0000226/",
+      "imdb": "https://www.imdb.com/name/nm0000226/"
   }, {
     "name": "Jaden Smith",
     "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/01/08/12/jadensmith.jpg",
