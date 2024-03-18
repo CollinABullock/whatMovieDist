@@ -509,7 +509,7 @@ export default function RandomMovie({ selectedRuntime  }) {
         <Modal.Header style={{backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "text-shadow: 2px 2px 2px black;"}}>
           <Modal.Title>{randomMovie ? randomMovie.title : 'Movie Title'}</Modal.Title>
           <div className='modal-details'>
-            {randomMovie && randomMovie.year}
+            <p>{randomMovie && randomMovie.year}</p>
             {randomMovie && randomMovie.runtime && (<p>{randomMovie.runtime} minutes</p>)}
             {randomMovie && randomMovie.mpaa && (<p>{randomMovie.mpaa}</p>)}
             {randomMovie && randomMovie.genre && randomMovie.genre.map((genre, index) => (
