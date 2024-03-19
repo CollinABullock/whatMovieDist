@@ -571,7 +571,7 @@ export default function RandomMovie({ selectedRuntime  }) {
         </a>
       ))}
   </div>
-  <button onClick={handleModalClose}>Close</button>
+  <button onClick={closeDirectorModal}>Close</button>
 </Modal>
 
 
