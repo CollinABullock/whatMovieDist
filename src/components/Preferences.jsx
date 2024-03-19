@@ -902,17 +902,22 @@ return (
     {filteredModalMovies
       .slice() // Create a copy of the array to avoid mutating the original
       .sort((a, b) => {
-        // Function to sort movies alphabetically, ignoring "the"
-        const getTitleForComparison = (title) => {
-          const words = title.split(" ");
-          return words[0].toLowerCase() === "the" ? words.slice(1).join(" ") : title;
-        };
-        const titleA = getTitleForComparison(a.title);
-        const titleB = getTitleForComparison(b.title);
-        return titleA.localeCompare(titleB, 'en', { sensitivity: 'base' }); // Case-insensitive comparison
+        // Function to check if a year is valid
+        const isValidYear = year => /^\d+$/.test(year);
+        
+        // Sort movies by year of release, handling missing or invalid years
+        if (isValidYear(a.year) && isValidYear(b.year)) {
+          return parseInt(a.year) - parseInt(b.year);
+        } else if (isValidYear(a.year)) {
+          return -1; // Place movies with missing years at the end
+        } else if (isValidYear(b.year)) {
+          return 1; // Place movies with missing years at the end
+        } else {
+          return 0; // Keep the order unchanged if both years are missing
+        }
       })
       .reduce((acc, movie) => {
-        // Filtering out duplicates
+        // Filtering out duplicates based on title
         const key = movie.title.toLowerCase(); // Using lowercase for case-insensitive comparison
         if (!acc.seenTitles.has(key)) {
           acc.seenTitles.add(key);
@@ -935,33 +940,38 @@ return (
   <h1>{selectedModalActor}</h1>
   <div className="movie-grid" >
     {filteredActorModalMovies
-      .slice() // Create a copy of the array to avoid mutating the original
-      .sort((a, b) => {
-        // Function to sort movies alphabetically, ignoring "the"
-        const getTitleForComparison = (title) => {
-          const words = title.split(" ");
-          return words[0].toLowerCase() === "the" ? words.slice(1).join(" ") : title;
-        };
-        const titleA = getTitleForComparison(a.title);
-        const titleB = getTitleForComparison(b.title);
-        return titleA.localeCompare(titleB, 'en', { sensitivity: 'base' }); // Case-insensitive comparison
-      })
-      .reduce((acc, movie) => {
-        // Filtering out duplicates
-        const key = movie.title.toLowerCase(); // Using lowercase for case-insensitive comparison
-        if (!acc.seenTitles.has(key)) {
-          acc.seenTitles.add(key);
-          acc.uniqueMovies.push(movie);
-        }
-        return acc;
-      }, { seenTitles: new Set(), uniqueMovies: [] })
-      .uniqueMovies
-      .map(movie => (
-        <a href={movie.link} target="_blank" rel="noopener noreferrer" key={movie.title}>
-          <img src={movie.poster} alt={movie.title} />
-          <h2>{movie.title}</h2>
-        </a>
-      ))}
+            .slice() // Create a copy of the array to avoid mutating the original
+            .sort((a, b) => {
+              // Function to check if a year is valid
+              const isValidYear = year => /^\d+$/.test(year);
+              
+              // Sort movies by year of release, handling missing or invalid years
+              if (isValidYear(a.year) && isValidYear(b.year)) {
+                return parseInt(a.year) - parseInt(b.year);
+              } else if (isValidYear(a.year)) {
+                return -1; // Place movies with missing years at the end
+              } else if (isValidYear(b.year)) {
+                return 1; // Place movies with missing years at the end
+              } else {
+                return 0; // Keep the order unchanged if both years are missing
+              }
+            })
+            .reduce((acc, movie) => {
+              // Filtering out duplicates based on title
+              const key = movie.title.toLowerCase(); // Using lowercase for case-insensitive comparison
+              if (!acc.seenTitles.has(key)) {
+                acc.seenTitles.add(key);
+                acc.uniqueMovies.push(movie);
+              }
+              return acc;
+            }, { seenTitles: new Set(), uniqueMovies: [] })
+            .uniqueMovies
+            .map(movie => (
+              <a href={movie.link} target="_blank" rel="noopener noreferrer" key={movie.title}>
+                <img src={movie.poster} alt={movie.title} />
+                <h2>{movie.title}</h2>
+              </a>
+            ))}
   </div>
   <button onClick={closeActorModal}>Close</button>
 </Modal>

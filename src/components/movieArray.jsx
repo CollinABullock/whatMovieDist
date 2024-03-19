@@ -3287,7 +3287,7 @@ const moviesArray = [
     },
 
     {    
-      "item": "88",
+      "item": 88,
       "title": "May December",
       "runtime": 117,
       "mpaa": "R",

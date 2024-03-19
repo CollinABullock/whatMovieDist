@@ -24,6 +24,8 @@ export default function RandomMovie({ selectedRuntime  }) {
   const [paramountArray, setParamountArray] = useState([]);
   const [criterionArray, setCriterionArray] = useState([]);
   const [tubiArray, setTubiArray] = useState([]);
+  const [modalDirector, setModalDirector] = useState(null)
+  const [isModalOpen, setIsModalOpen] = useState(null);
 
   
  
@@ -204,6 +206,31 @@ export default function RandomMovie({ selectedRuntime  }) {
 
   console.log("movies array:", moviesArray);
 
+  const handleModalDirectorClick = (directorName) => {
+    // Set the new director name as the selectedModalDirector
+    setModalDirector(directorName);
+    
+    // Open the modal
+    setIsModalOpen(true);
+  };
+
+  const filterMoviesByModalDirector = () => {
+    if (!modalDirector) {
+      return []; // Return an empty array if selectedModalDirector is not defined
+    }
+  
+    return moviesArray.filter(movie =>
+      (movie.director ?? []).some(director => director.name === modalDirector)
+    );
+  };
+
+  const filteredModalDirectorMovies = filterMoviesByModalDirector();
+
+  const closeDirectorModal = () => {
+    setIsModalOpen(false);
+    setModalDirector([]);
+  };
+
 
   
   // Function to handle opening actor's image modal, and the loading of the various details from the array
@@ -352,6 +379,7 @@ export default function RandomMovie({ selectedRuntime  }) {
   };
 
   const handleModalClose = () => {
+    setIsModalOpen(false);
     setShowModal(false);
   };
 
@@ -505,6 +533,49 @@ export default function RandomMovie({ selectedRuntime  }) {
           <button className="randomMovie" onClick={handleRandomMovie}>Pick a random movie</button>
         </Card>
       )}
+<Modal show={isModalOpen} style={{ backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", width: "100%", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center", maxWidth: "100%" }}>
+  <h1>{modalDirector}</h1>
+  <div className='movie-grid'>
+
+    {filteredModalDirectorMovies
+      .slice() // Create a copy of the array to avoid mutating the original
+      .sort((a, b) => {
+        // Function to check if a year is valid
+        const isValidYear = year => /^\d+$/.test(year);
+        
+        // Sort movies by year of release, handling missing or invalid years
+        if (isValidYear(a.year) && isValidYear(b.year)) {
+          return parseInt(a.year) - parseInt(b.year);
+        } else if (isValidYear(a.year)) {
+          return -1; // Place movies with missing years at the end
+        } else if (isValidYear(b.year)) {
+          return 1; // Place movies with missing years at the end
+        } else {
+          return 0; // Keep the order unchanged if both years are missing
+        }
+      })
+      .reduce((acc, movie) => {
+        // Filtering out duplicates based on title
+        const key = movie.title.toLowerCase(); // Using lowercase for case-insensitive comparison
+        if (!acc.seenTitles.has(key)) {
+          acc.seenTitles.add(key);
+          acc.uniqueMovies.push(movie);
+        }
+        return acc;
+      }, { seenTitles: new Set(), uniqueMovies: [] })
+      .uniqueMovies
+      .map(movie => (
+        <a href={movie.link} target="_blank" rel="noopener noreferrer" key={movie.title}>
+          <img src={movie.poster} alt={movie.title} />
+          <h2>{movie.title}</h2>
+        </a>
+      ))}
+  </div>
+  <button onClick={handleModalClose}>Close</button>
+</Modal>
+
+
+
       <Modal show={showModal} onHide={handleModalClose} style={{fontFamily: "Signwood"}}>
         <Modal.Header style={{backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "text-shadow: 2px 2px 2px black;"}}>
           <Modal.Title>{randomMovie ? randomMovie.title : 'Movie Title'}</Modal.Title>
@@ -537,6 +608,12 @@ export default function RandomMovie({ selectedRuntime  }) {
                         onClick={() => handleActorImageModalOpen(director.image, director.name, director.IMDB)}
                       />
                       <p style={{ marginTop: '5px', fontSize: '14px' }}>{director.name}</p>
+                      <p
+        style={{ margin: '0', color: 'gray', cursor: 'pointer' }}
+        onClick={() => handleModalDirectorClick(director.name)}
+      >
+        More movies by them
+      </p>
                     
                   </div>
                 ))}
