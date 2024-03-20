@@ -216,12 +216,12 @@ export default function RandomMovie({ selectedRuntime  }) {
     setIsModalOpen(true);
   };
 
-  const handleModalActorClick = (actorName) => {
+  const handleModalActorClick = (actor) => {
     // Set the new director name as the selectedModalDirector
-    setModalActor(actorName);
+    setModalActor(actor);
     
     // Open the modal
-    setIsModalOpen(true);
+    setIsActorModalOpen(true);
   };
 
   const filterMoviesByModalDirector = () => {
@@ -249,7 +249,7 @@ export default function RandomMovie({ selectedRuntime  }) {
     }
   
     return moviesArray.filter(movie =>
-      (movie.actor ?? []).some(actor => actor.name === modalActor)
+      (movie.actors ?? []).some(actor => actor.name === modalActor.name)
     );
   };
 
@@ -263,21 +263,7 @@ export default function RandomMovie({ selectedRuntime  }) {
   };
 
   
-  // Function to handle opening actor's image modal, and the loading of the various details from the array
-  const handleActorImageModalOpen = (imageSrc, nameSrc, IMDBSrc) => {
-    setActorImageSrc(imageSrc);
-    setActorNameSrc(nameSrc);
-    setActorIMDBSrc(IMDBSrc);
-    setActorImageModalOpen(true);
-  };
 
-  // Function to handle closing actor's image modal and to prombtly clear the image src
-  const handleActorImageModalClose = () => {
-    setActorImageSrc('');
-    setActorNameSrc("");
-    setActorIMDBSrc("");
-    setActorImageModalOpen(false);
-  };
 
  
 
@@ -608,7 +594,11 @@ export default function RandomMovie({ selectedRuntime  }) {
 </Modal>
 
 <Modal show={isActorModalOpen} style={{ backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", width: "100%", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center", maxWidth: "100%" }}>
-  <h1>{modalActor}</h1>
+  <div style={{border: "5px solid black"}}>
+  <a target="_blank" href={modalActor ? modalActor.imdb: "http://ww.imdb.com"}>
+  <img style={{margin: "0 auto"}} src={modalActor ? modalActor.image: "no actor"} alt={modalActor ? modalActor.name: "no actor"} /></a>
+  <h3>More films with {modalActor ? modalActor.name: "no actor"} in them</h3>
+  </div>
   <div className='movie-grid'>
 
     {filteredModalActorMovies
@@ -697,7 +687,7 @@ export default function RandomMovie({ selectedRuntime  }) {
             src={actor.image}
             alt={actor.name}
             style={{ width: '100px', height: '80px', objectFit: 'cover', cursor: 'pointer' }}
-            onClick={() => handleActorImageModalOpen(actor.image, actor.name, actor.IMDB)}
+            onClick={() => handleModalActorClick(actor)}
           />
           <p style={{ marginTop: '5px', fontSize: '14px' }}>{actor.name}</p>
         </div>
@@ -712,17 +702,7 @@ export default function RandomMovie({ selectedRuntime  }) {
           </Button>
         </Modal.Footer>
       </Modal>
-      <Modal show={actorImageModalOpen} onHide={handleActorImageModalClose}>
-      <Modal.Body style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: "center", msFlexDirection: "wrap" }}>
-    <img src={actorImageSrc} alt="Actor" style={{ maxWidth: '100%', maxHeight: '100%' }} /> <br/>
-    <h1 style={{ fontFamily: "SignWood", color: "whitesmoke", textShadow: "2px 2px 2px black" }}>{actorNameSrc}</h1>
-    <a href={actorIMDBSrc}><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png" alt="imdb" style={{width: "25%", height: "25%", margin: "0 auto"}} /></a>
-  </div>
-</Modal.Body>
-
-
-</Modal>
+     
     </div>
   );
 }
