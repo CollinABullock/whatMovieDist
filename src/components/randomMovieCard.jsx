@@ -208,9 +208,9 @@ export default function RandomMovie({ selectedRuntime  }) {
 
   console.log("movies array:", moviesArray);
 
-  const handleModalDirectorClick = (directorName) => {
+  const handleModalDirectorClick = (director) => {
     // Set the new director name as the selectedModalDirector
-    setModalDirector(directorName);
+    setModalDirector(director);
     
     // Open the modal
     setIsModalOpen(true);
@@ -230,7 +230,7 @@ export default function RandomMovie({ selectedRuntime  }) {
     }
   
     return moviesArray.filter(movie =>
-      (movie.director ?? []).some(director => director.name === modalDirector)
+      (movie.director ?? []).some(director => director.name === modalDirector.name)
     );
   };
 
@@ -240,6 +240,8 @@ export default function RandomMovie({ selectedRuntime  }) {
     setIsModalOpen(false);
     setModalDirector([]);
   };
+
+  console.log("modal director:", modalDirector);
 
   const filterMoviesByModalActor = () => {
     if (!modalActor) {
@@ -562,7 +564,8 @@ export default function RandomMovie({ selectedRuntime  }) {
         </Card>
       )}
 <Modal show={isModalOpen} style={{ backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", width: "100%", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center", maxWidth: "100%" }}>
-  <h1>{modalDirector}</h1>
+<h3>More films by {modalDirector ? modalDirector.name : 'No Director'}</h3>
+  
   <div className='movie-grid'>
 
     {filteredModalDirectorMovies
@@ -667,21 +670,14 @@ export default function RandomMovie({ selectedRuntime  }) {
               <h5>Director:</h5>
               <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
                 {randomMovie.director.map((director, index) => (
-                  <div key={index} style={{ textAlign: 'center' }}>
+                  <div onClick={() => handleModalDirectorClick(director)} key={index} style={{ textAlign: 'center' }}>
                     
                       <img 
                         src={director.image} 
                         alt={director.name} 
                         style={{ width: '120px', height: '100px', objectFit: 'cover' }} 
-                        onClick={() => handleActorImageModalOpen(director.image, director.name, director.IMDB)}
                       />
                       <p style={{ marginTop: '5px', fontSize: '14px' }}>{director.name}</p>
-                      <p
-        style={{ margin: '0', color: 'gray', cursor: 'pointer' }}
-        onClick={() => handleModalDirectorClick(director.name)}
-      >
-        More movies by them
-      </p>
                     
                   </div>
                 ))}
@@ -702,12 +698,6 @@ export default function RandomMovie({ selectedRuntime  }) {
             onClick={() => handleActorImageModalOpen(actor.image, actor.name, actor.IMDB)}
           />
           <p style={{ marginTop: '5px', fontSize: '14px' }}>{actor.name}</p>
-          <p
-        style={{ margin: '0', color: 'gray', cursor: 'pointer' }}
-        onClick={() => handleModalActorClick(actor.name)}
-      >
-        More movies by them
-      </p>
         </div>
       ))}
     </div>
