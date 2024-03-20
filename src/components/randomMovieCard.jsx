@@ -550,10 +550,11 @@ export default function RandomMovie({ selectedRuntime  }) {
         </Card>
       )}
 <Modal show={isModalOpen} style={{ backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", width: "100%", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center", maxWidth: "100%" }}>
+  <div style={{border: "5px solid black", marginBottom: "10px"}}>
   <a target="_blank" href={modalDirector ? modalDirector.imdb: "http://ww.imdb.com"}>
 <img src={modalDirector ? modalDirector.image : 'No Director'} alt={modalDirector ? modalDirector.name : "No Director"} style={{margin: "0 auto"}}/></a>
 <h3>More films by {modalDirector ? modalDirector.name : 'No Director'}</h3>
-  
+</div>
   <div className='movie-grid'>
 
     {filteredModalDirectorMovies
@@ -594,7 +595,7 @@ export default function RandomMovie({ selectedRuntime  }) {
 </Modal>
 
 <Modal show={isActorModalOpen} style={{ backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", width: "100%", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center", maxWidth: "100%" }}>
-  <div style={{border: "5px solid black"}}>
+  <div style={{border: "5px solid black", marginBottom: "10px"}}>
   <a target="_blank" href={modalActor ? modalActor.imdb: "http://ww.imdb.com"}>
   <img style={{margin: "0 auto"}} src={modalActor ? modalActor.image: "no actor"} alt={modalActor ? modalActor.name: "no actor"} /></a>
   <h3>More films with {modalActor ? modalActor.name: "no actor"} in them</h3>
