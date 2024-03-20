@@ -679,22 +679,23 @@ export default function RandomMovie({ selectedRuntime  }) {
           )}
           {/* Actors Section */}
           {randomMovie && randomMovie.actors && (
-  <div>
-    <h5>Actors:</h5>
-    <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
-      {randomMovie.actors.map((actor, index) => (
-        <div key={index} style={{ textAlign: 'center' }}>
-          <img
-            src={actor.image}
-            alt={actor.name}
-            style={{ width: '100px', height: '80px', objectFit: 'cover', cursor: 'pointer' }}
-            onClick={() => handleModalActorClick(actor)}
-          />
-          <p style={{ marginTop: '5px', fontSize: '14px' }}>{actor.name}</p>
-        </div>
-      ))}
-    </div>
-  </div>
+ <div>
+ <h5>Actors:</h5>
+ <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+   {randomMovie.actors.map((actor, index) => (
+     <div key={index} style={{ textAlign: 'center', width: '120px', margin: '10px' }}>
+       <img
+         src={actor.image}
+         alt={actor.name}
+         style={{ width: '100px', height: '80px', objectFit: 'cover', cursor: 'pointer' }}
+         onClick={() => handleModalActorClick(actor)}
+       />
+       <p style={{ marginTop: '5px', fontSize: '14px' }}>{actor.name}</p>
+     </div>
+   ))}
+ </div>
+</div>
+
 )}
         </Modal.Body>
         <Modal.Footer style={{backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "text-shadow: 2px 2px 2px black;"}}>
