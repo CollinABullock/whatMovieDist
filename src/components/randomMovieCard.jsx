@@ -10,10 +10,6 @@ export default function RandomMovie({ selectedRuntime  }) {
   const [showModal, setShowModal] = useState(false);
   const [animationKey, setAnimationKey] = useState(0);
   // setting up states to control the opening of the image modal as well as the source of the actor's image
-  const [actorImageModalOpen, setActorImageModalOpen] = useState(false);
-  const [actorImageSrc, setActorImageSrc] = useState('');
-  const [actorNameSrc, setActorNameSrc] = useState('');
-  const [actorIMDBSrc, setActorIMDBSrc] = useState('');
   const [netflixArray, setNetflixArray] = useState([]);
   const [maxArray, setMaxArray] = useState([]);
   const [primeArray, setPrimeArray] = useState([]);
@@ -536,7 +532,7 @@ export default function RandomMovie({ selectedRuntime  }) {
                 <h4 style={{marginBottom: "10px", fontSize: "2em"}}> {truncateDescription(randomMovie.description, 200)}<span onClick={handleDetails} style={{ cursor: 'pointer', fontFamily: "Signwood", textShadow: "2px 2px 2px black", color: "blue", textDecoration: "underline", fontWeight: "bold" }}>More Details</span>
 <br />
                     <div style={{margin: "30px", display: "flex", justifyContent: "space-evenly", alignItems: "stretch"}}>
-                    {renderWatchOnLink()} <button onClick={handleRandomMovie} style={{ backgroundColor: "red", color: "white", textShadow: "2px 2px 2px black", fontSize: ".55em", width: "40%" }}>I'm not feeling it, give me another</button>
+                    {renderWatchOnLink()} <button onClick={handleRandomMovie} style={{ backgroundColor: "red", color: "white", textShadow: "2px 2px 2px black", fontSize: ".55em", width: "40%" }}>Give me another</button>
                     </div>
                 </h4>
               </Card.Text>
@@ -544,99 +540,127 @@ export default function RandomMovie({ selectedRuntime  }) {
           </Card>
         </motion.div>
       ) : (
-        <Card style={{backgroundColor: "#58355E", alignItems: "center"}}>
+        <Card style={{backgroundColor: "#58355E", alignItems: "center", justifyContent: 'center'}}>
           <h1 className='movieShould' style={{color: "white", textShadow: "2px 2px 2px black"}}>What movie should you watch tonight?</h1>
           <button className="randomMovie" onClick={handleRandomMovie}>Pick a random movie</button>
         </Card>
       )}
-<Modal show={isModalOpen} style={{ backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", width: "100%", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center", maxWidth: "100%" }}>
-  <div style={{border: "5px solid black", marginBottom: "10px"}}>
-  <a target="_blank" href={modalDirector ? modalDirector.imdb: "http://ww.imdb.com"}>
-<img src={modalDirector ? modalDirector.image : 'No Director'} alt={modalDirector ? modalDirector.name : "No Director"} style={{margin: "0 auto"}}/></a>
-<h3>More films by {modalDirector ? modalDirector.name : 'No Director'}</h3>
-</div>
-  <div className='movie-grid'>
 
-    {filteredModalDirectorMovies
-      .slice() // Create a copy of the array to avoid mutating the original
-      .sort((a, b) => {
-        // Function to check if a year is valid
-        const isValidYear = year => /^\d+$/.test(year);
-        
-        // Sort movies by year of release, handling missing or invalid years
-        if (isValidYear(a.year) && isValidYear(b.year)) {
-          return parseInt(a.year) - parseInt(b.year);
-        } else if (isValidYear(a.year)) {
-          return -1; // Place movies with missing years at the end
-        } else if (isValidYear(b.year)) {
-          return 1; // Place movies with missing years at the end
-        } else {
-          return 0; // Keep the order unchanged if both years are missing
-        }
-      })
-      .reduce((acc, movie) => {
-        // Filtering out duplicates based on title
-        const key = movie.title.toLowerCase(); // Using lowercase for case-insensitive comparison
-        if (!acc.seenTitles.has(key)) {
-          acc.seenTitles.add(key);
-          acc.uniqueMovies.push(movie);
-        }
-        return acc;
-      }, { seenTitles: new Set(), uniqueMovies: [] })
-      .uniqueMovies
-      .map(movie => (
-        <a href={movie.link} target="_blank" rel="noopener noreferrer" key={movie.title}>
-          <img src={movie.poster} alt={movie.title} />
-          <h2>{movie.title}</h2>
-        </a>
-      ))}
+      {/* start director modal, within the details modal */}
+      <Modal show={isModalOpen} style={{ color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center", maxWidth: "100%" }}>
+  <div style={{ backgroundColor: "#58355E", width: "100%", padding: "10px", boxSizing: "border-box" }}>
+    <div style={{backgroundColor: "#58355E", border: "5px solid black", marginBottom: "10px"}}>
+      <a target="_blank" href={modalDirector ? modalDirector.imdb: "http://ww.imdb.com"}>
+        <img src={modalDirector ? modalDirector.image : 'No Director'} alt={modalDirector ? modalDirector.name : "No Director"} style={{margin: "0 auto"}}/>
+      </a>
+      <h3>More films by {modalDirector ? modalDirector.name : 'No Director'}</h3>
+    </div>
+    <div className='movie-grid' style={{ backgroundColor: "#58355E", display: "flex", flexDirection: "column", alignItems: "center" }}>
+  {filteredModalDirectorMovies
+    .slice() // Create a copy of the array to avoid mutating the original
+    .sort((a, b) => {
+      // Function to check if a year is valid
+      const isValidYear = year => /^\d+$/.test(year);
+      
+      // Sort movies by year of release, handling missing or invalid years
+      if (isValidYear(a.year) && isValidYear(b.year)) {
+        return parseInt(a.year) - parseInt(b.year);
+      } else if (isValidYear(a.year)) {
+        return -1; // Place movies with missing years at the end
+      } else if (isValidYear(b.year)) {
+        return 1; // Place movies with missing years at the end
+      } else {
+        return 0; // Keep the order unchanged if both years are missing
+      }
+    })
+    .reduce((acc, movie) => {
+      // Filtering out duplicates based on title
+      const key = movie.title.toLowerCase(); // Using lowercase for case-insensitive comparison
+      if (!acc.seenTitles.has(key)) {
+        acc.seenTitles.add(key);
+        acc.uniqueMovies.push(movie);
+      }
+      return acc;
+    }, { seenTitles: new Set(), uniqueMovies: [] })
+    .uniqueMovies
+    .map(movie => (
+      <div style={{ width: "100%", padding: "10px" }} key={movie.title}>
+        <div style={{ border: "5px solid black", borderRadius: "10px", overflow: "hidden" }}>
+          <a href={movie.link} target="_blank" rel="noopener noreferrer">
+            <img src={movie.poster} alt={movie.title} style={{ width: "100%", height: "auto" }} />
+          </a>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <a href={movie.link} target="_blank" rel="noopener noreferrer">
+              <h2 style={{ margin: '10px' }}>{movie.title} on </h2>
+            </a>
+            {renderWatchOnLink()}
+          </div>
+        </div>
+      </div>
+    ))}
+</div>
+
+    <button onClick={closeDirectorModal}>Close</button>
   </div>
-  <button onClick={closeDirectorModal}>Close</button>
 </Modal>
 
-<Modal show={isActorModalOpen} style={{ backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", width: "100%", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center", maxWidth: "100%" }}>
-  <div style={{border: "5px solid black", marginBottom: "10px"}}>
-  <a target="_blank" href={modalActor ? modalActor.imdb: "http://ww.imdb.com"}>
-  <img style={{margin: "0 auto"}} src={modalActor ? modalActor.image: "no actor"} alt={modalActor ? modalActor.name: "no actor"} /></a>
-  <h3>More films with {modalActor ? modalActor.name: "no actor"} in them</h3>
-  </div>
-  <div className='movie-grid'>
+{/* start actor modal within the details modals */}
 
-    {filteredModalActorMovies
-      .slice() // Create a copy of the array to avoid mutating the original
-      .sort((a, b) => {
-        // Function to check if a year is valid
-        const isValidYear = year => /^\d+$/.test(year);
-        
-        // Sort movies by year of release, handling missing or invalid years
-        if (isValidYear(a.year) && isValidYear(b.year)) {
-          return parseInt(a.year) - parseInt(b.year);
-        } else if (isValidYear(a.year)) {
-          return -1; // Place movies with missing years at the end
-        } else if (isValidYear(b.year)) {
-          return 1; // Place movies with missing years at the end
-        } else {
-          return 0; // Keep the order unchanged if both years are missing
-        }
-      })
-      .reduce((acc, movie) => {
-        // Filtering out duplicates based on title
-        const key = movie.title.toLowerCase(); // Using lowercase for case-insensitive comparison
-        if (!acc.seenTitles.has(key)) {
-          acc.seenTitles.add(key);
-          acc.uniqueMovies.push(movie);
-        }
-        return acc;
-      }, { seenTitles: new Set(), uniqueMovies: [] })
-      .uniqueMovies
-      .map(movie => (
-        <a href={movie.link} target="_blank" rel="noopener noreferrer" key={movie.title}>
-          <img src={movie.poster} alt={movie.title} />
-          <h2>{movie.title}</h2>
-        </a>
-      ))}
+<Modal show={isActorModalOpen} style={{ color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center", maxWidth: "100%" }}>
+  <div style={{ backgroundColor: "#58355E", width: "100%", padding: "10px", boxSizing: "border-box" }}>
+    <div style={{backgroundColor: "#58355E", border: "5px solid black", marginBottom: "10px"}}>
+      <a target="_blank" href={modalDirector ? modalDirector.imdb: "http://ww.imdb.com"}>
+        <img src={modalActor ? modalActor.image : 'No Actor'} alt={modalActor ? modalActor.name : "No Actor"} style={{margin: "0 auto"}}/>
+      </a>
+      <h3>More films with {modalActor ? modalActor.name : 'No Actor'}</h3>
+    </div>
+    <div className='movie-grid' style={{ backgroundColor: "#58355E", display: "flex", flexDirection: "column", alignItems: "center" }}>
+  {filteredModalActorMovies
+    .slice() // Create a copy of the array to avoid mutating the original
+    .sort((a, b) => {
+      // Function to check if a year is valid
+      const isValidYear = year => /^\d+$/.test(year);
+      
+      // Sort movies by year of release, handling missing or invalid years
+      if (isValidYear(a.year) && isValidYear(b.year)) {
+        return parseInt(a.year) - parseInt(b.year);
+      } else if (isValidYear(a.year)) {
+        return -1; // Place movies with missing years at the end
+      } else if (isValidYear(b.year)) {
+        return 1; // Place movies with missing years at the end
+      } else {
+        return 0; // Keep the order unchanged if both years are missing
+      }
+    })
+    .reduce((acc, movie) => {
+      // Filtering out duplicates based on title
+      const key = movie.title.toLowerCase(); // Using lowercase for case-insensitive comparison
+      if (!acc.seenTitles.has(key)) {
+        acc.seenTitles.add(key);
+        acc.uniqueMovies.push(movie);
+      }
+      return acc;
+    }, { seenTitles: new Set(), uniqueMovies: [] })
+    .uniqueMovies
+    .map(movie => (
+      <div style={{ width: "100%", padding: "10px" }} key={movie.title}>
+        <div style={{ border: "5px solid black", borderRadius: "10px", overflow: "hidden" }}>
+          <a href={movie.link} target="_blank" rel="noopener noreferrer">
+            <img src={movie.poster} alt={movie.title} style={{ width: "100%", height: "auto" }} />
+          </a>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <a href={movie.link} target="_blank" rel="noopener noreferrer">
+              <h2 style={{ margin: '10px' }}>{movie.title} on </h2>
+            </a>
+            {renderWatchOnLink()}
+          </div>
+        </div>
+      </div>
+    ))}
+</div>
+
+    <button onClick={closeActorModal}>Close</button>
   </div>
-  <button onClick={closeActorModal}>Close</button>
 </Modal>
 
 
