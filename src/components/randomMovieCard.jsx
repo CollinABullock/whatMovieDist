@@ -650,7 +650,7 @@ export default function RandomMovie({ selectedRuntime  }) {
                 <h4 style={{marginBottom: "10px", fontSize: "2em"}}> {truncateDescription(randomMovie.description, 200)}<span onClick={handleDetails} style={{ cursor: 'pointer', fontFamily: "Signwood", textShadow: "2px 2px 2px black", color: "blue", textDecoration: "underline", fontWeight: "bold" }}>More Details</span>
 <br />
                     <div style={{margin: "30px", display: "flex", justifyContent: "space-evenly", alignItems: "stretch"}}>
-                    {renderWatchOnLink()} <button onClick={handleRandomMovie} style={{ backgroundColor: "red", color: "white", textShadow: "2px 2px 2px black", fontSize: ".55em", width: "40%" }}>Give me another</button>
+                    {renderWatchOnLink()} <button onClick={handleRandomMovie} style={{ backgroundColor: "red", color: "white", textShadow: "2px 2px 2px black", fontSize: ".75em", width: "50%" }}>Give me another</button>
                     </div>
                 </h4>
               </Card.Text>
@@ -711,7 +711,7 @@ export default function RandomMovie({ selectedRuntime  }) {
             <a href={movie.link} target="_blank" rel="noopener noreferrer">
               <h2 style={{ margin: '10px' }}>{movie.title} on </h2>
             </a>
-            {renderWatchOnLink()}
+            {renderModalWatchOnLink(movie)}
           </div>
         </div>
       </div>
