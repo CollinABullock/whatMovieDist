@@ -564,6 +564,8 @@ export default function RandomMovie({ selectedRuntime  }) {
         </Card>
       )}
 <Modal show={isModalOpen} style={{ backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", width: "100%", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center", maxWidth: "100%" }}>
+  <a target="_blank" href={modalDirector ? modalDirector.imdb: "http://ww.imdb.com"}>
+<img src={modalDirector ? modalDirector.image : 'No Director'} alt={modalDirector ? modalDirector.name : "No Director"} style={{margin: "0 auto"}}/></a>
 <h3>More films by {modalDirector ? modalDirector.name : 'No Director'}</h3>
   
   <div className='movie-grid'>
