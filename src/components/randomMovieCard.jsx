@@ -646,7 +646,7 @@ export default function RandomMovie({ selectedRuntime  }) {
           <div className='modal-details'>
             <p>{randomMovie && randomMovie.year}</p>
             {randomMovie && randomMovie.runtime && (<p>{randomMovie.runtime} minutes</p>)}
-            {randomMovie && randomMovie.mpaa && (<p>{randomMovie.mpaa}</p>)}
+            {randomMovie && randomMovie.mpaa && (<p>Rated {randomMovie.mpaa}</p>)}
             {randomMovie && randomMovie.genre && randomMovie.genre.map((genre, index) => (
               <span key={index}>
                 {genre}
