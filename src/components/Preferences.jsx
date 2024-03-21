@@ -1443,6 +1443,7 @@ return (
       setDirectorBSearch("");
       setDirectorSearch("");
       window.alert("Preferences have been reset. Happy viewing!");
+      window.location.reload();
     }}
     style={{ fontSize: "2em", backgroundColor: "red" }}
   >
