@@ -315,6 +315,44 @@ export default function RandomMovie({ selectedRuntime  }) {
   
     filtered = filtered.filter(movie => movie.runtime <= selectedRuntime);
 
+// Filter based on preferred decades
+const preferredDecades = JSON.parse(sessionStorage.getItem('preferredDecades'));
+let decadeFiltered = [];
+
+if (preferredDecades && preferredDecades.length > 0) {
+  preferredDecades.forEach(decade => {
+    let startYear, endYear;
+
+    switch (decade) {
+      case "1920's":
+        startYear = 1920;
+        endYear = 1929;
+        break;
+      case "1930's":
+        startYear = 1930;
+        endYear = 1939;
+        break;
+      case "1940's":
+        startYear = 1940;
+        endYear = 1949;
+        break;
+        case "1940's":
+          startYear = 1940;
+          endYear = 1949;
+          break;
+      // Add cases for other decades as needed
+      default:
+        break;
+    }
+
+    const decadeMovies = filtered.filter(movie => movie.year >= startYear && movie.year <= endYear);
+    decadeFiltered = decadeFiltered.concat(decadeMovies);
+  });
+
+  filtered = decadeFiltered;
+}
+
+
     filtered = filtered.filter(movie => movie.title !== lastSelectedMovieTitle);
   
     // Filter based on selected genres to avoid

@@ -1429,6 +1429,7 @@ return (
       setSelectedGenres([]);
       setPreferredGenres([]);
       setIsPreferredDecadesOpen([]);
+      setPreferredDecades([]);
       setRuntime(240);
       setSelectedServices([]);
       setPreferredDirectors([]);
