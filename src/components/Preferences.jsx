@@ -7,11 +7,13 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   const [runtime, setRuntime] = useState(sessionStorage.getItem('selectedRuntime') || 240);
   const [selectedGenres, setSelectedGenres] = useState(JSON.parse(sessionStorage.getItem('selectedGenres')) || []);
   const [preferredGenres, setPreferredGenres] = useState(JSON.parse(sessionStorage.getItem('preferredGenres')) || []);
+  const [preferredDecades, setPreferredDecades] = useState([]);
   const [selectedServices, setSelectedServices] = useState([]);
   const [uniqueGenres, setUniqueGenres] = useState([]);
   const [isStreamingServicesOpen, setStreamingServicesOpen] = useState(false); // State for streaming services visibility
   const [isRuntimeOpen, setIsRuntimeOpen] = useState(false); 
   const [isPreferredGenresOpen, setIsPreferredGenresOpen] = useState(false);
+  const [isPreferredDecadesOpen, setIsPreferredDecadesOpen] = useState(false);
   const [isSelectedGenresOpen, setIsSelectedGenresOpen] = useState(false);
   const [isDirectorOpen, setIsDirectorOpen] = useState(false);
   const [directorBSearch, setDirectorBSearch] = useState('');
@@ -542,11 +544,26 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
       setPreferredGenres(prevPreferredGenres => prevPreferredGenres.filter(genre => genre !== value));
     }
   };
+
+  const handlePreferredDecadesCheckboxChange = (event) => {
+    const { value, checked } = event.target;
+    if (checked) {
+      setPreferredDecades(prevPreferredDecades => [...prevPreferredDecades, value]); // Corrected here
+      
+    } else {
+      setPreferredDecades(prevPreferredDecades => prevPreferredDecades.filter(decade => decade !== value)); // Corrected here
+    }
+  };
+
+  console.log("preferredDecades:", preferredDecades);
+
+  
   
   useEffect(() => {
     // Update sessionStorage whenever selectedGenres or preferredGenres change
     sessionStorage.setItem('selectedGenres', JSON.stringify(selectedGenres));
     sessionStorage.setItem('preferredGenres', JSON.stringify(preferredGenres));
+    sessionStorage.setItem("preferredDecades", JSON.stringify (preferredDecades));
   }, [selectedGenres, preferredGenres]);
 
   const handleSliderChange = (event) => {
@@ -569,6 +586,10 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
     { name: "Criterion", logo: "https://pyxis.nymag.com/v1/imgs/485/852/690bf30879dd192d9d3bd2b9b44f945c12-streamliner-criterion.jpg"},
     { name: "Tubi", logo: "https://cloudfront-us-east-1.images.arcpublishing.com/gmg/BVVRXGRYJ5BZTBKPJXLQC5TIJM.jpg"}
   ];
+
+  const decades = [
+    "1920s", "1930s", "1940s", "1950s", "1960s", "1970s", "1980s", "1990s", "2000s", "2010s", "2020"
+  ]
 
   const handleServiceClick = (serviceName) => {
     setSelectedServices(prevSelectedServices => {
@@ -718,6 +739,33 @@ return (
   )}
 </div>
 
+{/* start selected genre section */}
+
+<div style={{ marginBottom: '30px', border: '1px solid #ccc', padding: '15px' }}>
+<div
+    style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', marginBottom: '10px' }}
+    onClick={() => setIsPreferredDecadesOpen(!isPreferredDecadesOpen)}
+  >
+  <h4>Any decade you'd like to see a movie from?</h4>
+  {isPreferredDecadesOpen ? <BsChevronUp style={{ boxShadow: '5px 5px 5px green', margin: '10px' }} /> : <BsChevronDown style={{ boxShadow: '5px 5px 5px gred', margin: '10px' }} />}
+  </div>
+  {isPreferredDecadesOpen && (
+  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '10px' }}>
+  {decades.map(decade => (
+    <label key={decade} style={{ display: 'flex', alignItems: 'center'}}>
+      <input
+        type="checkbox"
+        value={decade}
+        checked={preferredDecades.includes(decade)}
+        onChange={handlePreferredDecadesCheckboxChange}
+      />
+      {decade}
+    </label>
+  ))}
+</div>
+  )}
+</div>
+
 <div style={{ marginBottom: '30px', border: '1px solid #ccc', padding: '15px' }}>
 <div
     style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', marginBottom: '10px' }}
@@ -742,6 +790,10 @@ return (
 </div>
   )}
 </div>
+
+
+
+{/* Starting selected genres section */}
 
 <div style={{ marginBottom: '30px', border: '1px solid #ccc', padding: '15px' }}>
 <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', marginBottom: '10px' }} onClick={() => setIsSelectedGenresOpen(!isSelectedGenresOpen)}>
@@ -1376,6 +1428,7 @@ return (
       sessionStorage.clear();
       setSelectedGenres([]);
       setPreferredGenres([]);
+      setIsPreferredDecadesOpen([]);
       setRuntime(240);
       setSelectedServices([]);
       setPreferredDirectors([]);
