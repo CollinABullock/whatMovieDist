@@ -564,7 +564,7 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
     sessionStorage.setItem('selectedGenres', JSON.stringify(selectedGenres));
     sessionStorage.setItem('preferredGenres', JSON.stringify(preferredGenres));
     sessionStorage.setItem("preferredDecades", JSON.stringify (preferredDecades));
-  }, [selectedGenres, preferredGenres]);
+  }, [selectedGenres, preferredGenres, preferredDecades]);
 
   const handleSliderChange = (event) => {
     const value = event.target.value;
@@ -588,7 +588,7 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   ];
 
   const decades = [
-    "1920s", "1930s", "1940s", "1950s", "1960s", "1970s", "1980s", "1990s", "2000s", "2010s", "2020"
+    "1920's", "1930's", "1940's", "1950's", "1960's", "1970's", "1980's", "1990's", "2000's", "2010's", "2020's"
   ]
 
   const handleServiceClick = (serviceName) => {
@@ -752,7 +752,7 @@ return (
   {isPreferredDecadesOpen && (
   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '10px' }}>
   {decades.map(decade => (
-    <label key={decade} style={{ display: 'flex', alignItems: 'center'}}>
+    <label key={decade} style={{ display: 'flex', alignItems: 'center', fontSize: "2em"}}>
       <input
         type="checkbox"
         value={decade}
