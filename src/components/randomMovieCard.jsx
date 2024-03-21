@@ -336,10 +336,38 @@ if (preferredDecades && preferredDecades.length > 0) {
         startYear = 1940;
         endYear = 1949;
         break;
-        case "1940's":
-          startYear = 1940;
-          endYear = 1949;
+        case "1950's":
+          startYear = 1950;
+          endYear = 1959;
           break;
+          case "1960's":
+            startYear = 1960;
+            endYear = 1969;
+            break;
+            case "1970's":
+              startYear = 1970;
+              endYear = 1979;
+              break;
+              case "1980's":
+                startYear = 1980;
+                endYear = 1989;
+                break;
+                case "1990's":
+                  startYear = 1990;
+                  endYear = 1999;
+                  break;
+                  case "2000's":
+                    startYear = 2000;
+                    endYear = 2009;
+                    break;
+                    case "2010's":
+                      startYear = 2010;
+                      endYear = 2019;
+                      break;
+                      case "2020's":
+                        startYear = 2020;
+                        endYear = 2029;
+                        break;
       // Add cases for other decades as needed
       default:
         break;
