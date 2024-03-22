@@ -557,6 +557,122 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
 
   console.log("preferredDecades:", preferredDecades);
 
+  const renderModalWatchOnLink = (movie) => {
+    console.log("modal render movie:", movie);
+    if (!movie || !movie.link) return "No link available";
+  
+    const { link } = movie;
+    const url = new URL(link);
+    const { hostname } = url;
+  
+    if (hostname === 'www.netflix.com') {
+      return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <img
+            src="https://cdn.vox-cdn.com/thumbor/pNxD2NFOCjbljnMPUSGdkFWeDjI=/0x0:3151x2048/1400x788/filters:focal(1575x1024:1576x1025)/cdn.vox-cdn.com/uploads/chorus_asset/file/15844974/netflixlogo.0.0.1466448626.png"
+            alt="Netflix Logo"
+            style={{ width: '100px', height: 'auto' }}
+          />
+        </a>
+      );
+    } else if (/^((www|play)\.)?max\.com$/.test(hostname)) {
+      return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2023/04/879441e7-38a1-4c08-97c6-38b5694f00ea_1920x1080.jpg?fit=1200%2C675&quality=89&ssl=1"
+          alt="Max Logo"
+          style={{ width: '100px', height: 'auto' }}
+        />
+        </a>
+      );
+    } else if (hostname === 'www.amazon.com') {
+      return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://www.shutterstock.com/image-vector/chattogram-bangladesh-may-18-2023-600nw-2304763275.jpg"
+          alt="Prime Logo"
+          style={{ width: '100px', height: 'auto' }}
+        />
+        </a>
+      );
+    } else if (hostname === 'www.hulu.com') {
+      return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://wallpapers.com/images/featured/hulu-fxo5g9d2z5nmrq7p.jpg"
+          alt="Hulu Logo"
+          style={{ width: '100px', height: 'auto' }}
+        />
+        </a>
+      );
+    } else if (hostname === 'www.peacocktv.com') {
+      return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://akns-images.eonline.com/eol_images/Entire_Site/20191131/rs_1024x759-191231151709-1024x759.peacock-logo-lp.123119.jpg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top"
+          alt="Peacock Logo"
+          style={{ width: '100px', height: 'auto' }}
+        />
+        </a>
+      );
+    } else if (hostname === 'tv.apple.com') {
+      return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://cdn.vox-cdn.com/thumbor/V5762AmEUyH1T3WNIzVbySZ0Mf4=/0x0:1632x918/1200x800/filters:focal(686x329:946x589)/cdn.vox-cdn.com/uploads/chorus_image/image/65608618/Apple_TV_Plus_logo.0.0.jpg"
+          alt="Apple TV Logo"
+          style={{ width: '100px', height: 'auto' }}
+        />
+        </a>
+      );
+    }  else if (hostname === 'www.disneyplus.com') {
+      return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://ca-times.brightspotcdn.com/dims4/default/9336457/2147483647/strip/false/crop/1920x1080+0+0/resize/1486x836!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F52%2Fad%2F65a1ea8a41718ef56032d9e14302%2Fdisney-with-studio-tag-copy.jpg"
+          alt="Disney Plus Logo"
+          style={{ width: '100px', height: 'auto' }}
+        />
+        </a>
+      );
+    }   else if (hostname === 'www.paramountplus.com') {
+      return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://www.themanual.com/wp-content/uploads/sites/9/2021/04/paramount-plus-logo-tm.jpg?fit=800%2C800&p=1"
+          alt="Paramount Plus Logo"
+          style={{ width: '100px', height: 'auto' }}
+        />
+        </a>
+      );
+    }    else if (hostname === 'www.criterionchannel.com') {
+      return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://vhx.imgix.net/criterionchannelchartersu/assets/0a871ff0-6742-42aa-a6f9-377cefa10b42.jpeg?auto=format%2Ccompress&fit=crop&h=720&q=75&w=1280"
+          alt="Criterion Logo"
+          style={{ width: '100px', height: 'auto' }}
+        />
+        </a>
+      );
+    }     else if (hostname === 'tubitv.com') {
+      return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://variety.com/wp-content/uploads/2024/02/Tubi-Logo.png?w=1000&h=563&crop=1"
+          alt="Tubi Logo"
+          style={{ width: '100px', height: 'auto' }}
+        />
+        </a>
+      );
+    }
+    else {
+      return (
+        <a href={link} target="_blank" style={{ color: 'blue', textDecoration: 'none', cursor: 'pointer' }}>Watch Now</a>
+      );
+    }
+  };
+
   
   
   useEffect(() => {
@@ -990,7 +1106,7 @@ return (
 
 <Modal show={isActorModalOpen} style={{ backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center"}}>
   <h1>{selectedModalActor}</h1>
-  <div className="movie-grid" >
+  <div className="movie-grid" tyle={{ backgroundColor: "#58355E", width: "100%", padding: "10px", boxSizing: "border-box", border: "5px solid black", borderRadius: "20px" }} >
     {filteredActorModalMovies
             .slice() // Create a copy of the array to avoid mutating the original
             .sort((a, b) => {
