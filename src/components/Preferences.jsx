@@ -1105,8 +1105,9 @@ return (
 </Modal>
 
 <Modal show={isActorModalOpen} style={{ backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center"}}>
+  <div style={{backgroundColor: "#58355E"}}>
   <h1>{selectedModalActor}</h1>
-  <div className="movie-grid" tyle={{ backgroundColor: "#58355E", width: "100%", padding: "10px", boxSizing: "border-box", border: "5px solid black", borderRadius: "20px" }} >
+  <div className="movie-grid"  >
     {filteredActorModalMovies
             .slice() // Create a copy of the array to avoid mutating the original
             .sort((a, b) => {
@@ -1135,13 +1136,24 @@ return (
             }, { seenTitles: new Set(), uniqueMovies: [] })
             .uniqueMovies
             .map(movie => (
-              <a href={movie.link} target="_blank" rel="noopener noreferrer" key={movie.title}>
-                <img src={movie.poster} alt={movie.title} />
-                <h2>{movie.title}</h2>
-              </a>
+              <div style={{ width: "100%", padding: "10px" }} key={movie.title}>
+              <div style={{ border: "5px solid black", borderRadius: "10px", overflow: "hidden" }}>
+                <a href={movie.link} target="_blank" rel="noopener noreferrer">
+                  <img src={movie.poster} alt={movie.title} style={{ width: "100%", height: "auto" }} />
+                </a>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <a href={movie.link} target="_blank" rel="noopener noreferrer">
+                    <h2 style={{ margin: '10px' }}>{movie.title} on </h2>
+                  </a>
+                  {renderModalWatchOnLink(movie)}
+                </div>
+              </div>
+            </div>
+              
             ))}
   </div>
   <button onClick={closeActorModal}>Close</button>
+  </div>
 </Modal>
 
 
