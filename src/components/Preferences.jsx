@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect} from 'react';
 import Button from 'react-bootstrap/Button';
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs';
 import Modal from 'react-bootstrap/Modal';
+import { motion } from 'framer-motion';
 
 export default function MoviePreferenceComponent({ onPreferenceChange }) {
   const [runtime, setRuntime] = useState(sessionStorage.getItem('selectedRuntime') || 240);
@@ -45,6 +46,30 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   const [paramountArray, setParamountArray] = useState([]);
   const [criterionArray, setCriterionArray] = useState([]);
   const [tubiArray, setTubiArray] = useState([]);
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Use useEffect to detect when the element enters the viewport
+  useEffect(() => {
+    const handleScroll = () => {
+      // Calculate whether the element is in the viewport
+      const element = document.getElementById('your-element-id');
+      if (element) {
+        const { top, bottom } = element.getBoundingClientRect();
+        setIsVisible(top < window.innerHeight && bottom >= 0);
+      }
+    };
+
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+    // Call handleScroll once to check visibility on initial render
+    handleScroll();
+
+    // Clean up the event listener when component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
  
 
   
@@ -952,6 +977,11 @@ return (
         {(!directorSearch || filteredDirectors.length === 0) ? (
             // Check if directors array is not empty before rendering
             sortedDirectors.map(director => (
+              <motion.div
+              initial={{ opacity: 0, y: 50 }} // Initial position of the row
+              animate={{ opacity: 1, y: 0 }} // Animation when the row enters the viewport
+              transition={{ duration: 1 }} // Animation duration
+            >
               <div
                 className='filtered-director-item'
                 key={director.name}
@@ -961,6 +991,7 @@ return (
                   {/* Image rendering */}
                   {director.image && (
                     <React.Fragment>
+           
                       <div style={{display: "flex", alignItems: "center"}}>
                       <img
                         className='filtered-director-img'
@@ -987,6 +1018,7 @@ return (
                         
                       )}
                       </div>
+                     
                     </React.Fragment>
                   )}
                   {/* Display director's name */}
@@ -998,7 +1030,9 @@ return (
       >
         Their Films
       </p>
+      
               </div>
+              </motion.div>
             ))
             
           ) : (
