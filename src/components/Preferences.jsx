@@ -978,9 +978,12 @@ return (
             // Check if directors array is not empty before rendering
             sortedDirectors.map(director => (
               <motion.div
-              initial={{ opacity: 0, y: 50 }} // Initial position of the row
-              animate={{ opacity: 1, y: 0 }} // Animation when the row enters the viewport
-              transition={{ duration: 1 }} // Animation duration
+              key={director.name}
+              initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
+          animate={{ opacity: 1, x: 0 }} // Slide in from the left
+              transition={{ duration: 1 }}
+              style={{ marginBottom: '20px' }} // Add margin bottom to create spacing between rows
+              staggerChildren={0.1} // Stagger the animation of the children elements
             >
               <div
                 className='filtered-director-item'
@@ -1043,7 +1046,7 @@ return (
                 className='filtered-director-item'
                 
                 key={director.name}
-                style={{ textAlign: 'center' }}
+                style={{ textAlign: 'center', margin: "20px"}}
               >
                 <div style={{ position: 'relative', display: 'inline-block', maxWidth: "100%" }}>
                   {/* Image rendering */}
@@ -1225,6 +1228,14 @@ return (
         {(!directorBSearch || filteredBDirectors.length === 0) ? (
             // Check if directors array is not empty before rendering
             sortedDirectors.map(director => (
+              <motion.div
+              key={director.name}
+              initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
+          animate={{ opacity: 1, x: 0 }} // Slide in from the left
+              transition={{ duration: 1 }}
+              style={{ marginBottom: '20px' }} // Add margin bottom to create spacing between rows
+              staggerChildren={0.1} // Stagger the animation of the children elements
+            >
               <div
                 className='filtered-director-item'
                 onClick={() => handleSelectedDirectorClick(director.name)}
@@ -1272,6 +1283,7 @@ return (
       </p>
       
               </div>
+              </motion.div>
 
 
               
@@ -1286,7 +1298,7 @@ return (
                 className='filtered-director-item'
                
                 key={director.name}
-                style={{ textAlign: 'center' }}
+                style={{ textAlign: 'center', margin: "20px" }}
               >
                 <div style={{ position: 'relative', display: 'inline-block', maxWidth: "100%" }}>
                   {/* Image rendering */}
@@ -1365,6 +1377,14 @@ return (
         {(!actorSearch || filteredActors.length === 0) ? (
             // Check if actors array is not empty before rendering
             sortedActors.map(actor => (
+              <motion.div
+              key={actor.name}
+              initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
+          animate={{ opacity: 1, x: 0 }} // Slide in from the left
+              transition={{ duration: 1 }}
+              style={{ marginBottom: '20px' }} // Add margin bottom to create spacing between rows
+              staggerChildren={0.1} // Stagger the animation of the children elements
+            >
               <div
                 className='filtered-actor-item'
                 key={actor.name}
@@ -1412,18 +1432,26 @@ return (
         Their Films
       </p>
               </div>
+              </motion.div>
             ))
             
           ) : (
             // Render filtered actors based on search query
             filteredActors.map(actor => (
-              
+              <motion.div
+              key={actor.name}
+              initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
+          animate={{ opacity: 1, x: 0 }} // Slide in from the left
+              transition={{ duration: 1 }}
+              style={{ marginBottom: '20px' }} // Add margin bottom to create spacing between rows
+              staggerChildren={0.1} // Stagger the animation of the children elements
+            >
               <div
                 className='filtered-actor-item'
                 key={actor.name}
                 style={{ textAlign: 'center' }}
               >
-                <div style={{ position: 'relative', display: 'inline-block', maxWidth: "100%" }}>
+                <div style={{ position: 'relative', display: 'inline-block', maxWidth: "100%", margin: "20px" }}>
                   {/* Image rendering */}
                   {actor.image && (
                     <React.Fragment>
@@ -1463,6 +1491,7 @@ return (
         Their Films
       </p>
               </div>
+              </motion.div>
             ))
           )}
         </div>
@@ -1493,6 +1522,7 @@ return (
         {(!actorBSearch || filteredBActors.length === 0) ? (
             // Check if directors array is not empty before rendering
             sortedActors.map(actor => (
+              
               <div
                 className='filtered-director-item'
               
