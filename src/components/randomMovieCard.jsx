@@ -696,6 +696,7 @@ if (preferredDecades && preferredDecades.length > 0) {
 
   return (
     <div className='randomCard' style={{ textAlign: "center" }}>
+      
       {randomMovie ? (
         <motion.div
           key={animationKey}
@@ -724,7 +725,7 @@ if (preferredDecades && preferredDecades.length > 0) {
           </Card>
         </motion.div>
       ) : (
-        <Card style={{backgroundColor: "#58355E", alignItems: "center", justifyContent: 'center'}}>
+        <Card className='randomCard' style={{backgroundColor: "#58355E", alignItems: "center", justifyContent: 'center', border: "0"}}>
           <h1 className='movieShould' style={{color: "white", textShadow: "2px 2px 2px black"}}>What movie should you watch tonight?</h1>
           <button className="randomMovie" onClick={handleRandomMovie}>Pick a random movie</button>
         </Card>
@@ -772,6 +773,7 @@ if (preferredDecades && preferredDecades.length > 0) {
         <div style={{ border: "5px solid black", borderRadius: "10px", overflow: "hidden" }}>
           <a href={movie.link} target="_blank" rel="noopener noreferrer">
             <img src={movie.poster} alt={movie.title} style={{ width: "100%", height: "auto" }} />
+            <img src="./posters/AFistfulOfDollars.avif" alt="goddamn" />
           </a>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <a href={movie.link} target="_blank" rel="noopener noreferrer">
