@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs';
 import Modal from 'react-bootstrap/Modal';
 import { motion } from 'framer-motion';
+import { FaArrowUp } from 'react-icons/fa';
+
 
 export default function MoviePreferenceComponent({ onPreferenceChange }) {
   const [runtime, setRuntime] = useState(sessionStorage.getItem('selectedRuntime') || 240);
@@ -46,29 +48,31 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   const [paramountArray, setParamountArray] = useState([]);
   const [criterionArray, setCriterionArray] = useState([]);
   const [tubiArray, setTubiArray] = useState([]);
-  const [isVisible, setIsVisible] = useState(false);
+  const [showScroll, setShowScroll] = useState(false);
 
-  // Use useEffect to detect when the element enters the viewport
-  useEffect(() => {
-    const handleScroll = () => {
-      // Calculate whether the element is in the viewport
-      const element = document.getElementById('your-element-id');
-      if (element) {
-        const { top, bottom } = element.getBoundingClientRect();
-        setIsVisible(top < window.innerHeight && bottom >= 0);
-      }
+
+
+    // useEffect to monitor scroll position and determine whether or not to show the arrow button
+    useEffect(() => {
+      const handleScroll = () => {
+        // scrolling past 300px will trigger arrow up icon
+        if (window.pageYOffset > 10) {
+          setShowScroll(true);
+        } else {
+          setShowScroll(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+  
+      // remove the event listener when the component unmounts (so it doesnt run forever)
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+  
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     };
-
-    // Attach the scroll event listener
-    window.addEventListener('scroll', handleScroll);
-    // Call handleScroll once to check visibility on initial render
-    handleScroll();
-
-    // Clean up the event listener when component unmounts
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
  
 
@@ -1621,6 +1625,11 @@ return (
             ))
           )}
         </div>
+        {showScroll && (
+        <div onClick={scrollToTop} style={{ position: "fixed", bottom: "20px", right: "20px", cursor: "pointer", backgroundColor: "yellow", padding: "20px", borderRadius: "50%" }}>
+        <FaArrowUp style={{ color: "black", fontSize:'1.5rem' }} />
+      </div>
+      )}
       </div>
     )}
     
