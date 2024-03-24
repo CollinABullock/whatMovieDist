@@ -44,6 +44,11 @@ position: relative;
 margin: 10px !important;
 }
 
+#selectedActors {
+  min-height: 300px; /* or any value you prefer */
+  overflow-y: auto /* or scroll */
+}
+
 .footer-a {
   padding: 10px;
 }

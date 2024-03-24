@@ -202,7 +202,7 @@ export default function RandomMovie({ selectedRuntime  }) {
 
   const moviesArray = [...netflixArray, ...maxArray, ...primeArray, ...huluArray,...disneyArray, ...paramountArray, ...appleArray, ...criterionArray, ...tubiArray, ...peacockArray];
 
-  console.log("movies array:", moviesArray);
+
 
   const handleModalDirectorClick = (director) => {
     // Set the new director name as the selectedModalDirector
@@ -237,7 +237,7 @@ export default function RandomMovie({ selectedRuntime  }) {
     setModalDirector([]);
   };
 
-  console.log("modal director:", modalDirector);
+
 
   const filterMoviesByModalActor = () => {
     if (!modalActor) {
@@ -251,9 +251,7 @@ export default function RandomMovie({ selectedRuntime  }) {
 
   const filteredModalActorMovies = filterMoviesByModalActor();
 
-  console.log("filtered modal actor:", filteredModalActorMovies);
-
-  console.log("modal Actor:", modalActor);
+  
 
   const closeActorModal = () => {
     setIsActorModalOpen(false);
@@ -579,7 +577,7 @@ if (preferredDecades && preferredDecades.length > 0) {
   };
 
   const renderModalWatchOnLink = (movie) => {
-    console.log("modal render movie:", movie);
+   
     if (!movie || !movie.link) return "No link available";
   
     const { link } = movie;

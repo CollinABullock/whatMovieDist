@@ -71,8 +71,15 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
     }, []);
   
     const scrollToTop = () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      const selectedActorsElement = document.getElementById('selectedActors');
+      console.log("Scroll To Top Is Being Called");
+      if (selectedActorsElement) {
+        selectedActorsElement.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     };
+    
+    
+    
 
  
 
@@ -584,7 +591,7 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
     }
   };
 
-  console.log("preferredDecades:", preferredDecades);
+
 
   const renderModalWatchOnLink = (movie) => {
     console.log("modal render movie:", movie);
@@ -1505,9 +1512,9 @@ return (
     
       </div>
 
-      {/* start selected actors sections, where they put in actors they'd */}
+      {/* start selected actors sections, where they put in actors they'd prefer not to see*/}
 
-      <div style={{ marginBottom: '30px', border: '1px solid #ccc', padding: '15px' }}>
+      <div  style={{ marginBottom: '30px', border: '1px solid #ccc', padding: '15px' }}>
     <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', marginBottom: '10px' }} onClick={() => setIsSelectedActorOpen(!isSelectedActorOpen)}>
     <h4>Any Actors you<span style={{ color: 'red', fontSize: '1.2em', textDecoration: 'underline' }}> ARE NOT</span>  fond of?</h4>
       {isSelectedActorOpen ? <BsChevronUp style={{ boxShadow: '5px 5px 5px green', margin: '10px' }} /> : <BsChevronDown style={{ boxShadow: '5px 5px 5px red', margin: '10px' }} />}
@@ -1522,7 +1529,7 @@ return (
           style={{ marginBottom: '10px' }}
         />
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '20px', maxWidth: "80%", margin: "0 auto" }}>
+        <div id='selectedActors' style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '20px', maxWidth: "80%", margin: "0 auto" }}>
         {(!actorBSearch || filteredBActors.length === 0) ? (
             // Check if directors array is not empty before rendering
             sortedActors.map(actor => (
@@ -1625,11 +1632,12 @@ return (
             ))
           )}
         </div>
-        {showScroll && (
-        <div onClick={scrollToTop} style={{ position: "fixed", bottom: "20px", right: "20px", cursor: "pointer", backgroundColor: "yellow", padding: "20px", borderRadius: "50%" }}>
-        <FaArrowUp style={{ color: "black", fontSize:'1.5rem' }} />
-      </div>
-      )}
+        
+        {/* <div onClick={scrollToTop} style={{ position: "fixed", bottom: "20px", right: "20px", cursor: "pointer", backgroundColor: "yellow", padding: "20px", borderRadius: "50%" }}> */}
+        <FaArrowUp onClick={scrollToTop} style={{ color: "black", fontSize:'1.5rem' }} />
+
+      {/* </div> */}
+      
       </div>
     )}
     
