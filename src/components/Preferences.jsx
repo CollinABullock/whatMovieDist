@@ -1633,10 +1633,11 @@ return (
           )}
         </div>
         
-        <div onClick={scrollToTop} style={{ position: "fixed", bottom: "20px", right: "20px", cursor: "pointer", backgroundColor: "yellow", padding: "20px", borderRadius: "50%" }}>
-        <FaArrowUp onClick={scrollToTop} style={{ color: "black", fontSize:'1.5rem' }} />
-
+        {showScroll && (
+        <div className="scroll-to-top" onClick={scrollToTop} style={{ position: "fixed", bottom: "20px", right: "20px", cursor: "pointer", backgroundColor: "yellow", padding: "20px", borderRadius: "50%" }}>
+        <FaArrowUp style={{ color: "black", fontSize:'1.5rem' }} />
       </div>
+      )}
       
       </div>
     )}
