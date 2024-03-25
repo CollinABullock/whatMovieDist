@@ -1113,7 +1113,7 @@ return (
       <div style={{ marginBottom: '30px', border: '1px solid #ccc', padding: '15px' }}>
       <div>
 
-      <Modal show={isModalOpen} style={{ backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center"}}>
+      <Modal show={isModalOpen} style={{ color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center"}}>
       <div style={{backgroundColor: "#58355E"}}>
   <h1>{selectedModalDirector}</h1>
   <div className="movie-grid" >
@@ -1164,7 +1164,7 @@ return (
   </div>
 </Modal>
 
-<Modal show={isActorModalOpen} style={{ backgroundColor: "#58355E", color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center"}}>
+<Modal show={isActorModalOpen} style={{ color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center"}}>
   <div style={{backgroundColor: "#58355E"}}>
   <h1>{selectedModalActor}</h1>
   <div className="movie-grid"  >
