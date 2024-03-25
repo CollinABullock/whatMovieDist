@@ -45,7 +45,8 @@ margin: 10px !important;
 }
 
 #selectedActors {
-  min-height: 300px; /* or any value you prefer */
+  height: 600px; /* or any value you prefer */
+  width: 600px;
   overflow-y: auto /* or scroll */
 }
 
