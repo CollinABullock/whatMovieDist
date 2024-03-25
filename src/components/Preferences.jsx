@@ -52,23 +52,28 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
 
 
 
-    // useEffect to monitor scroll position and determine whether or not to show the arrow button
-    useEffect(() => {
-      const handleScroll = () => {
-        // scrolling past 300px will trigger arrow up icon
-        if (window.pageYOffset > 1000) {
+  useEffect(() => {
+    const handleScroll = () => {
+      const selectedActorsElement = document.getElementById('selectedActors');
+      if (selectedActorsElement) {
+        // Calculate the distance from the top of the window to the start of the selectedActors div
+        const selectedActorsOffset = selectedActorsElement.getBoundingClientRect().top;
+        // scrolling past 300px below the start of selectedActors will trigger arrow up icon
+        if (window.pageYOffset > selectedActorsOffset + 300) {
           setShowScroll(true);
         } else {
           setShowScroll(false);
         }
-      };
+      }
+    };
+
+    console.log("show scroll:", showScroll);
   
-      window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
   
-  
-      // remove the event listener when the component unmounts (so it doesnt run forever)
-      return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    // remove the event listener when the component unmounts (so it doesn't run forever)
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   
     const scrollToTop = () => {
       const selectedActorsElement = document.getElementById('selectedActors');
@@ -1534,12 +1539,18 @@ return (
             // Check if directors array is not empty before rendering
             sortedActors.map(actor => (
               
+              
               <div
                 className='filtered-director-item'
               
                 key={actor.name}
                 style={{ textAlign: 'center' }}
               >
+                    
+        <div className="scroll-to-top" onClick={scrollToTop} style={{ position: "fixed", bottom: "20px", right: "20px", cursor: "pointer", backgroundColor: "yellow", padding: "20px", borderRadius: "50%" }}>
+        <FaArrowUp style={{ color: "black", fontSize:'1.5rem' }} />
+      </div>
+   
                 <div style={{ position: 'relative', display: 'inline-block', maxWidth: "100%" }}>
                   {/* Image rendering */}
                   {actor.image && (
@@ -1633,11 +1644,7 @@ return (
           )}
         </div>
         
-        {showScroll && (
-        <div className="scroll-to-top" onClick={scrollToTop} style={{ position: "fixed", bottom: "20px", right: "20px", cursor: "pointer", backgroundColor: "yellow", padding: "20px", borderRadius: "50%" }}>
-        <FaArrowUp style={{ color: "black", fontSize:'1.5rem' }} />
-      </div>
-      )}
+   
       
       </div>
     )}
