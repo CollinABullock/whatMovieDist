@@ -20,7 +20,7 @@ export default defineConfig({
       output: {
         entryFileNames: '[name]/index.js', // Output file structure: component-name/index.js
         chunkFileNames: '[name]/index.js', // Output file structure for chunks
-        assetFileNames: '[name].[ext]', // Output file structure for assets
+        assetFileNames: 'assets/[name].[ext]', // Output file structure for assets
       },
     },
   },
