@@ -2,3 +2,18 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+  [build]
+  command = "npm run build" # Or any other build command you use
+  publish = "dist" # Specify the directory to deploy
+
+[[plugins]]
+  package = "@netlify/plugin-inline-functions-env"
+
+# Add a build plugin to copy images from various folders to the assets folder
+[[plugins]]
+  package = "@netlify/plugin-functions-install"
+  # Copy images from multiple folders to the assets folder in the dist folder
+  [plugins.inputs]
+    package = "npm"
+    images_command = "cp -r ./images ./photos ./icons ./dist/assets"
