@@ -56,7 +56,7 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
     useEffect(() => {
       const handleScroll = () => {
         // scrolling past 300px will trigger arrow up icon
-        if (window.pageYOffset > 10) {
+        if (window.pageYOffset > 1000) {
           setShowScroll(true);
         } else {
           setShowScroll(false);
@@ -1633,10 +1633,10 @@ return (
           )}
         </div>
         
-        {/* <div onClick={scrollToTop} style={{ position: "fixed", bottom: "20px", right: "20px", cursor: "pointer", backgroundColor: "yellow", padding: "20px", borderRadius: "50%" }}> */}
+        <div onClick={scrollToTop} style={{ position: "fixed", bottom: "20px", right: "20px", cursor: "pointer", backgroundColor: "yellow", padding: "20px", borderRadius: "50%" }}>
         <FaArrowUp onClick={scrollToTop} style={{ color: "black", fontSize:'1.5rem' }} />
 
-      {/* </div> */}
+      </div>
       
       </div>
     )}

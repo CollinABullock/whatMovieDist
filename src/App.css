@@ -46,7 +46,7 @@ margin: 10px !important;
 
 #selectedActors {
   height: 600px; /* or any value you prefer */
-  width: 600px;
+  width: 1000px;
   overflow-y: auto /* or scroll */
 }
 
