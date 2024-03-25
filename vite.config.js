@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
@@ -15,7 +16,7 @@ export default defineConfig({
     },
     rollupOptions: {
       input: {
-        main: './index.html', // Set your entry HTML file here
+        main: path.resolve(__dirname, 'src/index.html'), // Set your entry HTML file here
       },
       output: {
         entryFileNames: '[name]/index.js', // Output file structure: component-name/index.js
