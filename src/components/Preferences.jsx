@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs';
 import Modal from 'react-bootstrap/Modal';
 import { motion } from 'framer-motion';
-import { FaArrowUp } from 'react-icons/fa';
+
 
 
 export default function MoviePreferenceComponent({ onPreferenceChange }) {
@@ -730,7 +730,7 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   
 
   const streamingServices = [
-    { name: 'Netflix', logo: 'https://cdn.vox-cdn.com/thumbor/pNxD2NFOCjbljnMPUSGdkFWeDjI=/0x0:3151x2048/1400x788/filters:focal(1575x1024:1576x1025)/cdn.vox-cdn.com/uploads/chorus_asset/file/15844974/netflixlogo.0.0.1466448626.png' },
+    { name: 'Netflix', logo: './netflix.jpeg' },
     { name: 'Max', logo: 'https://i0.wp.com/www.printmag.com/wp-content/uploads/2023/04/879441e7-38a1-4c08-97c6-38b5694f00ea_1920x1080.jpg?fit=1200%2C675&quality=89&ssl=1' },
     { name: 'Prime', logo: 'https://www.shutterstock.com/image-vector/chattogram-bangladesh-may-18-2023-600nw-2304763275.jpg' },
     { name: 'Hulu', logo: 'https://wallpapers.com/images/featured/hulu-fxo5g9d2z5nmrq7p.jpg' },
