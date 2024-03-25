@@ -43,9 +43,11 @@ function App() {
         onPreferenceChange={handlePreferenceChange}
         uniqueGenres={uniqueGenres} // Pass uniqueGenres
       />
+    
   
       <div className="container">
-        {/* <img src="./posters/AFistfulOfDollars.avif" alt="goddamn it"  /> */}
+      <img src="./netflixLogo.jpeg" alt="Netflix logo" />
+
         <RandomMovie selectedRuntime={selectedRuntime} selectedGenres={selectedGenres} preferredGenres={preferredGenres} /> {/* Pass preferredGenres */}
       </div>
       <Footer />

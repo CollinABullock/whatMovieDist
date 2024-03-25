@@ -435,6 +435,7 @@ if (preferredDecades && preferredDecades.length > 0) {
     } else {
       window.alert("No movies meet that criteria, please be less picky");
       setRandomMovie(null);
+      setLastSelectedMovieTitle("")
     }
   };
   
