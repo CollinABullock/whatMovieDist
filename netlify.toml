@@ -3,15 +3,4 @@
   to = "/index.html"
   status = 200
 
- 
-
-[[plugins]]
-  package = "@netlify/plugin-inline-functions-env"
-
-
-[[plugins]]
-  package = "@netlify/plugin-functions-install"
-
-  [plugins.inputs]
-    package = "npm"
-    images_command = "cp -r ./images ./photos ./icons ./dist/assets"
+  
