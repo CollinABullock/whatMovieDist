@@ -66,8 +66,6 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
         }
       }
     };
-
-    console.log("show scroll:", showScroll);
   
     window.addEventListener('scroll', handleScroll);
   
@@ -989,7 +987,8 @@ return (
           style={{ marginBottom: '10px' }}
         />
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '20px', maxWidth: "80%", margin: "0 auto" }}>
+        <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '20px', maxWidth: "80%", margin: "0 auto", justifyContent: "center" }}>
         {(!directorSearch || filteredDirectors.length === 0) ? (
             // Check if directors array is not empty before rendering
             sortedDirectors.map(director => (
@@ -1109,6 +1108,7 @@ return (
           )}
         </div>
       </div>
+      </div>
     )}
       
       </div>
@@ -1219,12 +1219,11 @@ return (
   </div>
   <button onClick={closeActorModal}>Close</button>
   </div>
-</Modal>
-
-
-
-    
+</Modal> 
   </div>
+
+  {/* start selectedDirector section */}
+
     <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', marginBottom: '10px' }} onClick={() => setIsSelectedDirectorOpen(!isSelectedDirectorOpen)}>
     <h4>Any Directors you<span style={{ color: 'red', fontSize: '1.2em', textDecoration: 'underline' }}> ARE NOT</span>  fond of?</h4>
       {isSelectedDirectorOpen ? <BsChevronUp style={{ boxShadow: '5px 5px 5px green', margin: '10px' }} /> : <BsChevronDown style={{ boxShadow: '5px 5px 5px red', margin: '10px' }} />}
@@ -1240,7 +1239,8 @@ return (
           style={{ marginBottom: '10px' }}
         />
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '20px', maxWidth: "80%", margin: "0 auto" }}>
+        <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '20px', maxWidth: "80%", margin: "0 auto", justifyContent: "center" }}>
         {(!directorBSearch || filteredBDirectors.length === 0) ? (
             // Check if directors array is not empty before rendering
             sortedDirectors.map(director => (
@@ -1299,6 +1299,7 @@ return (
       </p>
       
               </div>
+              
               </motion.div>
 
 
@@ -1360,6 +1361,7 @@ return (
           )}
         </div>
         
+      </div>
       </div>
     )}
     
@@ -1534,7 +1536,8 @@ return (
           style={{ marginBottom: '10px' }}
         />
         </div>
-        <div id='selectedActors' style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '20px', maxWidth: "80%", margin: "0 auto" }}>
+        <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '20px', maxWidth: "80%", margin: "0 auto", justifyContent: "center" }}>
         {(!actorBSearch || filteredBActors.length === 0) ? (
             // Check if directors array is not empty before rendering
             sortedActors.map(actor => (
@@ -1546,10 +1549,9 @@ return (
                 key={actor.name}
                 style={{ textAlign: 'center' }}
               >
-                    
-        <div className="scroll-to-top" onClick={scrollToTop} style={{ position: "fixed", bottom: "20px", right: "20px", cursor: "pointer", backgroundColor: "yellow", padding: "20px", borderRadius: "50%" }}>
-        <FaArrowUp style={{ color: "black", fontSize:'1.5rem' }} />
-      </div>
+                          
+   
+      
    
                 <div style={{ position: 'relative', display: 'inline-block', maxWidth: "100%" }}>
                   {/* Image rendering */}
@@ -1645,7 +1647,7 @@ return (
         </div>
         
    
-      
+      </div>
       </div>
     )}
     
