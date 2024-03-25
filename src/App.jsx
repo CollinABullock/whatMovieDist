@@ -47,7 +47,7 @@ function App() {
   
       <div className="container">
      
-     <img src="./images/netflixLogo.jpeg" alt="" />
+     
 
         <RandomMovie selectedRuntime={selectedRuntime} selectedGenres={selectedGenres} preferredGenres={preferredGenres} /> {/* Pass preferredGenres */}
       </div>

@@ -608,7 +608,7 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
       return (
         <a href={link} target="_blank" rel="noopener noreferrer">
           <img
-            src="https://cdn.vox-cdn.com/thumbor/pNxD2NFOCjbljnMPUSGdkFWeDjI=/0x0:3151x2048/1400x788/filters:focal(1575x1024:1576x1025)/cdn.vox-cdn.com/uploads/chorus_asset/file/15844974/netflixlogo.0.0.1466448626.png"
+            src="./images/streamingServices/netflixLogo.jpeg"
             alt="Netflix Logo"
             style={{ width: '100px', height: 'auto' }}
           />
@@ -730,16 +730,16 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   
 
   const streamingServices = [
-    { name: 'Netflix', logo: 'https://cdn.vox-cdn.com/thumbor/pNxD2NFOCjbljnMPUSGdkFWeDjI=/0x0:3151x2048/1400x788/filters:focal(1575x1024:1576x1025)/cdn.vox-cdn.com/uploads/chorus_asset/file/15844974/netflixlogo.0.0.1466448626.png'},
-    { name: 'Max', logo: 'https://i0.wp.com/www.printmag.com/wp-content/uploads/2023/04/879441e7-38a1-4c08-97c6-38b5694f00ea_1920x1080.jpg?fit=1200%2C675&quality=89&ssl=1' },
-    { name: 'Prime', logo: 'https://www.shutterstock.com/image-vector/chattogram-bangladesh-may-18-2023-600nw-2304763275.jpg' },
-    { name: 'Hulu', logo: 'https://wallpapers.com/images/featured/hulu-fxo5g9d2z5nmrq7p.jpg' },
-    { name: "Peacock", logo: "https://akns-images.eonline.com/eol_images/Entire_Site/20191131/rs_1024x759-191231151709-1024x759.peacock-logo-lp.123119.jpg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top" },
-    { name: "Apple", logo: "https://s.yimg.com/ny/api/res/1.2/olinh0MApHyLLoBgciYoIA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://s.yimg.com/uu/api/res/1.2/xDQXaqk95THWr3WD.EjcdQ--~B/aD0xODI0O3c9MjczNjthcHBpZD15dGFjaHlvbg--/http://globalfinance.zenfs.com/en_us/Finance/US_AFTP_SILICONALLEY_H_LIVE/The_new_Apple_TV_ads-ba77edc8097181dd910c9885454fd180"},
-    { name: "Disney", logo: "https://lumiere-a.akamaihd.net/v1/images/disney_logo_nov_2021_rbg_0fa74b54.jpeg?region=0,0,1920,1080"},
-    { name: "Paramount", logo: "https://www.paramount.com/sites/g/files/dxjhpe226/files/styles/twitter_image_1024_x_512_/public/ViacomCBSDotCom/NewsPage/Images/Paramount_SocialShare.jpg?h=79d7b992&itok=X2IUZz7U"} ,
-    { name: "Criterion", logo: "https://pyxis.nymag.com/v1/imgs/485/852/690bf30879dd192d9d3bd2b9b44f945c12-streamliner-criterion.jpg"},
-    { name: "Tubi", logo: "https://cloudfront-us-east-1.images.arcpublishing.com/gmg/BVVRXGRYJ5BZTBKPJXLQC5TIJM.jpg"}
+    { name: 'Netflix', logo: './images/streamingServices/netflixLogo.jpeg'},
+    { name: 'Max', logo: './images/streamingServices/maxLogo.webp' },
+    { name: 'Prime', logo: './images/streamingServices/primeLogo.webp' },
+    { name: 'Hulu', logo: './images/streamingServices/huluLogo.jpg' },
+    { name: "Peacock", logo: "./images/streamingServices/peacockLogo.avif" },
+    { name: "Apple", logo: "./images/streamingServices/appleLogo.png"},
+    { name: "Disney", logo: "./images/streamingServices/disneyLogo.jpeg"},
+    { name: "Paramount", logo: "./images/streamingServices/paramountLogo.jpg"} ,
+    { name: "Criterion", logo: "./images/streamingServices/criterionLogo.webp"},
+    { name: "Tubi", logo: "./images/streamingServices/tubiLogo.jpg"}
   ];
 
   const decades = [
@@ -1016,7 +1016,7 @@ return (
                         src={director.image}
                         alt={director.name}
                         onClick={() => handleDirectorClick(director.name)}
-                        style={{ width: '170px', height: '150px', objectFit: "cover", margin: '60px', margin: "0 auto" }}
+                        style={{ width: '170px', height: '150px', objectFit: "cover", margin: "0 auto" }}
                       />
                       {/* Conditional rendering for the checkmark */}
                       {preferredDirectors.includes(director.name) && (
