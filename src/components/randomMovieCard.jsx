@@ -702,9 +702,9 @@ if (preferredDecades && preferredDecades.length > 0) {
       {randomMovie ? (
         <motion.div
           key={animationKey}
-          initial={{ x: -1000, opacity: 0 }} // initial position off-screen to the left
-          animate={{ x: 0, opacity: 1 }} // animate to the center of the screen
-          transition={{ duration: 0.3, type: "tween" }} // adjust duration as needed
+          initial={{ x: '-100%' }} // Initially, move the section down below the viewport
+          animate={{ x: 0 }} // Animate the section to slide up to its original position
+          transition={{ type: 'spring', stiffness: 100, duration: .5 }}
         >
           <Card className="randomCard" style={{ width: "80%", maxHeight: "100%", backgroundColor: "#EC0B43", color: "whitesmoke", borderRadius: "30px"}}>
             <Card.Body>
