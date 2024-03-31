@@ -48,38 +48,8 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   const [paramountArray, setParamountArray] = useState([]);
   const [criterionArray, setCriterionArray] = useState([]);
   const [tubiArray, setTubiArray] = useState([]);
-  const [showScroll, setShowScroll] = useState(false);
 
 
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const selectedActorsElement = document.getElementById('selectedActors');
-      if (selectedActorsElement) {
-        // Calculate the distance from the top of the window to the start of the selectedActors div
-        const selectedActorsOffset = selectedActorsElement.getBoundingClientRect().top;
-        // scrolling past 300px below the start of selectedActors will trigger arrow up icon
-        if (window.pageYOffset > selectedActorsOffset + 300) {
-          setShowScroll(true);
-        } else {
-          setShowScroll(false);
-        }
-      }
-    };
-  
-    window.addEventListener('scroll', handleScroll);
-  
-    // remove the event listener when the component unmounts (so it doesn't run forever)
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-  
-    const scrollToTop = () => {
-      const selectedActorsElement = document.getElementById('selectedActors');
-      console.log("Scroll To Top Is Being Called");
-      if (selectedActorsElement) {
-        selectedActorsElement.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-    };
     
     
     
