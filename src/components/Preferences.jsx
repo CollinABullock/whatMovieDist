@@ -48,7 +48,7 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   const [paramountArray, setParamountArray] = useState([]);
   const [criterionArray, setCriterionArray] = useState([]);
   const [tubiArray, setTubiArray] = useState([]);
-  
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
 
     
@@ -570,8 +570,12 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   const renderModalWatchOnLink = (movie) => {
     console.log("modal render movie:", movie);
     if (!movie || !movie.link) return "No link available";
+
   
-    
+      const { link } = movie;
+      const url = new URL(link);
+      const { hostname } = url;
+  
   
     if (hostname === 'www.netflix.com') {
       return (
