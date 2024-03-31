@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { motion, wrap } from "framer-motion";
+import LazyLoadedImage from './lazyLoadedImage';
 
 export default function RandomMovie({ selectedRuntime  }) {
   const [lastSelectedMovieTitle, setLastSelectedMovieTitle] = useState("");
@@ -466,116 +467,122 @@ if (preferredDecades && preferredDecades.length > 0) {
     if (!randomMovie || !randomMovie.link) return "No link available";
   
     const { link } = randomMovie;
-    const url = new URL(link);
-    const { hostname } = url;
+    
+    try {
+      const url = new URL(link);
+      const { hostname } = url;
   
-    if (hostname === 'www.netflix.com') {
-      return (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          <img
-            src="./images/streamingServices/netflixLogo.jpeg"
-            alt="Netflix Logo"
-            style={{ width: '100px', height: 'auto' }}
-          />
-        </a>
-      );
-    } else if (/^((www|play)\.)?max\.com$/.test(hostname)) {
-      return (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-        <img
-          src="./images/streamingServices/maxLogo.webp"
-          alt="Max Logo"
-          style={{ width: '100px', height: 'auto' }}
-        />
-        </a>
-      );
-    } else if (hostname === 'www.amazon.com') {
-      return (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-        <img
-          src="./images/streamingServices/primeLogo.webp"
-          alt="Prime Logo"
-          style={{ width: '100px', height: 'auto' }}
-        />
-        </a>
-      );
-    } else if (hostname === 'www.hulu.com') {
-      return (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-        <img
-          src="./images/streamingServices/huluLogo.jpg"
-          alt="Hulu Logo"
-          style={{ width: '100px', height: 'auto' }}
-        />
-        </a>
-      );
-    } else if (hostname === 'www.peacocktv.com') {
-      return (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-        <img
-          src="./images/streamingServices/peacockLogo.avif"
-          alt="Peacock Logo"
-          style={{ width: '100px', height: 'auto' }}
-        />
-        </a>
-      );
-    } else if (hostname === 'tv.apple.com') {
-      return (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-        <img
-          src="./images/streamingServices/appleLogo.png"
-          alt="Apple TV Logo"
-          style={{ width: '100px', height: 'auto' }}
-        />
-        </a>
-      );
-    }  else if (hostname === 'www.disneyplus.com') {
-      return (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-        <img
-          src="./images/streamingServices/disneyLogo.jpeg"
-          alt="Disney Plus Logo"
-          style={{ width: '100px', height: 'auto' }}
-        />
-        </a>
-      );
-    }   else if (hostname === 'www.paramountplus.com') {
-      return (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-        <img
-          src="./images/streamingServices/paramountLogo.jpg"
-          alt="Paramount Plus Logo"
-          style={{ width: '100px', height: 'auto' }}
-        />
-        </a>
-      );
-    }    else if (hostname === 'www.criterionchannel.com') {
-      return (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-        <img
-          src="./images/streamingServices/criterionLogo.webp"
-          alt="Criterion Logo"
-          style={{ width: '100px', height: 'auto' }}
-        />
-        </a>
-      );
-    }     else if (hostname === 'tubitv.com') {
-      return (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-        <img
-          src="./images/streamingServices/tubiLogo.jpg"
-          alt="Tubi Logo"
-          style={{ width: '100px', height: 'auto' }}
-        />
-        </a>
-      );
-    }
-    else {
-      return (
-        <a href={link} target="_blank" style={{ color: 'blue', textDecoration: 'none', cursor: 'pointer' }}>Watch Now</a>
-      );
+      if (hostname === 'www.netflix.com') {
+        return (
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img
+              src="./images/streamingServices/netflixLogo.jpeg"
+              alt="Netflix Logo"
+              style={{ width: '100px', height: 'auto' }}
+            />
+          </a>
+        );
+      } else if (/^((www|play)\.)?max\.com$/.test(hostname)) {
+        return (
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img
+              src="./images/streamingServices/maxLogo.webp"
+              alt="Max Logo"
+              style={{ width: '100px', height: 'auto' }}
+            />
+          </a>
+        );
+      } else if (hostname === 'www.amazon.com') {
+        return (
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img
+              src="./images/streamingServices/primeLogo.webp"
+              alt="Prime Logo"
+              style={{ width: '100px', height: 'auto' }}
+            />
+          </a>
+        );
+      } else if (hostname === 'www.hulu.com') {
+        return (
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img
+              src="./images/streamingServices/huluLogo.jpg"
+              alt="Hulu Logo"
+              style={{ width: '100px', height: 'auto' }}
+            />
+          </a>
+        );
+      } else if (hostname === 'www.peacocktv.com') {
+        return (
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img
+              src="./images/streamingServices/peacockLogo.avif"
+              alt="Peacock Logo"
+              style={{ width: '100px', height: 'auto' }}
+            />
+          </a>
+        );
+      } else if (hostname === 'tv.apple.com') {
+        return (
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img
+              src="./images/streamingServices/appleLogo.png"
+              alt="Apple TV Logo"
+              style={{ width: '100px', height: 'auto' }}
+            />
+          </a>
+        );
+      } else if (hostname === 'www.disneyplus.com') {
+        return (
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img
+              src="./images/streamingServices/disneyLogo.jpeg"
+              alt="Disney Plus Logo"
+              style={{ width: '100px', height: 'auto' }}
+            />
+          </a>
+        );
+      } else if (hostname === 'www.paramountplus.com') {
+        return (
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img
+              src="./images/streamingServices/paramountLogo.jpg"
+              alt="Paramount Plus Logo"
+              style={{ width: '100px', height: 'auto' }}
+            />
+          </a>
+        );
+      } else if (hostname === 'www.criterionchannel.com') {
+        return (
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img
+              src="./images/streamingServices/criterionLogo.webp"
+              alt="Criterion Logo"
+              style={{ width: '100px', height: 'auto' }}
+            />
+          </a>
+        );
+      } else if (hostname === 'tubitv.com') {
+        return (
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img
+              src="./images/streamingServices/tubiLogo.jpg"
+              alt="Tubi Logo"
+              style={{ width: '100px', height: 'auto' }}
+            />
+          </a>
+        );
+      } else {
+        return (
+          <a href={link} target="_blank" style={{ color: 'blue', textDecoration: 'none', cursor: 'pointer' }}>Watch Now</a>
+        );
+      }
+    } catch (error) {
+      console.error("Invalid URL:", error);
+      return "Invalid URL";
     }
   };
+  
 
   const renderModalWatchOnLink = (movie) => {
    
@@ -709,9 +716,9 @@ if (preferredDecades && preferredDecades.length > 0) {
           <Card className="randomCard" style={{ width: "80%", maxHeight: "100%", backgroundColor: "#EC0B43", color: "whitesmoke", borderRadius: "30px"}}>
             <Card.Body>
               <a href={randomMovie.link}>
-            <Card.Img 
+            <LazyLoadedImage 
   src={randomMovie.poster} 
-  // Call handleImageLoad when the image is loaded
+  
 
   style={{ width: '75%', height: '50%', objectFit: 'cover', margin: '0', padding: '0', marginBottom: "20px" }} 
 /></a>
@@ -738,7 +745,7 @@ if (preferredDecades && preferredDecades.length > 0) {
   <div style={{ backgroundColor: "#58355E", width: "100%", padding: "10px", boxSizing: "border-box" }}>
     <div style={{backgroundColor: "#58355E", border: "5px solid black", marginBottom: "10px"}}>
       <a target="_blank" href={modalDirector ? modalDirector.imdb: "http://ww.imdb.com"}>
-        <img src={modalDirector ? modalDirector.image : 'No Director'} alt={modalDirector ? modalDirector.name : "No Director"} style={{margin: "0 auto"}}/>
+        <LazyLoadedImage src={modalDirector ? modalDirector.image : 'No Director'} alt={modalDirector ? modalDirector.name : "No Director"} style={{margin: "0 auto"}}/>
       </a>
       <h3>More films by {modalDirector ? modalDirector.name : 'No Director'}</h3>
     </div>
@@ -774,7 +781,7 @@ if (preferredDecades && preferredDecades.length > 0) {
       <div style={{ width: "100%", padding: "10px" }} key={movie.title}>
         <div style={{ border: "5px solid black", borderRadius: "10px", overflow: "hidden" }}>
           <a href={movie.link} target="_blank" rel="noopener noreferrer">
-            <img src={movie.poster} alt={movie.title} style={{ width: "100%", height: "auto" }} />
+            <LazyLoadedImage src={movie.poster} alt={movie.title} style={{ width: "100%", height: "auto" }} />
             
           </a>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -798,7 +805,7 @@ if (preferredDecades && preferredDecades.length > 0) {
   <div style={{ backgroundColor: "#58355E", width: "100%", padding: "10px", boxSizing: "border-box" }}>
     <div style={{backgroundColor: "#58355E", border: "5px solid black", marginBottom: "10px"}}>
       <a target="_blank" href={modalDirector ? modalDirector.imdb: "http://ww.imdb.com"}>
-        <img src={modalActor ? modalActor.image : 'No Actor'} alt={modalActor ? modalActor.name : "No Actor"} style={{margin: "0 auto"}}/>
+        <LazyLoadedImage src={modalActor ? modalActor.image : 'No Actor'} alt={modalActor ? modalActor.name : "No Actor"} style={{margin: "0 auto"}}/>
       </a>
       <h3>More films with {modalActor ? modalActor.name : 'No Actor'}</h3>
     </div>
@@ -834,7 +841,7 @@ if (preferredDecades && preferredDecades.length > 0) {
       <div style={{ width: "100%", padding: "10px" }} key={movie.title}>
         <div style={{ border: "5px solid black", borderRadius: "10px", overflow: "hidden" }}>
           <a href={movie.link} target="_blank" rel="noopener noreferrer">
-            <img src={movie.poster} alt={movie.title} style={{ width: "100%", height: "auto" }} />
+            <LazyLoadedImage src={movie.poster} alt={movie.title} style={{ width: "100%", height: "auto" }} />
           </a>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <a href={movie.link} target="_blank" rel="noopener noreferrer">
@@ -877,7 +884,7 @@ if (preferredDecades && preferredDecades.length > 0) {
                 {randomMovie.director.map((director, index) => (
                   <div onClick={() => handleModalDirectorClick(director)} key={index} style={{ textAlign: 'center' }}>
                     
-                      <img 
+                      <img
                         src={director.image} 
                         alt={director.name} 
                         style={{ width: '120px', height: '100px', objectFit: 'cover' }} 
