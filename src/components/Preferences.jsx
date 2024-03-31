@@ -48,6 +48,7 @@ export default function MoviePreferenceComponent({ onPreferenceChange }) {
   const [paramountArray, setParamountArray] = useState([]);
   const [criterionArray, setCriterionArray] = useState([]);
   const [tubiArray, setTubiArray] = useState([]);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
 
     
