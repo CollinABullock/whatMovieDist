@@ -1178,7 +1178,7 @@ return (
               <div style={{ width: "100%", padding: "10px" }} key={movie.title}>
               <div style={{ border: "5px solid black", borderRadius: "10px", overflow: "hidden" }}>
                 <a href={movie.link} target="_blank" rel="noopener noreferrer">
-                  <img src={movie.poster} alt={movie.title} style={{ width: "100%", height: "auto" }} />
+                  <LazyLoadedImage src={movie.poster} alt={movie.title} style={{ width: "100%", height: "auto" }} />
                 </a>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <a href={movie.link} target="_blank" rel="noopener noreferrer">
