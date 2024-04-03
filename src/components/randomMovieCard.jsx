@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import { motion, wrap } from "framer-motion";
+import { motion } from "framer-motion";
 import LazyLoadedImage from './lazyLoadedImage';
 
 export default function RandomMovie({ selectedRuntime  }) {
@@ -26,7 +26,15 @@ export default function RandomMovie({ selectedRuntime  }) {
   const [isModalOpen, setIsModalOpen] = useState(null);
   const [isActorModalOpen, setIsActorModalOpen] = useState(null);
 
-  
+
+  const handleAnimationStart = () => {
+    setAnimationKey(animationKey + 1); // Update animationKey to trigger animation
+  };
+
+  const handleShowAnother = () => {
+    setAnimationKey(animationKey + 1); // Reset animationKey when showing another movie
+    handleRandomMovie(); // Call the function to get another random movie
+  };
  
   useEffect(() => {
     async function fetchNetflixArray() {
@@ -432,7 +440,6 @@ if (preferredDecades && preferredDecades.length > 0) {
       const selectedMovie = filtered[randomIndex];
       setRandomMovie(selectedMovie);
       setLastSelectedMovieTitle(selectedMovie.title);
-      setAnimationKey(prevKey => prevKey + 1);
     } else {
       window.alert("No movies meet that criteria, please be less picky");
       setRandomMovie(null);
@@ -716,17 +723,17 @@ if (preferredDecades && preferredDecades.length > 0) {
           <Card className="randomCard" style={{ width: "80%", maxHeight: "100%", backgroundColor: "#EC0B43", color: "whitesmoke", borderRadius: "30px"}}>
             <Card.Body>
               <a href={randomMovie.link}>
-            <LazyLoadedImage 
-  src={randomMovie.poster} 
-  
-
-  style={{ width: '75%', height: '50%', objectFit: 'cover', margin: '0', padding: '0', marginBottom: "20px" }} 
-/></a>
+              <LazyLoadedImage 
+                  src={randomMovie.poster} 
+                  alt="Random Movie Poster"
+                  onLoad={handleAnimationStart} // Start animation when the image is loaded
+                  style={{ width: '75%', height: '50%', objectFit: 'cover', margin: '0', padding: '0', marginBottom: "20px" }} 
+                /></a>
               <Card.Text style={{ textAlign: "start", fontFamily: "SignWood"}}>
                 <h4 style={{marginBottom: "10px", fontSize: "2em"}}> {truncateDescription(randomMovie.description, 200)}<span onClick={handleDetails} style={{ cursor: 'pointer', fontFamily: "Signwood", textShadow: "2px 2px 2px black", color: "blue", textDecoration: "underline", fontWeight: "bold" }}>More Details</span>
 <br />
                     <div style={{margin: "30px", display: "flex", justifyContent: "space-evenly", alignItems: "stretch"}}>
-                    {renderWatchOnLink()} <button onClick={handleRandomMovie} style={{ backgroundColor: "red", color: "white", textShadow: "2px 2px 2px black", fontSize: ".75em", width: "50%" }}>Give me another</button>
+                    {renderWatchOnLink()} <button onClick={handleShowAnother} style={{ backgroundColor: "red", color: "white", textShadow: "2px 2px 2px black", fontSize: ".75em", width: "50%" }}>Give me another</button>
                     </div>
                 </h4>
               </Card.Text>
