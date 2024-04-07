@@ -723,12 +723,14 @@ if (preferredDecades && preferredDecades.length > 0) {
           <Card className="randomCard" style={{ width: "80%", maxHeight: "100%", backgroundColor: "#EC0B43", color: "whitesmoke", borderRadius: "30px"}}>
             <Card.Body>
               <a href={randomMovie.link}>
+                <div style={{width: "500px", height: "300px"}}>
               <LazyLoadedImage 
                   src={randomMovie.poster} 
                   alt="Random Movie Poster"
                   onLoad={handleAnimationStart} // Start animation when the image is loaded
                   style={{ width: '75%', height: '50%', objectFit: 'cover', margin: '0', padding: '0', marginBottom: "20px" }} 
-                /></a>
+                />  </div></a>
+              
               <Card.Text style={{ textAlign: "start", fontFamily: "SignWood"}}>
                 <h4 style={{marginBottom: "10px", fontSize: "2em"}}> {truncateDescription(randomMovie.description, 200)}<span onClick={handleDetails} style={{ cursor: 'pointer', fontFamily: "Signwood", textShadow: "2px 2px 2px black", color: "blue", textDecoration: "underline", fontWeight: "bold" }}>More Details</span>
 <br />
