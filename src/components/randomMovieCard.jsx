@@ -726,7 +726,7 @@ if (preferredDecades && preferredDecades.length > 0) {
               <div style={{
   width: "100%",
   height: "180px",
-  marginBottom: "10px",
+  marginBottom: "5px",
 }}>
               <LazyLoadedImage 
                   src={randomMovie.poster} 
