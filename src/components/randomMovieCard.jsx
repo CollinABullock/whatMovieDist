@@ -723,7 +723,11 @@ if (preferredDecades && preferredDecades.length > 0) {
           <Card className="randomCard" style={{ width: "80%", maxHeight: "100%", backgroundColor: "#EC0B43", color: "whitesmoke", borderRadius: "30px"}}>
             <Card.Body>
               <a href={randomMovie.link}>
-                <div style={{width: "100%", height: "100%"}}>
+              <div style={{
+  width: "100%",
+  height: "200px",
+  marginBottom: "10px",
+}}>
               <LazyLoadedImage 
                   src={randomMovie.poster} 
                   alt="Random Movie Poster"
