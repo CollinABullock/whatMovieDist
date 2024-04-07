@@ -725,7 +725,7 @@ if (preferredDecades && preferredDecades.length > 0) {
               <a href={randomMovie.link}>
               <div style={{
   width: "100%",
-  height: "200px",
+  height: "180px",
   marginBottom: "10px",
 }}>
               <LazyLoadedImage 
