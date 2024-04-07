@@ -723,12 +723,12 @@ if (preferredDecades && preferredDecades.length > 0) {
           <Card className="randomCard" style={{ width: "80%", maxHeight: "100%", backgroundColor: "#EC0B43", color: "whitesmoke", borderRadius: "30px"}}>
             <Card.Body>
               <a href={randomMovie.link}>
-                <div style={{width: "500px", height: "300px"}}>
+                <div style={{width: "100%", height: "100%"}}>
               <LazyLoadedImage 
                   src={randomMovie.poster} 
                   alt="Random Movie Poster"
                   onLoad={handleAnimationStart} // Start animation when the image is loaded
-                  style={{ width: '75%', height: '50%', objectFit: 'cover', margin: '0', padding: '0', marginBottom: "20px" }} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', margin: '0', padding: '0', marginBottom: "20px" }} 
                 />  </div></a>
               
               <Card.Text style={{ textAlign: "start", fontFamily: "SignWood"}}>
