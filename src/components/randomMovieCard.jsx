@@ -388,7 +388,10 @@ if (preferredDecades && preferredDecades.length > 0) {
 }
 
 
-    filtered = filtered.filter(movie => movie.title !== lastSelectedMovieTitle);
+if (lastSelectedMovieTitle) {
+  // Apply filtering only if lastSelectedMovieTitle exists
+  filtered = filtered.filter(movie => movie.title !== lastSelectedMovieTitle);
+};
   
     // Filter based on selected genres to avoid
     const selectedGenres = JSON.parse(sessionStorage.getItem('selectedGenres'));
@@ -435,15 +438,15 @@ if (preferredDecades && preferredDecades.length > 0) {
       );
     }
   
-    if (filtered.length > 0) {
+    if (filtered.length === 0) {
+      window.alert("No movies meet that criteria, please be less picky");
+      setRandomMovie(null);
+      setLastSelectedMovieTitle("");
+    } else {
       const randomIndex = Math.floor(Math.random() * filtered.length);
       const selectedMovie = filtered[randomIndex];
       setRandomMovie(selectedMovie);
       setLastSelectedMovieTitle(selectedMovie.title);
-    } else {
-      window.alert("No movies meet that criteria, please be less picky");
-      setRandomMovie(null);
-      setLastSelectedMovieTitle("")
     }
   };
   
