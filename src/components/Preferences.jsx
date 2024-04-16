@@ -1177,9 +1177,15 @@ return (
             .map(movie => (
               <div style={{ width: "100%", padding: "10px" }} key={movie.title}>
               <div style={{ border: "5px solid black", borderRadius: "10px", overflow: "hidden" }}>
+              <div style={{
+  width: "100%",
+  height: "180px",
+  marginBottom: "5px",
+}}>
                 <a href={movie.link} target="_blank" rel="noopener noreferrer">
-                  <LazyLoadedImage src={movie.poster} alt={movie.title} style={{ width: "100%", height: "auto" }} />
+                  <LazyLoadedImage src={movie.poster} alt={movie.title} style={{ width: "100%", height: "180px", objectFit: "cover" }} />
                 </a>
+                </div>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <a href={movie.link} target="_blank" rel="noopener noreferrer">
                     <h2 style={{ margin: '10px' }}>{movie.title} on </h2>

@@ -826,9 +826,15 @@ if (lastSelectedMovieTitle) {
 <Modal show={isActorModalOpen} style={{ color: "#E4C3AD", textShadow: "2px 2px 2px black", fontFamily: "Signwood", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", textAlign: "center", maxWidth: "100%" }}>
   <div style={{ backgroundColor: "#58355E", width: "100%", padding: "10px", boxSizing: "border-box" }}>
     <div style={{backgroundColor: "#58355E", border: "5px solid black", marginBottom: "10px"}}>
+    <div style={{
+  width: "100%",
+  height: "180px",
+  marginBottom: "5px",
+}}>
       <a target="_blank" href={modalDirector ? modalDirector.imdb: "http://ww.imdb.com"}>
         <LazyLoadedImage src={modalActor ? modalActor.image : 'No Actor'} alt={modalActor ? modalActor.name : "No Actor"} style={{margin: "0 auto"}}/>
       </a>
+      </div>
       <h3>More films with {modalActor ? modalActor.name : 'No Actor'}</h3>
     </div>
     <div className='movie-grid' style={{ backgroundColor: "#58355E", display: "flex", flexDirection: "column", alignItems: "center" }}>
