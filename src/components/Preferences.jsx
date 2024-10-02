@@ -944,9 +944,6 @@ return (
     ))}
   </div>
   )}
-
-{/* start directors you're a fan of section */}
-
 </div>
   <div style={{ marginBottom: '30px', border: '1px solid #ccc', padding: '15px' }}>
     <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', marginBottom: '10px' }} onClick={() => setIsDirectorOpen(!isDirectorOpen)}>
@@ -1211,7 +1208,155 @@ return (
 </Modal> 
   </div>
 
-  
+  {/* start selectedDirector section */}
+
+    <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', marginBottom: '10px' }} onClick={() => setIsSelectedDirectorOpen(!isSelectedDirectorOpen)}>
+    <h4>Any Directors you<span style={{ color: 'red', fontSize: '1.2em', textDecoration: 'underline' }}> ARE NOT</span>  fond of?</h4>
+      {isSelectedDirectorOpen ? <BsChevronUp style={{ boxShadow: '5px 5px 5px green', margin: '10px' }} /> : <BsChevronDown style={{ boxShadow: '5px 5px 5px red', margin: '10px' }} />}
+    </div>
+    {isSelectedDirectorOpen && (
+      <div>
+        <div style={{display: "flex", justifyContent: "center"}}>
+        <input
+          type="text"
+          placeholder="Search Directors..."
+          value={directorBSearch}
+          onChange={handleDirectorBSearch}
+          style={{ marginBottom: '10px' }}
+        />
+        </div>
+        <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '20px', maxWidth: "80%", margin: "0 auto", justifyContent: "center" }}>
+        {(!directorBSearch || filteredBDirectors.length === 0) ? (
+            // Check if directors array is not empty before rendering
+            sortedDirectors.map(director => (
+              <motion.div
+              key={director.name}
+              initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
+          animate={{ opacity: 1, x: 0 }} // Slide in from the left
+              transition={{ duration: 1 }}
+              style={{ marginBottom: '20px' }} // Add margin bottom to create spacing between rows
+              staggerChildren={0.1} // Stagger the animation of the children elements
+            >
+              <div
+                className='filtered-director-item'
+                onClick={() => handleSelectedDirectorClick(director.name)}
+                key={director.name}
+                style={{ textAlign: 'center' }}
+              >
+                <div style={{ position: 'relative', display: 'inline-block', maxWidth: "100%" }}>
+                  {/* Image rendering */}
+                  {director.image && (
+                    <React.Fragment>
+                      <img
+                      onClick={() => handleSelectedDirectorClick(director.name)}
+                        className='filtered-director-img'
+                        src={director.image}
+                        alt={director.name}
+                        style={{ width: '170px', height: '150px', objectFit: "cover", marginBottom: '10px' }}
+                      />
+                      {/* Conditional rendering for the checkmark */}
+                      {selectedDirectors.includes(director.name) && (
+                        <div style={{
+                          position: 'absolute',
+                          top: '-10px',
+                          right: '-10px',
+                          backgroundColor: 'green',
+                          borderRadius: '50%',
+                          padding: '3px',
+                          zIndex: '1'
+                        }}>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                            <path fill="#FFFFFF" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                          </svg>
+                        </div>
+                      )}
+                    </React.Fragment>
+                  )}
+                  {/* Display director's name */}
+                  <p onClick={() => handleSelectedDirectorClick(director.name)} style={{ margin: '0', color: preferredDirectors.includes(director.name) ? 'green' : 'gray' }}>{director.name}</p>
+                  
+                </div>
+                <p
+        style={{ margin: '0', color: 'gray', cursor: 'pointer' }}
+        onClick={() => handleModalDirectorClick(director.name)}
+      >
+        Their Films
+      </p>
+      
+              </div>
+              
+              </motion.div>
+
+
+              
+            ))
+            
+            
+          ) : (
+            // Render filtered directors based on search query
+            filteredBDirectors.map(director => (
+              
+              <div
+                className='filtered-director-item'
+               
+                key={director.name}
+                style={{ textAlign: 'center', margin: "20px" }}
+              >
+                <div style={{ position: 'relative', display: 'inline-block', maxWidth: "100%" }}>
+                  {/* Image rendering */}
+                  {director.image && (
+                    <React.Fragment>
+                      <img
+                       onClick={() => handleSelectedDirectorClick(director.name)}
+                        className='filtered-director-img'
+                        src={director.image}
+                        alt={director.name}
+                        style={{ width: '200px', height: '150px', objectFit: "cover", marginBottom: '10px' }}
+                      />
+                      {/* Conditional rendering for the checkmark */}
+                      {selectedDirectors.includes(director.name) && (
+                        <div style={{
+                          position: 'absolute',
+                          top: '-10px',
+                          right: '-10px',
+                          backgroundColor: 'green',
+                          borderRadius: '50%',
+                          padding: '3px',
+                          zIndex: '1'
+                        }}>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                            <path fill="#FFFFFF" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                          </svg>
+                        </div>
+                      )}
+                    </React.Fragment>
+                  )}
+                  {/* Display director's name */}
+                  <p  onClick={() => handleSelectedDirectorClick(director.name)} style={{ margin: '0', color: selectedDirectors.includes(director.name) ? 'green' : 'gray' }}>{director.name}</p>
+                </div>
+                <p
+        style={{ margin: '0', color: 'gray', cursor: 'pointer' }}
+        onClick={() => handleModalDirectorClick(director.name)}
+      >
+        Their Films
+      </p>
+              </div>
+            ))
+
+          )}
+        </div>
+        
+      </div>
+      </div>
+    )}
+    
+    
+      </div>
+
+      
+
+      {/* end selected directors section */}
       {/* start preferred actors section, the section for actors they want to include */}
 
       <div style={{ marginBottom: '30px', border: '1px solid #ccc', padding: '15px' }}>
@@ -1360,7 +1505,140 @@ return (
     
       </div>
 
+      {/* start selected actors sections, where they put in actors they'd prefer not to see*/}
+
+      <div  style={{ marginBottom: '30px', border: '1px solid #ccc', padding: '15px' }}>
+    <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', marginBottom: '10px' }} onClick={() => setIsSelectedActorOpen(!isSelectedActorOpen)}>
+    <h4>Any Actors you<span style={{ color: 'red', fontSize: '1.2em', textDecoration: 'underline' }}> ARE NOT</span>  fond of?</h4>
+      {isSelectedActorOpen ? <BsChevronUp style={{ boxShadow: '5px 5px 5px green', margin: '10px' }} /> : <BsChevronDown style={{ boxShadow: '5px 5px 5px red', margin: '10px' }} />}
+    </div>
+    {isSelectedActorOpen && (
+      <div>
+        <div style={{display: "flex", justifyContent: "center"}}>
+        <input
+          type="text"
+          placeholder="Search Actors..."
+          onChange={handleActorBSearch}
+          style={{ marginBottom: '10px' }}
+        />
+        </div>
+        <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '20px', maxWidth: "80%", margin: "0 auto", justifyContent: "center" }}>
+        {(!actorBSearch || filteredBActors.length === 0) ? (
+            // Check if directors array is not empty before rendering
+            sortedActors.map(actor => (
+              
+              
+              <div
+                className='filtered-director-item'
+              
+                key={actor.name}
+                style={{ textAlign: 'center' }}
+              >
+                          
+   
       
+   
+                <div style={{ position: 'relative', display: 'inline-block', maxWidth: "100%" }}>
+                  {/* Image rendering */}
+                  {actor.image && (
+                    <React.Fragment>
+                      <img
+                        onClick={() => handleSelectedActorClick(actor.name)}
+                        className='filtered-director-img'
+                        src={actor.image}
+                        alt={actor.name}
+                        style={{ width: '170px', height: '150px', objectFit: "cover", marginBottom: '10px' }}
+                      />
+                      {/* Conditional rendering for the checkmark */}
+                      {selectedActors.includes(actor.name) && (
+                        <div style={{
+                          position: 'absolute',
+                          top: '-10px',
+                          right: '-10px',
+                          backgroundColor: 'green',
+                          borderRadius: '50%',
+                          padding: '3px',
+                          zIndex: '1'
+                        }}>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                            <path fill="#FFFFFF" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                          </svg>
+                        </div>
+                      )}
+                    </React.Fragment>
+                  )}
+                  {/* Display director's name */}
+                  <p   onClick={() => handleSelectedActorClick(actor.name)} style={{ margin: '0', color: selectedActors.includes(actor.name) ? 'green' : 'gray' }}>{actor.name}</p>
+                </div>
+                <p
+        style={{ margin: '0', color: 'gray', cursor: 'pointer' }}
+        onClick={() => handleModalActorClick(actor.name)}
+      >
+        Their Films
+      </p>
+              </div>
+            ))
+            
+          ) : (
+            // Render filtered directors based on search query
+            filteredBActors.map(actor => (
+              
+              <div
+                className='filtered-director-item'
+                key={actor.name}
+                style={{ textAlign: 'center' }}
+              >
+                <div style={{ position: 'relative', display: 'inline-block', maxWidth: "100%" }}>
+                  {/* Image rendering */}
+                  {actor.image && (
+                    <React.Fragment>
+                      <img
+                       onClick={() => handleSelectedActorClick(actor.name)}
+                        className='filtered-director-img'
+                        src={actor.image}
+                        alt={actor.name}
+                        style={{ width: '200px', height: '150px', objectFit: "cover", marginBottom: '10px' }}
+                      />
+                      {/* Conditional rendering for the checkmark */}
+                      {selectedActors.includes(actor.name) && (
+                        <div style={{
+                          position: 'absolute',
+                          top: '-10px',
+                          right: '-10px',
+                          backgroundColor: 'green',
+                          borderRadius: '50%',
+                          padding: '3px',
+                          zIndex: '1'
+                        }}>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                            <path fill="#FFFFFF" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                          </svg>
+                        </div>
+                      )}
+                    </React.Fragment>
+                  )}
+                  {/* Display director's name */}
+                  <p  onClick={() => handleSelectedActorClick(actor.name)} style={{ margin: '0', color: selectedActors.includes(actor.name) ? 'green' : 'gray' }}>{actor.name}</p>
+                </div>
+                <p
+        style={{ margin: '0', color: 'gray', cursor: 'pointer' }}
+        onClick={() => handleModalActorClick(actor.name)}
+      >
+        Their Films
+      </p>
+              </div>
+            ))
+          )}
+        </div>
+        
+   
+      </div>
+      </div>
+    )}
+    
+      </div>
+
       <div style={{ display: 'flex', justifyContent: 'center' }}>
   <Button
     onClick={() => {
